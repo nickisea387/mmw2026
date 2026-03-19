@@ -125,6 +125,29 @@
   .leaflet-popup-content .popup-event-name{font-weight:600;color:var(--text);font-size:12px;}
   .leaflet-popup-content .popup-event-meta{font-size:11px;color:var(--muted);}
   .leaflet-popup-close-button{color:var(--muted)!important;}
+  .artists a{color:#bbb;text-decoration:none;border-bottom:1px dotted var(--muted2);transition:all 0.15s;}
+  .artists a:hover{color:var(--green);border-color:var(--green);}
+  .search-bar{width:100%;margin-bottom:20px;}
+  .search-input{width:100%;padding:10px 16px 10px 36px;background:var(--surface);border:1px solid var(--border);border-radius:3px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;transition:border-color 0.2s;}
+  .search-input:focus{border-color:var(--green);}
+  .search-input::placeholder{color:var(--muted2);}
+  .search-wrap{position:relative;}
+  .search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted2);font-size:14px;pointer-events:none;}
+  .search-divider{padding:16px 0 8px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-family:'DM Mono',monospace;border-top:1px dashed var(--border);margin-top:16px;}
+  .hp-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10000;display:none;align-items:center;justify-content:center;animation:fadeIn 0.3s ease;}
+  .hp-modal-overlay.visible{display:flex;}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  .hp-modal{background:linear-gradient(145deg,#1a1a2e,#16213e);border:1px solid #2a2a4a;border-radius:8px;padding:48px 40px;max-width:520px;width:90%;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.5);animation:slideUp 0.4s ease;}
+  @keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .hp-modal .hp-close{position:absolute;top:16px;right:20px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;}
+  .hp-modal .hp-close:hover{color:white;}
+  .hp-modal .hp-house{font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;}
+  .hp-modal .hp-char{font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:white;margin-bottom:4px;}
+  .hp-modal .hp-quote{font-style:italic;font-size:13px;color:var(--muted);margin:16px 0;line-height:1.7;}
+  .hp-modal .hp-reason{font-size:13px;color:#ccc;line-height:1.8;margin-top:16px;}
+  .hp-modal .hp-emoji{font-size:64px;margin-bottom:16px;display:block;}
+  .hp-modal .hp-dismiss{margin-top:24px;padding:10px 28px;background:transparent;border:1px solid var(--green);color:var(--green);border-radius:3px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.2s;}
+  .hp-modal .hp-dismiss:hover{background:var(--green);color:#000;}
   @media(max-width:900px){.main{grid-template-columns:1fr;}.left-panel{border-right:none;border-bottom:1px solid var(--border);}.header::after{display:none;}}
 </style>
 </head>
@@ -213,6 +236,12 @@
   <div class="right-panel">
     <div class="notice" id="notice"></div>
     <div class="ai-banner" id="aiBanner"></div>
+    <div class="search-bar">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search events, artists, venues..." oninput="handleSearch(this.value)">
+      </div>
+    </div>
     <div id="results">
       <div class="empty-state">
         <div class="big">→</div>
@@ -222,6 +251,18 @@
         <button class="submit-btn" onclick="showAllEvents()">Browse All Events →</button>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="hp-modal-overlay" id="hpModal">
+  <div class="hp-modal">
+    <button class="hp-close" onclick="closeHPModal()">×</button>
+    <span class="hp-emoji" id="hpEmoji"></span>
+    <div class="hp-house" id="hpHouse"></div>
+    <div class="hp-char" id="hpChar"></div>
+    <div class="hp-quote" id="hpQuote"></div>
+    <div class="hp-reason" id="hpReason"></div>
+    <button class="hp-dismiss" onclick="closeHPModal()">Show Me My Events →</button>
   </div>
 </div>
 
@@ -411,7 +452,7 @@ const EVENTS = [
   {id:90,day:'sun',dayLabel:'Sun Mar 29',name:"AC Slater & Friends",venue:"MAD Club Wynwood",type:'club',time:"10pm–3am",artists:"AC Slater",genre:['bass','techhouse'],matchKeywords:['ac slater','night bass','bass house'],summary:"AC Slater's Night Bass sound brings bass house to the closing night.",hype:3,mentions:2},
 ];
 
-let activeGenre='all', activeDay='all', sortMode='match', minMentions=0, viewMode='list';
+let activeGenre='all', activeDay='all', sortMode='match', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 
@@ -533,6 +574,7 @@ window.addEventListener('load',async()=>{
           b.innerHTML=`<strong>Your Sound:</strong> ${parsed.tasteSummary}<br><span style="display:block;margin-top:6px">Detected genres: <strong>${parsed.topGenres.join(' · ')}</strong></span>`;
           b.classList.add('visible');
           renderEvents();
+          // Don't re-show HP modal on restore — only on fresh analysis
         }catch(e){await loadAndAnalyze();}
       } else {
         await loadAndAnalyze();
@@ -587,8 +629,10 @@ ${EVENTS.map(e=>`ID:${e.id} | ${e.name} | Artists: ${e.artists} | Genres: ${e.ge
 Score each event 0-100 (direct artist match = 85-100, strong genre match = 65-84, adjacent = 35-64, outside taste = 10-34).
 Write a 2-sentence taste profile and list top 3 sub-genres detected.
 
+ALSO: Compare their music personality to a Harry Potter character. Consider ALL characters from every book — Harry, Hermione, Ron, Luna, Neville, Draco, Dumbledore, Snape, Sirius, Hagrid, Ginny, Fred, George, Bellatrix, McGonagall, Tonks, Lupin, Dobby, Cedric, Moody, Voldemort, Fleur, Viktor Krum, Cho Chang, Molly Weasley, Arthur Weasley, Seamus, Dean Thomas, Lavender Brown, Narcissa, Regulus Black, Newt Scamander, etc. Pick the SINGLE best match based on how their listening habits, energy, and genre preferences mirror that character's personality traits. Write a fun 2-3 sentence explanation of WHY they match. Also include a fitting quote from that character and which Hogwarts house they'd be sorted into based on their music taste.
+
 Respond ONLY in valid JSON (no markdown):
-{"tasteSummary":"...","topGenres":["...","...","..."],"scores":{"1":85,"2":40,...}}`;
+{"tasteSummary":"...","topGenres":["...","...","..."],"scores":{"1":85,"2":40,...},"hpCharacter":"...","hpHouse":"...","hpEmoji":"...","hpQuote":"...","hpReason":"..."}`;
 
   try{
     const r=await fetch('https://api.anthropic.com/v1/messages',{
@@ -604,6 +648,7 @@ Respond ONLY in valid JSON (no markdown):
     b.innerHTML=`<strong>Your Sound:</strong> ${parsed.tasteSummary}<br><span style="display:block;margin-top:6px">Detected genres: <strong>${parsed.topGenres.join(' · ')}</strong></span>`;
     b.classList.add('visible');
     renderEvents();
+    if(parsed.hpCharacter) showHPModal(parsed);
   }catch(err){
     console.error(err);
     EVENTS.forEach(e=>{eventMatchScores[e.id]=e.hype*18;});
@@ -664,6 +709,64 @@ function setView(mode){
   renderEvents();
 }
 
+// ── HP MODAL ─────────────────────────────────────────────────────────────────
+function showHPModal(data){
+  const houseColors={Gryffindor:'#ae0001',Slytherin:'#1a472a',Ravenclaw:'#0e1a40',Hufflepuff:'#ecb939'};
+  document.getElementById('hpEmoji').textContent=data.hpEmoji||'⚡';
+  const house=data.hpHouse||'Gryffindor';
+  document.getElementById('hpHouse').textContent=house;
+  document.getElementById('hpHouse').style.color=houseColors[house]||'var(--green)';
+  document.getElementById('hpChar').textContent=data.hpCharacter;
+  document.getElementById('hpQuote').textContent=`"${data.hpQuote}"`;
+  document.getElementById('hpReason').textContent=data.hpReason;
+  document.getElementById('hpModal').classList.add('visible');
+}
+function closeHPModal(){
+  document.getElementById('hpModal').classList.remove('visible');
+}
+
+// ── FUZZY SEARCH ─────────────────────────────────────────────────────────────
+function fuzzyMatch(query,text){
+  query=query.toLowerCase();
+  text=text.toLowerCase();
+  if(text.includes(query)) return 2; // exact substring = best
+  let qi=0;
+  for(let ti=0;ti<text.length&&qi<query.length;ti++){
+    if(text[ti]===query[qi]) qi++;
+  }
+  return qi===query.length?1:0; // fuzzy match = 1, no match = 0
+}
+
+function getSearchableText(e){
+  return `${e.name} ${e.artists} ${e.venue} ${e.summary} ${e.genre.join(' ')} ${e.matchKeywords.join(' ')}`;
+}
+
+function handleSearch(val){
+  searchQuery=val.trim();
+  renderEvents();
+}
+
+// ── ARTIST SPOTIFY LINKS ─────────────────────────────────────────────────────
+function linkifyArtists(artistStr){
+  // Split on commas but preserve "b2b" pairs
+  const parts=artistStr.split(/,\s*/);
+  return parts.map(part=>{
+    // Handle "b2b" by linking each side
+    if(part.toLowerCase().includes(' b2b ')){
+      const sides=part.split(/\s+b2b\s+/i);
+      return sides.map(s=>makeArtistLink(s.trim())).join(' b2b ');
+    }
+    return makeArtistLink(part.trim());
+  }).join(', ');
+}
+
+function makeArtistLink(name){
+  if(!name||name==='TBA'||name.startsWith('TBA ')||name.includes('rumored')||name.includes('surprise')) return name;
+  const clean=name.replace(/\s*\(.*?\)\s*/g,'').trim();
+  const url=`https://open.spotify.com/search/${encodeURIComponent(clean)}`;
+  return `<a href="${url}" target="_blank" rel="noopener">${name}</a>`;
+}
+
 function getMentionsDisplay(m){
   if(m>=6) return {text:`${m} sources`, cls:'hot', flames:'🔥🔥🔥'};
   if(m>=4) return {text:`${m} sources`, cls:'hot', flames:'🔥🔥'};
@@ -719,7 +822,7 @@ function updateMap(events){
     venueEvents.forEach(e=>{
       const s=eventMatchScores[e.id]||0;
       const scoreHtml=has?`<span style="color:${s>=70?'var(--green)':s>=40?'var(--amber)':'var(--muted)'};font-weight:600;">${s}</span>`:'';
-      popupHtml+=`<div class="popup-event"><div class="popup-event-name">${e.name} ${scoreHtml}</div><div class="popup-event-meta">${e.dayLabel} · ${e.time}</div><div class="popup-event-meta" style="color:#bbb">${e.artists}</div></div>`;
+      popupHtml+=`<div class="popup-event"><div class="popup-event-name">${e.name} ${scoreHtml}</div><div class="popup-event-meta">${e.dayLabel} · ${e.time}</div><div class="popup-event-meta" style="color:#bbb">${linkifyArtists(e.artists)}</div></div>`;
     });
 
     marker.bindPopup(popupHtml,{maxWidth:320,minWidth:240});
@@ -731,17 +834,31 @@ function updateMap(events){
 
 function renderEvents(){
   const dayOrder=['tue','wed','thu','fri','sat','sun'];
-  const events=EVENTS
-    .filter(e=>(activeDay==='all'||e.day===activeDay)&&(activeGenre==='all'||e.genre.includes(activeGenre))&&(e.mentions>=minMentions))
-    .sort((a,b)=>{
-      if(sortMode==='match') return (eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.hype-a.hype;
-      if(sortMode==='day') return dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day)||b.hype-a.hype;
-      if(sortMode==='buzz') return b.mentions-a.mentions||b.hype-a.hype;
-      return 0;
-    });
+  const filterFn=e=>(activeDay==='all'||e.day===activeDay)&&(activeGenre==='all'||e.genre.includes(activeGenre))&&(e.mentions>=minMentions);
+  const sortFn=(a,b)=>{
+    if(sortMode==='match') return (eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.hype-a.hype;
+    if(sortMode==='day') return dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day)||b.hype-a.hype;
+    if(sortMode==='buzz') return b.mentions-a.mentions||b.hype-a.hype;
+    return 0;
+  };
 
-  if(!events.length){
-    document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">∅</div><div>No events match this filter</div></div>`;
+  let events, outsideEvents=[];
+  if(searchQuery){
+    const filtered=EVENTS.filter(filterFn);
+    const unfiltered=EVENTS.filter(e=>!filterFn(e));
+    // Score and filter by fuzzy match
+    const scoredIn=filtered.map(e=>({e,score:fuzzyMatch(searchQuery,getSearchableText(e))})).filter(x=>x.score>0);
+    const scoredOut=unfiltered.map(e=>({e,score:fuzzyMatch(searchQuery,getSearchableText(e))})).filter(x=>x.score>0);
+    scoredIn.sort((a,b)=>b.score-a.score||sortFn(a.e,b.e));
+    scoredOut.sort((a,b)=>b.score-a.score||sortFn(a.e,b.e));
+    events=scoredIn.map(x=>x.e);
+    outsideEvents=scoredOut.map(x=>x.e);
+  } else {
+    events=EVENTS.filter(filterFn).sort(sortFn);
+  }
+
+  if(!events.length&&!outsideEvents.length){
+    document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">∅</div><div>No events match this search</div></div>`;
     return;
   }
 
@@ -779,7 +896,7 @@ function renderEvents(){
           <div>
             <div class="event-name">${e.name}<span class="tag ${e.type}">${e.type}</span></div>
             <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
-            <div class="artists">${e.artists}</div>
+            <div class="artists">${linkifyArtists(e.artists)}</div>
             <div class="event-summary">${e.summary}</div>
             <div class="mentions-badge ${md.cls}">${md.flames} Mentioned in ${md.text}</div>
           </div>
@@ -787,11 +904,33 @@ function renderEvents(){
                :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
         </div>`;
       }).join('')}
-    </div>`;
+    </div>
+    ${outsideEvents.length?`
+      <div class="search-divider">Outside your current filters</div>
+      <div class="events-grid">
+        ${outsideEvents.map(e=>{
+          const s=eventMatchScores[e.id]||0;
+          const cls=has?(s>=70?'match-high':s>=40?'match-med':'match-low'):'match-low';
+          const reason=s>=70?'Strong match':s>=50?'Good match':s>=30?'Worth exploring':'Outside your usual';
+          const md=getMentionsDisplay(e.mentions);
+          return `<div class="event-card ${cls}" style="opacity:0.7">
+            <div>
+              <div class="event-name">${e.name}<span class="tag ${e.type}">${e.type}</span></div>
+              <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
+              <div class="artists">${linkifyArtists(e.artists)}</div>
+              <div class="event-summary">${e.summary}</div>
+              <div class="mentions-badge ${md.cls}">${md.flames} Mentioned in ${md.text}</div>
+            </div>
+            ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div></div>`
+                 :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
+          </div>`;
+        }).join('')}
+      </div>
+    `:''}`;
 
   if(viewMode==='map'){
     initMap();
-    updateMap(events);
+    updateMap(events.concat(outsideEvents));
   }
 }
 </script>
