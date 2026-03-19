@@ -758,7 +758,7 @@ function renderEvents(){
   const dayOrder=['tue','wed','thu','fri','sat','sun'];
   const filterFn=e=>
     (activeDays.has('all')||activeDays.has(e.day))&&
-    (activeGenres.has('all')||e.genre.some(g=>activeGenres.has(g)))&&
+    (activeGenres.has('all')||e.genre.some(g=>activeGenres.has(g)||(activeGenres.has('house')&&g.includes('house'))))&&
     (activeVtypes.has('all')||activeVtypes.has(e.type))&&
     (activeBandwagons.has('all')||activeBandwagons.has(String(e.bandwagon||0)))&&
     (trendingFilter==='all'||(typeof TRENDING_IDS!=='undefined'&&TRENDING_IDS.includes(e.id)))&&
