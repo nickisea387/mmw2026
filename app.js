@@ -7,9 +7,7 @@ let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
 let showFavsOnly=false;
-// Clear old iTunes cache — switching to Deezer
-if(localStorage.getItem('artist_img_src')!=='deezer'){localStorage.removeItem('artist_img_cache');localStorage.setItem('artist_img_src','deezer');}
-const artistImageCache=JSON.parse(localStorage.getItem('artist_img_cache')||'{}');
+// Artist images are pre-baked in artist_images.js (ARTIST_IMAGES constant)
 let hpCharImages={};
 
 // ── PKCE AUTH ────────────────────────────────────────────────────────────────
@@ -214,40 +212,8 @@ function mkLink(name){
 }
 function getHeadliner(e){return e.artists.split(/,/)[0].replace(/\s*b2b\s+.*/i,'').replace(/\s*\(.*?\)/g,'').trim();}
 
-async function fetchArtistImage(name){
-  if(artistImageCache[name]) return artistImageCache[name];
-  try{
-    const r=await fetch(`https://api.deezer.com/search/artist?q=${encodeURIComponent(name)}&limit=1`);
-    if(!r.ok) return '';
-    const d=await r.json();
-    const url=d.data?.[0]?.picture_big||d.data?.[0]?.picture_medium||'';
-    if(url){artistImageCache[name]=url;try{localStorage.setItem('artist_img_cache',JSON.stringify(artistImageCache));}catch(e){}}
-    return url;
-  }catch(e){return '';}
-}
-
-function loadArtistImages(){
-  const els=document.querySelectorAll('.event-card-img[data-artist]');
-  if(!els.length) return;
-  const queue=[...els].filter(el=>el.dataset.artist);
-  let idx=0;
-  async function processNext(){
-    if(idx>=queue.length) return;
-    const el=queue[idx++];
-    const name=el.dataset.artist;
-    if(!name){processNext();return;}
-    // Check cache first
-    if(artistImageCache[name]){
-      el.style.backgroundImage=`url('${artistImageCache[name]}')`;
-      processNext();return;
-    }
-    const url=await fetchArtistImage(name);
-    if(url) el.style.backgroundImage=`url('${url}')`;
-    // Small delay to avoid rate limiting
-    setTimeout(processNext,120);
-  }
-  // Start 3 parallel fetchers for speed
-  processNext();processNext();processNext();
+function getArtistImage(name){
+  return ARTIST_IMAGES[name]||'';
 }
 
 // ── TICKET & PLAY ────────────────────────────────────────────────────────────
@@ -349,11 +315,11 @@ function renderCard(e,has,dimmed){
   const md=getMentionsDisplay(e.mentions);
   const isFav=favourites.includes(e.id);
   const headliner=getHeadliner(e);
-  const fallbackImg=getVenueImage(e);
+  const img=getArtistImage(headliner)||getVenueImage(e);
   const ticketUrl=getTicketUrl(e);
   const crowd=VENUE_CROWD[e.venue]||TYPE_CROWD[e.type]||'';
   return `<div class="event-card ${cls}" style="${dimmed?'opacity:0.6':''}">
-    <div class="event-card-img" data-artist="${headliner}" style="background-image:url('${artistImageCache[headliner]||fallbackImg}')"></div>
+    <div class="event-card-img" style="background-image:url('${img}')"></div>
     <div class="event-card-body">
       <div class="event-card-top">
         <div style="flex:1">
@@ -390,12 +356,16 @@ function renderEvents(){
     return 0;
   };
 
+  const hasSpotifyScores=localStorage.getItem('sp_scores')!==null;
   let events,outsideEvents=[];
   if(searchQuery){
     const filtered=EVENTS.filter(filterFn);
     const unfiltered=EVENTS.filter(e=>!filterFn(e));
     events=filtered.filter(e=>getSearchableText(e).includes(searchQuery)).sort(sortFn);
     outsideEvents=unfiltered.filter(e=>getSearchableText(e).includes(searchQuery)).sort(sortFn);
+  } else if(sortMode==='match'&&hasSpotifyScores){
+    // "My Picks" mode: show only top matches (score >= 50), sorted by score
+    events=EVENTS.filter(filterFn).filter(e=>(eventMatchScores[e.id]||0)>=50).sort(sortFn);
   } else {
     events=EVENTS.filter(filterFn).sort(sortFn);
   }
@@ -437,5 +407,4 @@ function renderEvents(){
     `:''}`;
 
   if(viewMode==='map'){initMap();updateMap(events);}
-  else{loadArtistImages();}
 }
