@@ -631,6 +631,18 @@ function buildMyPicksSummary(events){
   if(topVenue) venueHtml+=` — <a href="#" onclick="document.getElementById('searchInput').value='${topVenue[0].replace(/'/g,"\\'")}';handleSearch('${topVenue[0].replace(/'/g,"\\'")}');return false;" class="picks-link-highlight">${topVenue[0]}</a> has ${topVenue[1]} of your picks`;
   html+=`<div class="picks-insight"><span class="picks-icon">📍</span><div>${venueHtml}</div></div>`;
 
+  // Biggest discovery event — find event with decent score but NO direct artist overlap
+  const discoveryEvent=events.find(e=>{
+    const eArtists=e.artists.toLowerCase();
+    const hasDirectMatch=profile.topArtists.some(a=>eArtists.includes(a.toLowerCase()))||
+                         profile.recentArtists.some(a=>eArtists.includes(a.toLowerCase()));
+    return !hasDirectMatch&&(eventMatchScores[e.id]||0)>=40;
+  });
+  if(discoveryEvent){
+    const dGenres=discoveryEvent.genre.slice(0,2).join(', ');
+    html+=`<div class="picks-insight" style="border-top:1px solid var(--border);padding-top:12px;margin-top:4px;"><span class="picks-icon">🔮</span><div><strong>Biggest discovery:</strong> <a href="#" onclick="document.getElementById('searchInput').value='${discoveryEvent.name.replace(/'/g,"\\'")}';handleSearch('${discoveryEvent.name.replace(/'/g,"\\'")}');return false;" class="picks-link-highlight">${discoveryEvent.name}</a> — you don't listen to these artists yet, but based on your ${dGenres} taste, this could be your new favourite find this week.</div></div>`;
+  }
+
   html+=`</div></div>`;
   return html;
 }
@@ -678,7 +690,7 @@ function renderCard(e,has,dimmed){
           </div>
           <div id="embed-${e.id}" class="spotify-embed-container" style="display:none;margin-top:10px;"></div>
         </div>
-        ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div><div style="font-size:10px;letter-spacing:-1px;color:var(--green)">${stars}</div></div>`
+        ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div><div style="font-size:10px;letter-spacing:-1px;color:var(--muted)">${stars}</div></div>`
              :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
       </div>
     </div>
