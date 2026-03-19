@@ -2,7 +2,7 @@ const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
 const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
 const SCOPES = 'user-top-read user-read-recently-played user-read-private';
 
-let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), activeBandwagon=0, sortMode='day', minMentions=0, viewMode='list', searchQuery='';
+let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), activeBandwagons=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
@@ -261,8 +261,11 @@ function toggleVtype(btn){
   renderEvents();
 }
 function toggleBandwagon(btn){
-  document.querySelectorAll('[data-bw]').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');activeBandwagon=parseInt(btn.dataset.bw);renderEvents();
+  const v=btn.dataset.bw;
+  if(v==='0'){activeBandwagons=new Set(['all']);}
+  else{activeBandwagons.delete('all');if(activeBandwagons.has(v)) activeBandwagons.delete(v);else activeBandwagons.add(v);if(!activeBandwagons.size) activeBandwagons=new Set(['all']);}
+  document.querySelectorAll('[data-bw]').forEach(b=>b.classList.toggle('active',activeBandwagons.has(b.dataset.bw)||(activeBandwagons.has('all')&&b.dataset.bw==='0')));
+  renderEvents();
 }
 function toggleMentions(btn){document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');minMentions=parseInt(btn.dataset.mentions);renderEvents();}
 function setMode(sort,view){
@@ -387,7 +390,7 @@ function renderEvents(){
     (activeDays.has('all')||activeDays.has(e.day))&&
     (activeGenres.has('all')||e.genre.some(g=>activeGenres.has(g)))&&
     (activeVtypes.has('all')||activeVtypes.has(e.type))&&
-    (activeBandwagon===0||(e.bandwagon||0)===activeBandwagon)&&
+    (activeBandwagons.has('all')||activeBandwagons.has(String(e.bandwagon||0)))&&
     (e.mentions>=minMentions)&&
     (!showFavsOnly||favourites.includes(e.id));
   const sortFn=(a,b)=>{
