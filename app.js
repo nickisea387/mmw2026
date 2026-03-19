@@ -265,7 +265,8 @@ function getTicketUrl(e){
   return `https://www.eventbrite.com/d/fl--miami/${encodeURIComponent(e.name.replace(/[^\w\s]/g,'').replace(/\s+/g,'-').toLowerCase())}/`;
 }
 
-// Artist Spotify ID cache (persisted to localStorage)
+// Artist Spotify ID cache (persisted to localStorage) — v2 clears old bad matches
+if(localStorage.getItem('mmw_artist_cache_v')!=='2'){localStorage.removeItem('mmw_artist_ids');localStorage.setItem('mmw_artist_cache_v','2');}
 let artistSpotifyCache=JSON.parse(localStorage.getItem('mmw_artist_ids')||'{}');
 function saveArtistCache(){localStorage.setItem('mmw_artist_ids',JSON.stringify(artistSpotifyCache));}
 
@@ -277,17 +278,26 @@ async function resolveArtist(name){
   const token=await getValidToken();
   if(!token) return null;
   try{
-    const r=await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(clean)}&type=artist&limit=1`,{
-      headers:{Authorization:`Bearer ${token}`}
-    });
-    if(!r.ok) return null;
-    const data=await r.json();
-    const artist=data.artists?.items?.[0];
-    if(!artist) return null;
-    const result={id:artist.id,uri:artist.uri,name:artist.name};
-    artistSpotifyCache[key]=result;
-    saveArtistCache();
-    return result;
+    // Try exact search first, then broader search for ALL CAPS names like ANNA
+    const queries=[`artist:"${clean}"`,clean];
+    for(const q of queries){
+      const r=await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=artist&limit=5`,{
+        headers:{Authorization:`Bearer ${token}`}
+      });
+      if(!r.ok) continue;
+      const data=await r.json();
+      const items=data.artists?.items||[];
+      // Find best match — prefer exact case-insensitive name match
+      const exact=items.find(a=>a.name.toLowerCase()===clean.toLowerCase());
+      const artist=exact||items[0];
+      if(artist){
+        const result={id:artist.id,uri:artist.uri,name:artist.name};
+        artistSpotifyCache[key]=result;
+        saveArtistCache();
+        return result;
+      }
+    }
+    return null;
   }catch(e){return null;}
 }
 
@@ -322,15 +332,16 @@ function toggleEmbed(eventId){
 async function loadEmbeds(eventId,container){
   const event=EVENTS.find(e=>e.id===eventId);
   if(!event){container.innerHTML='';return;}
+  // Get ALL artists, not just 4
   const names=event.artists.split(/,\s*/)
-    .map(a=>a.replace(/\s*b2b\s+.*/i,'').replace(/\s*\(.*?\)/g,'').trim())
-    .filter(a=>a&&a!=='TBA')
-    .slice(0,4);
+    .flatMap(a=>a.split(/\s+b2b\s+/i))
+    .map(a=>a.replace(/\s*\(.*?\)/g,'').trim())
+    .filter(a=>a&&a!=='TBA'&&!a.includes('rumored')&&!a.includes('surprise'));
 
+  // Refresh token if needed before loading embeds
   const token=await getValidToken();
   if(!token){
-    // No auth: fall back to search link
-    container.innerHTML=`<div style="padding:12px;font-size:11px;"><a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:white;">Open in Spotify</a></div>`;
+    container.innerHTML=`<div style="padding:8px;font-size:12px;"><a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:white;">Open in Spotify →</a></div>`;
     return;
   }
 
@@ -338,13 +349,14 @@ async function loadEmbeds(eventId,container){
   const valid=artists.filter(Boolean);
 
   if(!valid.length){
-    container.innerHTML=`<div style="padding:12px;color:var(--muted);font-size:11px;">Could not find artists on Spotify. <a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:white;">Search manually</a></div>`;
+    container.innerHTML=`<div style="padding:8px;font-size:12px;color:var(--muted);">Could not find artists. <a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:white;">Search on Spotify →</a></div>`;
     return;
   }
 
-  container.innerHTML=valid.map(a=>
-    `<iframe style="border-radius:4px;margin-bottom:4px;" src="https://open.spotify.com/embed/artist/${a.id}?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
-  ).join('')+`<button class="play-btn" style="margin-top:6px;width:100%;" data-playlist-btn="${eventId}" onclick="createEventPlaylist(${eventId})">Create Full Playlist</button>`;
+  // Scrollable container with compact embeds for ALL artists
+  container.innerHTML=`<div style="max-height:400px;overflow-y:auto;display:flex;flex-direction:column;gap:2px;">${valid.map(a=>
+    `<iframe src="https://open.spotify.com/embed/artist/${a.id}?utm_source=generator&theme=0" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius:4px;flex-shrink:0;"></iframe>`
+  ).join('')}</div><button class="play-btn" style="margin-top:6px;width:100%;" data-playlist-btn="${eventId}" onclick="createEventPlaylist(${eventId})">Create Full Playlist</button>`;
 }
 
 // ── CREATE PLAYLIST (TIER 2: needs playlist-modify-private scope) ───────────
