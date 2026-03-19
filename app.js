@@ -123,6 +123,7 @@ async function loadAndAnalyze(){
     document.getElementById('connectBtn').style.display='flex';
     document.getElementById('authDesc').style.display='block';
     showAllEvents();
+  }
 }
 
 async function runAI({topArtists,topTracks,recent}){
