@@ -188,9 +188,16 @@
   .spotify-embed-container{border-top:1px solid var(--border);padding-top:10px;}
   .spotify-embed-container iframe{border:1px solid var(--border)!important;}
   .spotify-embed-container .play-btn{margin-top:8px;}
+  .filter-toggle{display:none;width:100%;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:4px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:600;cursor:pointer;text-align:left;margin-bottom:12px;align-items:center;justify-content:space-between;}
+  .filter-toggle-icon{transition:transform 0.2s;font-size:16px;}
+  .filter-toggle.open .filter-toggle-icon{transform:rotate(180deg);}
+  .filter-content{display:flex;flex-direction:column;gap:28px;}
   @media(max-width:900px){
+    .filter-toggle{display:flex;}
+    .filter-content.collapsed{display:none;}
+    .filter-content{gap:20px;}
     .main{grid-template-columns:1fr;}
-    .left-panel{border-right:none;border-bottom:1px solid var(--border);max-height:none;position:static;padding:20px 16px;gap:20px;}
+    .left-panel{border-right:none;border-bottom:1px solid var(--border);max-height:none;position:static;padding:16px;gap:0;}
     .right-panel{padding:20px 16px;}
     .header{padding:28px 16px 20px;}
     .header::after{display:none;}
@@ -235,6 +242,11 @@
 
 <div class="main">
   <div class="left-panel">
+    <button class="filter-toggle" id="filterToggle" onclick="document.getElementById('filterContent').classList.toggle('collapsed');this.classList.toggle('open');">
+      <span>Filters & Connect</span>
+      <span class="filter-toggle-icon">▾</span>
+    </button>
+    <div id="filterContent" class="filter-content collapsed">
     <div>
       <div class="section-label">01 / Spotify Connect</div>
       <div class="auth-block">
@@ -320,6 +332,7 @@
       </div>
       <div style="font-size:10px;color:var(--muted);line-height:1.4;margin-top:8px;">Events with high editorial buzz relative to how underground the act is. Underground acts getting unexpected press trend faster.</div>
     </div>
+    </div><!-- /filter-content -->
   </div>
 
   <div class="right-panel">
