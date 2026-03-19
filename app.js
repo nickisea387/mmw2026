@@ -530,15 +530,20 @@ function getMatchReason(event){
 function buildMyPicksSummary(events){
   const profile=JSON.parse(localStorage.getItem('sp_profile')||'null');
   if(!profile) return '';
+  const savedScores=JSON.parse(localStorage.getItem('sp_scores')||'null');
 
   const topArtists=profile.topArtists.slice(0,5);
   const topGenres=profile.topGenres.slice(0,5);
-  const recentArtists=profile.recentArtists.slice(0,5);
 
   // Find which of their artists appear in the picks
   const allPickArtists=events.map(e=>e.artists.toLowerCase()).join(' ');
   const artistsInPicks=profile.topArtists.filter(a=>allPickArtists.includes(a.toLowerCase()));
   const recentInPicks=profile.recentArtists.filter(a=>allPickArtists.includes(a.toLowerCase()));
+
+  // Map each matched artist to the event they're in
+  function findEventForArtist(name){
+    return events.find(e=>e.artists.toLowerCase().includes(name.toLowerCase()));
+  }
 
   // Count genre distribution in picks
   const genreCounts={};
@@ -550,42 +555,71 @@ function buildMyPicksSummary(events){
   events.forEach(e=>{typeCounts[e.type]=(typeCounts[e.type]||0)+1;});
   const topTypes=Object.entries(typeCounts).sort((a,b)=>b[1]-a[1]).slice(0,2).map(([t])=>t);
 
-  // Count day distribution
+  // Count day distribution & find best day + top event on that day
   const dayCounts={};
-  events.forEach(e=>{dayCounts[e.dayLabel]=(dayCounts[e.dayLabel]||0)+1;});
-  const bestDay=Object.entries(dayCounts).sort((a,b)=>b[1]-a[1])[0];
+  const dayEvents={};
+  events.forEach(e=>{
+    dayCounts[e.dayLabel]=(dayCounts[e.dayLabel]||0)+1;
+    if(!dayEvents[e.dayLabel]) dayEvents[e.dayLabel]=e;
+    else if((eventMatchScores[e.id]||0)>(eventMatchScores[dayEvents[e.dayLabel].id]||0)) dayEvents[e.dayLabel]=e;
+  });
+  const bestDayEntry=Object.entries(dayCounts).sort((a,b)=>b[1]-a[1])[0];
+  const bestDayTopEvent=bestDayEntry?dayEvents[bestDayEntry[0]]:null;
+
+  // Find best venue based on picks
+  const venueCounts={};
+  events.forEach(e=>{venueCounts[e.venue]=(venueCounts[e.venue]||0)+1;});
+  const topVenue=Object.entries(venueCounts).sort((a,b)=>b[1]-a[1])[0];
+
+  // Taste summary from AI or fallback
+  const tasteSummary=savedScores?.tasteSummary||'';
 
   let html=`<div class="picks-summary">`;
   html+=`<div class="picks-summary-title">Why these ${events.length} picks?</div>`;
   html+=`<div class="picks-summary-body">`;
 
-  // Your sound
-  html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> ${topGenres.slice(0,4).join(', ')}</div></div>`;
-
-  // Top artists
-  html+=`<div class="picks-insight"><span class="picks-icon">⭐</span><div><strong>Your top artists:</strong> ${topArtists.join(', ')}</div></div>`;
-
-  // Direct matches
-  if(artistsInPicks.length){
-    html+=`<div class="picks-insight picks-highlight"><span class="picks-icon">🎯</span><div><strong>${artistsInPicks.length} of your artists are performing:</strong> ${artistsInPicks.join(', ')}</div></div>`;
+  // Your sound — from AI taste summary
+  if(tasteSummary){
+    html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> ${tasteSummary}</div></div>`;
+  } else if(topGenres.length){
+    html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> You're deep into ${topGenres.slice(0,4).join(', ')}. We matched events with similar energy.</div></div>`;
   }
 
-  // Recently played matches
+  // Top artists — linked to Spotify
+  const artistLinks=topArtists.map(a=>`<a href="https://open.spotify.com/search/${encodeURIComponent(a)}" target="_blank" rel="noopener" class="picks-link">${a}</a>`);
+  html+=`<div class="picks-insight"><span class="picks-icon">⭐</span><div><strong>Your top artists:</strong> ${artistLinks.join(', ')}</div></div>`;
+
+  // Direct artist matches — each links to the event they're in
+  if(artistsInPicks.length){
+    const matchLinks=artistsInPicks.map(a=>{
+      const ev=findEventForArtist(a);
+      return ev?`<a href="#" onclick="document.getElementById('searchInput').value='${a.replace(/'/g,"\\'")}';handleSearch('${a.replace(/'/g,"\\'")}');return false;" class="picks-link-highlight">${a}</a>`:`<span>${a}</span>`;
+    });
+    html+=`<div class="picks-insight picks-highlight"><span class="picks-icon">🎯</span><div><strong>${artistsInPicks.length} of your artists are performing:</strong> ${matchLinks.join(', ')}</div></div>`;
+  }
+
+  // Recently played matches — linked to search
   const uniqueRecent=recentInPicks.filter(a=>!artistsInPicks.includes(a));
   if(uniqueRecent.length){
-    html+=`<div class="picks-insight"><span class="picks-icon">🔄</span><div><strong>Recently on repeat:</strong> ${uniqueRecent.join(', ')} — also playing this week</div></div>`;
+    const recentLinks=uniqueRecent.map(a=>`<a href="#" onclick="document.getElementById('searchInput').value='${a.replace(/'/g,"\\'")}';handleSearch('${a.replace(/'/g,"\\'")}');return false;" class="picks-link">${a}</a>`);
+    html+=`<div class="picks-insight"><span class="picks-icon">🔄</span><div><strong>Recently on repeat:</strong> ${recentLinks.join(', ')} — also playing this week</div></div>`;
   }
 
-  // Genre breakdown
-  html+=`<div class="picks-insight"><span class="picks-icon">🎵</span><div><strong>These picks lean:</strong> ${topPickGenres.join(', ')} — matching your listening profile</div></div>`;
+  // Genre breakdown — clickable to filter
+  const genreLinks=topPickGenres.map(g=>`<a href="#" onclick="activeGenres=new Set(['${g}']);document.querySelectorAll('.genre-chip').forEach(b=>b.classList.toggle('active',b.dataset.genre==='${g}'));setMode('day','list');return false;" class="picks-link">${g}</a>`);
+  html+=`<div class="picks-insight"><span class="picks-icon">🎵</span><div><strong>These picks lean:</strong> ${genreLinks.join(', ')} — matching your listening profile</div></div>`;
 
-  // Best day
-  if(bestDay){
-    html+=`<div class="picks-insight"><span class="picks-icon">📅</span><div><strong>Your biggest day:</strong> ${bestDay[0]} (${bestDay[1]} picks)</div></div>`;
+  // Best day — with top event recommendation
+  if(bestDayEntry){
+    let dayHtml=`<strong>Your biggest day:</strong> ${bestDayEntry[0]} (${bestDayEntry[1]} picks)`;
+    if(bestDayTopEvent) dayHtml+=` — don't miss <a href="#" onclick="document.getElementById('searchInput').value='${bestDayTopEvent.name.replace(/'/g,"\\'")}';handleSearch('${bestDayTopEvent.name.replace(/'/g,"\\'")}');return false;" class="picks-link-highlight">${bestDayTopEvent.name}</a>`;
+    html+=`<div class="picks-insight"><span class="picks-icon">📅</span><div>${dayHtml}</div></div>`;
   }
 
-  // Venue mix
-  html+=`<div class="picks-insight"><span class="picks-icon">📍</span><div><strong>Venue mix:</strong> Mostly ${topTypes.join(' + ')} events</div></div>`;
+  // Venue mix — with top venue recommendation
+  let venueHtml=`<strong>Venue mix:</strong> Mostly ${topTypes.join(' + ')} events`;
+  if(topVenue) venueHtml+=` — <a href="#" onclick="document.getElementById('searchInput').value='${topVenue[0].replace(/'/g,"\\'")}';handleSearch('${topVenue[0].replace(/'/g,"\\'")}');return false;" class="picks-link-highlight">${topVenue[0]}</a> has ${topVenue[1]} of your picks`;
+  html+=`<div class="picks-insight"><span class="picks-icon">📍</span><div>${venueHtml}</div></div>`;
 
   html+=`</div></div>`;
   return html;
