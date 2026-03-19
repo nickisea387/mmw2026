@@ -79,5 +79,12 @@ const ARTIST_IMAGES = {
   "Stefano Noferini": "https://cdn-images.dzcdn.net/images/artist/051dcb8add0e0060653145f44e24a386/500x500-000000-80-0-0.jpg",
   "AC Slater": "https://cdn-images.dzcdn.net/images/artist/7b16cffff2ee545675917bc9d0a535a8/500x500-000000-80-0-0.jpg",
   "PAWSA": "https://cdn-images.dzcdn.net/images/artist/d239501231d60980c6eb1ba64948289c/500x500-000000-80-0-0.jpg",
-  "OMRI": "https://cdn-images.dzcdn.net/images/artist/c94be4346bbe88c7cd2f993c0ed711e0/500x500-000000-80-0-0.jpg"
+  "OMRI": "https://cdn-images.dzcdn.net/images/artist/c94be4346bbe88c7cd2f993c0ed711e0/500x500-000000-80-0-0.jpg",
+  "Hernan Cattaneo": "https://cdn-images.dzcdn.net/images/artist/19cdaeeccd5d9ac57a8066d5d2b4a42f/500x500-000000-80-0-0.jpg",
+  "Sam Divine": "https://cdn-images.dzcdn.net/images/artist/04680f62e5921a32a1e419543295d206/500x500-000000-80-0-0.jpg",
+  "Massano": "https://cdn-images.dzcdn.net/images/artist/06a41e2ec0c3a373af5db2b85763f00e/500x500-000000-80-0-0.jpg",
+  "John Digweed": "https://cdn-images.dzcdn.net/images/artist/ef6150eae1e00574b3a4c2008776c50b/500x500-000000-80-0-0.jpg",
+  "tINI": "https://cdn-images.dzcdn.net/images/artist/efb8ac71cf0c9358acbce2b8126bfa39/500x500-000000-80-0-0.jpg",
+  "Egyptian Lover": "https://cdn-images.dzcdn.net/images/artist/4cb293361d7a17dba6939642ea6174da/500x500-000000-80-0-0.jpg",
+  "Arodes": "https://cdn-images.dzcdn.net/images/artist/23a68545f2eddef32e958317063d2d7d/500x500-000000-80-0-0.jpg"
 };
