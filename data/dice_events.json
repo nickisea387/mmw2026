@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-19T19:14:11.184698+00:00",
+  "updated": "2026-03-19T20:56:54.825465+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 107,
+  "total_found": 109,
   "matched_existing": 34,
-  "new_count": 73,
+  "new_count": 75,
   "events": [
     {
       "name": "MMW: King's Paradox: Vito UK",
@@ -396,6 +396,16 @@
       "is_new": true
     },
     {
+      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Factory Town Music Week 2026 (Wednesday Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
@@ -482,16 +492,6 @@
       "artists": [],
       "price": "294.95",
       "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "48.49",
-      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -766,6 +766,16 @@
       "is_new": true
     },
     {
+      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "60.62",
+      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Something Chill MMW Showcase",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
@@ -832,16 +842,6 @@
       "artists": [],
       "price": "25",
       "url": "https://dice.fm/event/92a2r9-mmw-bass-jamz-gaskin-26th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
-      "date": "2026-03-26T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "60.62",
-      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1046,12 +1046,22 @@
       "is_new": false
     },
     {
-      "name": "Factory Town Music Week 2026 (Sunday Pass)",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Factory Town",
+      "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
       "artists": [],
-      "price": "252.19",
-      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "price": "90.93",
+      "url": "https://dice.fm/event/6dnyd2-do-not-sit-on-mmw-yes-yes-yes-label-party-27th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1064,6 +1074,16 @@
       "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
       "matched_id": 103,
       "is_new": false
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Sunday Pass)",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "252.19",
+      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "30+ Hour MMW Closing Party 2026",
@@ -1318,6 +1338,14 @@
       "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets"
     },
     {
+      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
+    },
+    {
       "name": "Factory Town Music Week 2026 (Wednesday Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
@@ -1388,14 +1416,6 @@
       "artists": [],
       "price": "294.95",
       "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
-    },
-    {
-      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "48.49",
-      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
@@ -1518,6 +1538,14 @@
       "url": "https://dice.fm/event/mx86bw-cosmic-gate-special-guest-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets"
     },
     {
+      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "60.62",
+      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
+    },
+    {
       "name": "Something Chill MMW Showcase",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
@@ -1556,14 +1584,6 @@
       "artists": [],
       "price": "25",
       "url": "https://dice.fm/event/92a2r9-mmw-bass-jamz-gaskin-26th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
-      "date": "2026-03-26T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "60.62",
-      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
     },
     {
       "name": "Farris Wheel Showcase (MMW 2026)",
@@ -1652,6 +1672,22 @@
       "artists": [],
       "price": "94.34",
       "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets"
+    },
+    {
+      "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/6dnyd2-do-not-sit-on-mmw-yes-yes-yes-label-party-27th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
+    },
+    {
+      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
