@@ -260,7 +260,10 @@ function getArtistImage(name){
 }
 
 // ── TICKET & PLAY ────────────────────────────────────────────────────────────
-function getTicketUrl(e){return `https://www.eventbrite.com/d/fl--miami/${encodeURIComponent(e.name.replace(/[^\w\s]/g,'').replace(/\s+/g,'-').toLowerCase())}/`;}
+function getTicketUrl(e){
+  if(e.ticketUrl) return e.ticketUrl;
+  return `https://www.eventbrite.com/d/fl--miami/${encodeURIComponent(e.name.replace(/[^\w\s]/g,'').replace(/\s+/g,'-').toLowerCase())}/`;
+}
 
 // Artist Spotify ID cache (persisted to localStorage)
 let artistSpotifyCache=JSON.parse(localStorage.getItem('mmw_artist_ids')||'{}');
