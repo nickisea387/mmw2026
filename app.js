@@ -181,13 +181,7 @@ function showHPModal(userGenres){
 }
 function closeHPModal(){
   document.getElementById('hpModal').classList.remove('visible');
-  // Switch to My Picks sort and list view
-  sortMode='match';
-  viewMode='list';
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort==='match'));
-  document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view==='list'));
-  renderEvents();
-  // Scroll to top of results
+  // Just scroll to results — events are already rendered behind the modal
   document.getElementById('results')?.scrollIntoView({behavior:'smooth'});
 }
 
