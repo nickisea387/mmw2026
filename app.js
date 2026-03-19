@@ -181,7 +181,12 @@ function showHPModal(userGenres){
 }
 function closeHPModal(){
   document.getElementById('hpModal').classList.remove('visible');
-  // Just scroll to results — events are already rendered behind the modal
+  // Switch to My Picks — scores are saved by now since HP modal shows after runAI
+  sortMode='match';
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort==='match'));
+  viewMode='list';
+  document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view==='list'));
+  renderEvents();
   document.getElementById('results')?.scrollIntoView({behavior:'smooth'});
 }
 
