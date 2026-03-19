@@ -265,13 +265,9 @@ function toggleBandwagon(btn){
   btn.classList.add('active');activeBandwagon=parseInt(btn.dataset.bw);renderEvents();
 }
 function toggleMentions(btn){document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');minMentions=parseInt(btn.dataset.mentions);renderEvents();}
-function setSort(mode){
-  sortMode=mode;
-  if(viewMode==='map'){viewMode='list';document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view==='list'));}
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort===mode));
-  renderEvents();
+function setMode(sort,view){
+  sortMode=sort;viewMode=view;renderEvents();
 }
-function setView(mode){viewMode=mode;document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===mode));renderEvents();}
 function getMentionsDisplay(m){
   if(m>=6) return {text:`${m} sources`,cls:'hot',flames:'🔥🔥🔥'};
   if(m>=4) return {text:`${m} sources`,cls:'hot',flames:'🔥🔥'};
@@ -440,16 +436,11 @@ function renderEvents(){
       <div class="results-count">${events.length} events${outsideEvents.length?' + '+outsideEvents.length+' outside filters':''}${sortMode==='match'?' · your top picks':''}
         <button class="fav-filter-btn ${showFavsOnly?'active':''}" id="favFilterBtn" onclick="toggleFavFilter()">♥ ${favCount}</button>
       </div>
-      <div style="display:flex;gap:12px;align-items:center;">
-        <div class="view-toggle">
-          <button class="view-btn ${viewMode==='list'?'active':''}" data-view="list" onclick="setView('list')">List</button>
-          <button class="view-btn ${viewMode==='map'?'active':''}" data-view="map" onclick="setView('map')">Map</button>
-        </div>
-        <div class="sort-btns">
-          <button class="sort-btn ${sortMode==='match'?'active':''}" data-sort="match" onclick="setSort('match')">My Picks</button>
-          <button class="sort-btn ${sortMode==='day'?'active':''}" data-sort="day" onclick="setSort('day')">By Day</button>
-          <button class="sort-btn ${sortMode==='buzz'?'active':''}" data-sort="buzz" onclick="setSort('buzz')">By Buzz</button>
-        </div>
+      <div class="mode-btns">
+        <button class="mode-btn ${sortMode==='match'&&viewMode==='list'?'active':''}" onclick="setMode('match','list')">My Picks</button>
+        <button class="mode-btn ${sortMode==='day'&&viewMode==='list'?'active':''}" onclick="setMode('day','list')">By Day</button>
+        <button class="mode-btn ${sortMode==='buzz'&&viewMode==='list'?'active':''}" onclick="setMode('buzz','list')">By Buzz</button>
+        <button class="mode-btn ${viewMode==='map'?'active':''}" onclick="setMode(sortMode,'map')">Map</button>
       </div>
     </div>
     ${viewMode==='map'?`<div class="map-legend">${mapLegendHtml}</div>`:''}
