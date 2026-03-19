@@ -64,25 +64,25 @@
   .search-input:focus{border-color:var(--green);}
   .search-input::placeholder{color:var(--muted2);}
   .events-grid{display:flex;flex-direction:column;gap:12px;}
-  .event-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all 0.2s;position:relative;}
+  .event-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all 0.2s;position:relative;display:grid;grid-template-columns:110px 1fr;}
   .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--border);transition:all 0.2s;z-index:1;}
   .event-card.match-high::before{background:var(--green);}
   .event-card.match-med::before{background:var(--amber);}
   .event-card:hover{border-color:var(--muted2);transform:translateX(2px);}
-  .event-card-img{height:100px;background-size:cover;background-position:center;position:relative;}
-  .event-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,var(--surface) 100%);}
-  .event-card-body{padding:16px 20px 16px 20px;}
+  .event-card-img{background-size:cover;background-position:center;min-height:160px;}
+  .event-card-body{padding:16px 20px;}
   .event-card-top{display:flex;gap:16px;align-items:start;}
-  .event-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:white;margin-bottom:4px;line-height:1.2;}
+  .event-name{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:6px;line-height:1.2;}
   .event-link{color:white;text-decoration:none;transition:color 0.15s;}
   .event-link:hover{color:var(--green);}
-  .event-meta{font-size:11px;color:var(--muted);letter-spacing:0.3px;margin-bottom:8px;}
+  .event-meta{font-size:13px;color:var(--muted);letter-spacing:0.3px;margin-bottom:8px;}
   .event-meta span{margin-right:12px;}
   .event-meta .venue{color:var(--amber);}
-  .artists{font-size:12px;color:#bbb;line-height:1.7;}
-  .artists a{color:#bbb;text-decoration:none;border-bottom:1px dotted var(--muted2);transition:all 0.15s;}
+  .artists{font-size:14px;color:#ccc;line-height:1.8;}
+  .artists a{color:#ccc;text-decoration:none;border-bottom:1px dotted var(--muted2);transition:all 0.15s;}
   .artists a:hover{color:var(--green);border-color:var(--green);}
-  .event-summary{margin-top:6px;font-size:12px;color:var(--muted);line-height:1.6;}
+  .event-summary{margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;}
+  .event-crowd{margin-top:8px;font-size:12px;color:var(--pink);font-style:italic;line-height:1.6;opacity:0.85;}
   .event-actions{display:flex;align-items:center;gap:10px;margin-top:8px;flex-wrap:wrap;}
   .match-badge{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;min-width:70px;}
   .match-score{font-size:28px;font-weight:600;line-height:1;}
@@ -144,26 +144,20 @@
   .hp-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10000;display:none;align-items:center;justify-content:center;animation:fadeIn 0.3s ease;}
   .hp-modal-overlay.visible{display:flex;}
   @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-  .hp-modal{background:linear-gradient(145deg,#1a1a2e,#16213e);border:1px solid #2a2a4a;border-radius:8px;padding:48px 40px;max-width:520px;width:90%;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.5);animation:slideUp 0.4s ease;}
+  .hp-modal{border:1px solid #2a2a4a;border-radius:8px;max-width:560px;width:90%;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.5);animation:slideUp 0.4s ease;overflow:hidden;}
   @keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
-  .hp-modal .hp-close{position:absolute;top:16px;right:20px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;}
+  .hp-modal-bg{background-size:cover;background-position:center;position:relative;}
+  .hp-modal-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,30,0.6),rgba(10,10,30,0.95) 60%);}
+  .hp-modal-inner{position:relative;z-index:1;padding:56px 44px 44px;}
+  .hp-modal .hp-close{position:absolute;top:16px;right:20px;background:none;border:none;color:rgba(255,255,255,0.6);font-size:28px;cursor:pointer;z-index:2;}
   .hp-modal .hp-close:hover{color:white;}
-  .hp-modal .hp-house{font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;}
-  .hp-modal .hp-char{font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:white;margin-bottom:4px;}
-  .hp-modal .hp-quote{font-style:italic;font-size:13px;color:var(--muted);margin:16px 0;line-height:1.7;}
-  .hp-modal .hp-reason{font-size:13px;color:#ccc;line-height:1.8;margin-top:16px;}
-  .hp-modal .hp-emoji{font-size:64px;margin-bottom:16px;display:block;}
-  .hp-modal .hp-dismiss{margin-top:24px;padding:10px 28px;background:transparent;border:1px solid var(--green);color:var(--green);border-radius:3px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.2s;}
+  .hp-modal .hp-house{font-size:14px;letter-spacing:4px;text-transform:uppercase;margin-bottom:10px;font-weight:600;}
+  .hp-modal .hp-char{font-family:'Playfair Display',serif;font-size:44px;font-weight:900;color:white;margin-bottom:6px;}
+  .hp-modal .hp-quote{font-style:italic;font-size:16px;color:rgba(255,255,255,0.6);margin:20px 0;line-height:1.8;}
+  .hp-modal .hp-reason{font-size:16px;color:#ddd;line-height:1.9;margin-top:20px;}
+  .hp-modal .hp-emoji{font-size:96px;margin-bottom:20px;display:block;}
+  .hp-modal .hp-dismiss{margin-top:28px;padding:12px 32px;background:transparent;border:1px solid var(--green);color:var(--green);border-radius:3px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s;}
   .hp-modal .hp-dismiss:hover{background:var(--green);color:#000;}
-  /* Player Modal */
-  .player-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10001;display:none;align-items:center;justify-content:center;}
-  .player-overlay.visible{display:flex;}
-  .player-modal{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:32px;max-width:560px;width:90%;max-height:80vh;overflow-y:auto;position:relative;}
-  .player-modal .hp-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;}
-  .player-modal .hp-close:hover{color:white;}
-  .player-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:white;margin-bottom:20px;}
-  .player-artist{margin-bottom:16px;}
-  .player-artist-name{font-size:13px;font-weight:600;color:var(--green);margin-bottom:6px;}
   @media(max-width:900px){.main{grid-template-columns:1fr;}.left-panel{border-right:none;border-bottom:1px solid var(--border);max-height:none;position:static;}.header::after{display:none;}}
 </style>
 </head>
@@ -266,22 +260,19 @@
 <div class="hp-modal-overlay" id="hpModal">
   <div class="hp-modal">
     <button class="hp-close" onclick="closeHPModal()">×</button>
-    <span class="hp-emoji" id="hpEmoji"></span>
-    <div class="hp-house" id="hpHouse"></div>
-    <div class="hp-char" id="hpChar"></div>
-    <div class="hp-quote" id="hpQuote"></div>
-    <div class="hp-reason" id="hpReason"></div>
-    <button class="hp-dismiss" onclick="closeHPModal()">Show Me My Events →</button>
+    <div class="hp-modal-bg" id="hpModalBg">
+      <div class="hp-modal-inner">
+        <span class="hp-emoji" id="hpEmoji"></span>
+        <div class="hp-house" id="hpHouse"></div>
+        <div class="hp-char" id="hpChar"></div>
+        <div class="hp-quote" id="hpQuote"></div>
+        <div class="hp-reason" id="hpReason"></div>
+        <button class="hp-dismiss" onclick="closeHPModal()">Show Me My Picks →</button>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Spotify Player Modal -->
-<div class="player-overlay" id="playerModal">
-  <div class="player-modal">
-    <button class="hp-close" onclick="closePlayer()">×</button>
-    <div id="playerContent"></div>
-  </div>
-</div>
 
 <script src="data.js"></script>
 <script src="app.js"></script>

@@ -200,6 +200,13 @@ function showHPModal(userGenres){
     else bestChar=HP_CHARACTERS.find(c=>c.name==='Luna Lovegood');
   }
   const houseColors={Gryffindor:'#ae0001',Slytherin:'#1a472a',Ravenclaw:'#222f5b',Hufflepuff:'#ecb939'};
+  const houseImages={
+    Gryffindor:'https://images.unsplash.com/photo-1551269901-5c5e14c25df7?w=600&h=400&fit=crop&q=80',
+    Slytherin:'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=600&h=400&fit=crop&q=80',
+    Ravenclaw:'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=600&h=400&fit=crop&q=80',
+    Hufflepuff:'https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=600&h=400&fit=crop&q=80',
+  };
+  document.getElementById('hpModalBg').style.backgroundImage=`url('${houseImages[bestChar.house]||houseImages.Gryffindor}')`;
   document.getElementById('hpEmoji').textContent=bestChar.emoji;
   document.getElementById('hpHouse').textContent=bestChar.house;
   document.getElementById('hpHouse').style.color=houseColors[bestChar.house]||'#fff';
@@ -208,7 +215,13 @@ function showHPModal(userGenres){
   document.getElementById('hpReason').textContent=bestChar.reason;
   document.getElementById('hpModal').classList.add('visible');
 }
-function closeHPModal(){document.getElementById('hpModal').classList.remove('visible');}
+function closeHPModal(){
+  document.getElementById('hpModal').classList.remove('visible');
+  // Switch to "My Picks" sort so they see their personalized recommendations
+  sortMode='match';
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort==='match'));
+  renderEvents();
+}
 
 // ── SEARCH (SIMPLE SUBSTRING) ───────────────────────────────────────────────
 function getSearchableText(e){
@@ -254,53 +267,13 @@ function toggleFavFilter(){
 }
 
 // ── SPOTIFY PLAY SET ─────────────────────────────────────────────────────────
-async function playSet(eventId){
+function playSet(eventId){
   const event=EVENTS.find(e=>e.id===eventId);
   if(!event) return;
-  const token=await getValidToken();
-  const modal=document.getElementById('playerModal');
-  const content=document.getElementById('playerContent');
-
-  if(!token){
-    content.innerHTML='<div style="padding:20px;color:var(--muted)">Connect Spotify first to play sets.</div>';
-    modal.classList.add('visible');
-    return;
-  }
-
-  content.innerHTML='<div style="padding:20px;color:var(--muted)">Loading tracks...</div>';
-  modal.classList.add('visible');
-
   const artistNames=event.artists.split(/,\s*/).map(a=>a.replace(/\s*b2b\s+.*/i,'').replace(/\s*\(.*?\)/g,'').trim()).filter(a=>a&&a!=='TBA');
-  const uniqueArtists=[...new Set(artistNames)].slice(0,6);
-
-  let allTracks=[];
-  for(const name of uniqueArtists){
-    try{
-      const sr=await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(name)}&type=artist&limit=1`,{headers:{Authorization:`Bearer ${token}`}});
-      const sd=await sr.json();
-      const artist=sd.artists?.items?.[0];
-      if(!artist) continue;
-      const tr=await fetch(`https://api.spotify.com/v1/artists/${artist.id}/top-tracks?market=US`,{headers:{Authorization:`Bearer ${token}`}});
-      const td=await tr.json();
-      const top3=(td.tracks||[]).slice(0,3);
-      allTracks.push({artistName:name,artistImg:artist.images?.[0]?.url,tracks:top3});
-    }catch(e){console.error(e);}
-  }
-
-  if(!allTracks.length){
-    content.innerHTML='<div style="padding:20px;color:var(--muted)">Could not load tracks.</div>';
-    return;
-  }
-
-  content.innerHTML=`<div class="player-title">${event.name}</div>` +
-    allTracks.map(a=>`
-      <div class="player-artist">
-        <div class="player-artist-name">${a.artistName}</div>
-        ${a.tracks.map(t=>`<iframe src="https://open.spotify.com/embed/track/${t.id}?theme=0" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius:4px;margin-bottom:4px;"></iframe>`).join('')}
-      </div>
-    `).join('');
+  const url=`https://open.spotify.com/search/${encodeURIComponent(artistNames.slice(0,5).join(' '))}`;
+  window.open(url,'_blank');
 }
-function closePlayer(){document.getElementById('playerModal').classList.remove('visible');}
 
 // ── VENUE IMAGE ──────────────────────────────────────────────────────────────
 function getVenueImage(event){
@@ -361,8 +334,10 @@ function getMentionsDisplay(m){
 
 // ── MAP ──────────────────────────────────────────────────────────────────────
 function initMap(){
-  if(map) return;
+  // Container is recreated each render, so destroy old map first
+  if(map){try{map.remove();}catch(e){}map=null;}
   const container=document.getElementById('mapContainer');
+  if(!container) return;
   map=L.map(container,{zoomControl:true,scrollWheelZoom:true}).setView([25.795,-80.195],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
     attribution:'© OSM © CARTO',subdomains:'abcd',maxZoom:19
@@ -370,7 +345,8 @@ function initMap(){
 }
 function updateMap(events){
   if(!map) initMap();
-  mapMarkers.forEach(m=>map.removeLayer(m));
+  if(!map) return;
+  mapMarkers.forEach(m=>{try{map.removeLayer(m);}catch(e){}});
   mapMarkers=[];
   const dayOrder=['tue','wed','thu','fri','sat','sun'];
   const byVenue={};
@@ -420,6 +396,7 @@ function renderCard(e,has,dimmed){
           <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
           <div class="artists">${linkifyArtists(e.artists)}</div>
           <div class="event-summary">${e.summary}</div>
+          ${(()=>{const crowd=VENUE_CROWD[e.venue]||TYPE_CROWD[e.type]||'';return crowd?`<div class="event-crowd">"${crowd}"</div>`:'';})()}
           <div class="event-actions">
             <div class="mentions-badge ${md.cls}">${md.flames} ${md.text}</div>
             <button class="play-btn" onclick="playSet(${e.id})" title="Play artist set">▶ Play Set</button>
@@ -474,7 +451,7 @@ function renderEvents(){
           <button class="view-btn ${viewMode==='map'?'active':''}" data-view="map" onclick="setView('map')">Map</button>
         </div>
         <div class="sort-btns">
-          <button class="sort-btn ${sortMode==='match'?'active':''}" data-sort="match" onclick="setSort('match')">By Match</button>
+          <button class="sort-btn ${sortMode==='match'?'active':''}" data-sort="match" onclick="setSort('match')">My Picks</button>
           <button class="sort-btn ${sortMode==='day'?'active':''}" data-sort="day" onclick="setSort('day')">By Day</button>
           <button class="sort-btn ${sortMode==='buzz'?'active':''}" data-sort="buzz" onclick="setSort('buzz')">By Buzz</button>
         </div>
