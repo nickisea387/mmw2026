@@ -181,11 +181,6 @@ function showHPModal(userGenres){
 }
 function closeHPModal(){
   document.getElementById('hpModal').classList.remove('visible');
-  // Set state then render — the template reads sortMode/viewMode to set active classes
-  sortMode='match';
-  viewMode='list';
-  renderEvents();
-  document.getElementById('results')?.scrollIntoView({behavior:'smooth'});
 }
 
 // ── SEARCH ───────────────────────────────────────────────────────────────────
