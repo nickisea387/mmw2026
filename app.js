@@ -107,12 +107,24 @@ async function loadAndAnalyze(){
 }
 
 async function runAI({topArtists,topTracks,recent}){
-  showLoading('Claude is matching your taste to MMW lineups...');
-  const artists=(topArtists?.items||[]).map(a=>a.name).slice(0,25).join(', ');
+  showLoading('Analyzing your listening history...');
+  const topArtistNames=(topArtists?.items||[]).map(a=>a.name).slice(0,25);
+  const artists=topArtistNames.join(', ');
   const userGenres=[...new Set((topArtists?.items||[]).flatMap(a=>a.genres))].slice(0,25);
   const genres=userGenres.join(', ');
-  const tracks=(topTracks?.items||[]).map(t=>`${t.name} – ${t.artists[0]?.name}`).slice(0,15).join('; ');
-  const recents=[...new Set((recent?.items||[]).map(i=>i.track.artists[0]?.name))].slice(0,20).join(', ');
+  const topTracksList=(topTracks?.items||[]).map(t=>`${t.name} – ${t.artists[0]?.name}`).slice(0,15);
+  const tracks=topTracksList.join('; ');
+  const recentArtists=[...new Set((recent?.items||[]).map(i=>i.track.artists[0]?.name))].slice(0,20);
+  const recents=recentArtists.join(', ');
+
+  // Save rich Spotify profile for "My Picks" explainer
+  const spotifyProfile={
+    topArtists:topArtistNames,
+    topGenres:userGenres,
+    topTracks:topTracksList.slice(0,8),
+    recentArtists:recentArtists,
+  };
+  localStorage.setItem('sp_profile',JSON.stringify(spotifyProfile));
 
   const prompt=`You are a music taste analyst. Match a user to Miami Music Week 2026 events based on their Spotify data.
 TOP ARTISTS (6 months): ${artists}
@@ -473,6 +485,92 @@ function updateMap(events){
   setTimeout(()=>{if(map) map.invalidateSize();},150);
 }
 
+// ── MY PICKS EXPLAINER ───────────────────────────────────────────────────────
+function getMatchReason(event){
+  const profile=JSON.parse(localStorage.getItem('sp_profile')||'null');
+  if(!profile) return '';
+  const reasons=[];
+  const eventArtists=event.artists.toLowerCase();
+  const eventKeywords=event.matchKeywords.map(k=>k.toLowerCase());
+
+  // Check direct artist overlaps
+  const directMatches=profile.topArtists.filter(a=>eventArtists.includes(a.toLowerCase()));
+  const recentMatches=profile.recentArtists.filter(a=>eventArtists.includes(a.toLowerCase()));
+  if(directMatches.length) reasons.push(`You listen to <strong>${directMatches.join(', ')}</strong>`);
+  else if(recentMatches.length) reasons.push(`You recently played <strong>${recentMatches.join(', ')}</strong>`);
+
+  // Check genre overlaps
+  const eventGenreStr=event.genre.join(' ')+' '+eventKeywords.join(' ');
+  const genreMatches=profile.topGenres.filter(g=>eventGenreStr.includes(g.split(' ')[0])).slice(0,3);
+  if(genreMatches.length&&!directMatches.length) reasons.push(`Matches your <strong>${genreMatches.join(', ')}</strong> taste`);
+
+  return reasons.join(' · ')||'';
+}
+
+function buildMyPicksSummary(events){
+  const profile=JSON.parse(localStorage.getItem('sp_profile')||'null');
+  if(!profile) return '';
+
+  const topArtists=profile.topArtists.slice(0,5);
+  const topGenres=profile.topGenres.slice(0,5);
+  const recentArtists=profile.recentArtists.slice(0,5);
+
+  // Find which of their artists appear in the picks
+  const allPickArtists=events.map(e=>e.artists.toLowerCase()).join(' ');
+  const artistsInPicks=profile.topArtists.filter(a=>allPickArtists.includes(a.toLowerCase()));
+  const recentInPicks=profile.recentArtists.filter(a=>allPickArtists.includes(a.toLowerCase()));
+
+  // Count genre distribution in picks
+  const genreCounts={};
+  events.forEach(e=>e.genre.forEach(g=>{genreCounts[g]=(genreCounts[g]||0)+1;}));
+  const topPickGenres=Object.entries(genreCounts).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([g])=>g);
+
+  // Count venue type distribution
+  const typeCounts={};
+  events.forEach(e=>{typeCounts[e.type]=(typeCounts[e.type]||0)+1;});
+  const topTypes=Object.entries(typeCounts).sort((a,b)=>b[1]-a[1]).slice(0,2).map(([t])=>t);
+
+  // Count day distribution
+  const dayCounts={};
+  events.forEach(e=>{dayCounts[e.dayLabel]=(dayCounts[e.dayLabel]||0)+1;});
+  const bestDay=Object.entries(dayCounts).sort((a,b)=>b[1]-a[1])[0];
+
+  let html=`<div class="picks-summary">`;
+  html+=`<div class="picks-summary-title">Why these ${events.length} picks?</div>`;
+  html+=`<div class="picks-summary-body">`;
+
+  // Your sound
+  html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> ${topGenres.slice(0,4).join(', ')}</div></div>`;
+
+  // Top artists
+  html+=`<div class="picks-insight"><span class="picks-icon">⭐</span><div><strong>Your top artists:</strong> ${topArtists.join(', ')}</div></div>`;
+
+  // Direct matches
+  if(artistsInPicks.length){
+    html+=`<div class="picks-insight picks-highlight"><span class="picks-icon">🎯</span><div><strong>${artistsInPicks.length} of your artists are performing:</strong> ${artistsInPicks.join(', ')}</div></div>`;
+  }
+
+  // Recently played matches
+  const uniqueRecent=recentInPicks.filter(a=>!artistsInPicks.includes(a));
+  if(uniqueRecent.length){
+    html+=`<div class="picks-insight"><span class="picks-icon">🔄</span><div><strong>Recently on repeat:</strong> ${uniqueRecent.join(', ')} — also playing this week</div></div>`;
+  }
+
+  // Genre breakdown
+  html+=`<div class="picks-insight"><span class="picks-icon">🎵</span><div><strong>These picks lean:</strong> ${topPickGenres.join(', ')} — matching your listening profile</div></div>`;
+
+  // Best day
+  if(bestDay){
+    html+=`<div class="picks-insight"><span class="picks-icon">📅</span><div><strong>Your biggest day:</strong> ${bestDay[0]} (${bestDay[1]} picks)</div></div>`;
+  }
+
+  // Venue mix
+  html+=`<div class="picks-insight"><span class="picks-icon">📍</span><div><strong>Venue mix:</strong> Mostly ${topTypes.join(' + ')} events</div></div>`;
+
+  html+=`</div></div>`;
+  return html;
+}
+
 // ── BANDWAGON DISPLAY ────────────────────────────────────────────────────────
 function getBandwagonDisplay(bw){
   if(!bw) return {label:'',cls:''};
@@ -506,6 +604,7 @@ function renderCard(e,has,dimmed){
           <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
           <div class="artists">${linkifyArtists(e.artists)}</div>
           <div class="event-summary">${e.summary}</div>
+          ${sortMode==='match'&&getMatchReason(e)?`<div class="event-match-reason">🎯 ${getMatchReason(e)}</div>`:''}
           ${crowd?`<div class="event-crowd"><strong>TLDR:</strong> ${crowd}</div>`:''}
           <div class="event-actions">
             <div class="mentions-badge ${md.cls}">${md.flames} ${md.text}</div>
@@ -610,6 +709,7 @@ function renderEvents(){
         <button class="mode-btn ${viewMode==='map'?'active':''}" onclick="setMode(sortMode,'map')">Map</button>
       </div>
     </div>
+    ${sortMode==='match'&&viewMode!=='map'?buildMyPicksSummary(events):''}
     ${viewMode==='map'?`<div class="map-legend">${mapLegendHtml}</div>`:''}
     <div id="mapContainer" class="${viewMode==='map'?'visible':''}"></div>
     <div class="events-grid" style="${viewMode==='map'?'display:none':''}">
