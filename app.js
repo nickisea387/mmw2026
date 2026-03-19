@@ -181,11 +181,9 @@ function showHPModal(userGenres){
 }
 function closeHPModal(){
   document.getElementById('hpModal').classList.remove('visible');
-  // Switch to My Picks — scores are saved by now since HP modal shows after runAI
+  // Set state then render — the template reads sortMode/viewMode to set active classes
   sortMode='match';
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort==='match'));
   viewMode='list';
-  document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view==='list'));
   renderEvents();
   document.getElementById('results')?.scrollIntoView({behavior:'smooth'});
 }
@@ -400,7 +398,7 @@ function renderEvents(){
     return 0;
   };
 
-  const hasSpotifyScores=localStorage.getItem('sp_scores')!==null;
+  const hasSpotifyScores=Object.keys(eventMatchScores).length>0;
   let events,outsideEvents=[];
   if(searchQuery){
     const filtered=EVENTS.filter(filterFn);
