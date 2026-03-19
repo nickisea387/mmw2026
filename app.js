@@ -710,6 +710,7 @@ function renderCard(e,has,dimmed){
           <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span>${isTrending?`<span class="trending-badge" data-tip="This event scores high on editorial buzz (${e.mentions} sources) relative to how underground the act is. Underground artists getting unexpected press trend faster.">🔥 TRENDING</span>`:''}</div>
           <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
           <div class="artists">${linkifyArtists(e.artists)}</div>
+          <div class="event-genres">${e.genre.map(g=>`<button class="genre-tag" onclick="activeGenres=new Set(['${g}']);document.querySelectorAll('.genre-chip').forEach(b=>b.classList.toggle('active',b.dataset.genre==='${g}'));setMode('day','list');return false;">${g}</button>`).join('')}</div>
           <div class="event-summary">${e.summary}</div>
           ${sortMode==='match'&&getMatchReason(e)?`<div class="event-match-reason">🎯 ${getMatchReason(e)}</div>`:''}
           ${crowd?`<div class="event-crowd"><strong>TLDR:</strong> ${crowd}</div>`:''}
