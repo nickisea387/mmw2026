@@ -578,11 +578,16 @@ function buildMyPicksSummary(events){
   html+=`<div class="picks-summary-title">Why these ${events.length} picks?</div>`;
   html+=`<div class="picks-summary-body">`;
 
-  // Your sound — from AI taste summary
+  // Your sound — from AI taste summary, Spotify genres, or derived from picks
   if(tasteSummary){
     html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> ${tasteSummary}</div></div>`;
-  } else if(topGenres.length){
-    html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> You're deep into ${topGenres.slice(0,4).join(', ')}. We matched events with similar energy.</div></div>`;
+  } else {
+    // Build a taste description from what we know
+    const soundParts=[];
+    if(topGenres.length) soundParts.push(`Based on your Spotify, you're into <strong>${topGenres.slice(0,4).join(', ')}</strong>`);
+    if(artistsInPicks.length) soundParts.push(`and artists like <strong>${artistsInPicks.slice(0,3).join(', ')}</strong> are right in your wheelhouse`);
+    if(!soundParts.length) soundParts.push(`Based on <strong>${topArtists.slice(0,3).join(', ')}</strong> in your library, we matched you to <strong>${topPickGenres.join(', ')}</strong> events`);
+    html+=`<div class="picks-insight"><span class="picks-icon">🎧</span><div><strong>Your sound:</strong> ${soundParts.join(' ')}. We picked the ${events.length} events you'll vibe with most.</div></div>`;
   }
 
   // Top artists — linked to Spotify
