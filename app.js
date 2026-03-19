@@ -311,7 +311,7 @@ async function loadEmbeds(eventId,container){
   const token=await getValidToken();
   if(!token){
     // No auth: fall back to search link
-    container.innerHTML=`<div style="padding:12px;font-size:11px;"><a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:var(--green);">Open in Spotify</a></div>`;
+    container.innerHTML=`<div style="padding:12px;font-size:11px;"><a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:white;">Open in Spotify</a></div>`;
     return;
   }
 
@@ -319,7 +319,7 @@ async function loadEmbeds(eventId,container){
   const valid=artists.filter(Boolean);
 
   if(!valid.length){
-    container.innerHTML=`<div style="padding:12px;color:var(--muted);font-size:11px;">Could not find artists on Spotify. <a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:var(--green);">Search manually</a></div>`;
+    container.innerHTML=`<div style="padding:12px;color:var(--muted);font-size:11px;">Could not find artists on Spotify. <a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:white;">Search manually</a></div>`;
     return;
   }
 
