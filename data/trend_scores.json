@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-19T17:12:16.196687+00:00",
+  "updated": "2026-03-19T19:14:11.237866+00:00",
   "threshold": 35,
-  "trending_count": 4,
+  "trending_count": 5,
   "total_events": 103,
   "scores": {
     "1": {
@@ -322,11 +322,11 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.0,
-      "trending": false
+      "total": 37.0,
+      "trending": true
     },
     "28": {
       "name": "Cloonee Presents Hellbent",
@@ -562,10 +562,10 @@
       "hype_score": 8,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 22.0,
+      "total": 32.0,
       "trending": false
     },
     "48": {
