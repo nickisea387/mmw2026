@@ -676,7 +676,7 @@ function renderCard(e,has,dimmed){
     <div class="event-card-body">
       <div class="event-card-top">
         <div style="flex:1">
-          <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span>${isTrending?`<span class="trending-badge" title="Trending: This event scores high on editorial buzz (mentioned in ${e.mentions}+ sources) relative to how underground the headliner is. Underground acts getting unexpected press coverage trend faster than mainstream acts.">🔥 TRENDING</span>`:''}</div>
+          <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span>${isTrending?`<span class="trending-badge" data-tip="This event scores high on editorial buzz (${e.mentions} sources) relative to how underground the act is. Underground artists getting unexpected press trend faster.">🔥 TRENDING</span>`:''}</div>
           <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
           <div class="artists">${linkifyArtists(e.artists)}</div>
           <div class="event-summary">${e.summary}</div>
