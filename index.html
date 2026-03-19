@@ -89,11 +89,22 @@
   .tag.club{background:rgba(180,100,255,0.15);color:#b464ff;}
   .tag.warehouse{background:rgba(255,100,100,0.15);color:#ff6464;}
   .tag.cruise{background:rgba(255,200,80,0.15);color:#ffc850;}
+  .tag.openair{background:rgba(100,255,150,0.15);color:#64ff96;}
+  .tag.festival{background:rgba(255,100,200,0.15);color:#ff64c8;}
   .results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
   .results-count{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
   .sort-btns{display:flex;gap:6px;}
   .sort-btn{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;}
   .sort-btn.active{border-color:var(--muted2);color:var(--text);}
+  .mentions-badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;letter-spacing:1px;color:var(--muted);margin-top:6px;}
+  .mentions-badge .flame{font-style:normal;font-size:10px;}
+  .mentions-badge.hot{color:#ff6b6b;}
+  .mentions-badge.warm{color:var(--amber);}
+  .mentions-slider{display:flex;flex-direction:column;gap:12px;}
+  .mentions-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+  .mentions-btn{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;padding:8px 4px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;text-align:center;}
+  .mentions-btn.active{border-color:var(--pink);color:var(--pink);background:rgba(255,107,157,0.08);}
+  .mentions-btn:hover:not(.active){border-color:var(--muted2);color:var(--text);}
   @media(max-width:900px){.main{grid-template-columns:1fr;}.left-panel{border-right:none;border-bottom:1px solid var(--border);}.header::after{display:none;}}
 </style>
 </head>
@@ -102,7 +113,7 @@
 <div class="header">
   <div class="eyebrow">▸ Miami Music Week × Spotify Intelligence</div>
   <h1>Find your <em>perfect</em><br>MMW parties</h1>
-  <p class="subtitle">Connect Spotify → AI-matched recommendations across 25 curated events · March 24–29, 2026</p>
+  <p class="subtitle">Connect Spotify → AI-matched recommendations across 80+ curated events · March 24–29, 2026</p>
 </div>
 
 <div class="main">
@@ -134,6 +145,10 @@
         <button class="genre-chip" data-genre="deephouse" onclick="toggleGenre(this)">Deep House</button>
         <button class="genre-chip" data-genre="disco" onclick="toggleGenre(this)">Disco/Funk</button>
         <button class="genre-chip" data-genre="minimal" onclick="toggleGenre(this)">Minimal</button>
+        <button class="genre-chip" data-genre="trance" onclick="toggleGenre(this)">Trance</button>
+        <button class="genre-chip" data-genre="bass" onclick="toggleGenre(this)">Bass</button>
+        <button class="genre-chip" data-genre="progressive" onclick="toggleGenre(this)">Progressive</button>
+        <button class="genre-chip" data-genre="hiphop" onclick="toggleGenre(this)">Hip-Hop</button>
       </div>
     </div>
 
@@ -151,7 +166,22 @@
     </div>
 
     <div>
-      <div class="section-label">04 / Match Key</div>
+      <div class="section-label">04 / Buzz Level</div>
+      <div class="mentions-slider">
+        <div class="mentions-btns">
+          <button class="mentions-btn active" data-mentions="0" onclick="toggleMentions(this)">All</button>
+          <button class="mentions-btn" data-mentions="2" onclick="toggleMentions(this)">2+</button>
+          <button class="mentions-btn" data-mentions="3" onclick="toggleMentions(this)">3+</button>
+          <button class="mentions-btn" data-mentions="4" onclick="toggleMentions(this)">4+</button>
+          <button class="mentions-btn" data-mentions="5" onclick="toggleMentions(this)">5+</button>
+          <button class="mentions-btn" data-mentions="6" onclick="toggleMentions(this)">Most Hyped</button>
+        </div>
+        <div style="font-size:10px;color:var(--muted);line-height:1.5;">Filter by how many editorial sources featured this event. Higher = more buzz online.</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-label">05 / Match Key</div>
       <div class="legend">
         <div class="legend-item"><div class="dot high"></div>Strong match — direct overlap</div>
         <div class="legend-item"><div class="dot med"></div>Good match — adjacent sound</div>
@@ -181,34 +211,110 @@ const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
 const SCOPES = 'user-top-read user-read-recently-played user-read-private';
 
 const EVENTS = [
-  {id:1,day:'tue',dayLabel:'Tue Mar 24',name:"Experts Only: Club Space Takeover",venue:"Club Space",type:'club',time:"11pm–8pm (21hrs)",artists:"John Summit, ANNA, DJ Tennis, Hot Since 82, Layton Giordani, SG Lewis, AYYBO, Max Styler",genre:['techhouse','deephouse'],matchKeywords:['john summit','tech house','anna','dj tennis','hot since 82','layton giordani'],summary:"Marathon 21-hour full venue takeover. All 3 rooms under John Summit's Experts Only banner.",hype:5},
-  {id:2,day:'tue',dayLabel:'Tue Mar 24',name:"Beatport × Mood Child Pool Party",venue:"Kimpton EPIC Hotel",type:'pool',time:"5–10pm",artists:"DJ Sneak, Jean Pierre, Manda Moor, Ms. Mada, Sirus Hood",genre:['deephouse','techhouse'],matchKeywords:['dj sneak','chicago house','house music'],summary:"Classic house vibes from DJ Sneak poolside at the EPIC.",hype:3},
-  {id:3,day:'tue',dayLabel:'Tue Mar 24',name:"Luuk van Dijk: Get Closer",venue:"Jolene Sound Room",type:'club',time:"10pm–4am",artists:"Luuk van Dijk, Elliot Schooling, Julian Anthony, Laidlaw, Liam Palmer",genre:['techhouse','deephouse'],matchKeywords:['luuk van dijk','tech house'],summary:"Intimate club — one of the week's most refined tech house bookings.",hype:4},
-  {id:4,day:'wed',dayLabel:'Wed Mar 25',name:"20 Years of Rekids (Beatport)",venue:"Kimpton EPIC Hotel Pool",type:'pool',time:"3–10pm",artists:"Danny Tenaglia, Radio Slave b2b DJ Minx, Doc Martin b2b Tal Fussman, Anja Schneider b2b William Kiss",genre:['techhouse','deephouse','minimal'],matchKeywords:['danny tenaglia','radio slave','rekids','anja schneider'],summary:"Legendary label Rekids turns 20. Stacked b2b lineup poolside.",hype:5},
-  {id:5,day:'wed',dayLabel:'Wed Mar 25',name:"Oliver Heldens at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Oliver Heldens",genre:['techhouse','deephouse'],matchKeywords:['oliver heldens','house'],summary:"E11EVEN's legendary 24hr format with Oliver Heldens headlining.",hype:4},
-  {id:6,day:'wed',dayLabel:'Wed Mar 25',name:"DJ Mag Pool Party: Cloonee",venue:"Sagamore Hotel",type:'pool',time:"Daytime",artists:"Cloonee, Ben Sterling, Omar+, Salomé Le Chat, Gio Elia, Obskür",genre:['techhouse'],matchKeywords:['cloonee','ben sterling','tech house','hellbent'],summary:"DJ Mag's flagship pool party. Cloonee is the 2026 cover star headliner.",hype:5},
-  {id:7,day:'wed',dayLabel:'Wed Mar 25',name:"Crystal Waters: I Am House Orchestrated",venue:"James L. Knight Center",type:'club',time:"7–11pm",artists:"Crystal Waters, Barbara Tucker, Byron Stingily, CeCe Peniston, Duane Harden",genre:['disco','deephouse'],matchKeywords:['crystal waters','gospel house','barbara tucker','classic house'],summary:"Rare live orchestrated house with legends — emotional and special.",hype:4},
-  {id:8,day:'thu',dayLabel:'Thu Mar 26',name:"Beatport: Hot Creations × TSZR",venue:"Kimpton EPIC Hotel Pool",type:'pool',time:"3–10pm",artists:"Skream b2b L.P. Rhythm, Sidney Charles b2b Fleur Shore, Elliot Schooling b2b Liam Palmer, Airrica",genre:['techhouse','deephouse'],matchKeywords:['hot creations','jamie jones','skream','sidney charles'],summary:"Jamie Jones' Hot Creations meets TSZR. A lineup you won't find anywhere else.",hype:5},
-  {id:9,day:'thu',dayLabel:'Thu Mar 26',name:"Defected Pool Party",venue:"Sagamore Hotel",type:'pool',time:"Daytime",artists:"Defected roster TBA",genre:['deephouse','disco'],matchKeywords:['defected','house music','soulful house'],summary:"Defected Records Sagamore takeover — always a reliable soulful afternoon.",hype:4},
-  {id:10,day:'thu',dayLabel:'Thu Mar 26',name:"Eli & Fur, Fideles, Dosem",venue:"TBA",type:'club',time:"7pm–12am",artists:"Eli & Fur, Fideles, Dosem, Corren Cavini, Jack Emery",genre:['melodic','deephouse'],matchKeywords:['eli & fur','fideles','dosem','melodic house','melodic techno'],summary:"Melodic house and techno loaded night. Eli & Fur and Fideles are two of the genre's best.",hype:4},
-  {id:11,day:'fri',dayLabel:'Fri Mar 27',name:"Knee Deep in Miami: Hot Since 82",venue:"Sagamore Hotel",type:'pool',time:"Daytime",artists:"Hot Since 82",genre:['techhouse','deephouse'],matchKeywords:['hot since 82','knee deep in sound','tech house'],summary:"Knee Deep in Sound label showcase headlined by Hot Since 82.",hype:5},
-  {id:12,day:'fri',dayLabel:'Fri Mar 27',name:"Solid Grooves at Club Space",venue:"Club Space",type:'club',time:"11pm–open",artists:"Michael Bibi, ChaseWest, KinAhau, Ben Sterling, Pawsa, Carlita (rumored)",genre:['techhouse','minimal'],matchKeywords:['solid grooves','michael bibi','minimal house','chasewest','carlita'],summary:"Solid Grooves is one of the hottest brands in global house. Marathon sets, packed floors.",hype:5},
-  {id:13,day:'fri',dayLabel:'Fri Mar 27',name:"Black Coffee at Hialeah Park",venue:"Hialeah Park Casino",type:'warehouse',time:"6pm–late",artists:"Black Coffee",genre:['afrohouse','deephouse'],matchKeywords:['black coffee','afro house','south african house'],summary:"Black Coffee's Afro-house at the racetrack. Depth over spectacle. Unmissable.",hype:5},
-  {id:14,day:'fri',dayLabel:'Fri Mar 27',name:"MEDUZA – The Originals Present HIIDE",venue:"National Hotel",type:'pool',time:"12pm–late",artists:"MEDUZA, Luciano, Chelina Manuhutu b2b Tini Gessler, Joe Vanditti b2b Bassel Darwish",genre:['melodic','techhouse'],matchKeywords:['meduza','luciano','melodic house'],summary:"MEDUZA bring the European melodic sound poolside with Luciano.",hype:4},
-  {id:15,day:'sat',dayLabel:'Sat Mar 28',name:"Danny Tenaglia + Nicole Moudaber",venue:"Sagamore Hotel",type:'pool',time:"1pm–late",artists:"Danny Tenaglia, Nicole Moudaber",genre:['techno','deephouse'],matchKeywords:['danny tenaglia','nicole moudaber','techno'],summary:"Two legends poolside. Tenaglia's groove meets Moudaber's techno power.",hype:5},
-  {id:16,day:'sat',dayLabel:'Sat Mar 28',name:"Marco Carola: Music On",venue:"Club Space",type:'club',time:"11pm–open",artists:"Marco Carola",genre:['techno','minimal'],matchKeywords:['marco carola','music on','minimal techno'],summary:"Music On is a religion. Marco Carola at Club Space is as pure as it gets.",hype:5},
-  {id:17,day:'sat',dayLabel:'Sat Mar 28',name:"Factory Town: Adam Beyer, Pawsa, Joris Voorn",venue:"Factory Town",type:'warehouse',time:"9pm–late",artists:"Pawsa b2b Luciano, Adam Beyer, Bart Skils b2b Marco Faraone, Joris Voorn, Ben Sterling, Tiga, Ranger Trucco",genre:['techno','techhouse','minimal'],matchKeywords:['factory town','adam beyer','drumcode','joris voorn','pawsa','ben sterling'],summary:"Multi-stage warehouse. Drumcode energy + groove selectors. The week's biggest lineup.",hype:5},
-  {id:18,day:'sat',dayLabel:'Sat Mar 28',name:"MK & Armand Van Helden: Area 10",venue:"Kimpton Surfcomber Hotel",type:'pool',time:"12pm–late",artists:"MK, Armand Van Helden",genre:['disco','deephouse'],matchKeywords:['mk','armand van helden','disco house','classic house'],summary:"MK and Armand Van Helden sharing a bill is a disco-house dream.",hype:4},
-  {id:19,day:'sat',dayLabel:'Sat Mar 28',name:"RESISTANCE: Boris Brejcha, Miss Monique",venue:"M2 Miami",type:'club',time:"10pm–5am",artists:"Boris Brejcha, Miss Monique, Brina Knauss",genre:['techno','melodic'],matchKeywords:['boris brejcha','miss monique','high-tech minimal','melodic techno'],summary:"Boris Brejcha's high-tech minimal alongside Miss Monique's melodic journey.",hype:4},
-  {id:20,day:'sat',dayLabel:'Sat Mar 28',name:"Adriatique at LIV",venue:"LIV Nightclub",type:'club',time:"11:30pm–late",artists:"Adriatique, MAXI MERAKI",genre:['melodic','deephouse'],matchKeywords:['adriatique','melodic techno'],summary:"Swiss duo Adriatique bring their ethereal melodic sound to LIV.",hype:4},
-  {id:21,day:'sat',dayLabel:'Sat Mar 28',name:"Desert Hearts Open-Air",venue:"UVA Wynwood",type:'warehouse',time:"4pm–late",artists:"Mikey Lion, Lee Reynolds, Eats Everything, Kevin Knapp, Life on Planets, Soul Clap",genre:['deephouse','techhouse'],matchKeywords:['desert hearts','eats everything','soul clap','life on planets'],summary:"Desert Hearts open-air in Wynwood. Deep house cosmic good energy — walking distance from you.",hype:4},
-  {id:22,day:'sun',dayLabel:'Sun Mar 29',name:"Glitterbox Closing: DJ Jazzy Jeff × Moodymann",venue:"Sagamore Hotel",type:'pool',time:"Daytime",artists:"DJ Jazzy Jeff, Moodymann, Armand Van Helden, The Martinez Brothers",genre:['disco','deephouse'],matchKeywords:['glitterbox','moodymann','dj jazzy jeff','disco','armand van helden','martinez brothers'],summary:"Glitterbox closing party. Moodymann + DJ Jazzy Jeff = the perfect send-off.",hype:5},
-  {id:23,day:'sun',dayLabel:'Sun Mar 29',name:"Soundgarden Cruise: Dubfire b2b Nick Warren",venue:"Yacht / Miami",type:'cruise',time:"3:30–8:30pm",artists:"Dubfire b2b Nick Warren",genre:['techno','melodic'],matchKeywords:['dubfire','nick warren','underground techno'],summary:"B2b on a boat at sunset. One of the most special formats of the whole week.",hype:4},
-  {id:24,day:'sat',dayLabel:'Sat Mar 28',name:"Rodriguez Jr. Yacht Cruise",venue:"Luxury Yacht",type:'cruise',time:"3–7pm",artists:"Rodriguez Jr., Sydney Blu, Darin Epsilon, Min the Universe",genre:['melodic','deephouse'],matchKeywords:['rodriguez jr','melodic house'],summary:"Sunset cruise with Rodriguez Jr.'s cinematic melodic house. Stunning setting.",hype:4},
-  {id:25,day:'fri',dayLabel:'Fri Mar 27',name:"Chris Lake & Eats Everything",venue:"TBA",type:'club',time:"8pm–3am",artists:"Chris Lake, Eats Everything, Gio Lucca, Jackie Hollander, Marco Lys",genre:['techhouse'],matchKeywords:['chris lake','eats everything','tech house','black book records'],summary:"Chris Lake and Eats Everything on the same bill — two very different flavors of fun.",hype:4},
+  // ── TUESDAY MARCH 24 ──────────────────────────────────────────────────────
+  {id:1,day:'tue',dayLabel:'Tue Mar 24',name:"Experts Only: Club Space Takeover",venue:"Club Space",type:'club',time:"11pm–8pm (21hrs)",artists:"John Summit, ANNA, DJ Tennis, Hot Since 82, Layton Giordani, SG Lewis, AYYBO, Max Styler, Marte",genre:['techhouse','deephouse'],matchKeywords:['john summit','tech house','anna','dj tennis','hot since 82','layton giordani','sg lewis'],summary:"Marathon 21-hour full venue takeover. All 3 rooms under John Summit's Experts Only banner. The biggest opening party of the week.",hype:5,mentions:7},
+  {id:2,day:'tue',dayLabel:'Tue Mar 24',name:"Beatport × Mood Child Pool Party",venue:"Kimpton EPIC Hotel",type:'pool',time:"5–10pm",artists:"DJ Sneak, Jean Pierre, Manda Moor, Ms. Mada, Sirus Hood",genre:['deephouse','techhouse'],matchKeywords:['dj sneak','chicago house','house music','sirus hood'],summary:"Classic house vibes from DJ Sneak poolside at the EPIC. Mood Child label showcase.",hype:3,mentions:3},
+  {id:3,day:'tue',dayLabel:'Tue Mar 24',name:"Luuk van Dijk: Get Closer",venue:"Jolene Sound Room",type:'club',time:"10pm–4am",artists:"Luuk van Dijk, Elliot Schooling, Julian Anthony, Laidlaw, Liam Palmer",genre:['techhouse','deephouse'],matchKeywords:['luuk van dijk','tech house'],summary:"Intimate club — one of the week's most refined tech house bookings.",hype:4,mentions:2},
+  {id:4,day:'tue',dayLabel:'Tue Mar 24',name:"STMPD RCRDS Showcase",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"DubVision, Third Party, Matisse & Sadko, Julian Jordan, VisionV, Telykast, Justin Mylo",genre:['progressive','melodic'],matchKeywords:['dubvision','third party','matisse sadko','julian jordan','stmpd'],summary:"Martin Garrix's STMPD RCRDS label showcase poolside. Progressive and melodic house heavyweights.",hype:3,mentions:3},
+  {id:5,day:'tue',dayLabel:'Tue Mar 24',name:"Satoshi Tomiie: NOMAD Talent",venue:"Mode",type:'club',time:"10pm–5am",artists:"Satoshi Tomiie, Melody, Ohm Hourani, Kurilo",genre:['deephouse','minimal'],matchKeywords:['satoshi tomiie','deep house'],summary:"Japanese house legend Satoshi Tomiie headlines an intimate underground showcase.",hype:3,mentions:1},
+
+  // ── WEDNESDAY MARCH 25 ─────────────────────────────────────────────────────
+  {id:6,day:'wed',dayLabel:'Wed Mar 25',name:"20 Years of Rekids (Beatport)",venue:"Kimpton EPIC Hotel Pool",type:'pool',time:"3–10pm",artists:"Danny Tenaglia, Radio Slave b2b DJ Minx, Doc Martin b2b Tal Fussman, Anja Schneider b2b William Kiss",genre:['techhouse','deephouse','minimal'],matchKeywords:['danny tenaglia','radio slave','rekids','anja schneider','doc martin'],summary:"Legendary label Rekids turns 20. Stacked b2b lineup poolside with Danny Tenaglia headlining.",hype:5,mentions:4},
+  {id:7,day:'wed',dayLabel:'Wed Mar 25',name:"Oliver Heldens at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Oliver Heldens, Mister Gray",genre:['techhouse','deephouse'],matchKeywords:['oliver heldens','house','future house'],summary:"E11EVEN's legendary 24hr format with Oliver Heldens headlining.",hype:4,mentions:3},
+  {id:8,day:'wed',dayLabel:'Wed Mar 25',name:"DJ Mag Pool Party: Cloonee",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Cloonee, Ben Sterling, Omar+, Salomé Le Chat, Gio Elia, Obskür",genre:['techhouse'],matchKeywords:['cloonee','ben sterling','tech house','hellbent'],summary:"DJ Mag's flagship pool party. Cloonee is the 2026 cover star headliner.",hype:5,mentions:5},
+  {id:9,day:'wed',dayLabel:'Wed Mar 25',name:"Crystal Waters: I Am House Orchestrated",venue:"James L. Knight Center",type:'club',time:"7–11pm",artists:"Crystal Waters, Barbara Tucker, Byron Stingily, CeCe Peniston, Duane Harden",genre:['disco','deephouse'],matchKeywords:['crystal waters','gospel house','barbara tucker','classic house','cece peniston'],summary:"Rare live orchestrated house with legends — emotional and special.",hype:4,mentions:3},
+  {id:10,day:'wed',dayLabel:'Wed Mar 25',name:"Justice (DJ Set) at Factory Town",venue:"Factory Town (Infinity Room)",type:'warehouse',time:"10pm–7am",artists:"Justice, Chris Avantgarde, Camoufly, Alignment, Cloudy",genre:['techno','progressive'],matchKeywords:['justice','french house','electro','chris avantgarde'],summary:"French icons Justice doing a DJ set in Factory Town's Infinity Room. One of the week's rarest bookings.",hype:5,mentions:5},
+  {id:11,day:'wed',dayLabel:'Wed Mar 25',name:"Converge: Richie Hawtin b2b Dubfire",venue:"Fooqs Miami (Lion's Den)",type:'club',time:"9pm–3am",artists:"Richie Hawtin b2b Dubfire, Magda, Satoshi Tomiie, DJ Nigiri",genre:['techno','minimal'],matchKeywords:['richie hawtin','dubfire','magda','minimal techno','plastikman'],summary:"Richie Hawtin and Dubfire go b2b in a restaurant-turned-club. Magda and Satoshi Tomiie support.",hype:5,mentions:5},
+  {id:12,day:'wed',dayLabel:'Wed Mar 25',name:"Carlita + LP Giobbi",venue:"LIV Nightclub",type:'club',time:"11:30pm–5am",artists:"Carlita, LP Giobbi",genre:['deephouse','melodic'],matchKeywords:['carlita','lp giobbi','melodic house'],summary:"Two of electronic music's rising stars share a bill at LIV.",hype:4,mentions:3},
+  {id:13,day:'wed',dayLabel:'Wed Mar 25',name:"HUGEL's Make The Girls Dance",venue:"Space Miami",type:'club',time:"11pm–8pm",artists:"HUGEL",genre:['techhouse'],matchKeywords:['hugel','tech house','french house'],summary:"HUGEL takes over Space for a marathon session.",hype:3,mentions:2},
+  {id:14,day:'wed',dayLabel:'Wed Mar 25',name:"Two And A Half Cats: Luciano",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"Luciano, Mendoza, MIGUELLE & TONS, Miluhska, Noel",genre:['deephouse','minimal'],matchKeywords:['luciano','cadenza','minimal house'],summary:"Luciano headlines a poolside session at the Surfcomber. Deep minimal vibes.",hype:4,mentions:2},
+  {id:15,day:'wed',dayLabel:'Wed Mar 25',name:"RESISTANCE Miami Music Week",venue:"M2",type:'club',time:"10pm–5am",artists:"999999999, Juliet Fox, Yousuke Yukimatsu",genre:['techno'],matchKeywords:['999999999','juliet fox','hard techno','resistance'],summary:"Opening night of Ultra's RESISTANCE series. Hard techno takeover at M2.",hype:4,mentions:4},
+  {id:16,day:'wed',dayLabel:'Wed Mar 25',name:"Balance Miami: Guy J & Guy Mantzur",venue:"1-800-LUCKY",type:'club',time:"4pm–3am",artists:"Guy J, Guy Mantzur, Ezequiel Arias, Lucas Zárate, Niki Sadeki",genre:['progressive','melodic'],matchKeywords:['guy j','guy mantzur','progressive house','balance'],summary:"Progressive house legends Guy J and Guy Mantzur in an intimate Wynwood setting.",hype:3,mentions:2},
+  {id:17,day:'wed',dayLabel:'Wed Mar 25',name:"Incorrect Music: Cristoph & Friends",venue:"Mode",type:'club',time:"10pm–5am",artists:"Cristoph, Anthony Attalla, Carlo Lio, Dabura, Dillon Nathaniel",genre:['techhouse','progressive'],matchKeywords:['cristoph','carlo lio','anthony attalla','dillon nathaniel'],summary:"Cristoph headlines the Incorrect Music showcase. Quality underground tech house.",hype:3,mentions:2},
+  {id:18,day:'wed',dayLabel:'Wed Mar 25',name:"Coldharbour Night: BT",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"BT, Dave Neven, Mike Efex, Tim Clark, Claudia Pavel, Pavlo Vicci",genre:['trance','progressive'],matchKeywords:['bt','markus schulz','coldharbour','trance'],summary:"Markus Schulz's Coldharbour label showcase with trance legend BT headlining.",hype:3,mentions:2},
+  {id:19,day:'wed',dayLabel:'Wed Mar 25',name:"Tokimonsta: Young Art Records",venue:"ZeyZey",type:'club',time:"8pm–2am",artists:"Tokimonsta",genre:['bass','deephouse'],matchKeywords:['tokimonsta','brainfeeder','experimental'],summary:"Tokimonsta brings her Young Art Records label to ZeyZey for an eclectic showcase.",hype:3,mentions:2},
+  {id:20,day:'wed',dayLabel:'Wed Mar 25',name:"Perreo Del Futuro: Six Sex",venue:"The Ground",type:'club',time:"11pm–5am",artists:"Six Sex",genre:['bass','hiphop'],matchKeywords:['neoperreo','reggaeton','six sex'],summary:"Neoperreo collective blending traditional perreo with bass-heavy club sounds and hyperpop energy.",hype:3,mentions:3},
+
+  // ── THURSDAY MARCH 26 ──────────────────────────────────────────────────────
+  {id:21,day:'thu',dayLabel:'Thu Mar 26',name:"Beatport: Hot Creations × TSZR",venue:"Kimpton EPIC Hotel Pool",type:'pool',time:"3–10pm",artists:"Skream b2b L.P. Rhythm, Sidney Charles b2b Fleur Shore, Elliot Schooling b2b Liam Palmer, Airrica",genre:['techhouse','deephouse'],matchKeywords:['hot creations','jamie jones','skream','sidney charles'],summary:"Jamie Jones' Hot Creations meets TSZR. A lineup you won't find anywhere else.",hype:5,mentions:4},
+  {id:22,day:'thu',dayLabel:'Thu Mar 26',name:"Defected Miami: Loco Dice",venue:"Sagamore Hotel",type:'pool',time:"1–11pm",artists:"Loco Dice, Andrea Oliva, Harry Romero, HoneyLuv, Kellie Allen",genre:['deephouse','disco','techhouse'],matchKeywords:['defected','house music','soulful house','loco dice','harry romero','honeyluv'],summary:"Defected Records' Sagamore takeover. Loco Dice headlines a stacked soulful house bill.",hype:5,mentions:5},
+  {id:23,day:'thu',dayLabel:'Thu Mar 26',name:"Nora En Pure Presents Purified Miami",venue:"Jungle Island",type:'openair',time:"7pm–12am",artists:"Nora En Pure, Eli & Fur, Fideles, Dosem, Corren Cavini, Jack Emery",genre:['melodic','deephouse'],matchKeywords:['nora en pure','eli & fur','fideles','dosem','melodic house','melodic techno','purified'],summary:"Nora En Pure's Purified brand at Jungle Island. Eli & Fur and Fideles are two of the genre's best.",hype:5,mentions:4},
+  {id:24,day:'thu',dayLabel:'Thu Mar 26',name:"Pardon My French",venue:"Toe Jam XL",type:'club',time:"8pm–3am",artists:"DJ Snake b2b A-Trak, Dillon Francis b2b Flosstradamus, TroyBoi, Flowdan, Chuwe",genre:['hiphop','bass'],matchKeywords:['dj snake','a-trak','dillon francis','flosstradamus','troyboi','pardon my french'],summary:"Nostalgia-fueled hip-hop-heavy lineup. DJ Snake b2b A-Trak and Dillon Francis b2b Flosstradamus is legendary.",hype:5,mentions:5},
+  {id:25,day:'thu',dayLabel:'Thu Mar 26',name:"MoBlack Records at Toe Jam",venue:"Toe Jam Backlot",type:'club',time:"8pm–3am",artists:"MoBlack, Francis Mercier, Ape Drums b2b Caiiro",genre:['afrohouse','deephouse'],matchKeywords:['moblack','francis mercier','caiiro','afro house','ape drums'],summary:"One of Afro-house's most beloved labels. Deep, rhythm-driven dancing.",hype:4,mentions:3},
+  {id:26,day:'thu',dayLabel:'Thu Mar 26',name:"Gorgon City: Enter the Realm",venue:"Toe Jam Backlot",type:'club',time:"8pm–4am",artists:"Gorgon City, SG Lewis, Azzecca, Jackie Hollander, Silva Bumpa",genre:['deephouse','techhouse'],matchKeywords:['gorgon city','sg lewis','uk house'],summary:"Gorgon City bring their Enter the Realm concept to Miami. SG Lewis supports.",hype:4,mentions:3},
+  {id:27,day:'thu',dayLabel:'Thu Mar 26',name:"deadmau5 at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"deadmau5",genre:['progressive','techno'],matchKeywords:['deadmau5','mau5trap','progressive house'],summary:"deadmau5 takes over E11EVEN for a marathon overnight set.",hype:5,mentions:4},
+  {id:28,day:'thu',dayLabel:'Thu Mar 26',name:"Cloonee Presents Hellbent",venue:"Space Miami",type:'club',time:"11pm–8pm",artists:"Cloonee, CamelPhat, L.P. Rhythm, Adam Ten, Cole Terrazas",genre:['techhouse','minimal'],matchKeywords:['cloonee','camelphat','hellbent','tech house'],summary:"Cloonee's Hellbent label takes over Space with CamelPhat. Marathon format.",hype:5,mentions:4},
+  {id:29,day:'thu',dayLabel:'Thu Mar 26',name:"RESISTANCE: Eric Prydz & Argy",venue:"M2",type:'club',time:"10pm–5am",artists:"Eric Prydz, Argy, Jeremy Olander",genre:['progressive','techno'],matchKeywords:['eric prydz','argy','jeremy olander','resistance','cirez d'],summary:"Eric Prydz and Argy headline RESISTANCE. Jeremy Olander supports. Progressive techno perfection.",hype:5,mentions:5},
+  {id:30,day:'thu',dayLabel:'Thu Mar 26',name:"Toolroom Miami Open Air",venue:"Wynwood Marketplace",type:'openair',time:"3pm–12am",artists:"Cassimm, Chus & Ceballos, Crusy, Essel, Hatiras, Mark Knight",genre:['techhouse'],matchKeywords:['toolroom','mark knight','tech house','chus ceballos'],summary:"Mark Knight's Toolroom Records in an open-air Wynwood setting. Daytime into night.",hype:4,mentions:3},
+  {id:31,day:'thu',dayLabel:'Thu Mar 26',name:"RAW CUTS: DJ Tennis + Gerd Janson",venue:"Watson Island Park",type:'openair',time:"3–10pm",artists:"DJ Tennis, Gerd Janson, Bakke, Mai Iachetti",genre:['deephouse','minimal'],matchKeywords:['dj tennis','gerd janson','running back'],summary:"DJ Tennis and Gerd Janson outdoors at Watson Island. Tastemaker-level curation.",hype:4,mentions:2},
+  {id:32,day:'thu',dayLabel:'Thu Mar 26',name:"Breakaway Beach: Bob Sinclar",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"Bob Sinclar, Bella Grazia, Dalva, Devault, Linska",genre:['disco','deephouse'],matchKeywords:['bob sinclar','disco house','french house'],summary:"Bob Sinclar brings French disco house vibes poolside at the National Hotel.",hype:3,mentions:2},
+  {id:33,day:'thu',dayLabel:'Thu Mar 26',name:"DEADBEATS 10 Year Anniversary",venue:"MANA Wynwood",type:'warehouse',time:"9pm–5am",artists:"Zeds Dead, Boogie T, Bro Safari, DISTINCT MOTIVE, Aych",genre:['bass'],matchKeywords:['zeds dead','deadbeats','bass music','dubstep'],summary:"Zeds Dead's DEADBEATS label celebrates 10 years. Heavy bass in a warehouse.",hype:4,mentions:3},
+  {id:34,day:'thu',dayLabel:'Thu Mar 26',name:"Cosmic Gate & Friends",venue:"CLUTCH",type:'club',time:"9pm–5am",artists:"Cosmic Gate, Estiva, Pretty Pink, Luccio, Anunnakis",genre:['trance','progressive'],matchKeywords:['cosmic gate','trance','wake your mind'],summary:"Trance legends Cosmic Gate headline with Estiva and Pretty Pink.",hype:3,mentions:2},
+  {id:35,day:'thu',dayLabel:'Thu Mar 26',name:"Infected Mushroom + John 00 Fleming",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"Infected Mushroom, John 00 Fleming",genre:['trance','progressive'],matchKeywords:['infected mushroom','john 00 fleming','psytrance'],summary:"Psytrance meets progressive in a dark club setting. Cult followings collide.",hype:3,mentions:2},
+  {id:36,day:'thu',dayLabel:'Thu Mar 26',name:"AUDIEN: Progressive House Never Dies",venue:"MIDLINE Miami",type:'club',time:"10pm–5am",artists:"Audien, Justin Mylo, Lucas & Steve, Mike Williams, Luke Alexander",genre:['progressive'],matchKeywords:['audien','progressive house','lucas steve'],summary:"Audien makes the case for progressive house. Anthemic, uplifting, euphoric.",hype:3,mentions:2},
+  {id:37,day:'thu',dayLabel:'Thu Mar 26',name:"4B & Friends",venue:"UVA Wynwood",type:'club',time:"9pm–4am",artists:"4B, Craze, Good Times Ahead, Ricky Remedy, Stevie G",genre:['bass','hiphop'],matchKeywords:['4b','gta','craze','jersey club','trap'],summary:"Bass and trap heavyweights in Wynwood. High energy, speaker-rattling sets.",hype:3,mentions:2},
+  {id:38,day:'thu',dayLabel:'Thu Mar 26',name:"Ultra Naté's DEEP SUGAR: Birthday Bash",venue:"The Triangle at Little River",type:'club',time:"8pm–3am",artists:"Ultra Naté, Soul Clap, Rissa Garcia",genre:['disco','deephouse'],matchKeywords:['ultra nate','soul clap','deep sugar'],summary:"Ultra Naté celebrates with Soul Clap. Classic house energy meets disco funk.",hype:3,mentions:2},
+  {id:39,day:'thu',dayLabel:'Thu Mar 26',name:"Factory Town Day 2: Jamie Jones Paradise",venue:"Factory Town",type:'warehouse',time:"10pm–7am",artists:"Jamie Jones, Archie Hamilton, Adrián Mills, Alejo, Bad Boombox, ATRIP",genre:['techhouse','minimal'],matchKeywords:['jamie jones','paradise','hot creations','archie hamilton'],summary:"Jamie Jones brings Paradise to Factory Town's Infinity Room. Multi-stage warehouse madness.",hype:5,mentions:4},
+
+  // ── FRIDAY MARCH 27 ────────────────────────────────────────────────────────
+  {id:40,day:'fri',dayLabel:'Fri Mar 27',name:"Knee Deep in Miami: Hot Since 82",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Hot Since 82, Luuk van Dijk, Demi Riquísimo, Mai Iachetti, Prunk",genre:['techhouse','deephouse'],matchKeywords:['hot since 82','knee deep in sound','tech house','luuk van dijk'],summary:"Knee Deep in Sound label showcase headlined by Hot Since 82. Luuk van Dijk supports.",hype:5,mentions:5},
+  {id:41,day:'fri',dayLabel:'Fri Mar 27',name:"Solid Grooves at Club Space",venue:"Club Space",type:'club',time:"11pm–10am",artists:"Michael Bibi, ChaseWest, KinAhau, Ben Sterling, Pawsa, Carlita (rumored)",genre:['techhouse','minimal'],matchKeywords:['solid grooves','michael bibi','minimal house','chasewest','carlita','pawsa'],summary:"Solid Grooves is one of the hottest brands in global house. Marathon sets, packed floors.",hype:5,mentions:6},
+  {id:42,day:'fri',dayLabel:'Fri Mar 27',name:"Black Coffee at LIV",venue:"LIV Nightclub",type:'club',time:"11:30pm–5am",artists:"Black Coffee",genre:['afrohouse','deephouse'],matchKeywords:['black coffee','afro house','south african house'],summary:"Black Coffee's Friday night residency at LIV. Deep, spiritual Afro-house.",hype:5,mentions:5},
+  {id:43,day:'fri',dayLabel:'Fri Mar 27',name:"Chris Lake & Eats Everything: Black Book",venue:"Toe Jam Backlot",type:'club',time:"8pm–3am",artists:"Chris Lake, Eats Everything, Gio Lucca, Jackie Hollander, Marco Lys",genre:['techhouse'],matchKeywords:['chris lake','eats everything','tech house','black book records'],summary:"Chris Lake and Eats Everything on the same bill — two very different flavors of fun.",hype:4,mentions:4},
+  {id:44,day:'fri',dayLabel:'Fri Mar 27',name:"Shimza at Jungle Island",venue:"Jungle Island",type:'openair',time:"7pm–3am",artists:"Shimza, Bedouin, Francis Mercier, Arodes, FALYN",genre:['afrohouse','deephouse','melodic'],matchKeywords:['shimza','bedouin','francis mercier','afro house'],summary:"Shimza brings South African flair alongside Bedouin and Francis Mercier at Jungle Island.",hype:4,mentions:3},
+  {id:45,day:'fri',dayLabel:'Fri Mar 27',name:"Ministry of Sound × Hard Times: Dennis Ferrer",venue:"Sable Miami",type:'club',time:"7pm–4am",artists:"Dennis Ferrer, Derrick Carter, Chuck Daniels, Doorly, Fletch",genre:['deephouse','disco'],matchKeywords:['dennis ferrer','derrick carter','ministry of sound','hard times'],summary:"Two of the most legendary institutions in UK club culture collaborate. Soulful grooves and deep house.",hype:4,mentions:4},
+  {id:46,day:'fri',dayLabel:'Fri Mar 27',name:"deadmau5 at Toe Jam",venue:"Toe Jam XL",type:'club',time:"8pm–4am",artists:"deadmau5",genre:['progressive','techno'],matchKeywords:['deadmau5','mau5trap'],summary:"deadmau5 headline set in the Toe Jam XL space.",hype:5,mentions:4},
+  {id:47,day:'fri',dayLabel:'Fri Mar 27',name:"Diplo at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Diplo, AM75",genre:['hiphop','bass','techhouse'],matchKeywords:['diplo','mad decent','higher ground'],summary:"Diplo takes over E11EVEN. Genre-bending from house to hip-hop to bass.",hype:4,mentions:3},
+  {id:48,day:'fri',dayLabel:'Fri Mar 27',name:"RESISTANCE: Amelie Lens & Boys Noize",venue:"M2",type:'club',time:"10pm–5am",artists:"Amelie Lens, Boys Noize, ØTTA",genre:['techno'],matchKeywords:['amelie lens','boys noize','resistance','hard techno'],summary:"Amelie Lens and Boys Noize bring peak-time techno to RESISTANCE.",hype:5,mentions:5},
+  {id:49,day:'fri',dayLabel:'Fri Mar 27',name:"MEDUZA: The Originals Present HIIDE",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"HUGEL, Amal Nemer, Frank Storm",genre:['melodic','techhouse'],matchKeywords:['hugel','hiide','melodic house'],summary:"The Originals HIIDE poolside series on Friday with HUGEL headlining.",hype:3,mentions:2},
+  {id:50,day:'fri',dayLabel:'Fri Mar 27',name:"Soundgarden Cruise: Dubfire b2b Nick Warren",venue:"Yacht / Miami",type:'cruise',time:"3:30–8:30pm",artists:"Dubfire b2b Nick Warren",genre:['techno','melodic'],matchKeywords:['dubfire','nick warren','underground techno','soundgarden'],summary:"B2b on a boat at sunset. One of the most special formats of the whole week.",hype:4,mentions:3},
+  {id:51,day:'fri',dayLabel:'Fri Mar 27',name:"Seven Lions at MIDLINE",venue:"MIDLINE Miami",type:'club',time:"9pm–3am",artists:"Seven Lions, Andrew Bayer, Kill the Noise, Mitis, A Hundred Drums, Quackson",genre:['bass','trance'],matchKeywords:['seven lions','melodic dubstep','anjunabeats','kill the noise'],summary:"Seven Lions' melodic bass and trance crossover. Emotional, high-energy.",hype:4,mentions:3},
+  {id:52,day:'fri',dayLabel:'Fri Mar 27',name:"Brownies & Lemonade Miami",venue:"MANA Wynwood",type:'warehouse',time:"9pm–5am",artists:"TBA (surprise guests)",genre:['bass','progressive'],matchKeywords:['brownies lemonade','surprise','bass music'],summary:"Brownies & Lemonade's famous surprise-guest format. Past editions have featured major headliners.",hype:4,mentions:3},
+  {id:53,day:'fri',dayLabel:'Fri Mar 27',name:"Ferry Corsten + Giuseppe Ottaviani",venue:"CLUTCH",type:'club',time:"9pm–5am",artists:"Ferry Corsten, Giuseppe Ottaviani, Billy Gillies, Amy Wiles, Luccio",genre:['trance'],matchKeywords:['ferry corsten','giuseppe ottaviani','trance','billy gillies'],summary:"Trance royalty Ferry Corsten and Giuseppe Ottaviani share a bill.",hype:4,mentions:2},
+  {id:54,day:'fri',dayLabel:'Fri Mar 27',name:"JOURNEY: Spencer Brown & Eric Luttrell",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"Spencer Brown, Eric Luttrell, Massane, Qrion, Because of Art",genre:['progressive','melodic'],matchKeywords:['spencer brown','eric luttrell','qrion','massane','anjunadeep'],summary:"Anjunadeep-adjacent progressive house. Dreamy, introspective late-night music.",hype:3,mentions:2},
+  {id:55,day:'fri',dayLabel:'Fri Mar 27',name:"House Is A Feeling: Oscar G & DJ Sneak",venue:"1-800-LUCKY",type:'club',time:"6pm–3am",artists:"Oscar G, DJ Sneak, Tony Touch, Harry Romero, Emmaculate, Gettoblaster, DJ Dove",genre:['deephouse','disco'],matchKeywords:['oscar g','dj sneak','harry romero','classic house','gettoblaster'],summary:"Miami house royalty Oscar G joins DJ Sneak and Harry Romero. Classic house energy.",hype:4,mentions:2},
+  {id:56,day:'fri',dayLabel:'Fri Mar 27',name:"EDX Presents No Xcuses",venue:"Nikki Beach",type:'pool',time:"12pm–8pm",artists:"EDX",genre:['progressive','deephouse'],matchKeywords:['edx','no xcuses','progressive house'],summary:"EDX's No Xcuses series hits Nikki Beach for a daytime poolside session.",hype:3,mentions:2},
+  {id:57,day:'fri',dayLabel:'Fri Mar 27',name:"Tgthr: Secret Headliner & Franky Rizardo",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"Secret Headliner, Franky Rizardo, Mason Collective, Grace Arribas, Amal Nemer, Frank Storm",genre:['techhouse','deephouse'],matchKeywords:['franky rizardo','mason collective','tech house'],summary:"Tgthr poolside with a secret headliner and Franky Rizardo. Mystery adds to the hype.",hype:3,mentions:2},
+  {id:58,day:'fri',dayLabel:'Fri Mar 27',name:"Factory Town Day 3: Carlita & Friends",venue:"Factory Town",type:'warehouse',time:"9pm–7am",artists:"Carlita, Dan Ghenacia, AC13, Ainonow, Alpha Omega",genre:['deephouse','melodic'],matchKeywords:['carlita','factory town','dan ghenacia'],summary:"Factory Town's third night with Carlita headlining. Deep house and melodic textures.",hype:4,mentions:3},
+
+  // ── SATURDAY MARCH 28 ──────────────────────────────────────────────────────
+  {id:59,day:'sat',dayLabel:'Sat Mar 28',name:"Danny Tenaglia + Nicole Moudaber",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Danny Tenaglia, Nicole Moudaber, Jonathan Cowan, Romina Mazzini",genre:['techno','deephouse'],matchKeywords:['danny tenaglia','nicole moudaber','techno'],summary:"Two legends poolside. Tenaglia's groove meets Moudaber's techno power.",hype:5,mentions:6},
+  {id:60,day:'sat',dayLabel:'Sat Mar 28',name:"Marco Carola: Music On",venue:"Club Space",type:'club',time:"11pm–open",artists:"Marco Carola",genre:['techno','minimal'],matchKeywords:['marco carola','music on','minimal techno'],summary:"Music On is a religion. Marco Carola at Club Space is as pure as it gets.",hype:5,mentions:6},
+  {id:61,day:'sat',dayLabel:'Sat Mar 28',name:"Factory Town: Adam Beyer & Friends",venue:"Factory Town",type:'warehouse',time:"9pm–7am",artists:"Adam Beyer, Bart Skils b2b Marco Faraone, Pawsa b2b Luciano, Joris Voorn, Ben Sterling, Tiga, Ranger Trucco, Anetha",genre:['techno','techhouse','minimal'],matchKeywords:['factory town','adam beyer','drumcode','joris voorn','pawsa','ben sterling','anetha','bart skils'],summary:"Multi-stage warehouse. Drumcode energy + groove selectors. The week's biggest lineup.",hype:5,mentions:7},
+  {id:62,day:'sat',dayLabel:'Sat Mar 28',name:"MK & Armand Van Helden: Area 10",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"MK, Armand Van Helden",genre:['disco','deephouse'],matchKeywords:['mk','armand van helden','disco house','classic house','area 10'],summary:"MK and Armand Van Helden sharing a bill is a disco-house dream.",hype:4,mentions:5},
+  {id:63,day:'sat',dayLabel:'Sat Mar 28',name:"RESISTANCE: Boris Brejcha, Miss Monique",venue:"M2 Miami",type:'club',time:"10pm–5am",artists:"Boris Brejcha, Miss Monique, Brina Knauss",genre:['techno','melodic'],matchKeywords:['boris brejcha','miss monique','high-tech minimal','melodic techno','resistance'],summary:"Boris Brejcha's high-tech minimal alongside Miss Monique's melodic journey.",hype:5,mentions:5},
+  {id:64,day:'sat',dayLabel:'Sat Mar 28',name:"Adriatique at LIV",venue:"LIV Nightclub",type:'club',time:"11:30pm–late",artists:"Adriatique, MAXI MERAKI",genre:['melodic','deephouse'],matchKeywords:['adriatique','melodic techno','afterlife'],summary:"Swiss duo Adriatique bring their ethereal melodic sound to LIV.",hype:4,mentions:4},
+  {id:65,day:'sat',dayLabel:'Sat Mar 28',name:"Desert Hearts Open-Air",venue:"UVA Wynwood",type:'openair',time:"4pm–4am",artists:"Mikey Lion, Lee Reynolds, Eats Everything, Kevin Knapp, Life on Planets, Soul Clap, Kyle Walker, Fulano, JIMII",genre:['deephouse','techhouse'],matchKeywords:['desert hearts','eats everything','soul clap','life on planets','mikey lion'],summary:"Desert Hearts open-air in Wynwood. Deep house cosmic good energy.",hype:4,mentions:4},
+  {id:66,day:'sat',dayLabel:'Sat Mar 28',name:"MEDUZA: The Originals Present HIIDE",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"MEDUZA, Chelina Manuhutu b2b Tini Gessler, Bassel Darwish, Joe Vanditti, Above Ground, BFoxx, Genesi",genre:['melodic','techhouse'],matchKeywords:['meduza','luciano','melodic house','chelina manuhutu'],summary:"MEDUZA headline the HIIDE pool series at the National Hotel. European melodic house.",hype:5,mentions:5},
+  {id:67,day:'sat',dayLabel:'Sat Mar 28',name:"Black Coffee at Hialeah Park",venue:"Hialeah Park Casino",type:'warehouse',time:"6pm–1am",artists:"Black Coffee, Carlita, Kaz James",genre:['afrohouse','deephouse'],matchKeywords:['black coffee','afro house','south african house','carlita','kaz james'],summary:"Black Coffee's Afro-house at the racetrack with Carlita and Kaz James. Depth over spectacle.",hype:5,mentions:7},
+  {id:68,day:'sat',dayLabel:'Sat Mar 28',name:"Anjunadeep Open Air Miami",venue:"Wynwood Marketplace",type:'openair',time:"3pm–12am",artists:"Eli & Fur, Amtrac, Because of Art, CRi, Dosem",genre:['progressive','melodic','deephouse'],matchKeywords:['anjunadeep','eli fur','amtrac','cri','progressive house'],summary:"Anjunadeep's signature open-air format in Wynwood. Deep, melodic, and atmospheric.",hype:5,mentions:4},
+  {id:69,day:'sat',dayLabel:'Sat Mar 28',name:"Louie Vega & Friends: Moodymann & Karizma",venue:"ZeyZey",type:'club',time:"3–10pm",artists:"Louie Vega, Moodymann, Anané, Karizma",genre:['deephouse','disco'],matchKeywords:['louie vega','moodymann','karizma','anane','masters at work'],summary:"Louie Vega with Moodymann and Karizma. Masters At Work energy meets Detroit soul.",hype:5,mentions:3},
+  {id:70,day:'sat',dayLabel:'Sat Mar 28',name:"Steve Aoki: 30 Years of Dim Mak",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Steve Aoki",genre:['bass','hiphop'],matchKeywords:['steve aoki','dim mak'],summary:"Steve Aoki celebrates 30 years of Dim Mak at E11EVEN. Over-the-top, upscale decadence.",hype:4,mentions:4},
+  {id:71,day:'sat',dayLabel:'Sat Mar 28',name:"LALALAND: Green Velvet & Cajmere",venue:"Toe Jam Backlot",type:'club',time:"8pm–3am",artists:"Green Velvet, Cajmere, AYYBO, DISCIP, Jkatz",genre:['techhouse','deephouse'],matchKeywords:['green velvet','cajmere','chicago house','relief records'],summary:"Green Velvet and Cajmere — two sides of Curtis Jones — on the same bill.",hype:4,mentions:3},
+  {id:72,day:'sat',dayLabel:'Sat Mar 28',name:"Gordo at RC Cola Plant",venue:"RC Cola Plant",type:'warehouse',time:"10pm–5am",artists:"Gordo",genre:['techhouse','techno'],matchKeywords:['gordo','carnage','tech house'],summary:"Gordo (formerly Carnage) at the RC Cola Plant. Dark warehouse tech house.",hype:4,mentions:3},
+  {id:73,day:'sat',dayLabel:'Sat Mar 28',name:"Rodriguez Jr. Yacht Cruise",venue:"Luxury Yacht",type:'cruise',time:"3–7pm",artists:"Rodriguez Jr., Sydney Blu, Darin Epsilon, Min the Universe",genre:['melodic','deephouse'],matchKeywords:['rodriguez jr','melodic house'],summary:"Sunset cruise with Rodriguez Jr.'s cinematic melodic house. Stunning setting.",hype:4,mentions:2},
+  {id:74,day:'sat',dayLabel:'Sat Mar 28',name:"Cosmic Gate Sunset Cruise",venue:"Hyatt Regency Dock",type:'cruise',time:"3pm–8pm",artists:"Cosmic Gate, Luccio",genre:['trance','progressive'],matchKeywords:['cosmic gate','trance','sunset cruise'],summary:"Cosmic Gate on a sunset cruise. Trance on open water with golden hour views.",hype:4,mentions:2},
+  {id:75,day:'sat',dayLabel:'Sat Mar 28',name:"Gabriel & Dresden: Stories We Tell",venue:"Mazuma",type:'club',time:"9pm–3am",artists:"Gabriel & Dresden",genre:['trance','progressive'],matchKeywords:['gabriel dresden','trance','anjunabeats'],summary:"Gabriel & Dresden's emotional progressive trance. Deep storytelling through sound.",hype:3,mentions:2},
+  {id:76,day:'sat',dayLabel:'Sat Mar 28',name:"A-Trak & Friends × Fool's Gold",venue:"ZeyZey",type:'club',time:"11pm–4am",artists:"A-Trak, Dennis Ferrer, DJ Slugo, Illyus & Barrientos, Monty Kiddo",genre:['disco','hiphop','deephouse'],matchKeywords:['a-trak','fools gold','dennis ferrer','dj slugo'],summary:"A-Trak brings Fool's Gold energy with Dennis Ferrer. Eclectic, genre-spanning late-night.",hype:4,mentions:2},
+  {id:77,day:'sat',dayLabel:'Sat Mar 28',name:"Valentino Khan & Friends",venue:"MAD Club Wynwood",type:'club',time:"10pm–3am",artists:"Valentino Khan, DJ Susan, Marten Hørger, OKAYVAL, Proppa",genre:['bass','hiphop'],matchKeywords:['valentino khan','bass house','dj susan'],summary:"Valentino Khan's bass house meets Wynwood warehouse energy.",hype:3,mentions:2},
+  {id:78,day:'sat',dayLabel:'Sat Mar 28',name:"Odd Mob & Lauren Lane",venue:"MIDLINE Miami",type:'club',time:"10pm–5am",artists:"Odd Mob, Lauren Lane, Loofy, Yokai",genre:['techhouse','bass'],matchKeywords:['odd mob','lauren lane','tech house'],summary:"Odd Mob and Lauren Lane combine tech house grooves with a harder edge.",hype:3,mentions:2},
+
+  // ── SUNDAY MARCH 29 ────────────────────────────────────────────────────────
+  {id:79,day:'sun',dayLabel:'Sun Mar 29',name:"Glitterbox Closing: Skream, Derrick Carter & Gerd Janson",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Skream, Derrick Carter, Gerd Janson, Natasha Diggs, The Brothers Macklovitch, Aline Rocha, Yasmin",genre:['disco','deephouse'],matchKeywords:['glitterbox','skream','derrick carter','gerd janson','disco','natasha diggs'],summary:"Glitterbox closing party. Skream + Derrick Carter + Gerd Janson = the perfect send-off.",hype:5,mentions:6},
+  {id:80,day:'sun',dayLabel:'Sun Mar 29',name:"RESISTANCE Closing: Carl Cox & Maceo Plex",venue:"M2",type:'club',time:"10pm–5am",artists:"Carl Cox, Maceo Plex, Airrica",genre:['techno'],matchKeywords:['carl cox','maceo plex','resistance','techno'],summary:"Carl Cox and Maceo Plex close out RESISTANCE. Two titans of techno. Unmissable.",hype:5,mentions:6},
+  {id:81,day:'sun',dayLabel:'Sun Mar 29',name:"Elrow Miami at Factory Town",venue:"Factory Town",type:'festival',time:"10pm–7am",artists:"LP Giobbi, Ilario Alicante, Jay De Lys, Matroda, Emjie",genre:['techhouse','techno'],matchKeywords:['elrow','ilario alicante','lp giobbi','matroda'],summary:"Elrow's famously colorful, theatrical party format hits Factory Town for the closing night.",hype:5,mentions:5},
+  {id:82,day:'sun',dayLabel:'Sun Mar 29',name:"Claptone Presents The Masquerade",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"Claptone",genre:['deephouse','disco'],matchKeywords:['claptone','masquerade','house music'],summary:"Claptone's iconic Masquerade party poolside. Masks, mystery, and deep house.",hype:4,mentions:3},
+  {id:83,day:'sun',dayLabel:'Sun Mar 29',name:"James Hype: HIIDE",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"James Hype, Classmatic, Benjamin Lloyd, BFoxx, Alves, DJ Tucci",genre:['techhouse'],matchKeywords:['james hype','tech house','hiide'],summary:"James Hype closes out the HIIDE pool series at the National Hotel.",hype:4,mentions:3},
+  {id:84,day:'sun',dayLabel:'Sun Mar 29',name:"Vintage Culture at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Vintage Culture",genre:['techhouse','deephouse'],matchKeywords:['vintage culture','brazilian house'],summary:"Brazilian house star Vintage Culture closes out E11EVEN's MMW series.",hype:4,mentions:3},
+  {id:85,day:'sun',dayLabel:'Sun Mar 29',name:"Cristoph Presents COS Miami",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"Cristoph, Jeremy Olander, Dirty South, Dimuth K, Michael Anthony",genre:['progressive','melodic'],matchKeywords:['cristoph','jeremy olander','dirty south','cos'],summary:"Cristoph's COS label night with Jeremy Olander and Dirty South. Deep progressive house.",hype:4,mentions:2},
+  {id:86,day:'sun',dayLabel:'Sun Mar 29',name:"Anjunabeats Miami",venue:"MAD LIVE",type:'club',time:"10pm–4am",artists:"Mat Zo, Genix, Grum, Amy Wiles, Leena Punks",genre:['trance','progressive'],matchKeywords:['anjunabeats','mat zo','genix','grum','trance'],summary:"Anjunabeats showcase with Mat Zo, Genix, and Grum. Uplifting and euphoric.",hype:4,mentions:3},
+  {id:87,day:'sun',dayLabel:'Sun Mar 29',name:"MoBlack Records Closing",venue:"Toe Jam Backlot",type:'club',time:"8pm–4am",artists:"Francis Mercier, Caiiro, Ape Drums, Avö, Luna Mar",genre:['afrohouse','deephouse'],matchKeywords:['moblack','francis mercier','caiiro','afro house'],summary:"MoBlack Records' closing showcase. Afro-house rhythms to end the week.",hype:3,mentions:2},
+  {id:88,day:'sun',dayLabel:'Sun Mar 29',name:"30+ Hour Closing Party",venue:"Space Miami",type:'club',time:"12am–12am+",artists:"TBA",genre:['techhouse','techno','deephouse'],matchKeywords:['space miami','closing party','marathon'],summary:"Space Miami's legendary 30+ hour closing party. The ultimate marathon to end MMW.",hype:5,mentions:5},
+  {id:89,day:'sun',dayLabel:'Sun Mar 29',name:"Deeperfect Showcase",venue:"Mode",type:'club',time:"10pm–5am",artists:"Stefano Noferini, Dimmish, Joe Vanditti, Mandiz, Slugg",genre:['techhouse'],matchKeywords:['stefano noferini','deeperfect','tech house'],summary:"Stefano Noferini's Deeperfect label showcase. Quality Italian tech house.",hype:3,mentions:1},
+  {id:90,day:'sun',dayLabel:'Sun Mar 29',name:"AC Slater & Friends",venue:"MAD Club Wynwood",type:'club',time:"10pm–3am",artists:"AC Slater",genre:['bass','techhouse'],matchKeywords:['ac slater','night bass','bass house'],summary:"AC Slater's Night Bass sound brings bass house to the closing night.",hype:3,mentions:2},
 ];
 
-let activeGenre='all', activeDay='all', sortMode='match';
+let activeGenre='all', activeDay='all', sortMode='match', minMentions=0;
 let spotifyToken=null, eventMatchScores={};
 
 // ── PKCE ─────────────────────────────────────────────────────────────────────
@@ -313,7 +419,7 @@ Respond ONLY in valid JSON (no markdown):
     const r=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,messages:[{role:'user',content:prompt}]})
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,messages:[{role:'user',content:prompt}]})
     });
     const d=await r.json();
     const parsed=JSON.parse((d.content?.[0]?.text||'').replace(/```json|```/g,'').trim());
@@ -365,19 +471,34 @@ function toggleDay(btn){
   btn.classList.add('active'); activeDay=btn.dataset.day; renderEvents();
 }
 
+function toggleMentions(btn){
+  document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active'); minMentions=parseInt(btn.dataset.mentions); renderEvents();
+}
+
 function setSort(mode){
   sortMode=mode;
   document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort===mode));
   renderEvents();
 }
 
+function getMentionsDisplay(m){
+  if(m>=6) return {text:`${m} sources`, cls:'hot', flames:'🔥🔥🔥'};
+  if(m>=4) return {text:`${m} sources`, cls:'hot', flames:'🔥🔥'};
+  if(m>=3) return {text:`${m} sources`, cls:'warm', flames:'🔥'};
+  return {text:`${m} source${m!==1?'s':''}`, cls:'', flames:''};
+}
+
 function renderEvents(){
   const dayOrder=['tue','wed','thu','fri','sat','sun'];
   const events=EVENTS
-    .filter(e=>(activeDay==='all'||e.day===activeDay)&&(activeGenre==='all'||e.genre.includes(activeGenre)))
-    .sort((a,b)=>sortMode==='match'
-      ?(eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.hype-a.hype
-      :dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day));
+    .filter(e=>(activeDay==='all'||e.day===activeDay)&&(activeGenre==='all'||e.genre.includes(activeGenre))&&(e.mentions>=minMentions))
+    .sort((a,b)=>{
+      if(sortMode==='match') return (eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.hype-a.hype;
+      if(sortMode==='day') return dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day)||b.hype-a.hype;
+      if(sortMode==='buzz') return b.mentions-a.mentions||b.hype-a.hype;
+      return 0;
+    });
 
   if(!events.length){
     document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">∅</div><div>No events match this filter</div></div>`;
@@ -392,6 +513,7 @@ function renderEvents(){
       <div class="sort-btns">
         <button class="sort-btn ${sortMode==='match'?'active':''}" data-sort="match" onclick="setSort('match')">By Match</button>
         <button class="sort-btn ${sortMode==='day'?'active':''}" data-sort="day" onclick="setSort('day')">By Day</button>
+        <button class="sort-btn ${sortMode==='buzz'?'active':''}" data-sort="buzz" onclick="setSort('buzz')">By Buzz</button>
       </div>
     </div>
     <div class="events-grid">
@@ -400,12 +522,14 @@ function renderEvents(){
         const cls=has?(s>=70?'match-high':s>=40?'match-med':'match-low'):'match-low';
         const reason=s>=70?'★ Strong match':s>=50?'◆ Good match':s>=30?'◇ Worth exploring':'· Outside your usual';
         const stars='★'.repeat(s>=70?3:s>=45?2:1)+'☆'.repeat(s>=70?0:s>=45?1:2);
+        const md=getMentionsDisplay(e.mentions);
         return `<div class="event-card ${cls}">
           <div>
             <div class="event-name">${e.name}<span class="tag ${e.type}">${e.type}</span></div>
             <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
             <div class="artists">${e.artists}</div>
             <div style="margin-top:8px;font-size:11px;color:var(--muted);line-height:1.6">${e.summary}</div>
+            <div class="mentions-badge ${md.cls}">${md.flames} Mentioned in ${md.text}</div>
           </div>
           ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div><div style="font-size:10px;letter-spacing:-1px;color:var(--green)">${stars}</div></div>`
                :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
