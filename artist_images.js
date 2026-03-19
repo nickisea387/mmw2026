@@ -81,4 +81,3 @@ const ARTIST_IMAGES = {
   "PAWSA": "https://cdn-images.dzcdn.net/images/artist/d239501231d60980c6eb1ba64948289c/500x500-000000-80-0-0.jpg",
   "OMRI": "https://cdn-images.dzcdn.net/images/artist/c94be4346bbe88c7cd2f993c0ed711e0/500x500-000000-80-0-0.jpg"
 };
-
