@@ -768,7 +768,7 @@ function renderEvents(){
         <button class="mode-btn ${viewMode==='map'?'active':''}" onclick="setMode(sortMode,'map')">Map</button>
       </div>
     </div>
-    ${viewMode!=='map'&&localStorage.getItem('sp_profile')?buildMyPicksSummary(sortMode==='match'?events:EVENTS.filter(filterFn).sort((a,b)=>(eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)).slice(0,15)):''}
+    ${sortMode==='match'&&viewMode!=='map'?buildMyPicksSummary(EVENTS.sort((a,b)=>(eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)).slice(0,15)):''}
     ${viewMode==='map'?`<div class="map-legend">${mapLegendHtml}</div>`:''}
     <div id="mapContainer" class="${viewMode==='map'?'visible':''}"></div>
     <div class="events-grid" style="${viewMode==='map'?'display:none':''}">
