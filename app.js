@@ -64,12 +64,17 @@ window.addEventListener('load',async()=>{
     if(state!==saved){showNotice('State mismatch — try again.','err');return;}
     window.history.replaceState({},document.title,window.location.pathname);
     showLoading('Exchanging auth code with Spotify...');
-    try{const t=await exchangeCode(code);saveTokens(t);sessionStorage.removeItem('pkce_v');sessionStorage.removeItem('pkce_s');await loadAndAnalyze();}
-    catch(err){showNotice(`Auth failed: ${err.message}`,'err');showAllEvents();}
+    try{
+      const t=await exchangeCode(code);
+      saveTokens(t);
+      sessionStorage.removeItem('pkce_v');sessionStorage.removeItem('pkce_s');
+    }catch(err){showNotice(`Auth failed: ${err.message}`,'err');showAllEvents();return;}
+    try{await loadAndAnalyze();}catch(err){console.error(err);showAllEvents();}
     return;
   }
   if(loadTokens()){
     const token=await getValidToken();
+    if(!token){clearTokens();showAllEvents();return;}
     if(token){
       const savedName=localStorage.getItem('sp_name'),savedScores=localStorage.getItem('sp_scores');
       if(savedName&&savedScores){
@@ -122,13 +127,13 @@ async function loadAndAnalyze(){
 
 async function runAI({topArtists,topTracks,recent}){
   showLoading('Analyzing your listening history...');
-  const topArtistNames=(topArtists?.items||[]).map(a=>a.name).slice(0,25);
+  const topArtistNames=(topArtists?.items||[]).filter(a=>a&&a.name).map(a=>a.name).slice(0,25);
   const artists=topArtistNames.join(', ');
-  const userGenres=[...new Set((topArtists?.items||[]).flatMap(a=>a.genres))].slice(0,25);
+  const userGenres=[...new Set((topArtists?.items||[]).filter(a=>a&&a.genres).flatMap(a=>a.genres))].slice(0,25);
   const genres=userGenres.join(', ');
-  const topTracksList=(topTracks?.items||[]).map(t=>`${t.name} – ${t.artists[0]?.name}`).slice(0,15);
+  const topTracksList=(topTracks?.items||[]).filter(t=>t&&t.name&&t.artists).map(t=>`${t.name} – ${t.artists[0]?.name||'Unknown'}`).slice(0,15);
   const tracks=topTracksList.join('; ');
-  const recentArtists=[...new Set((recent?.items||[]).map(i=>i.track.artists[0]?.name))].slice(0,20);
+  const recentArtists=[...new Set((recent?.items||[]).filter(i=>i&&i.track&&i.track.artists).map(i=>i.track.artists[0]?.name).filter(Boolean))].slice(0,20);
   const recents=recentArtists.join(', ');
 
   // Save rich Spotify profile for "My Picks" explainer
