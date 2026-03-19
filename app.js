@@ -2,7 +2,7 @@ const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
 const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
 const SCOPES = 'user-top-read user-read-recently-played user-read-private playlist-modify-private';
 
-let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), activeBandwagons=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
+let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), activeBandwagons=new Set(['all']), trendingFilter='all', sortMode='day', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
@@ -97,9 +97,9 @@ async function loadAndAnalyze(){
     const token=await getValidToken();if(!token){showNotice('Session expired — reconnect.','err');showAllEvents();return;}
     const headers={Authorization:`Bearer ${token}`};
     const [r1,r2,r3,r4]=await Promise.all([
-      fetch('https://api.spotify.com/v1/me/top/artists?limit=50&time_range=medium_term',{headers}),
-      fetch('https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=medium_term',{headers}),
-      fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50',{headers}),
+      fetch('https://api.spotify.com/v1/me/top/artists?limit=50&time_range=short_term',{headers}),  // Last ~4 weeks
+      fetch('https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=short_term',{headers}),   // Last ~4 weeks
+      fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50',{headers}),              // Last ~50 plays
       fetch('https://api.spotify.com/v1/me',{headers}),
     ]);
     // Check if any response failed (e.g. token expired / scope mismatch)
@@ -460,6 +460,11 @@ function toggleBandwagon(btn){
   document.querySelectorAll('[data-bw]').forEach(b=>b.classList.toggle('active',activeBandwagons.has(b.dataset.bw)||(activeBandwagons.has('all')&&b.dataset.bw==='0')));
   renderEvents();
 }
+function toggleTrending(btn){
+  trendingFilter=btn.dataset.trend;
+  document.querySelectorAll('[data-trend]').forEach(b=>b.classList.toggle('active',b.dataset.trend===trendingFilter));
+  renderEvents();
+}
 function toggleMentions(btn){document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');minMentions=parseInt(btn.dataset.mentions);renderEvents();}
 function setMode(sort,view){
   sortMode=sort;viewMode=view;renderEvents();
@@ -592,7 +597,7 @@ function buildMyPicksSummary(events){
 
   // Top artists — linked to Spotify
   const artistLinks=topArtists.map(a=>`<a href="https://open.spotify.com/search/${encodeURIComponent(a)}" target="_blank" rel="noopener" class="picks-link">${a}</a>`);
-  html+=`<div class="picks-insight"><span class="picks-icon">⭐</span><div><strong>Your top artists:</strong> ${artistLinks.join(', ')}</div></div>`;
+  html+=`<div class="picks-insight"><span class="picks-icon">⭐</span><div><strong>Most played this month:</strong> ${artistLinks.join(', ')}</div></div>`;
 
   // Direct artist matches — each links to the event they're in
   if(artistsInPicks.length){
@@ -600,14 +605,14 @@ function buildMyPicksSummary(events){
       const ev=findEventForArtist(a);
       return ev?`<a href="#" onclick="document.getElementById('searchInput').value='${a.replace(/'/g,"\\'")}';handleSearch('${a.replace(/'/g,"\\'")}');return false;" class="picks-link-highlight">${a}</a>`:`<span>${a}</span>`;
     });
-    html+=`<div class="picks-insight picks-highlight"><span class="picks-icon">🎯</span><div><strong>${artistsInPicks.length} of your artists are performing:</strong> ${matchLinks.join(', ')}</div></div>`;
+    html+=`<div class="picks-insight picks-highlight"><span class="picks-icon">🎯</span><div><strong>${artistsInPicks.length} artist${artistsInPicks.length>1?'s':''} you've been playing this month ${artistsInPicks.length>1?'are':'is'} performing:</strong> ${matchLinks.join(', ')}</div></div>`;
   }
 
   // Recently played matches — linked to search
   const uniqueRecent=recentInPicks.filter(a=>!artistsInPicks.includes(a));
   if(uniqueRecent.length){
     const recentLinks=uniqueRecent.map(a=>`<a href="#" onclick="document.getElementById('searchInput').value='${a.replace(/'/g,"\\'")}';handleSearch('${a.replace(/'/g,"\\'")}');return false;" class="picks-link">${a}</a>`);
-    html+=`<div class="picks-insight"><span class="picks-icon">🔄</span><div><strong>Recently on repeat:</strong> ${recentLinks.join(', ')} — also playing this week</div></div>`;
+    html+=`<div class="picks-insight"><span class="picks-icon">🔄</span><div><strong>In your last 7 days:</strong> ${recentLinks.join(', ')} — also playing this week</div></div>`;
   }
 
   // Genre breakdown — clickable to filter
@@ -659,7 +664,7 @@ function renderCard(e,has,dimmed){
     <div class="event-card-body">
       <div class="event-card-top">
         <div style="flex:1">
-          <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span>${isTrending?'<span class="trending-badge">🔥 TRENDING</span>':''}</div>
+          <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span>${isTrending?`<span class="trending-badge" title="Trending: This event scores high on editorial buzz (mentioned in ${e.mentions}+ sources) relative to how underground the headliner is. Underground acts getting unexpected press coverage trend faster than mainstream acts.">🔥 TRENDING</span>`:''}</div>
           <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
           <div class="artists">${linkifyArtists(e.artists)}</div>
           <div class="event-summary">${e.summary}</div>
@@ -713,6 +718,7 @@ function renderEvents(){
     (activeGenres.has('all')||e.genre.some(g=>activeGenres.has(g)))&&
     (activeVtypes.has('all')||activeVtypes.has(e.type))&&
     (activeBandwagons.has('all')||activeBandwagons.has(String(e.bandwagon||0)))&&
+    (trendingFilter==='all'||(typeof TRENDING_IDS!=='undefined'&&TRENDING_IDS.includes(e.id)))&&
     (e.mentions>=minMentions)&&
     (!showFavsOnly||favourites.includes(e.id));
   const sortFn=(a,b)=>{
