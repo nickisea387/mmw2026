@@ -54,6 +54,16 @@ fetch('https://hp-api.onrender.com/api/characters').then(r=>r.json()).then(chars
   chars.forEach(c=>{if(c.image) hpCharImages[c.name.toLowerCase()]=c.image;});
 }).catch(()=>{});
 
+// ── AUTO-CLEAR STALE TOKENS ──────────────────────────────────────────────────
+// If token is expired and refresh fails, clear everything so user sees Connect button
+(function(){
+  const expiry=parseInt(localStorage.getItem('sp_expiry')||'0');
+  const hasRefresh=!!localStorage.getItem('sp_refresh');
+  if(expiry&&Date.now()>expiry&&!hasRefresh){
+    ['sp_access','sp_refresh','sp_expiry','sp_name','sp_scores','sp_profile'].forEach(k=>localStorage.removeItem(k));
+  }
+})();
+
 // ── ON LOAD ──────────────────────────────────────────────────────────────────
 window.addEventListener('load',async()=>{
   const p=new URLSearchParams(window.location.search);
@@ -74,7 +84,13 @@ window.addEventListener('load',async()=>{
   }
   if(loadTokens()){
     const token=await getValidToken();
-    if(!token){clearTokens();showAllEvents();return;}
+    if(!token){
+      clearTokens();
+      document.getElementById('connectBtn').style.display='flex';
+      document.getElementById('authDesc').style.display='block';
+      document.getElementById('connectedBadge').classList.remove('visible');
+      showAllEvents();return;
+    }
     if(token){
       const savedName=localStorage.getItem('sp_name'),savedScores=localStorage.getItem('sp_scores');
       if(savedName&&savedScores){
