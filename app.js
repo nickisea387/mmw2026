@@ -2,7 +2,7 @@ const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
 const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
 const SCOPES = 'user-top-read user-read-recently-played user-read-private';
 
-let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
+let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), activeBandwagon=0, sortMode='day', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
@@ -137,10 +137,13 @@ Respond ONLY in valid JSON (no markdown):
     localStorage.setItem('sp_scores',JSON.stringify(parsed));
     const b=document.getElementById('aiBanner');
     b.innerHTML=`<strong>Your Sound:</strong> ${parsed.tasteSummary}<br><span style="display:block;margin-top:6px">Detected genres: <strong>${parsed.topGenres.join(' · ')}</strong></span>`;
-    b.classList.add('visible');renderEvents();
+    b.classList.add('visible');
   }catch(err){
-    console.error(err);EVENTS.forEach(e=>{eventMatchScores[e.id]=e.hype*18;});renderEvents();
+    console.error(err);EVENTS.forEach(e=>{eventMatchScores[e.id]=e.hype*18;});
   }
+  // Default to My Picks after Spotify connect
+  sortMode='match';
+  renderEvents();
   showHPModal(userGenres);
 }
 
@@ -256,6 +259,10 @@ function toggleVtype(btn){
   else{activeVtypes.delete('all');if(activeVtypes.has(v)) activeVtypes.delete(v);else activeVtypes.add(v);if(!activeVtypes.size) activeVtypes=new Set(['all']);}
   document.querySelectorAll('[data-vtype]').forEach(b=>b.classList.toggle('active',activeVtypes.has(b.dataset.vtype)));
   renderEvents();
+}
+function toggleBandwagon(btn){
+  document.querySelectorAll('[data-bw]').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');activeBandwagon=parseInt(btn.dataset.bw);renderEvents();
 }
 function toggleMentions(btn){document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');minMentions=parseInt(btn.dataset.mentions);renderEvents();}
 function setSort(mode){
@@ -384,6 +391,7 @@ function renderEvents(){
     (activeDays.has('all')||activeDays.has(e.day))&&
     (activeGenres.has('all')||e.genre.some(g=>activeGenres.has(g)))&&
     (activeVtypes.has('all')||activeVtypes.has(e.type))&&
+    (activeBandwagon===0||(e.bandwagon||0)===activeBandwagon)&&
     (e.mentions>=minMentions)&&
     (!showFavsOnly||favourites.includes(e.id));
   const sortFn=(a,b)=>{
@@ -402,8 +410,8 @@ function renderEvents(){
     outsideEvents=unfiltered.filter(e=>getSearchableText(e).includes(searchQuery)).sort(sortFn);
   } else if(sortMode==='match'){
     if(hasSpotifyScores){
-      // My Picks: only show events with score >= 40
-      events=EVENTS.filter(filterFn).filter(e=>(eventMatchScores[e.id]||0)>=40).sort(sortFn);
+      // My Picks: show top 15 events ranked by match score
+      events=EVENTS.filter(filterFn).sort(sortFn).slice(0,15);
     } else {
       // No Spotify: show prompt
       document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">🎧</div><div style="font-size:16px;color:var(--text);margin-bottom:8px;">Connect Spotify to unlock My Picks</div><div style="font-size:13px;color:var(--muted);line-height:1.7">We'll analyze your listening history and show<br>only the events that match your taste</div><br><button class="submit-btn" onclick="startAuth()">Connect Spotify →</button></div>`;
