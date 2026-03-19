@@ -2,7 +2,7 @@ const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
 const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
 const SCOPES = 'user-top-read user-read-recently-played user-read-private';
 
-let activeGenres=new Set(['all']), activeDays=new Set(['all']), sortMode='match', minMentions=0, viewMode='list', searchQuery='';
+let activeGenres=new Set(['all']), activeDays=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
@@ -181,8 +181,7 @@ function showHPModal(userGenres){
 }
 function closeHPModal(){
   document.getElementById('hpModal').classList.remove('visible');
-  sortMode='match';
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort==='match'));
+  // Keep whatever sort the user had, just refresh the view
   renderEvents();
 }
 
@@ -210,28 +209,38 @@ function getHeadliner(e){return e.artists.split(/,/)[0].replace(/\s*b2b\s+.*/i,'
 async function fetchArtistImage(name){
   if(artistImageCache[name]) return artistImageCache[name];
   try{
+    // Use iTunes Search API with JSONP-style fetch
     const r=await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(name)}&entity=musicArtist&limit=1`);
+    if(!r.ok) return '';
     const d=await r.json();
-    const url=d.results?.[0]?.artworkUrl100?.replace('100x100','300x300')||'';
-    artistImageCache[name]=url;
-    localStorage.setItem('artist_img_cache',JSON.stringify(artistImageCache));
+    const url=d.results?.[0]?.artworkUrl100?.replace('100x100','600x600')||'';
+    if(url){artistImageCache[name]=url;try{localStorage.setItem('artist_img_cache',JSON.stringify(artistImageCache));}catch(e){}}
     return url;
-  }catch(e){return '';}
+  }catch(e){console.log('iTunes fetch failed for',name,e);return '';}
 }
 
 function loadArtistImages(){
   const els=document.querySelectorAll('.event-card-img[data-artist]');
-  let i=0;
-  function next(){
-    if(i>=els.length) return;
-    const el=els[i++];
+  if(!els.length) return;
+  const queue=[...els].filter(el=>el.dataset.artist);
+  let idx=0;
+  async function processNext(){
+    if(idx>=queue.length) return;
+    const el=queue[idx++];
     const name=el.dataset.artist;
-    if(!name){next();return;}
-    const cached=artistImageCache[name];
-    if(cached){el.style.backgroundImage=`url('${cached}')`;next();return;}
-    fetchArtistImage(name).then(url=>{if(url) el.style.backgroundImage=`url('${url}')`;setTimeout(next,80);}).catch(()=>setTimeout(next,80));
+    if(!name){processNext();return;}
+    // Check cache first
+    if(artistImageCache[name]){
+      el.style.backgroundImage=`url('${artistImageCache[name]}')`;
+      processNext();return;
+    }
+    const url=await fetchArtistImage(name);
+    if(url) el.style.backgroundImage=`url('${url}')`;
+    // Small delay to avoid rate limiting
+    setTimeout(processNext,120);
   }
-  next();
+  // Start 3 parallel fetchers for speed
+  processNext();processNext();processNext();
 }
 
 // ── TICKET & PLAY ────────────────────────────────────────────────────────────
@@ -277,7 +286,12 @@ function toggleDay(btn){
   renderEvents();
 }
 function toggleMentions(btn){document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');minMentions=parseInt(btn.dataset.mentions);renderEvents();}
-function setSort(mode){sortMode=mode;document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort===mode));renderEvents();}
+function setSort(mode){
+  sortMode=mode;
+  if(viewMode==='map'){viewMode='list';document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view==='list'));}
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort===mode));
+  renderEvents();
+}
 function setView(mode){viewMode=mode;document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===mode));renderEvents();}
 function getMentionsDisplay(m){
   if(m>=6) return {text:`${m} sources`,cls:'hot',flames:'🔥🔥🔥'};
