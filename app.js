@@ -1,6 +1,6 @@
 const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
 const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
-const SCOPES = 'user-top-read user-read-recently-played user-read-private';
+const SCOPES = 'user-top-read user-read-recently-played user-read-private playlist-modify-private';
 
 let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), activeBandwagons=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
@@ -212,11 +212,172 @@ function getArtistImage(name){
 }
 
 // ── TICKET & PLAY ────────────────────────────────────────────────────────────
-function getTicketUrl(e){return `https://www.google.com/search?q=${encodeURIComponent(e.name+' miami music week 2026 tickets')}`;}
+function getTicketUrl(e){return `https://www.eventbrite.com/d/fl--miami/${encodeURIComponent(e.name.replace(/[^\w\s]/g,'').replace(/\s+/g,'-').toLowerCase())}/`;}
+
+// Artist Spotify ID cache (persisted to localStorage)
+let artistSpotifyCache=JSON.parse(localStorage.getItem('mmw_artist_ids')||'{}');
+function saveArtistCache(){localStorage.setItem('mmw_artist_ids',JSON.stringify(artistSpotifyCache));}
+
+// Resolve an artist name to a Spotify artist object {id, uri, name}
+async function resolveArtist(name){
+  const clean=name.replace(/\s*\(.*?\)/g,'').trim();
+  const key=clean.toLowerCase();
+  if(artistSpotifyCache[key]) return artistSpotifyCache[key];
+  const token=await getValidToken();
+  if(!token) return null;
+  try{
+    const r=await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(clean)}&type=artist&limit=1`,{
+      headers:{Authorization:`Bearer ${token}`}
+    });
+    if(!r.ok) return null;
+    const data=await r.json();
+    const artist=data.artists?.items?.[0];
+    if(!artist) return null;
+    const result={id:artist.id,uri:artist.uri,name:artist.name};
+    artistSpotifyCache[key]=result;
+    saveArtistCache();
+    return result;
+  }catch(e){return null;}
+}
+
+// Get top tracks for an artist
+async function getArtistTopTracks(artistId){
+  const token=await getValidToken();
+  if(!token) return [];
+  try{
+    const r=await fetch(`https://api.spotify.com/v1/artists/${artistId}/top-tracks?market=US`,{
+      headers:{Authorization:`Bearer ${token}`}
+    });
+    if(!r.ok) return [];
+    const data=await r.json();
+    return (data.tracks||[]).slice(0,3);
+  }catch(e){return [];}
+}
+
+// ── SPOTIFY EMBED (TIER 1: no extra auth, 30-sec previews inline) ───────────
+function toggleEmbed(eventId){
+  const container=document.getElementById(`embed-${eventId}`);
+  if(!container) return;
+  if(container.style.display==='block'){
+    container.style.display='none';
+    container.innerHTML='';
+    return;
+  }
+  container.style.display='block';
+  container.innerHTML=`<div style="padding:12px;color:var(--muted);font-size:11px;">Loading artist previews...</div>`;
+  loadEmbeds(eventId,container);
+}
+
+async function loadEmbeds(eventId,container){
+  const event=EVENTS.find(e=>e.id===eventId);
+  if(!event){container.innerHTML='';return;}
+  const names=event.artists.split(/,\s*/)
+    .map(a=>a.replace(/\s*b2b\s+.*/i,'').replace(/\s*\(.*?\)/g,'').trim())
+    .filter(a=>a&&a!=='TBA')
+    .slice(0,4);
+
+  const token=await getValidToken();
+  if(!token){
+    // No auth: fall back to search link
+    container.innerHTML=`<div style="padding:12px;font-size:11px;"><a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:var(--green);">Open in Spotify</a></div>`;
+    return;
+  }
+
+  const artists=await Promise.all(names.map(n=>resolveArtist(n)));
+  const valid=artists.filter(Boolean);
+
+  if(!valid.length){
+    container.innerHTML=`<div style="padding:12px;color:var(--muted);font-size:11px;">Could not find artists on Spotify. <a href="https://open.spotify.com/search/${encodeURIComponent(names.join(' '))}" target="_blank" style="color:var(--green);">Search manually</a></div>`;
+    return;
+  }
+
+  container.innerHTML=valid.map(a=>
+    `<iframe style="border-radius:4px;margin-bottom:4px;" src="https://open.spotify.com/embed/artist/${a.id}?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
+  ).join('')+`<button class="play-btn" style="margin-top:6px;width:100%;" data-playlist-btn="${eventId}" onclick="createEventPlaylist(${eventId})">Create Full Playlist</button>`;
+}
+
+// ── CREATE PLAYLIST (TIER 2: needs playlist-modify-private scope) ───────────
+async function createEventPlaylist(eventId){
+  const event=EVENTS.find(e=>e.id===eventId);
+  if(!event) return;
+  const token=await getValidToken();
+  if(!token){showNotice('Connect Spotify to create playlists.','warn');return;}
+
+  const btn=document.querySelector(`[data-playlist-btn="${eventId}"]`);
+  if(btn){btn.textContent='Creating playlist...';btn.disabled=true;}
+
+  try{
+    // 1. Get artist names
+    const names=event.artists.split(/,\s*/)
+      .map(a=>a.replace(/\s*b2b\s+.*/i,'').replace(/\s*\(.*?\)/g,'').trim())
+      .filter(a=>a&&a!=='TBA')
+      .slice(0,8);
+
+    // 2. Resolve all artists and get top tracks
+    const artists=await Promise.all(names.map(n=>resolveArtist(n)));
+    const validArtists=artists.filter(Boolean);
+    if(!validArtists.length){
+      showNotice('Could not find artists on Spotify.','warn');
+      if(btn){btn.textContent='Create Full Playlist';btn.disabled=false;}
+      return;
+    }
+
+    const trackArrays=await Promise.all(validArtists.map(a=>getArtistTopTracks(a.id)));
+    const trackUris=trackArrays.flat().map(t=>t.uri);
+    if(!trackUris.length){
+      showNotice('No tracks found for these artists.','warn');
+      if(btn){btn.textContent='Create Full Playlist';btn.disabled=false;}
+      return;
+    }
+
+    // 3. Get user ID
+    const meR=await fetch('https://api.spotify.com/v1/me',{headers:{Authorization:`Bearer ${token}`}});
+    const me=await meR.json();
+
+    // 4. Create playlist
+    const playlistName=`MMW 2026: ${event.name}`;
+    const playlistDesc=`${event.dayLabel} @ ${event.venue} — Top tracks from ${validArtists.map(a=>a.name).join(', ')}. Generated by MMW 2026 Planner.`;
+    const createR=await fetch(`https://api.spotify.com/v1/users/${me.id}/playlists`,{
+      method:'POST',
+      headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},
+      body:JSON.stringify({name:playlistName,description:playlistDesc,public:false})
+    });
+    if(!createR.ok){
+      const err=await createR.json();
+      if(err.error?.status===403){
+        showNotice('Playlist permission needed. Click "Connect with Spotify" to re-authorize.','warn');
+        if(btn){btn.textContent='Create Full Playlist';btn.disabled=false;}
+        return;
+      }
+      throw new Error(err.error?.message||'Failed to create playlist');
+    }
+    const playlist=await createR.json();
+
+    // 5. Add tracks (max 100 per request)
+    await fetch(`https://api.spotify.com/v1/playlists/${playlist.id}/tracks`,{
+      method:'POST',
+      headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},
+      body:JSON.stringify({uris:trackUris.slice(0,100)})
+    });
+
+    // 6. Open the playlist
+    window.open(playlist.external_urls.spotify,'_blank');
+    if(btn){
+      btn.textContent='Playlist Created';
+      btn.style.borderColor='var(--green)';btn.style.color='var(--green)';
+      setTimeout(()=>{btn.textContent='Create Full Playlist';btn.disabled=false;},4000);
+    }
+
+  }catch(err){
+    console.error('Playlist creation failed:',err);
+    showNotice(`Playlist error: ${err.message}`,'err');
+    if(btn){btn.textContent='Create Full Playlist';btn.disabled=false;}
+  }
+}
+
+// ── UNIFIED playSet: show inline embeds + playlist button ───────────────────
 function playSet(eventId){
-  const event=EVENTS.find(e=>e.id===eventId);if(!event) return;
-  const names=event.artists.split(/,\s*/).map(a=>a.replace(/\s*b2b\s+.*/i,'').replace(/\s*\(.*?\)/g,'').trim()).filter(a=>a&&a!=='TBA');
-  window.open(`https://open.spotify.com/search/${encodeURIComponent(names.slice(0,5).join(' '))}`,'_blank');
+  toggleEmbed(eventId);
 }
 
 // ── FAVOURITES ───────────────────────────────────────────────────────────────
@@ -303,7 +464,8 @@ function updateMap(events){
     venueEvents.forEach(e=>{
       const s=eventMatchScores[e.id]||0;
       const sc=has?` <span style="color:${s>=70?'var(--green)':s>=40?'var(--amber)':'var(--muted)'};font-weight:600;">${s}</span>`:'';
-      html+=`<div class="popup-event"><div class="popup-event-name">${e.name}${sc}</div><div class="popup-event-meta">${e.dayLabel} · ${e.time}</div><div class="popup-event-meta" style="color:#bbb">${linkifyArtists(e.artists)}</div></div>`;
+      const tUrl=getTicketUrl(e);
+      html+=`<div class="popup-event"><div class="popup-event-name"><a href="${tUrl}" target="_blank" rel="noopener" style="color:white;text-decoration:none;">${e.name}</a>${sc}</div><div class="popup-event-meta">${e.dayLabel} · ${e.time}</div><div class="popup-event-meta" style="color:#bbb">${linkifyArtists(e.artists)}</div></div>`;
     });
     html+='</div>';
     marker.bindPopup(html,{maxWidth:320,minWidth:240});mapMarkers.push(marker);
@@ -329,6 +491,7 @@ function renderCard(e,has,dimmed){
   const stars='★'.repeat(s>=70?3:s>=45?2:1)+'☆'.repeat(s>=70?0:s>=45?1:2);
   const md=getMentionsDisplay(e.mentions);
   const bw=getBandwagonDisplay(e.bandwagon);
+  const isTrending=typeof TRENDING_IDS!=='undefined'&&TRENDING_IDS.includes(e.id);
   const isFav=favourites.includes(e.id);
   const headliner=getHeadliner(e);
   const img=getArtistImage(headliner)||getVenueImage(e);
@@ -339,7 +502,7 @@ function renderCard(e,has,dimmed){
     <div class="event-card-body">
       <div class="event-card-top">
         <div style="flex:1">
-          <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span></div>
+          <div class="event-name"><a href="${ticketUrl}" target="_blank" rel="noopener" class="event-link">${e.name}</a><span class="tag ${e.type}">${e.type}</span>${isTrending?'<span class="trending-badge">🔥 TRENDING</span>':''}</div>
           <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
           <div class="artists">${linkifyArtists(e.artists)}</div>
           <div class="event-summary">${e.summary}</div>
@@ -347,9 +510,10 @@ function renderCard(e,has,dimmed){
           <div class="event-actions">
             <div class="mentions-badge ${md.cls}">${md.flames} ${md.text}</div>
             ${bw.label?`<span class="bandwagon-badge ${bw.cls}">${bw.label}</span>`:''}
-            <button class="play-btn" onclick="playSet(${e.id})" title="Play artist set on Spotify">▶ Play Set</button>
+            <button class="play-btn" onclick="playSet(${e.id})" title="Preview artists on Spotify">▶ Play Set</button>
             <button class="fav-btn ${isFav?'active':''}" onclick="toggleFav(${e.id})" title="${isFav?'Remove from':'Add to'} favourites">${isFav?'♥':'♡'}</button>
           </div>
+          <div id="embed-${e.id}" class="spotify-embed-container" style="display:none;margin-top:10px;"></div>
         </div>
         ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div><div style="font-size:10px;letter-spacing:-1px;color:var(--green)">${stars}</div></div>`
              :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
