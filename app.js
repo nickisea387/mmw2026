@@ -97,13 +97,27 @@ async function loadAndAnalyze(){
       fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50',{headers}),
       fetch('https://api.spotify.com/v1/me',{headers}),
     ]);
+    // Check if any response failed (e.g. token expired / scope mismatch)
+    if(!r1.ok||!r4.ok){
+      clearTokens();
+      showNotice('Spotify session expired — please reconnect.','warn');
+      document.getElementById('connectBtn').style.display='flex';
+      document.getElementById('authDesc').style.display='block';
+      showAllEvents();return;
+    }
     const [topArtists,topTracks,recent,profile]=await Promise.all([r1.json(),r2.json(),r3.json(),r4.json()]);
     document.getElementById('connectBtn').style.display='none';document.getElementById('authDesc').style.display='none';
-    const displayName=profile.display_name||profile.id;
+    const displayName=profile.display_name||profile.id||'User';
     document.getElementById('spotifyName').textContent=displayName;document.getElementById('connectedBadge').classList.add('visible');
     localStorage.setItem('sp_name',displayName);
-    await runAI({topArtists,topTracks,recent});
-  }catch(err){showNotice(`Spotify error: ${err.message}`,'err');showAllEvents();}
+    await runAI({topArtists:topArtists||{},topTracks:topTracks||{},recent:recent||{}});
+  }catch(err){
+    console.error(err);
+    clearTokens();
+    showNotice('Spotify connection failed — please reconnect.','warn');
+    document.getElementById('connectBtn').style.display='flex';
+    document.getElementById('authDesc').style.display='block';
+    showAllEvents();
 }
 
 async function runAI({topArtists,topTracks,recent}){
