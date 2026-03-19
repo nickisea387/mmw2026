@@ -2,8 +2,8 @@ name: Refresh MMW Event Data
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Every 2 hours
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:  # Manual trigger button
 
 permissions:
   contents: write
@@ -18,13 +18,23 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Refresh artist images from Deezer
-        run: |
-          python3 scripts/refresh_images.py
+      - name: Create data directory
+        run: mkdir -p data
 
-      - name: Check for updates
-        run: |
-          python3 scripts/check_updates.py
+      - name: Refresh artist images from Deezer
+        run: python3 scripts/refresh_images.py
+        continue-on-error: true
+
+      - name: Scrape Reddit signals
+        run: python3 scripts/scrape_reddit.py
+        continue-on-error: true
+
+      - name: Scrape ticket availability
+        run: python3 scripts/scrape_tickets.py
+        continue-on-error: true
+
+      - name: Calculate trending scores
+        run: python3 scripts/check_updates.py
 
       - name: Commit and push if changed
         run: |
