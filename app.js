@@ -7,6 +7,8 @@ let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
 let showFavsOnly=false;
+// Clear old iTunes cache — switching to Deezer
+if(localStorage.getItem('artist_img_src')!=='deezer'){localStorage.removeItem('artist_img_cache');localStorage.setItem('artist_img_src','deezer');}
 const artistImageCache=JSON.parse(localStorage.getItem('artist_img_cache')||'{}');
 let hpCharImages={};
 
@@ -209,14 +211,13 @@ function getHeadliner(e){return e.artists.split(/,/)[0].replace(/\s*b2b\s+.*/i,'
 async function fetchArtistImage(name){
   if(artistImageCache[name]) return artistImageCache[name];
   try{
-    // Use iTunes Search API with JSONP-style fetch
-    const r=await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(name)}&entity=musicArtist&limit=1`);
+    const r=await fetch(`https://api.deezer.com/search/artist?q=${encodeURIComponent(name)}&limit=1`);
     if(!r.ok) return '';
     const d=await r.json();
-    const url=d.results?.[0]?.artworkUrl100?.replace('100x100','600x600')||'';
+    const url=d.data?.[0]?.picture_big||d.data?.[0]?.picture_medium||'';
     if(url){artistImageCache[name]=url;try{localStorage.setItem('artist_img_cache',JSON.stringify(artistImageCache));}catch(e){}}
     return url;
-  }catch(e){console.log('iTunes fetch failed for',name,e);return '';}
+  }catch(e){return '';}
 }
 
 function loadArtistImages(){
@@ -377,8 +378,8 @@ function renderEvents(){
     (e.mentions>=minMentions)&&
     (!showFavsOnly||favourites.includes(e.id));
   const sortFn=(a,b)=>{
-    if(sortMode==='match') return (eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.hype-a.hype;
-    if(sortMode==='day') return dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day)||b.hype-a.hype;
+    if(sortMode==='match') return (eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.mentions-a.mentions;
+    if(sortMode==='day') return dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day)||(a.time<b.time?-1:1);
     if(sortMode==='buzz') return b.mentions-a.mentions||b.hype-a.hype;
     return 0;
   };
