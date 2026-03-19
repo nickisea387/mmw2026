@@ -3,17 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MMW 2026 × Your Taste</title>
+<title>MMW 2026</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
-  :root {
-    --bg:#0a0a0a;--surface:#111111;--surface2:#1a1a1a;--border:#2a2a2a;
-    --green:#1DB954;--green-dim:rgba(29,185,84,0.15);--green-glow:rgba(29,185,84,0.3);
-    --amber:#F5A623;--amber-dim:rgba(245,166,35,0.12);--pink:#FF6B9D;
-    --text:#f0f0f0;--muted:#888;--muted2:#555;
-  }
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
+  :root{--bg:#0a0a0a;--surface:#111;--surface2:#1a1a1a;--border:#2a2a2a;--green:#1DB954;--green-dim:rgba(29,185,84,0.15);--green-glow:rgba(29,185,84,0.3);--amber:#F5A623;--amber-dim:rgba(245,166,35,0.12);--pink:#FF6B9D;--text:#f0f0f0;--muted:#888;--muted2:#555;}
   *{box-sizing:border-box;margin:0;padding:0;}
   body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh;overflow-x:hidden;}
   body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:0.4;}
@@ -24,29 +19,33 @@
   h1 em{font-style:italic;color:var(--green);}
   .subtitle{margin-top:12px;font-size:12px;color:var(--muted);letter-spacing:0.5px;}
   .main{display:grid;grid-template-columns:340px 1fr;min-height:calc(100vh - 140px);}
-  .left-panel{border-right:1px solid var(--border);padding:32px 28px;display:flex;flex-direction:column;gap:32px;}
-  .section-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;}
+  .left-panel{border-right:1px solid var(--border);padding:32px 28px;display:flex;flex-direction:column;gap:28px;overflow-y:auto;max-height:calc(100vh - 140px);position:sticky;top:0;}
+  .section-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;}
   .section-label::after{content:'';flex:1;height:1px;background:var(--border);}
   .auth-block{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:24px;}
   .auth-block p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:20px;}
-  .spotify-btn{display:flex;align-items:center;gap:10px;background:var(--green);color:#000;border:none;border-radius:3px;padding:12px 20px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.5px;cursor:pointer;width:100%;justify-content:center;transition:all 0.2s;}
+  .spotify-btn{display:flex;align-items:center;gap:10px;background:var(--green);color:#000;border:none;border-radius:3px;padding:12px 20px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer;width:100%;justify-content:center;transition:all 0.2s;}
   .spotify-btn:hover{background:#1ed760;transform:translateY(-1px);box-shadow:0 4px 20px var(--green-glow);}
-  .connected-badge{display:none;align-items:center;gap:10px;padding:12px 16px;background:var(--green-dim);border:1px solid rgba(29,185,84,0.3);border-radius:3px;font-size:11px;color:var(--green);letter-spacing:0.5px;}
+  .connected-badge{display:none;align-items:center;gap:10px;padding:12px 16px;background:var(--green-dim);border:1px solid rgba(29,185,84,0.3);border-radius:3px;font-size:11px;color:var(--green);}
   .connected-badge.visible{display:flex;}
   .connected-badge .name{color:white;font-weight:600;}
   .disconnect-btn{margin-left:auto;background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:16px;line-height:1;padding:0 4px;}
   .disconnect-btn:hover{color:var(--pink);}
-  .genre-grid{display:flex;flex-wrap:wrap;gap:8px;}
-  .genre-chip{font-size:10px;letter-spacing:0.5px;text-transform:uppercase;padding:6px 12px;border-radius:2px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;transition:all 0.15s;}
+  .genre-grid{display:flex;flex-wrap:wrap;gap:6px;}
+  .genre-chip{font-size:9px;letter-spacing:0.5px;text-transform:uppercase;padding:5px 10px;border-radius:2px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;transition:all 0.15s;}
   .genre-chip.active{border-color:var(--green);color:var(--green);background:var(--green-dim);}
   .genre-chip:hover:not(.active){border-color:var(--muted2);color:var(--text);}
-  .day-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
-  .day-btn{font-family:'Inter',sans-serif;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;padding:8px 4px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;text-align:center;}
+  .day-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;}
+  .day-btn{font-family:'Inter',sans-serif;font-size:9px;font-weight:500;text-transform:uppercase;padding:7px 3px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;text-align:center;}
   .day-btn.active{border-color:var(--amber);color:var(--amber);background:var(--amber-dim);}
   .day-btn:hover:not(.active){border-color:var(--muted2);color:var(--text);}
-  .legend{font-size:11px;display:flex;flex-direction:column;gap:8px;}
-  .legend-item{display:flex;align-items:center;gap:10px;color:var(--muted);}
-  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+  .mentions-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;}
+  .mentions-btn{font-family:'Inter',sans-serif;font-size:9px;font-weight:500;padding:7px 3px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;text-align:center;}
+  .mentions-btn.active{border-color:var(--pink);color:var(--pink);background:rgba(255,107,157,0.08);}
+  .mentions-btn:hover:not(.active){border-color:var(--muted2);color:var(--text);}
+  .legend{font-size:10px;display:flex;flex-direction:column;gap:6px;}
+  .legend-item{display:flex;align-items:center;gap:8px;color:var(--muted);}
+  .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
   .dot.high{background:var(--green);box-shadow:0 0 6px var(--green);}
   .dot.med{background:var(--amber);}
   .dot.low{background:var(--muted2);}
@@ -55,62 +54,76 @@
   .notice.visible{display:block;}
   .notice.warn{background:var(--amber-dim);border:1px solid rgba(245,166,35,0.3);color:var(--amber);}
   .notice.err{background:rgba(255,107,157,0.08);border:1px solid rgba(255,107,157,0.4);color:var(--pink);}
-  .ai-banner{background:linear-gradient(135deg,rgba(29,185,84,0.1),rgba(29,185,84,0.03));border:1px solid rgba(29,185,84,0.25);border-radius:4px;padding:16px 20px;margin-bottom:28px;font-size:13px;color:var(--green);line-height:1.6;display:none;}
+  .ai-banner{background:linear-gradient(135deg,rgba(29,185,84,0.1),rgba(29,185,84,0.03));border:1px solid rgba(29,185,84,0.25);border-radius:4px;padding:16px 20px;margin-bottom:20px;font-size:13px;color:var(--green);line-height:1.6;display:none;}
   .ai-banner.visible{display:block;}
   .ai-banner strong{color:white;}
+  .search-bar{margin-bottom:20px;}
+  .search-wrap{position:relative;}
+  .search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted2);font-size:14px;pointer-events:none;}
+  .search-input{width:100%;padding:10px 16px 10px 36px;background:var(--surface);border:1px solid var(--border);border-radius:3px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;transition:border-color 0.2s;}
+  .search-input:focus{border-color:var(--green);}
+  .search-input::placeholder{color:var(--muted2);}
   .events-grid{display:flex;flex-direction:column;gap:12px;}
-  .event-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:20px 24px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;transition:all 0.2s;position:relative;overflow:hidden;}
-  .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--border);transition:all 0.2s;}
+  .event-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all 0.2s;position:relative;}
+  .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--border);transition:all 0.2s;z-index:1;}
   .event-card.match-high::before{background:var(--green);}
   .event-card.match-med::before{background:var(--amber);}
-  .event-card:hover{border-color:var(--muted2);background:var(--surface2);transform:translateX(2px);}
-  .event-card.match-high:hover{border-color:rgba(29,185,84,0.4);}
-  .event-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:white;margin-bottom:4px;line-height:1.2;}
-  .event-meta{font-size:12px;color:var(--muted);letter-spacing:0.3px;margin-bottom:10px;}
-  .event-meta span{margin-right:14px;}
+  .event-card:hover{border-color:var(--muted2);transform:translateX(2px);}
+  .event-card-img{height:100px;background-size:cover;background-position:center;position:relative;}
+  .event-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,var(--surface) 100%);}
+  .event-card-body{padding:16px 20px 16px 20px;}
+  .event-card-top{display:flex;gap:16px;align-items:start;}
+  .event-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:white;margin-bottom:4px;line-height:1.2;}
+  .event-link{color:white;text-decoration:none;transition:color 0.15s;}
+  .event-link:hover{color:var(--green);}
+  .event-meta{font-size:11px;color:var(--muted);letter-spacing:0.3px;margin-bottom:8px;}
+  .event-meta span{margin-right:12px;}
   .event-meta .venue{color:var(--amber);}
   .artists{font-size:12px;color:#bbb;line-height:1.7;}
-  .match-badge{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0;min-width:80px;}
+  .artists a{color:#bbb;text-decoration:none;border-bottom:1px dotted var(--muted2);transition:all 0.15s;}
+  .artists a:hover{color:var(--green);border-color:var(--green);}
+  .event-summary{margin-top:6px;font-size:12px;color:var(--muted);line-height:1.6;}
+  .event-actions{display:flex;align-items:center;gap:10px;margin-top:8px;flex-wrap:wrap;}
+  .match-badge{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;min-width:70px;}
   .match-score{font-size:28px;font-weight:600;line-height:1;}
   .event-card.match-high .match-score{color:var(--green);}
   .event-card.match-med .match-score{color:var(--amber);}
   .event-card.match-low .match-score{color:var(--muted2);}
-  .match-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-family:'DM Mono',monospace;}
-  .match-reason{font-size:10px;color:var(--green);text-align:right;line-height:1.5;max-width:140px;}
+  .match-label{font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-family:'DM Mono',monospace;}
+  .match-reason{font-size:9px;color:var(--green);text-align:right;line-height:1.4;max-width:120px;}
   .event-card.match-med .match-reason{color:var(--amber);}
   .event-card.match-low .match-reason{color:var(--muted);}
-  .loading-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 40px;gap:20px;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-align:center;}
-  .pulse-ring{width:48px;height:48px;border-radius:50%;border:2px solid var(--green);animation:pulse 1.5s ease-out infinite;}
-  @keyframes pulse{0%{opacity:1;transform:scale(0.8);}100%{opacity:0;transform:scale(1.5);}}
-  .empty-state{text-align:center;padding:60px 40px;color:var(--muted);}
-  .empty-state .big{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:var(--surface2);margin-bottom:16px;}
-  .submit-btn{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;background:transparent;border:1px solid var(--green);color:var(--green);padding:10px 20px;border-radius:3px;cursor:pointer;letter-spacing:0.5px;transition:all 0.2s;}
-  .submit-btn:hover{background:var(--green);color:#000;}
-  .tag{display:inline-block;padding:2px 8px;border-radius:2px;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;margin-left:8px;vertical-align:middle;font-family:'DM Mono',monospace;}
+  .mentions-badge{font-size:10px;color:var(--muted);}
+  .mentions-badge.hot{color:#ff6b6b;}
+  .mentions-badge.warm{color:var(--amber);}
+  .play-btn{background:transparent;border:1px solid var(--green);color:var(--green);font-family:'Inter',sans-serif;font-size:10px;font-weight:500;padding:4px 10px;border-radius:2px;cursor:pointer;transition:all 0.15s;}
+  .play-btn:hover{background:var(--green);color:#000;}
+  .fav-btn{background:transparent;border:none;font-size:18px;cursor:pointer;color:var(--muted);transition:all 0.15s;padding:0 4px;}
+  .fav-btn.active{color:var(--pink);}
+  .fav-btn:hover{color:var(--pink);}
+  .fav-filter-btn{background:transparent;border:1px solid var(--border);color:var(--muted);font-family:'Inter',sans-serif;font-size:10px;padding:3px 8px;border-radius:2px;cursor:pointer;margin-left:10px;transition:all 0.15s;}
+  .fav-filter-btn.active{border-color:var(--pink);color:var(--pink);background:rgba(255,107,157,0.08);}
+  .results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;}
+  .results-count{font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;font-family:'DM Mono',monospace;display:flex;align-items:center;}
+  .sort-btns,.view-toggle{display:flex;gap:5px;}
+  .sort-btn,.view-btn{font-family:'Inter',sans-serif;font-size:9px;font-weight:500;text-transform:uppercase;padding:5px 10px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;}
+  .sort-btn.active{border-color:var(--muted2);color:var(--text);}
+  .view-btn.active{border-color:var(--green);color:var(--green);background:var(--green-dim);}
+  .search-divider{padding:16px 0 8px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-family:'DM Mono',monospace;border-top:1px dashed var(--border);margin-top:16px;}
+  .tag{display:inline-block;padding:2px 7px;border-radius:2px;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;margin-left:8px;vertical-align:middle;font-family:'DM Mono',monospace;}
   .tag.pool{background:rgba(100,200,255,0.15);color:#64c8ff;}
   .tag.club{background:rgba(180,100,255,0.15);color:#b464ff;}
   .tag.warehouse{background:rgba(255,100,100,0.15);color:#ff6464;}
   .tag.cruise{background:rgba(255,200,80,0.15);color:#ffc850;}
   .tag.openair{background:rgba(100,255,150,0.15);color:#64ff96;}
   .tag.festival{background:rgba(255,100,200,0.15);color:#ff64c8;}
-  .results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;}
-  .results-count{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-family:'DM Mono',monospace;}
-  .sort-btns{display:flex;gap:6px;}
-  .sort-btn{font-family:'Inter',sans-serif;font-size:9px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;padding:5px 10px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;}
-  .sort-btn.active{border-color:var(--muted2);color:var(--text);}
-  .mentions-badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;color:var(--muted);margin-top:6px;}
-  .mentions-badge .flame{font-style:normal;font-size:10px;}
-  .mentions-badge.hot{color:#ff6b6b;}
-  .mentions-badge.warm{color:var(--amber);}
-  .mentions-slider{display:flex;flex-direction:column;gap:12px;}
-  .mentions-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
-  .mentions-btn{font-family:'Inter',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.5px;padding:8px 4px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;text-align:center;}
-  .mentions-btn.active{border-color:var(--pink);color:var(--pink);background:rgba(255,107,157,0.08);}
-  .mentions-btn:hover:not(.active){border-color:var(--muted2);color:var(--text);}
-  .event-summary{margin-top:8px;font-size:12px;color:var(--muted);line-height:1.7;}
-  .view-toggle{display:flex;gap:6px;}
-  .view-btn{font-family:'Inter',sans-serif;font-size:9px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;padding:5px 10px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s;}
-  .view-btn.active{border-color:var(--green);color:var(--green);background:var(--green-dim);}
+  .loading-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 40px;gap:20px;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-align:center;}
+  .pulse-ring{width:48px;height:48px;border-radius:50%;border:2px solid var(--green);animation:pulse 1.5s ease-out infinite;}
+  @keyframes pulse{0%{opacity:1;transform:scale(0.8);}100%{opacity:0;transform:scale(1.5);}}
+  .empty-state{text-align:center;padding:60px 40px;color:var(--muted);}
+  .empty-state .big{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:var(--surface2);margin-bottom:16px;}
+  .submit-btn{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;background:transparent;border:1px solid var(--green);color:var(--green);padding:10px 20px;border-radius:3px;cursor:pointer;transition:all 0.2s;}
+  .submit-btn:hover{background:var(--green);color:#000;}
   #mapContainer{width:100%;height:600px;border-radius:4px;border:1px solid var(--border);display:none;margin-bottom:20px;}
   #mapContainer.visible{display:block;}
   .map-legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;font-size:11px;}
@@ -119,21 +132,15 @@
   .leaflet-popup-content-wrapper{background:var(--surface)!important;color:var(--text)!important;border:1px solid var(--border)!important;border-radius:4px!important;font-family:'Inter',sans-serif!important;}
   .leaflet-popup-tip{background:var(--surface)!important;}
   .leaflet-popup-content{font-size:12px!important;line-height:1.6!important;margin:12px 16px!important;}
-  .leaflet-popup-content .popup-venue{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;margin-bottom:8px;}
-  .leaflet-popup-content .popup-event{padding:6px 0;border-bottom:1px solid var(--border);}
-  .leaflet-popup-content .popup-event:last-child{border-bottom:none;}
-  .leaflet-popup-content .popup-event-name{font-weight:600;color:var(--text);font-size:12px;}
-  .leaflet-popup-content .popup-event-meta{font-size:11px;color:var(--muted);}
+  .popup-venue{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;margin-bottom:8px;}
+  .popup-event{padding:6px 0;border-bottom:1px solid var(--border);}
+  .popup-event:last-child{border-bottom:none;}
+  .popup-event-name{font-weight:600;color:var(--text);font-size:12px;}
+  .popup-event-meta{font-size:11px;color:var(--muted);}
   .leaflet-popup-close-button{color:var(--muted)!important;}
-  .artists a{color:#bbb;text-decoration:none;border-bottom:1px dotted var(--muted2);transition:all 0.15s;}
-  .artists a:hover{color:var(--green);border-color:var(--green);}
-  .search-bar{width:100%;margin-bottom:20px;}
-  .search-input{width:100%;padding:10px 16px 10px 36px;background:var(--surface);border:1px solid var(--border);border-radius:3px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;transition:border-color 0.2s;}
-  .search-input:focus{border-color:var(--green);}
-  .search-input::placeholder{color:var(--muted2);}
-  .search-wrap{position:relative;}
-  .search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted2);font-size:14px;pointer-events:none;}
-  .search-divider{padding:16px 0 8px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-family:'DM Mono',monospace;border-top:1px dashed var(--border);margin-top:16px;}
+  .popup-event a{color:#bbb;text-decoration:none;border-bottom:1px dotted var(--muted2);}
+  .popup-event a:hover{color:var(--green);}
+  /* HP Modal */
   .hp-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10000;display:none;align-items:center;justify-content:center;animation:fadeIn 0.3s ease;}
   .hp-modal-overlay.visible{display:flex;}
   @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -148,14 +155,23 @@
   .hp-modal .hp-emoji{font-size:64px;margin-bottom:16px;display:block;}
   .hp-modal .hp-dismiss{margin-top:24px;padding:10px 28px;background:transparent;border:1px solid var(--green);color:var(--green);border-radius:3px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.2s;}
   .hp-modal .hp-dismiss:hover{background:var(--green);color:#000;}
-  @media(max-width:900px){.main{grid-template-columns:1fr;}.left-panel{border-right:none;border-bottom:1px solid var(--border);}.header::after{display:none;}}
+  /* Player Modal */
+  .player-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10001;display:none;align-items:center;justify-content:center;}
+  .player-overlay.visible{display:flex;}
+  .player-modal{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:32px;max-width:560px;width:90%;max-height:80vh;overflow-y:auto;position:relative;}
+  .player-modal .hp-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;}
+  .player-modal .hp-close:hover{color:white;}
+  .player-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:white;margin-bottom:20px;}
+  .player-artist{margin-bottom:16px;}
+  .player-artist-name{font-size:13px;font-weight:600;color:var(--green);margin-bottom:6px;}
+  @media(max-width:900px){.main{grid-template-columns:1fr;}.left-panel{border-right:none;border-bottom:1px solid var(--border);max-height:none;position:static;}.header::after{display:none;}}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="eyebrow">▸ Miami Music Week × Spotify Intelligence</div>
-  <h1>Find your <em>perfect</em><br>MMW parties</h1>
+  <div class="eyebrow">▸ Miami Music Week Planning</div>
+  <h1>MMW <em>2026</em></h1>
   <p class="subtitle">Connect Spotify → AI-matched recommendations across 90 curated events · March 24–29, 2026</p>
 </div>
 
@@ -164,7 +180,7 @@
     <div>
       <div class="section-label">01 / Spotify Connect</div>
       <div class="auth-block">
-        <p id="authDesc">Connect your Spotify so Claude can read your top artists and genres to match you to the right MMW events.</p>
+        <p id="authDesc">Connect your Spotify so we can match your listening history to the right MMW events.</p>
         <div class="connected-badge" id="connectedBadge">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
           Connected: <span class="name" id="spotifyName"></span>
@@ -176,7 +192,6 @@
         </button>
       </div>
     </div>
-
     <div>
       <div class="section-label">02 / Genre Focus</div>
       <div class="genre-grid">
@@ -194,11 +209,10 @@
         <button class="genre-chip" data-genre="hiphop" onclick="toggleGenre(this)">Hip-Hop</button>
       </div>
     </div>
-
     <div>
       <div class="section-label">03 / Day</div>
       <div class="day-btns">
-        <button class="day-btn active" data-day="all" onclick="toggleDay(this)">All Week</button>
+        <button class="day-btn active" data-day="all" onclick="toggleDay(this)">All</button>
         <button class="day-btn" data-day="tue" onclick="toggleDay(this)">Tue 24</button>
         <button class="day-btn" data-day="wed" onclick="toggleDay(this)">Wed 25</button>
         <button class="day-btn" data-day="thu" onclick="toggleDay(this)">Thu 26</button>
@@ -207,22 +221,16 @@
         <button class="day-btn" data-day="sun" onclick="toggleDay(this)">Sun 29</button>
       </div>
     </div>
-
     <div>
       <div class="section-label">04 / Buzz Level</div>
-      <div class="mentions-slider">
-        <div class="mentions-btns">
-          <button class="mentions-btn active" data-mentions="0" onclick="toggleMentions(this)">All</button>
-          <button class="mentions-btn" data-mentions="2" onclick="toggleMentions(this)">2+</button>
-          <button class="mentions-btn" data-mentions="3" onclick="toggleMentions(this)">3+</button>
-          <button class="mentions-btn" data-mentions="4" onclick="toggleMentions(this)">4+</button>
-          <button class="mentions-btn" data-mentions="5" onclick="toggleMentions(this)">5+</button>
-          <button class="mentions-btn" data-mentions="6" onclick="toggleMentions(this)">Most Hyped</button>
-        </div>
-        <div style="font-size:10px;color:var(--muted);line-height:1.5;">Filter by how many editorial sources featured this event.</div>
+      <div class="mentions-btns">
+        <button class="mentions-btn active" data-mentions="0" onclick="toggleMentions(this)">All</button>
+        <button class="mentions-btn" data-mentions="3" onclick="toggleMentions(this)">3+</button>
+        <button class="mentions-btn" data-mentions="4" onclick="toggleMentions(this)">4+</button>
+        <button class="mentions-btn" data-mentions="5" onclick="toggleMentions(this)">5+</button>
+        <button class="mentions-btn" data-mentions="6" onclick="toggleMentions(this)">Most Hyped</button>
       </div>
     </div>
-
     <div>
       <div class="section-label">05 / Match Key</div>
       <div class="legend">
@@ -246,7 +254,7 @@
       <div class="empty-state">
         <div class="big">→</div>
         <div style="font-size:14px;margin-bottom:8px;color:var(--text)">Connect Spotify to get personalized picks</div>
-        <div style="font-size:12px;color:var(--muted);line-height:1.7">Claude will analyze your listening history<br>and rank all MMW events by match score</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.7">We'll analyze your listening history<br>and rank all MMW events by match score</div>
         <br><br>
         <button class="submit-btn" onclick="showAllEvents()">Browse All Events →</button>
       </div>
@@ -254,6 +262,7 @@
   </div>
 </div>
 
+<!-- HP Character Modal -->
 <div class="hp-modal-overlay" id="hpModal">
   <div class="hp-modal">
     <button class="hp-close" onclick="closeHPModal()">×</button>
@@ -266,673 +275,15 @@
   </div>
 </div>
 
-<script>
-const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
-const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
-const SCOPES = 'user-top-read user-read-recently-played user-read-private';
+<!-- Spotify Player Modal -->
+<div class="player-overlay" id="playerModal">
+  <div class="player-modal">
+    <button class="hp-close" onclick="closePlayer()">×</button>
+    <div id="playerContent"></div>
+  </div>
+</div>
 
-// ── VENUE COORDINATES & NEIGHBORHOODS ────────────────────────────────────────
-const HOOD_COLORS = {
-  'South Beach':   '#FF6B9D',
-  'Downtown':      '#64c8ff',
-  'Wynwood':       '#1DB954',
-  'Hialeah':       '#F5A623',
-  'Mid-Beach':     '#b464ff',
-  'Islands':       '#00CED1',
-  'Little River':  '#ff6464',
-};
-
-const VENUE_DATA = {
-  "Club Space":              {lat:25.7858,lng:-80.1912,hood:'Downtown'},
-  "E11EVEN Miami":           {lat:25.7852,lng:-80.1918,hood:'Downtown'},
-  "Kimpton EPIC Hotel":      {lat:25.7685,lng:-80.1875,hood:'Downtown'},
-  "Kimpton EPIC Hotel Pool": {lat:25.7686,lng:-80.1876,hood:'Downtown'},
-  "James L. Knight Center":  {lat:25.7648,lng:-80.1922,hood:'Downtown'},
-  "M2":                      {lat:25.7862,lng:-80.1905,hood:'Downtown'},
-  "M2 Miami":                {lat:25.7862,lng:-80.1905,hood:'Downtown'},
-  "Space Miami":             {lat:25.7858,lng:-80.1912,hood:'Downtown'},
-  "Sagamore Hotel":          {lat:25.7938,lng:-80.1301,hood:'South Beach'},
-  "Surfcomber Hotel":        {lat:25.7908,lng:-80.1296,hood:'South Beach'},
-  "National Hotel":          {lat:25.7868,lng:-80.1308,hood:'South Beach'},
-  "Nikki Beach":             {lat:25.7688,lng:-80.1318,hood:'South Beach'},
-  "Moxy South Beach":        {lat:25.7835,lng:-80.1312,hood:'South Beach'},
-  "Clevelander":             {lat:25.7808,lng:-80.1305,hood:'South Beach'},
-  "Sable Miami":             {lat:25.7965,lng:-80.1965,hood:'Wynwood'},
-  "LIV Nightclub":           {lat:25.8128,lng:-80.1228,hood:'Mid-Beach'},
-  "Fontainebleau":           {lat:25.8128,lng:-80.1228,hood:'Mid-Beach'},
-  "UVA Wynwood":             {lat:25.8008,lng:-80.1988,hood:'Wynwood'},
-  "MANA Wynwood":            {lat:25.7988,lng:-80.1998,hood:'Wynwood'},
-  "MAD Club Wynwood":        {lat:25.8012,lng:-80.1992,hood:'Wynwood'},
-  "Wynwood Marketplace":     {lat:25.8022,lng:-80.1982,hood:'Wynwood'},
-  "ZeyZey":                  {lat:25.7992,lng:-80.1978,hood:'Wynwood'},
-  "1-800-LUCKY":             {lat:25.8018,lng:-80.1990,hood:'Wynwood'},
-  "Toe Jam XL":              {lat:25.7982,lng:-80.1972,hood:'Wynwood'},
-  "Toe Jam Backlot":         {lat:25.7984,lng:-80.1974,hood:'Wynwood'},
-  "Floyd":                   {lat:25.7998,lng:-80.1982,hood:'Wynwood'},
-  "Jolene Sound Room":       {lat:25.7978,lng:-80.1988,hood:'Wynwood'},
-  "Coyo Taco":               {lat:25.8008,lng:-80.1995,hood:'Wynwood'},
-  "MAD LIVE":                {lat:25.8018,lng:-80.1998,hood:'Wynwood'},
-  "MIDLINE Miami":           {lat:25.7955,lng:-80.1965,hood:'Wynwood'},
-  "Mazuma":                  {lat:25.7948,lng:-80.1955,hood:'Wynwood'},
-  "CLUTCH":                  {lat:25.7942,lng:-80.1948,hood:'Wynwood'},
-  "Mode":                    {lat:25.7962,lng:-80.1958,hood:'Wynwood'},
-  "MODE":                    {lat:25.7962,lng:-80.1958,hood:'Wynwood'},
-  "DUA Miami":               {lat:25.7958,lng:-80.1972,hood:'Wynwood'},
-  "RC Cola Plant":           {lat:25.8105,lng:-80.2008,hood:'Wynwood'},
-  "Factory Town":            {lat:25.8632,lng:-80.2822,hood:'Hialeah'},
-  "Factory Town (Infinity Room)":{lat:25.8634,lng:-80.2824,hood:'Hialeah'},
-  "Hialeah Park Casino":     {lat:25.8552,lng:-80.2782,hood:'Hialeah'},
-  "Jungle Island":           {lat:25.7872,lng:-80.1738,hood:'Islands'},
-  "Watson Island Park":      {lat:25.7868,lng:-80.1732,hood:'Islands'},
-  "Yacht / Miami":           {lat:25.7748,lng:-80.1808,hood:'Islands'},
-  "Luxury Yacht":            {lat:25.7752,lng:-80.1812,hood:'Islands'},
-  "Hyatt Regency Dock":      {lat:25.7668,lng:-80.1858,hood:'Downtown'},
-  "Dinner Key Marina":       {lat:25.7272,lng:-80.2378,hood:'Downtown'},
-  "Fooqs Miami (Lion's Den)":{lat:25.8202,lng:-80.1952,hood:'Little River'},
-  "The Triangle at Little River":{lat:25.8322,lng:-80.1892,hood:'Little River'},
-  "Little River Studios":    {lat:25.8312,lng:-80.1888,hood:'Little River'},
-  "The Ground":              {lat:25.7856,lng:-80.1914,hood:'Downtown'},
-  "Joia Beach":              {lat:25.7878,lng:-80.1728,hood:'Islands'},
-  "Electric Lady":           {lat:25.7972,lng:-80.1962,hood:'Wynwood'},
-  "NEGRONI":                 {lat:25.7968,lng:-80.1955,hood:'Wynwood'},
-  "Astra Rooftop Garden":    {lat:25.7948,lng:-80.1968,hood:'Wynwood'},
-  "Mad Radio":               {lat:25.8015,lng:-80.1990,hood:'Wynwood'},
-  "MITA":                    {lat:25.7960,lng:-80.1950,hood:'Wynwood'},
-  "Domicile":                {lat:25.7962,lng:-80.1982,hood:'Wynwood'},
-  "Selva":                   {lat:25.7970,lng:-80.1975,hood:'Wynwood'},
-  "Limonada":                {lat:25.7985,lng:-80.1968,hood:'Wynwood'},
-  "Tipsy Flamingo Cocktail Bar":{lat:25.7815,lng:-80.1302,hood:'South Beach'},
-  "Bacon Bitch":             {lat:25.7812,lng:-80.1308,hood:'South Beach'},
-  "Cucu's Nest Bar":         {lat:25.7975,lng:-80.1960,hood:'Wynwood'},
-  "TBA":                     {lat:25.7900,lng:-80.1950,hood:'Wynwood'},
-  "Surfcomber":              {lat:25.7908,lng:-80.1296,hood:'South Beach'},
-};
-
-const EVENTS = [
-  // ── TUESDAY MARCH 24 ──────────────────────────────────────────────────────
-  {id:1,day:'tue',dayLabel:'Tue Mar 24',name:"Experts Only: Club Space Takeover",venue:"Club Space",type:'club',time:"11pm–8pm (21hrs)",artists:"John Summit, ANNA, DJ Tennis, Hot Since 82, Layton Giordani, SG Lewis, AYYBO, Max Styler, Marte",genre:['techhouse','deephouse'],matchKeywords:['john summit','tech house','anna','dj tennis','hot since 82','layton giordani','sg lewis'],summary:"Marathon 21-hour full venue takeover. All 3 rooms under John Summit's Experts Only banner.",hype:5,mentions:7},
-  {id:2,day:'tue',dayLabel:'Tue Mar 24',name:"Beatport × Mood Child Pool Party",venue:"Kimpton EPIC Hotel",type:'pool',time:"5–10pm",artists:"DJ Sneak, Jean Pierre, Manda Moor, Ms. Mada, Sirus Hood",genre:['deephouse','techhouse'],matchKeywords:['dj sneak','chicago house','house music','sirus hood'],summary:"Classic house vibes from DJ Sneak poolside at the EPIC.",hype:3,mentions:3},
-  {id:3,day:'tue',dayLabel:'Tue Mar 24',name:"Luuk van Dijk: Get Closer",venue:"Jolene Sound Room",type:'club',time:"10pm–4am",artists:"Luuk van Dijk, Elliot Schooling, Julian Anthony, Laidlaw, Liam Palmer",genre:['techhouse','deephouse'],matchKeywords:['luuk van dijk','tech house'],summary:"Intimate club — one of the week's most refined tech house bookings.",hype:4,mentions:2},
-  {id:4,day:'tue',dayLabel:'Tue Mar 24',name:"STMPD RCRDS Showcase",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"DubVision, Third Party, Matisse & Sadko, Julian Jordan, VisionV, Telykast, Justin Mylo",genre:['progressive','melodic'],matchKeywords:['dubvision','third party','matisse sadko','julian jordan','stmpd'],summary:"Martin Garrix's STMPD RCRDS label showcase poolside. Progressive and melodic house heavyweights.",hype:3,mentions:3},
-  {id:5,day:'tue',dayLabel:'Tue Mar 24',name:"Satoshi Tomiie: NOMAD Talent",venue:"Mode",type:'club',time:"10pm–5am",artists:"Satoshi Tomiie, Melody, Ohm Hourani, Kurilo",genre:['deephouse','minimal'],matchKeywords:['satoshi tomiie','deep house'],summary:"Japanese house legend Satoshi Tomiie headlines an intimate underground showcase.",hype:3,mentions:1},
-
-  // ── WEDNESDAY MARCH 25 ─────────────────────────────────────────────────────
-  {id:6,day:'wed',dayLabel:'Wed Mar 25',name:"20 Years of Rekids (Beatport)",venue:"Kimpton EPIC Hotel Pool",type:'pool',time:"3–10pm",artists:"Danny Tenaglia, Radio Slave b2b DJ Minx, Doc Martin b2b Tal Fussman, Anja Schneider b2b William Kiss",genre:['techhouse','deephouse','minimal'],matchKeywords:['danny tenaglia','radio slave','rekids','anja schneider','doc martin'],summary:"Legendary label Rekids turns 20. Stacked b2b lineup poolside with Danny Tenaglia headlining.",hype:5,mentions:4},
-  {id:7,day:'wed',dayLabel:'Wed Mar 25',name:"Oliver Heldens at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Oliver Heldens, Mister Gray",genre:['techhouse','deephouse'],matchKeywords:['oliver heldens','house','future house'],summary:"E11EVEN's legendary 24hr format with Oliver Heldens headlining.",hype:4,mentions:3},
-  {id:8,day:'wed',dayLabel:'Wed Mar 25',name:"DJ Mag Pool Party: Cloonee",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Cloonee, Ben Sterling, Omar+, Salomé Le Chat, Gio Elia, Obskür",genre:['techhouse'],matchKeywords:['cloonee','ben sterling','tech house','hellbent'],summary:"DJ Mag's flagship pool party. Cloonee is the 2026 cover star headliner.",hype:5,mentions:5},
-  {id:9,day:'wed',dayLabel:'Wed Mar 25',name:"Crystal Waters: I Am House Orchestrated",venue:"James L. Knight Center",type:'club',time:"7–11pm",artists:"Crystal Waters, Barbara Tucker, Byron Stingily, CeCe Peniston, Duane Harden",genre:['disco','deephouse'],matchKeywords:['crystal waters','gospel house','barbara tucker','classic house','cece peniston'],summary:"Rare live orchestrated house with legends — emotional and special.",hype:4,mentions:3},
-  {id:10,day:'wed',dayLabel:'Wed Mar 25',name:"Justice (DJ Set) at Factory Town",venue:"Factory Town (Infinity Room)",type:'warehouse',time:"10pm–7am",artists:"Justice, Chris Avantgarde, Camoufly, Alignment, Cloudy",genre:['techno','progressive'],matchKeywords:['justice','french house','electro','chris avantgarde'],summary:"French icons Justice doing a DJ set in Factory Town's Infinity Room. One of the week's rarest bookings.",hype:5,mentions:5},
-  {id:11,day:'wed',dayLabel:'Wed Mar 25',name:"Converge: Richie Hawtin b2b Dubfire",venue:"Fooqs Miami (Lion's Den)",type:'club',time:"9pm–3am",artists:"Richie Hawtin b2b Dubfire, Magda, Satoshi Tomiie, DJ Nigiri",genre:['techno','minimal'],matchKeywords:['richie hawtin','dubfire','magda','minimal techno','plastikman'],summary:"Richie Hawtin and Dubfire go b2b in a restaurant-turned-club. Magda and Satoshi Tomiie support.",hype:5,mentions:5},
-  {id:12,day:'wed',dayLabel:'Wed Mar 25',name:"Carlita + LP Giobbi",venue:"LIV Nightclub",type:'club',time:"11:30pm–5am",artists:"Carlita, LP Giobbi",genre:['deephouse','melodic'],matchKeywords:['carlita','lp giobbi','melodic house'],summary:"Two of electronic music's rising stars share a bill at LIV.",hype:4,mentions:3},
-  {id:13,day:'wed',dayLabel:'Wed Mar 25',name:"HUGEL's Make The Girls Dance",venue:"Space Miami",type:'club',time:"11pm–8pm",artists:"HUGEL",genre:['techhouse'],matchKeywords:['hugel','tech house','french house'],summary:"HUGEL takes over Space for a marathon session.",hype:3,mentions:2},
-  {id:14,day:'wed',dayLabel:'Wed Mar 25',name:"Two And A Half Cats: Luciano",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"Luciano, Mendoza, MIGUELLE & TONS, Miluhska, Noel",genre:['deephouse','minimal'],matchKeywords:['luciano','cadenza','minimal house'],summary:"Luciano headlines a poolside session at the Surfcomber. Deep minimal vibes.",hype:4,mentions:2},
-  {id:15,day:'wed',dayLabel:'Wed Mar 25',name:"RESISTANCE Miami Music Week",venue:"M2",type:'club',time:"10pm–5am",artists:"999999999, Juliet Fox, Yousuke Yukimatsu",genre:['techno'],matchKeywords:['999999999','juliet fox','hard techno','resistance'],summary:"Opening night of Ultra's RESISTANCE series. Hard techno takeover at M2.",hype:4,mentions:4},
-  {id:16,day:'wed',dayLabel:'Wed Mar 25',name:"Balance Miami: Guy J & Guy Mantzur",venue:"1-800-LUCKY",type:'club',time:"4pm–3am",artists:"Guy J, Guy Mantzur, Ezequiel Arias, Lucas Zárate, Niki Sadeki",genre:['progressive','melodic'],matchKeywords:['guy j','guy mantzur','progressive house','balance'],summary:"Progressive house legends Guy J and Guy Mantzur in an intimate Wynwood setting.",hype:3,mentions:2},
-  {id:17,day:'wed',dayLabel:'Wed Mar 25',name:"Incorrect Music: Cristoph & Friends",venue:"Mode",type:'club',time:"10pm–5am",artists:"Cristoph, Anthony Attalla, Carlo Lio, Dabura, Dillon Nathaniel",genre:['techhouse','progressive'],matchKeywords:['cristoph','carlo lio','anthony attalla','dillon nathaniel'],summary:"Cristoph headlines the Incorrect Music showcase. Quality underground tech house.",hype:3,mentions:2},
-  {id:18,day:'wed',dayLabel:'Wed Mar 25',name:"Coldharbour Night: BT",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"BT, Dave Neven, Mike Efex, Tim Clark, Claudia Pavel, Pavlo Vicci",genre:['trance','progressive'],matchKeywords:['bt','markus schulz','coldharbour','trance'],summary:"Markus Schulz's Coldharbour label showcase with trance legend BT headlining.",hype:3,mentions:2},
-  {id:19,day:'wed',dayLabel:'Wed Mar 25',name:"Tokimonsta: Young Art Records",venue:"ZeyZey",type:'club',time:"8pm–2am",artists:"Tokimonsta",genre:['bass','deephouse'],matchKeywords:['tokimonsta','brainfeeder','experimental'],summary:"Tokimonsta brings her Young Art Records label to ZeyZey for an eclectic showcase.",hype:3,mentions:2},
-  {id:20,day:'wed',dayLabel:'Wed Mar 25',name:"Perreo Del Futuro: Six Sex",venue:"The Ground",type:'club',time:"11pm–5am",artists:"Six Sex",genre:['bass','hiphop'],matchKeywords:['neoperreo','reggaeton','six sex'],summary:"Neoperreo collective blending traditional perreo with bass-heavy club sounds and hyperpop energy.",hype:3,mentions:3},
-
-  // ── THURSDAY MARCH 26 ──────────────────────────────────────────────────────
-  {id:21,day:'thu',dayLabel:'Thu Mar 26',name:"Beatport: Hot Creations × TSZR",venue:"Kimpton EPIC Hotel Pool",type:'pool',time:"3–10pm",artists:"Skream b2b L.P. Rhythm, Sidney Charles b2b Fleur Shore, Elliot Schooling b2b Liam Palmer, Airrica",genre:['techhouse','deephouse'],matchKeywords:['hot creations','jamie jones','skream','sidney charles'],summary:"Jamie Jones' Hot Creations meets TSZR. A lineup you won't find anywhere else.",hype:5,mentions:4},
-  {id:22,day:'thu',dayLabel:'Thu Mar 26',name:"Defected Miami: Loco Dice",venue:"Sagamore Hotel",type:'pool',time:"1–11pm",artists:"Loco Dice, Andrea Oliva, Harry Romero, HoneyLuv, Kellie Allen",genre:['deephouse','disco','techhouse'],matchKeywords:['defected','house music','soulful house','loco dice','harry romero','honeyluv'],summary:"Defected Records' Sagamore takeover. Loco Dice headlines a stacked soulful house bill.",hype:5,mentions:5},
-  {id:23,day:'thu',dayLabel:'Thu Mar 26',name:"Nora En Pure Presents Purified Miami",venue:"Jungle Island",type:'openair',time:"7pm–12am",artists:"Nora En Pure, Eli & Fur, Fideles, Dosem, Corren Cavini, Jack Emery",genre:['melodic','deephouse'],matchKeywords:['nora en pure','eli & fur','fideles','dosem','melodic house','melodic techno','purified'],summary:"Nora En Pure's Purified brand at Jungle Island. Eli & Fur and Fideles are two of the genre's best.",hype:5,mentions:4},
-  {id:24,day:'thu',dayLabel:'Thu Mar 26',name:"Pardon My French",venue:"Toe Jam XL",type:'club',time:"8pm–3am",artists:"DJ Snake b2b A-Trak, Dillon Francis b2b Flosstradamus, TroyBoi, Flowdan, Chuwe",genre:['hiphop','bass'],matchKeywords:['dj snake','a-trak','dillon francis','flosstradamus','troyboi','pardon my french'],summary:"Nostalgia-fueled hip-hop-heavy lineup. DJ Snake b2b A-Trak and Dillon Francis b2b Flosstradamus.",hype:5,mentions:5},
-  {id:25,day:'thu',dayLabel:'Thu Mar 26',name:"MoBlack Records at Toe Jam",venue:"Toe Jam Backlot",type:'club',time:"8pm–3am",artists:"MoBlack, Francis Mercier, Ape Drums b2b Caiiro",genre:['afrohouse','deephouse'],matchKeywords:['moblack','francis mercier','caiiro','afro house','ape drums'],summary:"One of Afro-house's most beloved labels. Deep, rhythm-driven dancing.",hype:4,mentions:3},
-  {id:26,day:'thu',dayLabel:'Thu Mar 26',name:"Gorgon City: Enter the Realm",venue:"Toe Jam Backlot",type:'club',time:"8pm–4am",artists:"Gorgon City, SG Lewis, Azzecca, Jackie Hollander, Silva Bumpa",genre:['deephouse','techhouse'],matchKeywords:['gorgon city','sg lewis','uk house'],summary:"Gorgon City bring their Enter the Realm concept to Miami. SG Lewis supports.",hype:4,mentions:3},
-  {id:27,day:'thu',dayLabel:'Thu Mar 26',name:"deadmau5 at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"deadmau5",genre:['progressive','techno'],matchKeywords:['deadmau5','mau5trap','progressive house'],summary:"deadmau5 takes over E11EVEN for a marathon overnight set.",hype:5,mentions:4},
-  {id:28,day:'thu',dayLabel:'Thu Mar 26',name:"Cloonee Presents Hellbent",venue:"Space Miami",type:'club',time:"11pm–8pm",artists:"Cloonee, CamelPhat, L.P. Rhythm, Adam Ten, Cole Terrazas",genre:['techhouse','minimal'],matchKeywords:['cloonee','camelphat','hellbent','tech house'],summary:"Cloonee's Hellbent label takes over Space with CamelPhat. Marathon format.",hype:5,mentions:4},
-  {id:29,day:'thu',dayLabel:'Thu Mar 26',name:"RESISTANCE: Eric Prydz & Argy",venue:"M2",type:'club',time:"10pm–5am",artists:"Eric Prydz, Argy, Jeremy Olander",genre:['progressive','techno'],matchKeywords:['eric prydz','argy','jeremy olander','resistance','cirez d'],summary:"Eric Prydz and Argy headline RESISTANCE. Jeremy Olander supports.",hype:5,mentions:5},
-  {id:30,day:'thu',dayLabel:'Thu Mar 26',name:"Toolroom Miami Open Air",venue:"Wynwood Marketplace",type:'openair',time:"3pm–12am",artists:"Cassimm, Chus & Ceballos, Crusy, Essel, Hatiras, Mark Knight",genre:['techhouse'],matchKeywords:['toolroom','mark knight','tech house','chus ceballos'],summary:"Mark Knight's Toolroom Records in an open-air Wynwood setting.",hype:4,mentions:3},
-  {id:31,day:'thu',dayLabel:'Thu Mar 26',name:"RAW CUTS: DJ Tennis + Gerd Janson",venue:"Watson Island Park",type:'openair',time:"3–10pm",artists:"DJ Tennis, Gerd Janson, Bakke, Mai Iachetti",genre:['deephouse','minimal'],matchKeywords:['dj tennis','gerd janson','running back'],summary:"DJ Tennis and Gerd Janson outdoors at Watson Island. Tastemaker-level curation.",hype:4,mentions:2},
-  {id:32,day:'thu',dayLabel:'Thu Mar 26',name:"Breakaway Beach: Bob Sinclar",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"Bob Sinclar, Bella Grazia, Dalva, Devault, Linska",genre:['disco','deephouse'],matchKeywords:['bob sinclar','disco house','french house'],summary:"Bob Sinclar brings French disco house vibes poolside at the National Hotel.",hype:3,mentions:2},
-  {id:33,day:'thu',dayLabel:'Thu Mar 26',name:"DEADBEATS 10 Year Anniversary",venue:"MANA Wynwood",type:'warehouse',time:"9pm–5am",artists:"Zeds Dead, Boogie T, Bro Safari, DISTINCT MOTIVE, Aych",genre:['bass'],matchKeywords:['zeds dead','deadbeats','bass music','dubstep'],summary:"Zeds Dead's DEADBEATS label celebrates 10 years. Heavy bass in a warehouse.",hype:4,mentions:3},
-  {id:34,day:'thu',dayLabel:'Thu Mar 26',name:"Cosmic Gate & Friends",venue:"CLUTCH",type:'club',time:"9pm–5am",artists:"Cosmic Gate, Estiva, Pretty Pink, Luccio, Anunnakis",genre:['trance','progressive'],matchKeywords:['cosmic gate','trance','wake your mind'],summary:"Trance legends Cosmic Gate headline with Estiva and Pretty Pink.",hype:3,mentions:2},
-  {id:35,day:'thu',dayLabel:'Thu Mar 26',name:"Infected Mushroom + John 00 Fleming",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"Infected Mushroom, John 00 Fleming",genre:['trance','progressive'],matchKeywords:['infected mushroom','john 00 fleming','psytrance'],summary:"Psytrance meets progressive in a dark club setting. Cult followings collide.",hype:3,mentions:2},
-  {id:36,day:'thu',dayLabel:'Thu Mar 26',name:"AUDIEN: Progressive House Never Dies",venue:"MIDLINE Miami",type:'club',time:"10pm–5am",artists:"Audien, Justin Mylo, Lucas & Steve, Mike Williams, Luke Alexander",genre:['progressive'],matchKeywords:['audien','progressive house','lucas steve'],summary:"Audien makes the case for progressive house. Anthemic, uplifting, euphoric.",hype:3,mentions:2},
-  {id:37,day:'thu',dayLabel:'Thu Mar 26',name:"4B & Friends",venue:"UVA Wynwood",type:'club',time:"9pm–4am",artists:"4B, Craze, Good Times Ahead, Ricky Remedy, Stevie G",genre:['bass','hiphop'],matchKeywords:['4b','gta','craze','jersey club','trap'],summary:"Bass and trap heavyweights in Wynwood. High energy, speaker-rattling sets.",hype:3,mentions:2},
-  {id:38,day:'thu',dayLabel:'Thu Mar 26',name:"Ultra Naté's DEEP SUGAR: Birthday Bash",venue:"The Triangle at Little River",type:'club',time:"8pm–3am",artists:"Ultra Naté, Soul Clap, Rissa Garcia",genre:['disco','deephouse'],matchKeywords:['ultra nate','soul clap','deep sugar'],summary:"Ultra Naté celebrates with Soul Clap. Classic house energy meets disco funk.",hype:3,mentions:2},
-  {id:39,day:'thu',dayLabel:'Thu Mar 26',name:"Factory Town Day 2: Jamie Jones Paradise",venue:"Factory Town",type:'warehouse',time:"10pm–7am",artists:"Jamie Jones, Archie Hamilton, Adrián Mills, Alejo, Bad Boombox, ATRIP",genre:['techhouse','minimal'],matchKeywords:['jamie jones','paradise','hot creations','archie hamilton'],summary:"Jamie Jones brings Paradise to Factory Town's Infinity Room. Multi-stage warehouse.",hype:5,mentions:4},
-
-  // ── FRIDAY MARCH 27 ────────────────────────────────────────────────────────
-  {id:40,day:'fri',dayLabel:'Fri Mar 27',name:"Knee Deep in Miami: Hot Since 82",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Hot Since 82, Luuk van Dijk, Demi Riquísimo, Mai Iachetti, Prunk",genre:['techhouse','deephouse'],matchKeywords:['hot since 82','knee deep in sound','tech house','luuk van dijk'],summary:"Knee Deep in Sound label showcase headlined by Hot Since 82.",hype:5,mentions:5},
-  {id:41,day:'fri',dayLabel:'Fri Mar 27',name:"Solid Grooves at Club Space",venue:"Club Space",type:'club',time:"11pm–10am",artists:"Michael Bibi, ChaseWest, KinAhau, Ben Sterling, Pawsa, Carlita (rumored)",genre:['techhouse','minimal'],matchKeywords:['solid grooves','michael bibi','minimal house','chasewest','carlita','pawsa'],summary:"Solid Grooves is one of the hottest brands in global house. Marathon sets, packed floors.",hype:5,mentions:6},
-  {id:42,day:'fri',dayLabel:'Fri Mar 27',name:"Black Coffee at LIV",venue:"LIV Nightclub",type:'club',time:"11:30pm–5am",artists:"Black Coffee",genre:['afrohouse','deephouse'],matchKeywords:['black coffee','afro house','south african house'],summary:"Black Coffee's Friday night residency at LIV. Deep, spiritual Afro-house.",hype:5,mentions:5},
-  {id:43,day:'fri',dayLabel:'Fri Mar 27',name:"Chris Lake & Eats Everything: Black Book",venue:"Toe Jam Backlot",type:'club',time:"8pm–3am",artists:"Chris Lake, Eats Everything, Gio Lucca, Jackie Hollander, Marco Lys",genre:['techhouse'],matchKeywords:['chris lake','eats everything','tech house','black book records'],summary:"Chris Lake and Eats Everything on the same bill — two very different flavors of fun.",hype:4,mentions:4},
-  {id:44,day:'fri',dayLabel:'Fri Mar 27',name:"Shimza at Jungle Island",venue:"Jungle Island",type:'openair',time:"7pm–3am",artists:"Shimza, Bedouin, Francis Mercier, Arodes, FALYN",genre:['afrohouse','deephouse','melodic'],matchKeywords:['shimza','bedouin','francis mercier','afro house'],summary:"Shimza brings South African flair alongside Bedouin and Francis Mercier at Jungle Island.",hype:4,mentions:3},
-  {id:45,day:'fri',dayLabel:'Fri Mar 27',name:"Ministry of Sound × Hard Times: Dennis Ferrer",venue:"Sable Miami",type:'club',time:"7pm–4am",artists:"Dennis Ferrer, Derrick Carter, Chuck Daniels, Doorly, Fletch",genre:['deephouse','disco'],matchKeywords:['dennis ferrer','derrick carter','ministry of sound','hard times'],summary:"Two legendary UK club culture institutions collaborate. Soulful grooves and deep house.",hype:4,mentions:4},
-  {id:46,day:'fri',dayLabel:'Fri Mar 27',name:"deadmau5 at Toe Jam",venue:"Toe Jam XL",type:'club',time:"8pm–4am",artists:"deadmau5",genre:['progressive','techno'],matchKeywords:['deadmau5','mau5trap'],summary:"deadmau5 headline set in the Toe Jam XL space.",hype:5,mentions:4},
-  {id:47,day:'fri',dayLabel:'Fri Mar 27',name:"Diplo at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Diplo, AM75",genre:['hiphop','bass','techhouse'],matchKeywords:['diplo','mad decent','higher ground'],summary:"Diplo takes over E11EVEN. Genre-bending from house to hip-hop to bass.",hype:4,mentions:3},
-  {id:48,day:'fri',dayLabel:'Fri Mar 27',name:"RESISTANCE: Amelie Lens & Boys Noize",venue:"M2",type:'club',time:"10pm–5am",artists:"Amelie Lens, Boys Noize, ØTTA",genre:['techno'],matchKeywords:['amelie lens','boys noize','resistance','hard techno'],summary:"Amelie Lens and Boys Noize bring peak-time techno to RESISTANCE.",hype:5,mentions:5},
-  {id:49,day:'fri',dayLabel:'Fri Mar 27',name:"HUGEL: The Originals HIIDE",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"HUGEL, Amal Nemer, Frank Storm",genre:['melodic','techhouse'],matchKeywords:['hugel','hiide','melodic house'],summary:"The Originals HIIDE poolside series on Friday with HUGEL headlining.",hype:3,mentions:2},
-  {id:50,day:'fri',dayLabel:'Fri Mar 27',name:"Soundgarden Cruise: Dubfire b2b Nick Warren",venue:"Yacht / Miami",type:'cruise',time:"3:30–8:30pm",artists:"Dubfire b2b Nick Warren",genre:['techno','melodic'],matchKeywords:['dubfire','nick warren','underground techno','soundgarden'],summary:"B2b on a boat at sunset. One of the most special formats of the whole week.",hype:4,mentions:3},
-  {id:51,day:'fri',dayLabel:'Fri Mar 27',name:"Seven Lions at MIDLINE",venue:"MIDLINE Miami",type:'club',time:"9pm–3am",artists:"Seven Lions, Andrew Bayer, Kill the Noise, Mitis, A Hundred Drums, Quackson",genre:['bass','trance'],matchKeywords:['seven lions','melodic dubstep','anjunabeats','kill the noise'],summary:"Seven Lions' melodic bass and trance crossover. Emotional, high-energy.",hype:4,mentions:3},
-  {id:52,day:'fri',dayLabel:'Fri Mar 27',name:"Brownies & Lemonade Miami",venue:"MANA Wynwood",type:'warehouse',time:"9pm–5am",artists:"TBA (surprise guests)",genre:['bass','progressive'],matchKeywords:['brownies lemonade','surprise','bass music'],summary:"Brownies & Lemonade's famous surprise-guest format. Past editions have featured major headliners.",hype:4,mentions:3},
-  {id:53,day:'fri',dayLabel:'Fri Mar 27',name:"Ferry Corsten + Giuseppe Ottaviani",venue:"CLUTCH",type:'club',time:"9pm–5am",artists:"Ferry Corsten, Giuseppe Ottaviani, Billy Gillies, Amy Wiles, Luccio",genre:['trance'],matchKeywords:['ferry corsten','giuseppe ottaviani','trance','billy gillies'],summary:"Trance royalty Ferry Corsten and Giuseppe Ottaviani share a bill.",hype:4,mentions:2},
-  {id:54,day:'fri',dayLabel:'Fri Mar 27',name:"JOURNEY: Spencer Brown & Eric Luttrell",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"Spencer Brown, Eric Luttrell, Massane, Qrion, Because of Art",genre:['progressive','melodic'],matchKeywords:['spencer brown','eric luttrell','qrion','massane','anjunadeep'],summary:"Anjunadeep-adjacent progressive house. Dreamy, introspective late-night music.",hype:3,mentions:2},
-  {id:55,day:'fri',dayLabel:'Fri Mar 27',name:"House Is A Feeling: Oscar G & DJ Sneak",venue:"1-800-LUCKY",type:'club',time:"6pm–3am",artists:"Oscar G, DJ Sneak, Tony Touch, Harry Romero, Emmaculate, Gettoblaster, DJ Dove",genre:['deephouse','disco'],matchKeywords:['oscar g','dj sneak','harry romero','classic house','gettoblaster'],summary:"Miami house royalty Oscar G joins DJ Sneak and Harry Romero. Classic house energy.",hype:4,mentions:2},
-  {id:56,day:'fri',dayLabel:'Fri Mar 27',name:"EDX Presents No Xcuses",venue:"Nikki Beach",type:'pool',time:"12pm–8pm",artists:"EDX",genre:['progressive','deephouse'],matchKeywords:['edx','no xcuses','progressive house'],summary:"EDX's No Xcuses series hits Nikki Beach for a daytime poolside session.",hype:3,mentions:2},
-  {id:57,day:'fri',dayLabel:'Fri Mar 27',name:"Tgthr: Secret Headliner & Franky Rizardo",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"Secret Headliner, Franky Rizardo, Mason Collective, Grace Arribas, Amal Nemer",genre:['techhouse','deephouse'],matchKeywords:['franky rizardo','mason collective','tech house'],summary:"Tgthr poolside with a secret headliner and Franky Rizardo.",hype:3,mentions:2},
-  {id:58,day:'fri',dayLabel:'Fri Mar 27',name:"Factory Town Day 3: Carlita & Friends",venue:"Factory Town",type:'warehouse',time:"9pm–7am",artists:"Carlita, Dan Ghenacia, AC13, Ainonow, Alpha Omega",genre:['deephouse','melodic'],matchKeywords:['carlita','factory town','dan ghenacia'],summary:"Factory Town's third night with Carlita headlining.",hype:4,mentions:3},
-
-  // ── SATURDAY MARCH 28 ──────────────────────────────────────────────────────
-  {id:59,day:'sat',dayLabel:'Sat Mar 28',name:"Danny Tenaglia + Nicole Moudaber",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Danny Tenaglia, Nicole Moudaber, Jonathan Cowan, Romina Mazzini",genre:['techno','deephouse'],matchKeywords:['danny tenaglia','nicole moudaber','techno'],summary:"Two legends poolside. Tenaglia's groove meets Moudaber's techno power.",hype:5,mentions:6},
-  {id:60,day:'sat',dayLabel:'Sat Mar 28',name:"Marco Carola: Music On",venue:"Club Space",type:'club',time:"11pm–open",artists:"Marco Carola",genre:['techno','minimal'],matchKeywords:['marco carola','music on','minimal techno'],summary:"Music On is a religion. Marco Carola at Club Space is as pure as it gets.",hype:5,mentions:6},
-  {id:61,day:'sat',dayLabel:'Sat Mar 28',name:"Factory Town: Adam Beyer & Friends",venue:"Factory Town",type:'warehouse',time:"9pm–7am",artists:"Adam Beyer, Bart Skils b2b Marco Faraone, Pawsa b2b Luciano, Joris Voorn, Ben Sterling, Tiga, Ranger Trucco, Anetha",genre:['techno','techhouse','minimal'],matchKeywords:['factory town','adam beyer','drumcode','joris voorn','pawsa','ben sterling','anetha','bart skils'],summary:"Multi-stage warehouse. Drumcode energy + groove selectors. The week's biggest lineup.",hype:5,mentions:7},
-  {id:62,day:'sat',dayLabel:'Sat Mar 28',name:"MK & Armand Van Helden: Area 10",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"MK, Armand Van Helden",genre:['disco','deephouse'],matchKeywords:['mk','armand van helden','disco house','classic house','area 10'],summary:"MK and Armand Van Helden sharing a bill is a disco-house dream.",hype:4,mentions:5},
-  {id:63,day:'sat',dayLabel:'Sat Mar 28',name:"RESISTANCE: Boris Brejcha, Miss Monique",venue:"M2 Miami",type:'club',time:"10pm–5am",artists:"Boris Brejcha, Miss Monique, Brina Knauss",genre:['techno','melodic'],matchKeywords:['boris brejcha','miss monique','high-tech minimal','melodic techno','resistance'],summary:"Boris Brejcha's high-tech minimal alongside Miss Monique's melodic journey.",hype:5,mentions:5},
-  {id:64,day:'sat',dayLabel:'Sat Mar 28',name:"Adriatique at LIV",venue:"LIV Nightclub",type:'club',time:"11:30pm–late",artists:"Adriatique, MAXI MERAKI",genre:['melodic','deephouse'],matchKeywords:['adriatique','melodic techno','afterlife'],summary:"Swiss duo Adriatique bring their ethereal melodic sound to LIV.",hype:4,mentions:4},
-  {id:65,day:'sat',dayLabel:'Sat Mar 28',name:"Desert Hearts Open-Air",venue:"UVA Wynwood",type:'openair',time:"4pm–4am",artists:"Mikey Lion, Lee Reynolds, Eats Everything, Kevin Knapp, Life on Planets, Soul Clap, Kyle Walker, Fulano, JIMII",genre:['deephouse','techhouse'],matchKeywords:['desert hearts','eats everything','soul clap','life on planets','mikey lion'],summary:"Desert Hearts open-air in Wynwood. Deep house cosmic good energy.",hype:4,mentions:4},
-  {id:66,day:'sat',dayLabel:'Sat Mar 28',name:"MEDUZA: The Originals Present HIIDE",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"MEDUZA, Chelina Manuhutu b2b Tini Gessler, Bassel Darwish, Joe Vanditti, Above Ground",genre:['melodic','techhouse'],matchKeywords:['meduza','melodic house','chelina manuhutu'],summary:"MEDUZA headline the HIIDE pool series at the National Hotel.",hype:5,mentions:5},
-  {id:67,day:'sat',dayLabel:'Sat Mar 28',name:"Black Coffee at Hialeah Park",venue:"Hialeah Park Casino",type:'warehouse',time:"6pm–1am",artists:"Black Coffee, Carlita, Kaz James",genre:['afrohouse','deephouse'],matchKeywords:['black coffee','afro house','south african house','carlita','kaz james'],summary:"Black Coffee's Afro-house at the racetrack with Carlita and Kaz James. Depth over spectacle.",hype:5,mentions:7},
-  {id:68,day:'sat',dayLabel:'Sat Mar 28',name:"Anjunadeep Open Air Miami",venue:"Wynwood Marketplace",type:'openair',time:"3pm–12am",artists:"Eli & Fur, Amtrac, Because of Art, CRi, Dosem",genre:['progressive','melodic','deephouse'],matchKeywords:['anjunadeep','eli fur','amtrac','cri','progressive house'],summary:"Anjunadeep's signature open-air format in Wynwood. Deep, melodic, and atmospheric.",hype:5,mentions:4},
-  {id:69,day:'sat',dayLabel:'Sat Mar 28',name:"Louie Vega & Friends: Moodymann & Karizma",venue:"ZeyZey",type:'club',time:"3–10pm",artists:"Louie Vega, Moodymann, Anané, Karizma",genre:['deephouse','disco'],matchKeywords:['louie vega','moodymann','karizma','anane','masters at work'],summary:"Louie Vega with Moodymann and Karizma. Masters At Work energy meets Detroit soul.",hype:5,mentions:3},
-  {id:70,day:'sat',dayLabel:'Sat Mar 28',name:"Steve Aoki: 30 Years of Dim Mak",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Steve Aoki",genre:['bass','hiphop'],matchKeywords:['steve aoki','dim mak'],summary:"Steve Aoki celebrates 30 years of Dim Mak at E11EVEN.",hype:4,mentions:4},
-  {id:71,day:'sat',dayLabel:'Sat Mar 28',name:"LALALAND: Green Velvet & Cajmere",venue:"Toe Jam Backlot",type:'club',time:"8pm–3am",artists:"Green Velvet, Cajmere, AYYBO, DISCIP, Jkatz",genre:['techhouse','deephouse'],matchKeywords:['green velvet','cajmere','chicago house','relief records'],summary:"Green Velvet and Cajmere — two sides of Curtis Jones — on the same bill.",hype:4,mentions:3},
-  {id:72,day:'sat',dayLabel:'Sat Mar 28',name:"Gordo at RC Cola Plant",venue:"RC Cola Plant",type:'warehouse',time:"10pm–5am",artists:"Gordo",genre:['techhouse','techno'],matchKeywords:['gordo','carnage','tech house'],summary:"Gordo at the RC Cola Plant. Dark warehouse tech house.",hype:4,mentions:3},
-  {id:73,day:'sat',dayLabel:'Sat Mar 28',name:"Rodriguez Jr. Yacht Cruise",venue:"Luxury Yacht",type:'cruise',time:"3–7pm",artists:"Rodriguez Jr., Sydney Blu, Darin Epsilon, Min the Universe",genre:['melodic','deephouse'],matchKeywords:['rodriguez jr','melodic house'],summary:"Sunset cruise with Rodriguez Jr.'s cinematic melodic house.",hype:4,mentions:2},
-  {id:74,day:'sat',dayLabel:'Sat Mar 28',name:"Cosmic Gate Sunset Cruise",venue:"Hyatt Regency Dock",type:'cruise',time:"3pm–8pm",artists:"Cosmic Gate, Luccio",genre:['trance','progressive'],matchKeywords:['cosmic gate','trance','sunset cruise'],summary:"Cosmic Gate on a sunset cruise. Trance on open water with golden hour views.",hype:4,mentions:2},
-  {id:75,day:'sat',dayLabel:'Sat Mar 28',name:"Gabriel & Dresden: Stories We Tell",venue:"Mazuma",type:'club',time:"9pm–3am",artists:"Gabriel & Dresden",genre:['trance','progressive'],matchKeywords:['gabriel dresden','trance','anjunabeats'],summary:"Gabriel & Dresden's emotional progressive trance. Deep storytelling through sound.",hype:3,mentions:2},
-  {id:76,day:'sat',dayLabel:'Sat Mar 28',name:"A-Trak & Friends × Fool's Gold",venue:"ZeyZey",type:'club',time:"11pm–4am",artists:"A-Trak, Dennis Ferrer, DJ Slugo, Illyus & Barrientos, Monty Kiddo",genre:['disco','hiphop','deephouse'],matchKeywords:['a-trak','fools gold','dennis ferrer','dj slugo'],summary:"A-Trak brings Fool's Gold energy with Dennis Ferrer. Eclectic, genre-spanning late-night.",hype:4,mentions:2},
-  {id:77,day:'sat',dayLabel:'Sat Mar 28',name:"Valentino Khan & Friends",venue:"MAD Club Wynwood",type:'club',time:"10pm–3am",artists:"Valentino Khan, DJ Susan, Marten Hørger, OKAYVAL, Proppa",genre:['bass','hiphop'],matchKeywords:['valentino khan','bass house','dj susan'],summary:"Valentino Khan's bass house meets Wynwood warehouse energy.",hype:3,mentions:2},
-  {id:78,day:'sat',dayLabel:'Sat Mar 28',name:"Odd Mob & Lauren Lane",venue:"MIDLINE Miami",type:'club',time:"10pm–5am",artists:"Odd Mob, Lauren Lane, Loofy, Yokai",genre:['techhouse','bass'],matchKeywords:['odd mob','lauren lane','tech house'],summary:"Odd Mob and Lauren Lane combine tech house grooves with a harder edge.",hype:3,mentions:2},
-
-  // ── SUNDAY MARCH 29 ────────────────────────────────────────────────────────
-  {id:79,day:'sun',dayLabel:'Sun Mar 29',name:"Glitterbox Closing: Skream, Derrick Carter & Gerd Janson",venue:"Sagamore Hotel",type:'pool',time:"1pm–11pm",artists:"Skream, Derrick Carter, Gerd Janson, Natasha Diggs, The Brothers Macklovitch, Aline Rocha, Yasmin",genre:['disco','deephouse'],matchKeywords:['glitterbox','skream','derrick carter','gerd janson','disco','natasha diggs'],summary:"Glitterbox closing party. Skream + Derrick Carter + Gerd Janson = the perfect send-off.",hype:5,mentions:6},
-  {id:80,day:'sun',dayLabel:'Sun Mar 29',name:"RESISTANCE Closing: Carl Cox & Maceo Plex",venue:"M2",type:'club',time:"10pm–5am",artists:"Carl Cox, Maceo Plex, Airrica",genre:['techno'],matchKeywords:['carl cox','maceo plex','resistance','techno'],summary:"Carl Cox and Maceo Plex close out RESISTANCE. Two titans of techno. Unmissable.",hype:5,mentions:6},
-  {id:81,day:'sun',dayLabel:'Sun Mar 29',name:"Elrow Miami at Factory Town",venue:"Factory Town",type:'festival',time:"10pm–7am",artists:"LP Giobbi, Ilario Alicante, Jay De Lys, Matroda, Emjie",genre:['techhouse','techno'],matchKeywords:['elrow','ilario alicante','lp giobbi','matroda'],summary:"Elrow's famously colorful, theatrical party format hits Factory Town for the closing night.",hype:5,mentions:5},
-  {id:82,day:'sun',dayLabel:'Sun Mar 29',name:"Claptone Presents The Masquerade",venue:"Surfcomber Hotel",type:'pool',time:"12pm–11pm",artists:"Claptone",genre:['deephouse','disco'],matchKeywords:['claptone','masquerade','house music'],summary:"Claptone's iconic Masquerade party poolside. Masks, mystery, and deep house.",hype:4,mentions:3},
-  {id:83,day:'sun',dayLabel:'Sun Mar 29',name:"James Hype: HIIDE",venue:"National Hotel",type:'pool',time:"12pm–11pm",artists:"James Hype, Classmatic, Benjamin Lloyd, BFoxx, Alves, DJ Tucci",genre:['techhouse'],matchKeywords:['james hype','tech house','hiide'],summary:"James Hype closes out the HIIDE pool series at the National Hotel.",hype:4,mentions:3},
-  {id:84,day:'sun',dayLabel:'Sun Mar 29',name:"Vintage Culture at E11EVEN",venue:"E11EVEN Miami",type:'club',time:"8pm–10am",artists:"Vintage Culture",genre:['techhouse','deephouse'],matchKeywords:['vintage culture','brazilian house'],summary:"Brazilian house star Vintage Culture closes out E11EVEN's MMW series.",hype:4,mentions:3},
-  {id:85,day:'sun',dayLabel:'Sun Mar 29',name:"Cristoph Presents COS Miami",venue:"Mazuma",type:'club',time:"9pm–5am",artists:"Cristoph, Jeremy Olander, Dirty South, Dimuth K, Michael Anthony",genre:['progressive','melodic'],matchKeywords:['cristoph','jeremy olander','dirty south','cos'],summary:"Cristoph's COS label night with Jeremy Olander and Dirty South.",hype:4,mentions:2},
-  {id:86,day:'sun',dayLabel:'Sun Mar 29',name:"Anjunabeats Miami",venue:"MAD LIVE",type:'club',time:"10pm–4am",artists:"Mat Zo, Genix, Grum, Amy Wiles, Leena Punks",genre:['trance','progressive'],matchKeywords:['anjunabeats','mat zo','genix','grum','trance'],summary:"Anjunabeats showcase with Mat Zo, Genix, and Grum. Uplifting and euphoric.",hype:4,mentions:3},
-  {id:87,day:'sun',dayLabel:'Sun Mar 29',name:"MoBlack Records Closing",venue:"Toe Jam Backlot",type:'club',time:"8pm–4am",artists:"Francis Mercier, Caiiro, Ape Drums, Avö, Luna Mar",genre:['afrohouse','deephouse'],matchKeywords:['moblack','francis mercier','caiiro','afro house'],summary:"MoBlack Records' closing showcase. Afro-house rhythms to end the week.",hype:3,mentions:2},
-  {id:88,day:'sun',dayLabel:'Sun Mar 29',name:"30+ Hour Closing Party",venue:"Space Miami",type:'club',time:"12am–12am+",artists:"TBA",genre:['techhouse','techno','deephouse'],matchKeywords:['space miami','closing party','marathon'],summary:"Space Miami's legendary 30+ hour closing party. The ultimate marathon to end MMW.",hype:5,mentions:5},
-  {id:89,day:'sun',dayLabel:'Sun Mar 29',name:"Deeperfect Showcase",venue:"Mode",type:'club',time:"10pm–5am",artists:"Stefano Noferini, Dimmish, Joe Vanditti, Mandiz, Slugg",genre:['techhouse'],matchKeywords:['stefano noferini','deeperfect','tech house'],summary:"Stefano Noferini's Deeperfect label showcase. Quality Italian tech house.",hype:3,mentions:1},
-  {id:90,day:'sun',dayLabel:'Sun Mar 29',name:"AC Slater & Friends",venue:"MAD Club Wynwood",type:'club',time:"10pm–3am",artists:"AC Slater",genre:['bass','techhouse'],matchKeywords:['ac slater','night bass','bass house'],summary:"AC Slater's Night Bass sound brings bass house to the closing night.",hype:3,mentions:2},
-];
-
-let activeGenre='all', activeDay='all', sortMode='match', minMentions=0, viewMode='list', searchQuery='';
-let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
-let map=null, mapMarkers=[];
-
-// ── PKCE ─────────────────────────────────────────────────────────────────────
-function genVerifier(len=128){
-  const c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~';
-  const v=crypto.getRandomValues(new Uint8Array(len));
-  return Array.from(v,x=>c[x%c.length]).join('');
-}
-async function genChallenge(v){
-  const d=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(v));
-  return btoa(String.fromCharCode(...new Uint8Array(d))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=/g,'');
-}
-
-async function startAuth(){
-  const verifier=genVerifier();
-  const challenge=await genChallenge(verifier);
-  const state=crypto.randomUUID();
-  sessionStorage.setItem('pkce_v',verifier);
-  sessionStorage.setItem('pkce_s',state);
-  const p=new URLSearchParams({client_id:CLIENT_ID,response_type:'code',redirect_uri:REDIRECT_URI,scope:SCOPES,code_challenge_method:'S256',code_challenge:challenge,state});
-  window.location.href=`https://accounts.spotify.com/authorize?${p}`;
-}
-
-async function exchangeCode(code){
-  const verifier=sessionStorage.getItem('pkce_v');
-  if(!verifier) throw new Error('No verifier found — please try connecting again.');
-  const body=new URLSearchParams({client_id:CLIENT_ID,grant_type:'authorization_code',code,redirect_uri:REDIRECT_URI,code_verifier:verifier});
-  const r=await fetch('https://accounts.spotify.com/api/token',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body});
-  if(!r.ok){const e=await r.json();throw new Error(e.error_description||'Token exchange failed');}
-  return r.json();
-}
-
-function saveTokens(data){
-  spotifyToken=data.access_token;
-  if(data.refresh_token) refreshToken=data.refresh_token;
-  tokenExpiry=Date.now()+(data.expires_in*1000)-60000; // refresh 1min early
-  localStorage.setItem('sp_access',spotifyToken);
-  if(refreshToken) localStorage.setItem('sp_refresh',refreshToken);
-  localStorage.setItem('sp_expiry',tokenExpiry.toString());
-}
-
-function loadTokens(){
-  spotifyToken=localStorage.getItem('sp_access');
-  refreshToken=localStorage.getItem('sp_refresh');
-  tokenExpiry=parseInt(localStorage.getItem('sp_expiry')||'0');
-  return !!(spotifyToken && refreshToken);
-}
-
-function clearTokens(){
-  spotifyToken=null;refreshToken=null;tokenExpiry=0;
-  localStorage.removeItem('sp_access');
-  localStorage.removeItem('sp_refresh');
-  localStorage.removeItem('sp_expiry');
-  localStorage.removeItem('sp_name');
-  localStorage.removeItem('sp_scores');
-}
-
-async function refreshAccessToken(){
-  if(!refreshToken) return false;
-  try{
-    const body=new URLSearchParams({client_id:CLIENT_ID,grant_type:'refresh_token',refresh_token:refreshToken});
-    const r=await fetch('https://accounts.spotify.com/api/token',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body});
-    if(!r.ok) return false;
-    const data=await r.json();
-    saveTokens(data);
-    return true;
-  }catch(e){return false;}
-}
-
-async function getValidToken(){
-  if(Date.now()>=tokenExpiry){
-    const ok=await refreshAccessToken();
-    if(!ok){clearTokens();return null;}
-  }
-  return spotifyToken;
-}
-
-// ── ON LOAD ──────────────────────────────────────────────────────────────────
-window.addEventListener('load',async()=>{
-  const p=new URLSearchParams(window.location.search);
-  const code=p.get('code'), state=p.get('state'), error=p.get('error');
-
-  if(error){showNotice(`Spotify declined: ${error}`,'err');return;}
-
-  if(code){
-    const saved=sessionStorage.getItem('pkce_s');
-    if(state!==saved){showNotice('State mismatch — please try again.','err');return;}
-    window.history.replaceState({},document.title,window.location.pathname);
-    showLoading('Exchanging auth code with Spotify...');
-    try{
-      const t=await exchangeCode(code);
-      saveTokens(t);
-      sessionStorage.removeItem('pkce_v');
-      sessionStorage.removeItem('pkce_s');
-      await loadAndAnalyze();
-    }catch(err){
-      showNotice(`Auth failed: ${err.message}`,'err');
-      showAllEvents();
-    }
-    return;
-  }
-
-  // Try restoring session from localStorage
-  if(loadTokens()){
-    const token=await getValidToken();
-    if(token){
-      const savedName=localStorage.getItem('sp_name');
-      const savedScores=localStorage.getItem('sp_scores');
-      if(savedName&&savedScores){
-        document.getElementById('connectBtn').style.display='none';
-        document.getElementById('authDesc').style.display='none';
-        document.getElementById('spotifyName').textContent=savedName;
-        document.getElementById('connectedBadge').classList.add('visible');
-        try{
-          const parsed=JSON.parse(savedScores);
-          Object.entries(parsed.scores).forEach(([id,s])=>{eventMatchScores[parseInt(id)]=s;});
-          const b=document.getElementById('aiBanner');
-          b.innerHTML=`<strong>Your Sound:</strong> ${parsed.tasteSummary}<br><span style="display:block;margin-top:6px">Detected genres: <strong>${parsed.topGenres.join(' · ')}</strong></span>`;
-          b.classList.add('visible');
-          renderEvents();
-          // Don't re-show HP modal on restore — only on fresh analysis
-        }catch(e){await loadAndAnalyze();}
-      } else {
-        await loadAndAnalyze();
-      }
-    }
-  }
-});
-
-async function loadAndAnalyze(){
-  showLoading('Reading your Spotify listening history...');
-  try{
-    const token=await getValidToken();
-    if(!token){showNotice('Session expired — please reconnect.','err');showAllEvents();return;}
-    const headers={Authorization:`Bearer ${token}`};
-    const [r1,r2,r3,r4]=await Promise.all([
-      fetch('https://api.spotify.com/v1/me/top/artists?limit=50&time_range=medium_term',{headers}),
-      fetch('https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=medium_term',{headers}),
-      fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50',{headers}),
-      fetch('https://api.spotify.com/v1/me',{headers}),
-    ]);
-    const [topArtists,topTracks,recent,profile]=await Promise.all([r1.json(),r2.json(),r3.json(),r4.json()]);
-    document.getElementById('connectBtn').style.display='none';
-    document.getElementById('authDesc').style.display='none';
-    const displayName=profile.display_name||profile.id;
-    document.getElementById('spotifyName').textContent=displayName;
-    document.getElementById('connectedBadge').classList.add('visible');
-    localStorage.setItem('sp_name',displayName);
-    await runAI({topArtists,topTracks,recent});
-  }catch(err){
-    showNotice(`Spotify error: ${err.message}`,'err');
-    showAllEvents();
-  }
-}
-
-async function runAI({topArtists,topTracks,recent}){
-  showLoading('Claude is matching your taste to MMW lineups...');
-  const artists=(topArtists?.items||[]).map(a=>a.name).slice(0,25).join(', ');
-  const genres=[...new Set((topArtists?.items||[]).flatMap(a=>a.genres))].slice(0,25).join(', ');
-  const tracks=(topTracks?.items||[]).map(t=>`${t.name} – ${t.artists[0]?.name}`).slice(0,15).join('; ');
-  const recents=[...new Set((recent?.items||[]).map(i=>i.track.artists[0]?.name))].slice(0,20).join(', ');
-
-  const prompt=`You are a music taste analyst. Match a user to Miami Music Week 2026 events based on their Spotify data.
-
-TOP ARTISTS (6 months): ${artists}
-GENRES: ${genres}
-TOP TRACKS: ${tracks}
-RECENTLY PLAYED: ${recents}
-
-EVENTS:
-${EVENTS.map(e=>`ID:${e.id} | ${e.name} | Artists: ${e.artists} | Genres: ${e.genre.join(',')} | Keywords: ${e.matchKeywords.join(',')}`).join('\n')}
-
-Score each event 0-100 (direct artist match = 85-100, strong genre match = 65-84, adjacent = 35-64, outside taste = 10-34).
-Write a 2-sentence taste profile and list top 3 sub-genres detected.
-
-ALSO: Compare their music personality to a Harry Potter character. Consider ALL characters from every book — Harry, Hermione, Ron, Luna, Neville, Draco, Dumbledore, Snape, Sirius, Hagrid, Ginny, Fred, George, Bellatrix, McGonagall, Tonks, Lupin, Dobby, Cedric, Moody, Voldemort, Fleur, Viktor Krum, Cho Chang, Molly Weasley, Arthur Weasley, Seamus, Dean Thomas, Lavender Brown, Narcissa, Regulus Black, Newt Scamander, etc. Pick the SINGLE best match based on how their listening habits, energy, and genre preferences mirror that character's personality traits. Write a fun 2-3 sentence explanation of WHY they match. Also include a fitting quote from that character and which Hogwarts house they'd be sorted into based on their music taste.
-
-Respond ONLY in valid JSON (no markdown):
-{"tasteSummary":"...","topGenres":["...","...","..."],"scores":{"1":85,"2":40,...},"hpCharacter":"...","hpHouse":"...","hpEmoji":"...","hpQuote":"...","hpReason":"..."}`;
-
-  try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,messages:[{role:'user',content:prompt}]})
-    });
-    const d=await r.json();
-    const parsed=JSON.parse((d.content?.[0]?.text||'').replace(/```json|```/g,'').trim());
-    Object.entries(parsed.scores).forEach(([id,s])=>{eventMatchScores[parseInt(id)]=s;});
-    localStorage.setItem('sp_scores',JSON.stringify(parsed));
-    const b=document.getElementById('aiBanner');
-    b.innerHTML=`<strong>Your Sound:</strong> ${parsed.tasteSummary}<br><span style="display:block;margin-top:6px">Detected genres: <strong>${parsed.topGenres.join(' · ')}</strong></span>`;
-    b.classList.add('visible');
-    renderEvents();
-    if(parsed.hpCharacter) showHPModal(parsed);
-  }catch(err){
-    console.error(err);
-    EVENTS.forEach(e=>{eventMatchScores[e.id]=e.hype*18;});
-    renderEvents();
-  }
-}
-
-// ── UI HELPERS ────────────────────────────────────────────────────────────────
-function showNotice(msg,type){
-  const el=document.getElementById('notice');
-  el.textContent=msg;
-  el.className=`notice visible ${type}`;
-}
-
-function showLoading(msg){
-  document.getElementById('results').innerHTML=`<div class="loading-state"><div class="pulse-ring"></div><div>${msg}</div></div>`;
-}
-
-function showAllEvents(){
-  EVENTS.forEach(e=>{eventMatchScores[e.id]=e.hype*18;});
-  renderEvents();
-}
-
-function disconnect(){
-  clearTokens(); eventMatchScores={};
-  document.getElementById('connectBtn').style.display='flex';
-  document.getElementById('authDesc').style.display='block';
-  document.getElementById('connectedBadge').classList.remove('visible');
-  document.getElementById('aiBanner').classList.remove('visible');
-  document.getElementById('notice').classList.remove('visible');
-  document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">→</div><div style="font-size:14px;margin-bottom:8px;color:var(--text)">Connect Spotify to get personalized picks</div><br><br><button class="submit-btn" onclick="showAllEvents()">Browse All Events →</button></div>`;
-}
-
-function toggleGenre(btn){
-  document.querySelectorAll('.genre-chip').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active'); activeGenre=btn.dataset.genre; renderEvents();
-}
-
-function toggleDay(btn){
-  document.querySelectorAll('.day-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active'); activeDay=btn.dataset.day; renderEvents();
-}
-
-function toggleMentions(btn){
-  document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active'); minMentions=parseInt(btn.dataset.mentions); renderEvents();
-}
-
-function setSort(mode){
-  sortMode=mode;
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.toggle('active',b.dataset.sort===mode));
-  renderEvents();
-}
-
-function setView(mode){
-  viewMode=mode;
-  document.querySelectorAll('.view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===mode));
-  renderEvents();
-}
-
-// ── HP MODAL ─────────────────────────────────────────────────────────────────
-function showHPModal(data){
-  const houseColors={Gryffindor:'#ae0001',Slytherin:'#1a472a',Ravenclaw:'#0e1a40',Hufflepuff:'#ecb939'};
-  document.getElementById('hpEmoji').textContent=data.hpEmoji||'⚡';
-  const house=data.hpHouse||'Gryffindor';
-  document.getElementById('hpHouse').textContent=house;
-  document.getElementById('hpHouse').style.color=houseColors[house]||'var(--green)';
-  document.getElementById('hpChar').textContent=data.hpCharacter;
-  document.getElementById('hpQuote').textContent=`"${data.hpQuote}"`;
-  document.getElementById('hpReason').textContent=data.hpReason;
-  document.getElementById('hpModal').classList.add('visible');
-}
-function closeHPModal(){
-  document.getElementById('hpModal').classList.remove('visible');
-}
-
-// ── FUZZY SEARCH ─────────────────────────────────────────────────────────────
-function fuzzyMatch(query,text){
-  query=query.toLowerCase();
-  text=text.toLowerCase();
-  if(text.includes(query)) return 2; // exact substring = best
-  let qi=0;
-  for(let ti=0;ti<text.length&&qi<query.length;ti++){
-    if(text[ti]===query[qi]) qi++;
-  }
-  return qi===query.length?1:0; // fuzzy match = 1, no match = 0
-}
-
-function getSearchableText(e){
-  return `${e.name} ${e.artists} ${e.venue} ${e.summary} ${e.genre.join(' ')} ${e.matchKeywords.join(' ')}`;
-}
-
-function handleSearch(val){
-  searchQuery=val.trim();
-  renderEvents();
-}
-
-// ── ARTIST SPOTIFY LINKS ─────────────────────────────────────────────────────
-function linkifyArtists(artistStr){
-  // Split on commas but preserve "b2b" pairs
-  const parts=artistStr.split(/,\s*/);
-  return parts.map(part=>{
-    // Handle "b2b" by linking each side
-    if(part.toLowerCase().includes(' b2b ')){
-      const sides=part.split(/\s+b2b\s+/i);
-      return sides.map(s=>makeArtistLink(s.trim())).join(' b2b ');
-    }
-    return makeArtistLink(part.trim());
-  }).join(', ');
-}
-
-function makeArtistLink(name){
-  if(!name||name==='TBA'||name.startsWith('TBA ')||name.includes('rumored')||name.includes('surprise')) return name;
-  const clean=name.replace(/\s*\(.*?\)\s*/g,'').trim();
-  const url=`https://open.spotify.com/search/${encodeURIComponent(clean)}`;
-  return `<a href="${url}" target="_blank" rel="noopener">${name}</a>`;
-}
-
-function getMentionsDisplay(m){
-  if(m>=6) return {text:`${m} sources`, cls:'hot', flames:'🔥🔥🔥'};
-  if(m>=4) return {text:`${m} sources`, cls:'hot', flames:'🔥🔥'};
-  if(m>=3) return {text:`${m} sources`, cls:'warm', flames:'🔥'};
-  return {text:`${m} source${m!==1?'s':''}`, cls:'', flames:''};
-}
-
-// ── MAP ──────────────────────────────────────────────────────────────────────
-function initMap(){
-  if(map) return;
-  const container=document.getElementById('mapContainer');
-  map=L.map(container,{
-    zoomControl:true,
-    scrollWheelZoom:true,
-  }).setView([25.795,-80.195],12);
-
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-    subdomains:'abcd',maxZoom:19
-  }).addTo(map);
-}
-
-function updateMap(events){
-  if(!map) initMap();
-  mapMarkers.forEach(m=>map.removeLayer(m));
-  mapMarkers=[];
-
-  // Group events by venue
-  const byVenue={};
-  events.forEach(e=>{
-    const key=e.venue;
-    if(!byVenue[key]) byVenue[key]=[];
-    byVenue[key].push(e);
-  });
-
-  Object.entries(byVenue).forEach(([venueName,venueEvents])=>{
-    const vd=VENUE_DATA[venueName];
-    if(!vd) return;
-    const color=HOOD_COLORS[vd.hood]||'#999';
-
-    const icon=L.divIcon({
-      className:'custom-marker',
-      html:`<div style="width:14px;height:14px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.8);box-shadow:0 0 8px ${color}80;cursor:pointer;"></div>`,
-      iconSize:[14,14],
-      iconAnchor:[7,7],
-      popupAnchor:[0,-10],
-    });
-
-    const marker=L.marker([vd.lat,vd.lng],{icon}).addTo(map);
-    const has=Object.keys(eventMatchScores).length>0;
-
-    let popupHtml=`<div class="popup-venue">${venueName}</div><div style="font-size:10px;color:${color};margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;">${vd.hood}</div>`;
-    venueEvents.forEach(e=>{
-      const s=eventMatchScores[e.id]||0;
-      const scoreHtml=has?`<span style="color:${s>=70?'var(--green)':s>=40?'var(--amber)':'var(--muted)'};font-weight:600;">${s}</span>`:'';
-      popupHtml+=`<div class="popup-event"><div class="popup-event-name">${e.name} ${scoreHtml}</div><div class="popup-event-meta">${e.dayLabel} · ${e.time}</div><div class="popup-event-meta" style="color:#bbb">${linkifyArtists(e.artists)}</div></div>`;
-    });
-
-    marker.bindPopup(popupHtml,{maxWidth:320,minWidth:240});
-    mapMarkers.push(marker);
-  });
-
-  setTimeout(()=>map.invalidateSize(),100);
-}
-
-function renderEvents(){
-  const dayOrder=['tue','wed','thu','fri','sat','sun'];
-  const filterFn=e=>(activeDay==='all'||e.day===activeDay)&&(activeGenre==='all'||e.genre.includes(activeGenre))&&(e.mentions>=minMentions);
-  const sortFn=(a,b)=>{
-    if(sortMode==='match') return (eventMatchScores[b.id]||0)-(eventMatchScores[a.id]||0)||b.hype-a.hype;
-    if(sortMode==='day') return dayOrder.indexOf(a.day)-dayOrder.indexOf(b.day)||b.hype-a.hype;
-    if(sortMode==='buzz') return b.mentions-a.mentions||b.hype-a.hype;
-    return 0;
-  };
-
-  let events, outsideEvents=[];
-  if(searchQuery){
-    const filtered=EVENTS.filter(filterFn);
-    const unfiltered=EVENTS.filter(e=>!filterFn(e));
-    // Score and filter by fuzzy match
-    const scoredIn=filtered.map(e=>({e,score:fuzzyMatch(searchQuery,getSearchableText(e))})).filter(x=>x.score>0);
-    const scoredOut=unfiltered.map(e=>({e,score:fuzzyMatch(searchQuery,getSearchableText(e))})).filter(x=>x.score>0);
-    scoredIn.sort((a,b)=>b.score-a.score||sortFn(a.e,b.e));
-    scoredOut.sort((a,b)=>b.score-a.score||sortFn(a.e,b.e));
-    events=scoredIn.map(x=>x.e);
-    outsideEvents=scoredOut.map(x=>x.e);
-  } else {
-    events=EVENTS.filter(filterFn).sort(sortFn);
-  }
-
-  if(!events.length&&!outsideEvents.length){
-    document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">∅</div><div>No events match this search</div></div>`;
-    return;
-  }
-
-  const has=Object.keys(eventMatchScores).length>0;
-
-  const mapLegendHtml=Object.entries(HOOD_COLORS).map(([hood,color])=>
-    `<div class="map-legend-item"><div class="map-legend-dot" style="background:${color};box-shadow:0 0 6px ${color}80;"></div>${hood}</div>`
-  ).join('');
-
-  document.getElementById('results').innerHTML=`
-    <div class="results-header">
-      <div class="results-count">${events.length} events${has?' · ranked by match':''}</div>
-      <div style="display:flex;gap:12px;align-items:center;">
-        <div class="view-toggle">
-          <button class="view-btn ${viewMode==='list'?'active':''}" data-view="list" onclick="setView('list')">List</button>
-          <button class="view-btn ${viewMode==='map'?'active':''}" data-view="map" onclick="setView('map')">Map</button>
-        </div>
-        <div class="sort-btns">
-          <button class="sort-btn ${sortMode==='match'?'active':''}" data-sort="match" onclick="setSort('match')">By Match</button>
-          <button class="sort-btn ${sortMode==='day'?'active':''}" data-sort="day" onclick="setSort('day')">By Day</button>
-          <button class="sort-btn ${sortMode==='buzz'?'active':''}" data-sort="buzz" onclick="setSort('buzz')">By Buzz</button>
-        </div>
-      </div>
-    </div>
-    ${viewMode==='map'?`<div class="map-legend">${mapLegendHtml}</div>`:''}
-    <div id="mapContainer" class="${viewMode==='map'?'visible':''}"></div>
-    <div class="events-grid" style="${viewMode==='map'?'display:none':''}">
-      ${events.map(e=>{
-        const s=eventMatchScores[e.id]||0;
-        const cls=has?(s>=70?'match-high':s>=40?'match-med':'match-low'):'match-low';
-        const reason=s>=70?'Strong match':s>=50?'Good match':s>=30?'Worth exploring':'Outside your usual';
-        const stars='★'.repeat(s>=70?3:s>=45?2:1)+'☆'.repeat(s>=70?0:s>=45?1:2);
-        const md=getMentionsDisplay(e.mentions);
-        return `<div class="event-card ${cls}">
-          <div>
-            <div class="event-name">${e.name}<span class="tag ${e.type}">${e.type}</span></div>
-            <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
-            <div class="artists">${linkifyArtists(e.artists)}</div>
-            <div class="event-summary">${e.summary}</div>
-            <div class="mentions-badge ${md.cls}">${md.flames} Mentioned in ${md.text}</div>
-          </div>
-          ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div><div style="font-size:10px;letter-spacing:-1px;color:var(--green)">${stars}</div></div>`
-               :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
-        </div>`;
-      }).join('')}
-    </div>
-    ${outsideEvents.length?`
-      <div class="search-divider">Outside your current filters</div>
-      <div class="events-grid">
-        ${outsideEvents.map(e=>{
-          const s=eventMatchScores[e.id]||0;
-          const cls=has?(s>=70?'match-high':s>=40?'match-med':'match-low'):'match-low';
-          const reason=s>=70?'Strong match':s>=50?'Good match':s>=30?'Worth exploring':'Outside your usual';
-          const md=getMentionsDisplay(e.mentions);
-          return `<div class="event-card ${cls}" style="opacity:0.7">
-            <div>
-              <div class="event-name">${e.name}<span class="tag ${e.type}">${e.type}</span></div>
-              <div class="event-meta"><span class="venue">${e.venue}</span><span>${e.dayLabel}</span><span>${e.time}</span></div>
-              <div class="artists">${linkifyArtists(e.artists)}</div>
-              <div class="event-summary">${e.summary}</div>
-              <div class="mentions-badge ${md.cls}">${md.flames} Mentioned in ${md.text}</div>
-            </div>
-            ${has?`<div class="match-badge"><div class="match-score">${s}</div><div class="match-label">match</div><div class="match-reason">${reason}</div></div>`
-                 :`<div class="match-badge"><div class="match-score" style="font-size:18px;color:var(--muted2)">—</div></div>`}
-          </div>`;
-        }).join('')}
-      </div>
-    `:''}`;
-
-  if(viewMode==='map'){
-    initMap();
-    updateMap(events.concat(outsideEvents));
-  }
-}
-</script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
