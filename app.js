@@ -2,7 +2,7 @@ const CLIENT_ID = 'af89877b7d3a4e309afbdd30559fd1d6';
 const REDIRECT_URI = 'https://nickisea387.github.io/mmw2026/';
 const SCOPES = 'user-top-read user-read-recently-played user-read-private';
 
-let activeGenres=new Set(['all']), activeDays=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
+let activeGenres=new Set(['all']), activeDays=new Set(['all']), activeVtypes=new Set(['all']), sortMode='day', minMentions=0, viewMode='list', searchQuery='';
 let spotifyToken=null, refreshToken=null, tokenExpiry=0, eventMatchScores={};
 let map=null, mapMarkers=[];
 let favourites=JSON.parse(localStorage.getItem('mmw_favs')||'[]');
@@ -258,6 +258,13 @@ function toggleDay(btn){
   document.querySelectorAll('.day-btn').forEach(b=>b.classList.toggle('active',activeDays.has(b.dataset.day)));
   renderEvents();
 }
+function toggleVtype(btn){
+  const v=btn.dataset.vtype;
+  if(v==='all'){activeVtypes=new Set(['all']);}
+  else{activeVtypes.delete('all');if(activeVtypes.has(v)) activeVtypes.delete(v);else activeVtypes.add(v);if(!activeVtypes.size) activeVtypes=new Set(['all']);}
+  document.querySelectorAll('[data-vtype]').forEach(b=>b.classList.toggle('active',activeVtypes.has(b.dataset.vtype)));
+  renderEvents();
+}
 function toggleMentions(btn){document.querySelectorAll('.mentions-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');minMentions=parseInt(btn.dataset.mentions);renderEvents();}
 function setSort(mode){
   sortMode=mode;
@@ -306,6 +313,16 @@ function updateMap(events){
   setTimeout(()=>{if(map) map.invalidateSize();},150);
 }
 
+// ── BANDWAGON DISPLAY ────────────────────────────────────────────────────────
+function getBandwagonDisplay(bw){
+  if(!bw) return {label:'',cls:''};
+  if(bw>=5) return {label:'BANDWAGON 🎪',cls:'bw-high'};
+  if(bw>=4) return {label:'POPULAR 🎵',cls:'bw-med'};
+  if(bw>=3) return {label:'KNOWN 👀',cls:'bw-low'};
+  if(bw>=2) return {label:'UNDERGROUND 🔊',cls:'bw-ug'};
+  return {label:'DEEP CUT 💎',cls:'bw-deep'};
+}
+
 // ── RENDER CARD ──────────────────────────────────────────────────────────────
 function renderCard(e,has,dimmed){
   const s=eventMatchScores[e.id]||0;
@@ -313,6 +330,7 @@ function renderCard(e,has,dimmed){
   const reason=s>=70?'Strong match':s>=50?'Good match':s>=30?'Worth exploring':'Outside your usual';
   const stars='★'.repeat(s>=70?3:s>=45?2:1)+'☆'.repeat(s>=70?0:s>=45?1:2);
   const md=getMentionsDisplay(e.mentions);
+  const bw=getBandwagonDisplay(e.bandwagon);
   const isFav=favourites.includes(e.id);
   const headliner=getHeadliner(e);
   const img=getArtistImage(headliner)||getVenueImage(e);
@@ -330,6 +348,7 @@ function renderCard(e,has,dimmed){
           ${crowd?`<div class="event-crowd"><strong>TLDR:</strong> ${crowd}</div>`:''}
           <div class="event-actions">
             <div class="mentions-badge ${md.cls}">${md.flames} ${md.text}</div>
+            ${bw.label?`<span class="bandwagon-badge ${bw.cls}">${bw.label}</span>`:''}
             <button class="play-btn" onclick="playSet(${e.id})" title="Play artist set on Spotify">▶ Play Set</button>
             <button class="fav-btn ${isFav?'active':''}" onclick="toggleFav(${e.id})" title="${isFav?'Remove from':'Add to'} favourites">${isFav?'♥':'♡'}</button>
           </div>
@@ -341,12 +360,38 @@ function renderCard(e,has,dimmed){
   </div>`;
 }
 
+// ── LAZY LOADING ─────────────────────────────────────────────────────────────
+let allFilteredEvents=[], renderedCount=0;
+const BATCH_SIZE=20;
+
+function renderMoreCards(){
+  const grid=document.querySelector('.events-grid');
+  if(!grid||renderedCount>=allFilteredEvents.length) return;
+  const has=Object.keys(eventMatchScores).length>0;
+  const next=allFilteredEvents.slice(renderedCount,renderedCount+BATCH_SIZE);
+  next.forEach(e=>{
+    const div=document.createElement('div');
+    div.innerHTML=renderCard(e,has,false);
+    grid.appendChild(div.firstElementChild);
+  });
+  renderedCount+=next.length;
+  updateLoadMore();
+}
+
+function updateLoadMore(){
+  const btn=document.getElementById('loadMoreBtn');
+  if(!btn) return;
+  if(renderedCount>=allFilteredEvents.length) btn.style.display='none';
+  else btn.textContent=`Show more (${allFilteredEvents.length-renderedCount} remaining)`;
+}
+
 // ── MAIN RENDER ──────────────────────────────────────────────────────────────
 function renderEvents(){
   const dayOrder=['tue','wed','thu','fri','sat','sun'];
   const filterFn=e=>
     (activeDays.has('all')||activeDays.has(e.day))&&
     (activeGenres.has('all')||e.genre.some(g=>activeGenres.has(g)))&&
+    (activeVtypes.has('all')||activeVtypes.has(e.type))&&
     (e.mentions>=minMentions)&&
     (!showFavsOnly||favourites.includes(e.id));
   const sortFn=(a,b)=>{
@@ -363,9 +408,15 @@ function renderEvents(){
     const unfiltered=EVENTS.filter(e=>!filterFn(e));
     events=filtered.filter(e=>getSearchableText(e).includes(searchQuery)).sort(sortFn);
     outsideEvents=unfiltered.filter(e=>getSearchableText(e).includes(searchQuery)).sort(sortFn);
-  } else if(sortMode==='match'&&hasSpotifyScores){
-    // "My Picks" mode: show only top matches (score >= 50), sorted by score
-    events=EVENTS.filter(filterFn).filter(e=>(eventMatchScores[e.id]||0)>=50).sort(sortFn);
+  } else if(sortMode==='match'){
+    if(hasSpotifyScores){
+      // My Picks: only show events with score >= 40
+      events=EVENTS.filter(filterFn).filter(e=>(eventMatchScores[e.id]||0)>=40).sort(sortFn);
+    } else {
+      // No Spotify: show prompt
+      document.getElementById('results').innerHTML=`<div class="empty-state"><div class="big">🎧</div><div style="font-size:16px;color:var(--text);margin-bottom:8px;">Connect Spotify to unlock My Picks</div><div style="font-size:13px;color:var(--muted);line-height:1.7">We'll analyze your listening history and show<br>only the events that match your taste</div><br><button class="submit-btn" onclick="startAuth()">Connect Spotify →</button></div>`;
+      return;
+    }
   } else {
     events=EVENTS.filter(filterFn).sort(sortFn);
   }
@@ -379,9 +430,14 @@ function renderEvents(){
   const mapLegendHtml=Object.entries(HOOD_COLORS).map(([hood,color])=>`<div class="map-legend-item"><div class="map-legend-dot" style="background:${color};box-shadow:0 0 6px ${color}80;"></div>${hood}</div>`).join('');
   const favCount=favourites.length;
 
+  // Store for lazy loading
+  allFilteredEvents=events;
+  const initialEvents=events.slice(0,BATCH_SIZE);
+  renderedCount=initialEvents.length;
+
   document.getElementById('results').innerHTML=`
     <div class="results-header">
-      <div class="results-count">${events.length} events${outsideEvents.length?' + '+outsideEvents.length+' outside filters':''}${has?' · ranked':''}
+      <div class="results-count">${events.length} events${outsideEvents.length?' + '+outsideEvents.length+' outside filters':''}${sortMode==='match'?' · your top picks':''}
         <button class="fav-filter-btn ${showFavsOnly?'active':''}" id="favFilterBtn" onclick="toggleFavFilter()">♥ ${favCount}</button>
       </div>
       <div style="display:flex;gap:12px;align-items:center;">
@@ -399,12 +455,22 @@ function renderEvents(){
     ${viewMode==='map'?`<div class="map-legend">${mapLegendHtml}</div>`:''}
     <div id="mapContainer" class="${viewMode==='map'?'visible':''}"></div>
     <div class="events-grid" style="${viewMode==='map'?'display:none':''}">
-      ${events.map(e=>renderCard(e,has,false)).join('')}
+      ${initialEvents.map(e=>renderCard(e,has,false)).join('')}
     </div>
+    ${events.length>BATCH_SIZE&&viewMode!=='map'?`<button class="load-more-btn" id="loadMoreBtn" onclick="renderMoreCards()">Show more (${events.length-BATCH_SIZE} remaining)</button>`:''}
     ${outsideEvents.length&&viewMode!=='map'?`
       <div class="search-divider">Outside your current filters</div>
       <div class="events-grid">${outsideEvents.map(e=>renderCard(e,has,true)).join('')}</div>
     `:''}`;
 
   if(viewMode==='map'){initMap();updateMap(events);}
+
+  // Infinite scroll
+  if(viewMode==='list'&&events.length>BATCH_SIZE){
+    const observer=new IntersectionObserver((entries)=>{
+      if(entries[0].isIntersecting&&renderedCount<allFilteredEvents.length){renderMoreCards();}
+    },{threshold:0.1});
+    const btn=document.getElementById('loadMoreBtn');
+    if(btn) observer.observe(btn);
+  }
 }
