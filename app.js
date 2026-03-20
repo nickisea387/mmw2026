@@ -58,14 +58,14 @@ fetch('https://hp-api.onrender.com/api/characters').then(r=>r.json()).then(chars
 function toggleTheme(){
   const isLight=document.documentElement.classList.toggle('light');
   localStorage.setItem('mmw_theme',isLight?'light':'dark');
-  document.getElementById('themeToggle').innerHTML=isLight?'🌙 Dark':'☀️ Light';
+  document.getElementById('themeToggle').innerHTML=isLight?'🌙 Dark Mode':'☀️ Light Mode';
 }
 (function(){
   const saved=localStorage.getItem('mmw_theme');
   if(saved==='light'){
     document.documentElement.classList.add('light');
     document.addEventListener('DOMContentLoaded',()=>{
-      document.getElementById('themeToggle').innerHTML='🌙 Dark';
+      document.getElementById('themeToggle').innerHTML='🌙 Dark Mode';
     });
   }
 })();
