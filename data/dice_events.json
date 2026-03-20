@@ -1,20 +1,10 @@
 {
-  "updated": "2026-03-20T08:09:45.241749+00:00",
+  "updated": "2026-03-20T09:00:36.657155+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 115,
+  "total_found": 114,
   "matched_existing": 38,
-  "new_count": 77,
+  "new_count": 76,
   "events": [
-    {
-      "name": "MMW: King's Paradox: Vito UK",
-      "date": "2026-03-19T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ry9lk5-mmw-kings-paradox-vito-uk-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
     {
       "name": "MMW Jolene All Access Pass",
       "date": "2026-03-19T22:00:00-04:00",
@@ -416,6 +406,16 @@
       "is_new": true
     },
     {
+      "name": "RESISTANCE Miami - MMW Pass",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "294.95",
+      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -432,16 +432,6 @@
       "artists": [],
       "price": "48.49",
       "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "RESISTANCE Miami - MMW Pass",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "294.95",
-      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1096,16 +1086,6 @@
       "is_new": false
     },
     {
-      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "90.93",
-      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1116,12 +1096,12 @@
       "is_new": false
     },
     {
-      "name": "Factory Town Music Week 2026 (Sunday Pass)",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Factory Town",
+      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
       "artists": [],
-      "price": "152.19",
-      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "price": "90.93",
+      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1134,6 +1114,16 @@
       "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
       "matched_id": 103,
       "is_new": false
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Sunday Pass)",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "152.19",
+      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
@@ -1157,14 +1147,6 @@
     }
   ],
   "new_events": [
-    {
-      "name": "MMW: King's Paradox: Vito UK",
-      "date": "2026-03-19T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ry9lk5-mmw-kings-paradox-vito-uk-19th-mar-jolene-sound-room-miami-miami-tickets"
-    },
     {
       "name": "MMW Jolene All Access Pass",
       "date": "2026-03-19T22:00:00-04:00",
@@ -1414,6 +1396,14 @@
       "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets"
     },
     {
+      "name": "RESISTANCE Miami - MMW Pass",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "294.95",
+      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
+    },
+    {
       "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1428,14 +1418,6 @@
       "artists": [],
       "price": "48.49",
       "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
-    },
-    {
-      "name": "RESISTANCE Miami - MMW Pass",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "294.95",
-      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Wednesday Pass)",
