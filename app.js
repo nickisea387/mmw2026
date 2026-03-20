@@ -313,6 +313,16 @@ function closeHPModal(){
 function getSearchableText(e){return `${e.name} ${e.artists} ${e.venue} ${e.summary} ${e.genre.join(' ')} ${e.matchKeywords.join(' ')}`.toLowerCase();}
 function handleSearch(val){
   searchQuery=val.trim().toLowerCase();
+  const clearBtn=document.getElementById('searchClear');
+  if(clearBtn) clearBtn.style.display=searchQuery?'block':'none';
+  renderEvents();
+}
+function clearSearch(){
+  const input=document.getElementById('searchInput');
+  if(input) input.value='';
+  searchQuery='';
+  const clearBtn=document.getElementById('searchClear');
+  if(clearBtn) clearBtn.style.display='none';
   renderEvents();
 }
 

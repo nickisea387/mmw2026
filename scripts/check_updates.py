@@ -32,6 +32,7 @@ from config import (
     TREND_SCORES_FILE,
     PREVIOUS_REDDIT_FILE,
     TRENDING_JS,
+    DATA_DIR,
     parse_events,
     load_json,
     save_json,
@@ -58,6 +59,10 @@ def main():
     ticket_signals = ticket_data.get('signals', {}) if ticket_data else {}
     print(f"  Ticket signals: {len(ticket_signals)} events" if ticket_signals else "  Ticket signals: not available")
 
+    news_data = load_json(os.path.join(DATA_DIR, 'news_signals.json'))
+    news_signals = news_data.get('signals', {}) if news_data else {}
+    print(f"  News signals: {len(news_signals)} events" if news_signals else "  News signals: not available")
+
     previous_reddit = load_json(PREVIOUS_REDDIT_FILE) or {}
     print(f"  Previous reddit scores: {len(previous_reddit)} events" if previous_reddit else "  Previous reddit scores: not available")
 
@@ -82,6 +87,12 @@ def main():
         if eid in reddit_signals:
             reddit_signal = reddit_signals[eid].get('score', 0.0)
         reddit_score = min(reddit_signal * 20, 20)
+
+        # News/press score
+        news_signal = 0.0
+        if eid in news_signals:
+            news_signal = news_signals[eid].get('score', 0.0)
+        news_score = min(news_signal * 15, 15)
         current_reddit_snapshot[eid] = reddit_signal
 
         # Sold-out bonus
@@ -102,7 +113,7 @@ def main():
 
         # Total
         total = (mention_score + hype_score + bandwagon_score +
-                 reddit_score + soldout_bonus + dark_horse + momentum)
+                 reddit_score + news_score + soldout_bonus + dark_horse + momentum)
         total = round(total, 2)
 
         if total >= TRENDING_THRESHOLD:

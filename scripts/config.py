@@ -6,7 +6,7 @@ import re
 import json
 
 # ── Reddit settings ──────────────────────────────────────────────────────────
-REDDIT_SUBREDDITS = ['EDM', 'aves', 'UKFestivals', 'housemusic', 'techno', 'MiamiMusic']
+REDDIT_SUBREDDITS = ['EDM', 'aves', 'UKFestivals', 'housemusic', 'techno', 'MiamiMusic', 'DJs', 'Techno', 'electronicmusic', 'trance', 'deephouse', 'miami', 'festivals']
 REDDIT_USER_AGENT = 'mmw-event-tracker/1.0'
 REDDIT_DELAY = 2.0  # seconds between requests
 

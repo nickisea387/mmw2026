@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-20T15:10:37.682347+00:00",
+  "updated": "2026-03-20T16:00:07.755632+00:00",
   "threshold": 35,
-  "trending_count": 7,
-  "total_events": 103,
+  "trending_count": 10,
+  "total_events": 109,
   "scores": {
     "1": {
       "name": "Experts Only: Club Space Takeover",
@@ -1230,6 +1230,78 @@
     },
     "103": {
       "name": "MMW Closing: Arodes & Fideles",
+      "mention_score": 6,
+      "hype_score": 6,
+      "bandwagon_score": 2,
+      "reddit_score": 0.0,
+      "soldout_bonus": 0,
+      "dark_horse": 0,
+      "momentum": 0,
+      "total": 14.0,
+      "trending": false
+    },
+    "104": {
+      "name": "Ben B\u00f6hmer Live",
+      "mention_score": 12,
+      "hype_score": 10,
+      "bandwagon_score": 4,
+      "reddit_score": 0.0,
+      "soldout_bonus": 0,
+      "dark_horse": 0,
+      "momentum": 0,
+      "total": 26.0,
+      "trending": false
+    },
+    "105": {
+      "name": "Ultra Music Festival Day 1",
+      "mention_score": 21,
+      "hype_score": 10,
+      "bandwagon_score": 5,
+      "reddit_score": 0.0,
+      "soldout_bonus": 0,
+      "dark_horse": 0,
+      "momentum": 0,
+      "total": 36.0,
+      "trending": true
+    },
+    "106": {
+      "name": "Ultra Music Festival Day 2",
+      "mention_score": 21,
+      "hype_score": 10,
+      "bandwagon_score": 5,
+      "reddit_score": 0.0,
+      "soldout_bonus": 0,
+      "dark_horse": 0,
+      "momentum": 0,
+      "total": 36.0,
+      "trending": true
+    },
+    "107": {
+      "name": "Ultra Music Festival Day 3",
+      "mention_score": 21,
+      "hype_score": 10,
+      "bandwagon_score": 5,
+      "reddit_score": 0.0,
+      "soldout_bonus": 0,
+      "dark_horse": 0,
+      "momentum": 0,
+      "total": 36.0,
+      "trending": true
+    },
+    "108": {
+      "name": "Acraze b2b CID at Sable",
+      "mention_score": 6,
+      "hype_score": 6,
+      "bandwagon_score": 4,
+      "reddit_score": 0.0,
+      "soldout_bonus": 0,
+      "dark_horse": 0,
+      "momentum": 0,
+      "total": 16.0,
+      "trending": false
+    },
+    "109": {
+      "name": "Benjamin Lloyd at E11EVEN",
       "mention_score": 6,
       "hype_score": 6,
       "bandwagon_score": 2,

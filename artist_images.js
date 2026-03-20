@@ -86,5 +86,10 @@ const ARTIST_IMAGES = {
   "John Digweed": "https://cdn-images.dzcdn.net/images/artist/ef6150eae1e00574b3a4c2008776c50b/500x500-000000-80-0-0.jpg",
   "tINI": "https://cdn-images.dzcdn.net/images/artist/efb8ac71cf0c9358acbce2b8126bfa39/500x500-000000-80-0-0.jpg",
   "Egyptian Lover": "https://cdn-images.dzcdn.net/images/artist/4cb293361d7a17dba6939642ea6174da/500x500-000000-80-0-0.jpg",
-  "Arodes": "https://cdn-images.dzcdn.net/images/artist/23a68545f2eddef32e958317063d2d7d/500x500-000000-80-0-0.jpg"
+  "Arodes": "https://cdn-images.dzcdn.net/images/artist/23a68545f2eddef32e958317063d2d7d/500x500-000000-80-0-0.jpg",
+  "Ben B\u00f6hmer": "https://cdn-images.dzcdn.net/images/artist/66840a9b7da1d5ebf6fe9b6cd65f1a29/500x500-000000-80-0-0.jpg",
+  "Martin Garrix": "https://cdn-images.dzcdn.net/images/artist/4cab1c0cbe0edc1b3d2234873abc485e/500x500-000000-80-0-0.jpg",
+  "Ti\u00ebsto": "https://cdn-images.dzcdn.net/images/artist/b6ff15612b6ef51e5a552e4bd6abefd6/500x500-000000-80-0-0.jpg",
+  "Acraze": "https://cdn-images.dzcdn.net/images/artist/d548c413118ecc4a7b94d8c26c1ac710/500x500-000000-80-0-0.jpg",
+  "Benjamin Lloyd": "https://cdn-images.dzcdn.net/images/artist/c3cfdf5e820bb3337d92983212477199/500x500-000000-80-0-0.jpg"
 };
