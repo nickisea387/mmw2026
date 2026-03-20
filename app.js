@@ -212,18 +212,77 @@ Respond ONLY in valid JSON (no markdown):
 }
 
 // ── HARRY POTTER ─────────────────────────────────────────────────────────────
+// Broad keyword map: Spotify genre tags → character affinities
+const HP_GENRE_MAP={
+  // Luna: eclectic, experimental, ambient, world, psychedelic
+  'Luna Lovegood':['ambient','experimental','psychedelic','new age','world','trip hop','chillwave','shoegaze','dream pop','ethereal','space','downtempo','idm','glitch','witch house','folklore'],
+  // Snape: dark, intense, underground electronic
+  'Severus Snape':['techno','dark','industrial','ebm','noise','hardstyle','gabber','acid','minimal techno','berlin'],
+  // Fred & George: chaotic, fun, high energy
+  'Fred & George Weasley':['trap','dubstep','bass','drum and bass','jungle','dnb','riddim','brostep','moombahton','jersey club','grime','uk bass','garage','2-step'],
+  // Hermione: sophisticated, complex, refined
+  'Hermione Granger':['progressive','electronica','deep house','organic house','melodic techno','classical crossover','neo-classical','intelligent','jazz','contemporary'],
+  // Sirius: rebellious, underground, raw
+  'Sirius Black':['punk','post-punk','indie','alternative','grunge','garage rock','underground','lo-fi','noise rock','new wave'],
+  // Dumbledore: broad taste, timeless, wise
+  'Dumbledore':['soul','funk','disco','jazz','blues','motown','classic','r&b','gospel','swing','vintage','bossa'],
+  // Draco: sleek, polished, exclusive
+  'Draco Malfoy':['tech house','minimal','microhouse','deep tech','uk house','bass house','future house','slap house'],
+  // Hagrid: earthy, warm, global
+  'Hagrid':['afro','african','latin','reggae','dancehall','cumbia','tribal','organic','world music','afrobeats','soca','zouk'],
+  // Neville: understated, chill, grower
+  'Neville Longbottom':['lo-fi','chill','bedroom','indie folk','soft','mellow','acoustic','singer-songwriter','emo','sad'],
+  // Ginny: fierce, high energy, powerful
+  'Ginny Weasley':['hard techno','rave','hardstyle','hardcore','peak time','big room','festival','mainstage','hard dance','rawstyle'],
+  // Tonks: shapeshifter, genre-fluid
+  'Tonks':['electro','breakbeat','uk garage','speed garage','breaks','house','fidget','electro house','nu disco'],
+  // Dobby: pure, emotional, uplifting
+  'Dobby':['trance','uplifting','vocal trance','euphoric','anjuna','above beyond','emotional','epic','anthem'],
+  // McGonagall: proper, classic, quality
+  'McGonagall':['classic house','chicago','detroit','soulful','garage','uk garage','vocal house','gospel house','warehouse'],
+  // Bellatrix: extreme, unhinged
+  'Bellatrix Lestrange':['metal','death metal','black metal','noise','power electronics','harsh','extreme','screamo','deathcore'],
+  // Harry: mainstream but genuine, popular
+  'Harry Potter':['pop','dance pop','edm','electropop','synth pop','future bass','tropical','mainstream','chart','top 40','radio'],
+  // Ron: fun-loving, crowd-pleaser
+  'Ron Weasley':['party','dance','club','bounce','melbourne bounce','commercial','hands up','eurodance','happy hardcore'],
+  // Lupin: thoughtful, shifts between calm and wild
+  'Lupin':['deep house','organic house','downtempo','electronica','ambient house','balearic','slow house','dub','dub techno'],
+  // Cedric: golden, anthemic
+  'Cedric Diggory':['melodic house','progressive house','vocal house','anthem','swedish house','big room progressive','epic trance'],
+  // Molly: timeless classics, warm
+  'Molly Weasley':['70s','80s','classic rock','soft rock','adult contemporary','oldies','country','folk','americana','easy listening'],
+  // Newt: curious, rare, unusual
+  'Newt Scamander':['field recording','musique concrete','avant-garde','free jazz','noise pop','art pop','outsider','microtonal','found sound'],
+};
+
 function showHPModal(userGenres){
   const genreStr=(userGenres||[]).join(' ').toLowerCase();
-  let bestChar=HP_CHARACTERS[0],bestScore=0;
+  // Also check top artists for additional signal
+  const profile=JSON.parse(localStorage.getItem('sp_profile')||'null');
+  const artistStr=(profile?.topArtists||[]).join(' ').toLowerCase();
+  const combinedStr=genreStr+' '+artistStr;
+
+  let bestChar=null,bestScore=0;
   HP_CHARACTERS.forEach(ch=>{
+    const keywords=HP_GENRE_MAP[ch.name]||ch.genres||[];
     let score=0;
-    ch.genres.forEach(g=>{if(genreStr.includes(g)) score+=2;g.split(' ').forEach(w=>{if(w.length>3&&genreStr.includes(w)) score+=1;});});
+    keywords.forEach(k=>{
+      if(combinedStr.includes(k)) score+=3;
+      // Partial word match for compound genres
+      k.split(' ').forEach(w=>{if(w.length>2&&combinedStr.includes(w)) score+=1;});
+    });
     if(score>bestScore){bestScore=score;bestChar=ch;}
   });
-  if(bestScore<2){
-    if(genreStr.includes('house')||genreStr.includes('edm')) bestChar=HP_CHARACTERS.find(c=>c.name==='Harry Potter')||HP_CHARACTERS[0];
-    else if(genreStr.includes('pop')||genreStr.includes('dance')) bestChar=HP_CHARACTERS.find(c=>c.name==='Ron Weasley')||HP_CHARACTERS[0];
-    else bestChar=HP_CHARACTERS.find(c=>c.name==='Luna Lovegood')||HP_CHARACTERS[0];
+
+  // Better fallback based on broader patterns
+  if(bestScore<3){
+    if(combinedStr.match(/house|edm|electronic|dance|dj|club|techno|beat/)) bestChar=HP_CHARACTERS.find(c=>c.name==='Harry Potter');
+    else if(combinedStr.match(/pop|hip.?hop|rap|r&b|urban|latin|reggaeton/)) bestChar=HP_CHARACTERS.find(c=>c.name==='Ron Weasley');
+    else if(combinedStr.match(/rock|indie|alternative|punk|metal/)) bestChar=HP_CHARACTERS.find(c=>c.name==='Sirius Black');
+    else if(combinedStr.match(/jazz|soul|funk|blues|classical/)) bestChar=HP_CHARACTERS.find(c=>c.name==='Dumbledore');
+    else bestChar=HP_CHARACTERS.find(c=>c.name==='Hermione Granger');
+    bestChar=bestChar||HP_CHARACTERS[0];
   }
   const houseColors={Gryffindor:'#ae0001',Slytherin:'#1a472a',Ravenclaw:'#222f5b',Hufflepuff:'#ecb939'};
   const houseImages={
