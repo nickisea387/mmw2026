@@ -1,1 +1,1 @@
-const TRENDING_IDS = [1, 8, 11, 27, 28, 61, 67];
+const TRENDING_IDS = [1, 11, 61, 67];
