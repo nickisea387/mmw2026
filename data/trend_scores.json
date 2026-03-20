@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-19T23:54:00.262581+00:00",
+  "updated": "2026-03-20T01:40:37.887931+00:00",
   "threshold": 35,
-  "trending_count": 7,
+  "trending_count": 5,
   "total_events": 103,
   "scores": {
     "1": {
@@ -34,10 +34,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.0,
+      "total": 16.0,
       "trending": false
     },
     "4": {
@@ -406,10 +406,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.0,
+      "total": 15.0,
       "trending": false
     },
     "35": {
@@ -442,10 +442,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.0,
+      "total": 13.0,
       "trending": false
     },
     "38": {
@@ -598,10 +598,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 19.0,
+      "total": 29.0,
       "trending": false
     },
     "51": {
@@ -730,10 +730,10 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.0,
+      "total": 35.0,
       "trending": true
     },
     "62": {
@@ -754,11 +754,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.0,
-      "trending": true
+      "total": 29.0,
+      "trending": false
     },
     "64": {
       "name": "Adriatique at LIV",
@@ -778,10 +778,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.0,
+      "total": 23.0,
       "trending": false
     },
     "66": {
@@ -826,10 +826,10 @@
       "hype_score": 10,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.0,
+      "total": 21.0,
       "trending": false
     },
     "70": {
@@ -922,10 +922,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.0,
+      "total": 15.0,
       "trending": false
     },
     "78": {
@@ -958,11 +958,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.0,
-      "trending": true
+      "total": 32.0,
+      "trending": false
     },
     "81": {
       "name": "Elrow Miami at Factory Town",
@@ -1078,10 +1078,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.0,
+      "total": 14.0,
       "trending": false
     },
     "91": {
@@ -1090,10 +1090,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.0,
+      "total": 19.0,
       "trending": false
     },
     "92": {
@@ -1102,10 +1102,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 14.0,
+      "total": 24.0,
       "trending": false
     },
     "93": {
@@ -1162,10 +1162,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.0,
+      "total": 30.0,
       "trending": false
     },
     "98": {
