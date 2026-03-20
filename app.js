@@ -54,6 +54,22 @@ fetch('https://hp-api.onrender.com/api/characters').then(r=>r.json()).then(chars
   chars.forEach(c=>{if(c.image) hpCharImages[c.name.toLowerCase()]=c.image;});
 }).catch(()=>{});
 
+// ── THEME TOGGLE ─────────────────────────────────────────────────────────────
+function toggleTheme(){
+  const isLight=document.documentElement.classList.toggle('light');
+  localStorage.setItem('mmw_theme',isLight?'light':'dark');
+  document.getElementById('themeToggle').innerHTML=isLight?'🌙 Dark':'☀️ Light';
+}
+(function(){
+  const saved=localStorage.getItem('mmw_theme');
+  if(saved==='light'){
+    document.documentElement.classList.add('light');
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.getElementById('themeToggle').innerHTML='🌙 Dark';
+    });
+  }
+})();
+
 // ── AUTO-CLEAR STALE TOKENS ──────────────────────────────────────────────────
 // If token is expired and refresh fails, clear everything so user sees Connect button
 (function(){
