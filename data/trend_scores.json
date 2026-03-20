@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-20T06:14:42.285854+00:00",
+  "updated": "2026-03-20T07:14:16.171833+00:00",
   "threshold": 35,
-  "trending_count": 4,
+  "trending_count": 7,
   "total_events": 103,
   "scores": {
     "1": {
@@ -94,11 +94,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.0,
-      "trending": false
+      "total": 39.0,
+      "trending": true
     },
     "9": {
       "name": "Crystal Waters: I Am House Orchestrated",
@@ -214,10 +214,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.0,
+      "total": 25.0,
       "trending": false
     },
     "19": {
@@ -310,10 +310,10 @@
       "hype_score": 8,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.0,
+      "total": 31.0,
       "trending": false
     },
     "27": {
@@ -322,11 +322,11 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.0,
-      "trending": false
+      "total": 37.0,
+      "trending": true
     },
     "28": {
       "name": "Cloonee Presents Hellbent",
@@ -334,11 +334,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.0,
-      "trending": false
+      "total": 36.0,
+      "trending": true
     },
     "29": {
       "name": "RESISTANCE: Eric Prydz & Argy",
@@ -382,10 +382,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.0,
+      "total": 25.0,
       "trending": false
     },
     "33": {
@@ -562,10 +562,10 @@
       "hype_score": 8,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 22.0,
+      "total": 32.0,
       "trending": false
     },
     "48": {
@@ -982,10 +982,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.0,
+      "total": 30.0,
       "trending": false
     },
     "83": {
@@ -1018,10 +1018,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.0,
+      "total": 26.0,
       "trending": false
     },
     "86": {
@@ -1102,10 +1102,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 14.0,
+      "total": 24.0,
       "trending": false
     },
     "93": {

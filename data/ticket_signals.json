@@ -1,417 +1,417 @@
 {
-  "updated": "2026-03-20T06:10:04.218500+00:00",
+  "updated": "2026-03-20T07:09:45.084245+00:00",
   "signals": {
     "1": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "2": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "3": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "4": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "5": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "6": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "7": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "8": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "9": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "10": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "11": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "12": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "13": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "14": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "15": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "16": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "17": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "18": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "19": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "20": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "21": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "22": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "23": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "24": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "25": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "26": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "27": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "28": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "29": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "30": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "31": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "32": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "33": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "34": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "35": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "36": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "37": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "38": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "39": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "40": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "41": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "42": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "43": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "44": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "45": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "46": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "47": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "48": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "49": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "50": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "51": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "52": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "final_release"
     },
     "53": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "54": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "55": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "56": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "57": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "58": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "59": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "60": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "61": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "62": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "63": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "64": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "final_release"
     },
     "65": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "66": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "67": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "68": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "69": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "70": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "71": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "72": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "73": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "74": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "75": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "76": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "77": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "78": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "79": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "80": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "81": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "82": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "83": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "84": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "85": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "86": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "87": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "88": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "final_release"
     },
     "89": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "90": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "91": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "92": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "93": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "94": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "95": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "96": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "97": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "98": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "99": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "100": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "101": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "102": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "103": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     }
   }
 }
