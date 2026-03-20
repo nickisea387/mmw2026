@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-20T15:10:37.634434+00:00",
+  "updated": "2026-03-20T17:41:03.281696+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 114,
-  "matched_existing": 35,
-  "new_count": 79,
+  "matched_existing": 36,
+  "new_count": 78,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -492,8 +492,8 @@
       "artists": [],
       "price": "18.19",
       "url": "https://dice.fm/event/yoaqlp-open-channel-mmw-acraze-b2b-cid-fallon-jazzy-25th-mar-sable-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
+      "matched_id": 108,
+      "is_new": false
     },
     {
       "name": "MIAMI MUSIC WEEK OPNING PARTY ",
@@ -1458,14 +1458,6 @@
       "artists": [],
       "price": "30.31",
       "url": "https://dice.fm/event/l85yml-cadenza-hi-fi-mmw-special-guest-325-25th-mar-cadenza-hi-fi-miami-tickets"
-    },
-    {
-      "name": "Open Channel MMW: Acraze b2b CID, Fallon, Jazzy ",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Sable Miami",
-      "artists": [],
-      "price": "18.19",
-      "url": "https://dice.fm/event/yoaqlp-open-channel-mmw-acraze-b2b-cid-fallon-jazzy-25th-mar-sable-miami-miami-tickets"
     },
     {
       "name": "MIAMI MUSIC WEEK OPNING PARTY ",
