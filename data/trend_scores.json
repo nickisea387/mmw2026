@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-20T13:06:52.081148+00:00",
+  "updated": "2026-03-20T14:24:58.048159+00:00",
   "threshold": 35,
-  "trending_count": 7,
+  "trending_count": 4,
   "total_events": 103,
   "scores": {
     "1": {
@@ -94,11 +94,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.0,
-      "trending": true
+      "total": 29.0,
+      "trending": false
     },
     "9": {
       "name": "Crystal Waters: I Am House Orchestrated",
@@ -322,11 +322,11 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.0,
-      "trending": true
+      "total": 27.0,
+      "trending": false
     },
     "28": {
       "name": "Cloonee Presents Hellbent",
@@ -334,11 +334,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.0,
-      "trending": true
+      "total": 26.0,
+      "trending": false
     },
     "29": {
       "name": "RESISTANCE: Eric Prydz & Argy",
@@ -562,10 +562,10 @@
       "hype_score": 8,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.0,
+      "total": 22.0,
       "trending": false
     },
     "48": {
@@ -1018,10 +1018,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.0,
+      "total": 16.0,
       "trending": false
     },
     "86": {

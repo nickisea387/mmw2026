@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-20T13:06:52.038978+00:00",
+  "updated": "2026-03-20T14:24:57.998449+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 114,
-  "matched_existing": 35,
-  "new_count": 79,
+  "matched_existing": 38,
+  "new_count": 76,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -206,16 +206,6 @@
       "is_new": false
     },
     {
-      "name": "Good Taste MMW Edition",
-      "date": "2026-03-24T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-mmw-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Welcome to Miami Music Week",
       "date": "2026-03-24T19:00:00-04:00",
       "venue": "Tipsy Flamingo Miami",
@@ -242,16 +232,6 @@
       "artists": [],
       "price": "18.19",
       "url": "https://dice.fm/event/v3yayd-mmw-activation-24th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "OFF THE TARMAC",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5ar96-off-the-tarmac-24th-mar-domicile-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -642,16 +622,6 @@
       "artists": [],
       "price": "24.25",
       "url": "https://dice.fm/event/bb82ag-rvdiovctive-x-groove-factory-x-clique-cabana-26th-mar-coyo-taco-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Soulute MMW Edition",
-      "date": "2026-03-26T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/mx7r6w-soulute-mmw-edition-26th-mar-esm-hotel-rooftop-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1056,6 +1026,36 @@
       "is_new": true
     },
     {
+      "name": "Ministry Of Sound x Hard Times",
+      "date": "2026-03-27T19:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/oevn7a-ministry-of-sound-x-hard-times-27th-mar-sable-miami-miami-tickets",
+      "matched_id": 45,
+      "is_new": false
+    },
+    {
+      "name": "Black Book Records - Miami Music Week ",
+      "date": "2026-03-27T20:00:00-04:00",
+      "venue": "Toe Jam Backlot ",
+      "artists": [],
+      "price": "126.74",
+      "url": "https://dice.fm/event/3ow9nx-black-book-records-miami-music-week-27th-mar-toe-jam-backlot-miami-tickets",
+      "matched_id": 43,
+      "is_new": false
+    },
+    {
+      "name": "deadmau5 - Miami Music Week",
+      "date": "2026-03-27T20:00:00-04:00",
+      "venue": "Toe Jam XL",
+      "artists": [],
+      "price": "71.09",
+      "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
+      "matched_id": 46,
+      "is_new": false
+    },
+    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1300,14 +1300,6 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
-      "name": "Good Taste MMW Edition",
-      "date": "2026-03-24T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-mmw-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets"
-    },
-    {
       "name": "Welcome to Miami Music Week",
       "date": "2026-03-24T19:00:00-04:00",
       "venue": "Tipsy Flamingo Miami",
@@ -1330,14 +1322,6 @@
       "artists": [],
       "price": "18.19",
       "url": "https://dice.fm/event/v3yayd-mmw-activation-24th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
-    },
-    {
-      "name": "OFF THE TARMAC",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5ar96-off-the-tarmac-24th-mar-domicile-miami-miami-tickets"
     },
     {
       "name": "Brobot Records Miami x We Group Hi-Fi",
@@ -1538,14 +1522,6 @@
       "artists": [],
       "price": "24.25",
       "url": "https://dice.fm/event/bb82ag-rvdiovctive-x-groove-factory-x-clique-cabana-26th-mar-coyo-taco-miami-tickets"
-    },
-    {
-      "name": "Soulute MMW Edition",
-      "date": "2026-03-26T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/mx7r6w-soulute-mmw-edition-26th-mar-esm-hotel-rooftop-miami-beach-tickets"
     },
     {
       "name": "Floyd Lavine & Friends MMW ft. AQUTIE + Nei Tii",
