@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-20T23:26:30.132537+00:00",
+  "updated": "2026-03-21T02:15:51.861676+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 114,
-  "matched_existing": 36,
+  "total_found": 116,
+  "matched_existing": 38,
   "new_count": 78,
   "events": [
     {
@@ -20,7 +20,7 @@
       "date": "2026-03-20T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "12",
+      "price": "15",
       "url": "https://dice.fm/event/ry9oey-mmw-mano-le-tough-20th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -36,22 +36,22 @@
       "is_new": true
     },
     {
-      "name": "Ctrl Room ",
-      "date": "2026-03-21T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
       "date": "2026-03-21T22:00:00-04:00",
       "venue": "Lunasol",
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Ctrl Room ",
+      "date": "2026-03-21T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -501,7 +501,7 @@
       "venue": "Domicile Miami",
       "artists": [],
       "price": "30",
-      "url": "https://dice.fm/event/k692ao-miami-music-week-opning-party-25th-mar-domicile-miami-miami-tickets",
+      "url": "https://dice.fm/event/k692ao-gravedgr-shay-de-castro-vessel-miami-music-week-opening-party-25th-mar-domicile-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -806,16 +806,6 @@
       "is_new": true
     },
     {
-      "name": "RESISTANCE MMW: Eric Prydz, Argy, Jeremy Olander",
-      "date": "2026-03-26T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "124.95",
-      "url": "https://dice.fm/event/yoax7x-resistance-mmw-eric-prydz-argy-jeremy-olander-26th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 29,
-      "is_new": false
-    },
-    {
       "name": "Do Not Sit On MMW : Mira & Tal fussman ",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
@@ -824,6 +814,16 @@
       "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "RESISTANCE MMW: Eric Prydz, Argy, Jeremy Olander",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "124.95",
+      "url": "https://dice.fm/event/yoax7x-resistance-mmw-eric-prydz-argy-jeremy-olander-26th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": 29,
+      "is_new": false
     },
     {
       "name": "Something Chill MMW Showcase",
@@ -1076,6 +1076,16 @@
       "is_new": true
     },
     {
+      "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "National Hotel",
+      "artists": [],
+      "price": "74.98",
+      "url": "https://dice.fm/event/k6a36o-meduza-the-originals-present-hiide-mmw-2026-28th-mar-national-hotel-miami-tickets",
+      "matched_id": 66,
+      "is_new": false
+    },
+    {
       "name": "Louie Vega & Friends: Moodymann, Anan\u00e9, Karizma",
       "date": "2026-03-28T15:00:00-04:00",
       "venue": "ZeyZey",
@@ -1104,6 +1114,16 @@
       "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
+      "date": "2026-03-29T12:00:00-04:00",
+      "venue": "National Hotel",
+      "artists": [],
+      "price": "49.99",
+      "url": "https://dice.fm/event/7dpydp-james-hype-the-originals-present-hiide-mmw-2026-29th-mar-national-hotel-miami-tickets",
+      "matched_id": 49,
+      "is_new": false
     },
     {
       "name": "MMW Closing Party With Arodes And Fideles",
@@ -1160,7 +1180,7 @@
       "date": "2026-03-20T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "12",
+      "price": "15",
       "url": "https://dice.fm/event/ry9oey-mmw-mano-le-tough-20th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -1172,20 +1192,20 @@
       "url": "https://dice.fm/event/bb3ldg-made-in-miami-oscar-g-friends-21st-mar-national-hotel-miami-tickets"
     },
     {
-      "name": "Ctrl Room ",
-      "date": "2026-03-21T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets"
-    },
-    {
       "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
       "date": "2026-03-21T22:00:00-04:00",
       "venue": "Lunasol",
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets"
+    },
+    {
+      "name": "Ctrl Room ",
+      "date": "2026-03-21T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets"
     },
     {
       "name": "MMW: Amtrac",
@@ -1465,7 +1485,7 @@
       "venue": "Domicile Miami",
       "artists": [],
       "price": "30",
-      "url": "https://dice.fm/event/k692ao-miami-music-week-opning-party-25th-mar-domicile-miami-miami-tickets"
+      "url": "https://dice.fm/event/k692ao-gravedgr-shay-de-castro-vessel-miami-music-week-opening-party-25th-mar-domicile-miami-miami-tickets"
     },
     {
       "name": "MMW: Cheetah Print: Rafael ",
