@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-21T11:28:46.621595+00:00",
+  "updated": "2026-03-21T13:33:56.482719+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 116,
+  "total_found": 115,
   "matched_existing": 38,
-  "new_count": 78,
+  "new_count": 77,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -12,16 +12,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Mano Le Tough",
-      "date": "2026-03-20T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ry9oey-mmw-mano-le-tough-20th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -36,12 +26,12 @@
       "is_new": true
     },
     {
-      "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
+      "name": "MMW: Amtrac",
       "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Lunasol",
+      "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets",
+      "price": "12",
+      "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -56,12 +46,12 @@
       "is_new": true
     },
     {
-      "name": "MMW: Amtrac",
+      "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
       "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
+      "venue": "Lunasol",
       "artists": [],
-      "price": "12",
-      "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets",
+      "price": "",
+      "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -426,6 +416,16 @@
       "is_new": true
     },
     {
+      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "RESISTANCE Miami - MMW Pass",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -442,16 +442,6 @@
       "artists": [],
       "price": "49.95",
       "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "48.49",
-      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -806,16 +796,6 @@
       "is_new": true
     },
     {
-      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
-      "date": "2026-03-26T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "60.62",
-      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "RESISTANCE MMW: Eric Prydz, Argy, Jeremy Olander",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -824,6 +804,16 @@
       "url": "https://dice.fm/event/yoax7x-resistance-mmw-eric-prydz-argy-jeremy-olander-26th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 29,
       "is_new": false
+    },
+    {
+      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "60.62",
+      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Something Chill MMW Showcase",
@@ -1056,16 +1046,6 @@
       "is_new": true
     },
     {
-      "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "99.96",
-      "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 48,
-      "is_new": false
-    },
-    {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
@@ -1074,6 +1054,16 @@
       "url": "https://dice.fm/event/6dnyd2-do-not-sit-on-mmw-yes-yes-yes-label-party-27th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "99.96",
+      "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": 48,
+      "is_new": false
     },
     {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
@@ -1176,14 +1166,6 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
-      "name": "MMW: Mano Le Tough",
-      "date": "2026-03-20T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ry9oey-mmw-mano-le-tough-20th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
       "name": "Made in Miami: Oscar G + Friends",
       "date": "2026-03-21T13:00:00-04:00",
       "venue": "National Hotel",
@@ -1192,12 +1174,12 @@
       "url": "https://dice.fm/event/bb3ldg-made-in-miami-oscar-g-friends-21st-mar-national-hotel-miami-tickets"
     },
     {
-      "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
+      "name": "MMW: Amtrac",
       "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Lunasol",
+      "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets"
+      "price": "12",
+      "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
       "name": "Ctrl Room ",
@@ -1208,12 +1190,12 @@
       "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets"
     },
     {
-      "name": "MMW: Amtrac",
+      "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
       "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
+      "venue": "Lunasol",
       "artists": [],
-      "price": "12",
-      "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets"
+      "price": "",
+      "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets"
     },
     {
       "name": "Kybba",
@@ -1432,6 +1414,14 @@
       "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets"
     },
     {
+      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
+    },
+    {
       "name": "RESISTANCE Miami - MMW Pass",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1446,14 +1436,6 @@
       "artists": [],
       "price": "49.95",
       "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets"
-    },
-    {
-      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "48.49",
-      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Wednesday Pass)",
