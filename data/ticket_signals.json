@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T06:47:22.885594+00:00",
+  "updated": "2026-03-22T08:33:24.696760+00:00",
   "signals": {
     "1": {
       "soldOut": false,
@@ -74,8 +74,8 @@
       "status": "available"
     },
     "19": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "20": {
       "soldOut": false,
@@ -98,8 +98,8 @@
       "status": "available"
     },
     "25": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "26": {
       "soldOut": false,
@@ -190,8 +190,8 @@
       "status": "sold_out"
     },
     "48": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "49": {
       "soldOut": false,
@@ -222,8 +222,8 @@
       "status": "available"
     },
     "56": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "57": {
       "soldOut": false,
@@ -326,8 +326,8 @@
       "status": "available"
     },
     "82": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "83": {
       "soldOut": false,
@@ -350,8 +350,8 @@
       "status": "sold_out"
     },
     "88": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "final_release"
     },
     "89": {
       "soldOut": false,
