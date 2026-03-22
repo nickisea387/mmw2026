@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T05:21:47.407014+00:00",
+  "updated": "2026-03-22T06:58:10.222105+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 114,
+  "total_found": 115,
   "matched_existing": 38,
-  "new_count": 76,
+  "new_count": 77,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -16,11 +16,21 @@
       "is_new": true
     },
     {
+      "name": "Made in Miami: Oscar G + Friends",
+      "date": "2026-03-21T13:00:00-04:00",
+      "venue": "National Hotel",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bb3ldg-made-in-miami-oscar-g-friends-21st-mar-national-hotel-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "MMW: Amtrac",
       "date": "2026-03-21T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "17.20",
+      "price": "40",
       "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -500,7 +510,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "MITA",
       "artists": [],
-      "price": "",
+      "price": "24.25",
       "url": "https://dice.fm/event/g5mpq2-trifecta-records-label-showcase-25th-mar-mita-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -786,16 +796,6 @@
       "is_new": true
     },
     {
-      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
-      "date": "2026-03-26T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "60.62",
-      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "RESISTANCE MMW: Eric Prydz, Argy, Jeremy Olander",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -804,6 +804,16 @@
       "url": "https://dice.fm/event/yoax7x-resistance-mmw-eric-prydz-argy-jeremy-olander-26th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 29,
       "is_new": false
+    },
+    {
+      "name": "Do Not Sit On MMW : Mira & Tal fussman ",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "60.62",
+      "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Something Chill MMW Showcase",
@@ -1076,16 +1086,6 @@
       "is_new": false
     },
     {
-      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "90.93",
-      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1094,6 +1094,16 @@
       "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 63,
       "is_new": false
+    },
+    {
+      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
@@ -1106,16 +1116,6 @@
       "is_new": false
     },
     {
-      "name": "Factory Town Music Week 2026 (Sunday Pass)",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "249.99",
-      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "MMW Closing Party With Arodes And Fideles",
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Wynwood Studios",
@@ -1124,6 +1124,16 @@
       "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
       "matched_id": 103,
       "is_new": false
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Sunday Pass)",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "249.99",
+      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
@@ -1156,11 +1166,19 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
+      "name": "Made in Miami: Oscar G + Friends",
+      "date": "2026-03-21T13:00:00-04:00",
+      "venue": "National Hotel",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bb3ldg-made-in-miami-oscar-g-friends-21st-mar-national-hotel-miami-tickets"
+    },
+    {
       "name": "MMW: Amtrac",
       "date": "2026-03-21T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "17.20",
+      "price": "40",
       "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -1464,7 +1482,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "MITA",
       "artists": [],
-      "price": "",
+      "price": "24.25",
       "url": "https://dice.fm/event/g5mpq2-trifecta-records-label-showcase-25th-mar-mita-miami-tickets"
     },
     {
