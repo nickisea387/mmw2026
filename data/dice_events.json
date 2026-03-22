@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T08:44:00.989411+00:00",
+  "updated": "2026-03-22T10:31:36.873612+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 115,
+  "total_found": 112,
   "matched_existing": 38,
-  "new_count": 77,
+  "new_count": 74,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -16,42 +16,12 @@
       "is_new": true
     },
     {
-      "name": "Made in Miami: Oscar G + Friends",
-      "date": "2026-03-21T13:00:00-04:00",
-      "venue": "National Hotel",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bb3ldg-made-in-miami-oscar-g-friends-21st-mar-national-hotel-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Amtrac",
-      "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Ctrl Room ",
       "date": "2026-03-21T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "6",
-      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
-      "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Lunasol",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets",
+      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1086,16 +1056,6 @@
       "is_new": false
     },
     {
-      "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "149.95",
-      "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 63,
-      "is_new": false
-    },
-    {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
@@ -1104,6 +1064,16 @@
       "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "149.95",
+      "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": 63,
+      "is_new": false
     },
     {
       "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
@@ -1166,36 +1136,12 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
-      "name": "Made in Miami: Oscar G + Friends",
-      "date": "2026-03-21T13:00:00-04:00",
-      "venue": "National Hotel",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bb3ldg-made-in-miami-oscar-g-friends-21st-mar-national-hotel-miami-tickets"
-    },
-    {
-      "name": "MMW: Amtrac",
-      "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5mal6-mmw-amtrac-21st-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
       "name": "Ctrl Room ",
       "date": "2026-03-21T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "6",
-      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets"
-    },
-    {
-      "name": "Generous B, G$, Yomayo, Harrison Davis, Elias",
-      "date": "2026-03-21T22:00:00-04:00",
-      "venue": "Lunasol",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/2w3gvo-generous-b-g-yomayo-harrison-davis-elias-21st-mar-lunasol-miami-tickets"
+      "url": "https://dice.fm/event/bbraeo-ctrl-room-21st-mar-m2-miami-miami-beach-tickets"
     },
     {
       "name": "Kybba",

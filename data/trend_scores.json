@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-22T08:45:19.962283+00:00",
+  "updated": "2026-03-22T10:32:55.610480+00:00",
   "threshold": 35,
-  "trending_count": 32,
+  "trending_count": 30,
   "total_events": 109,
   "scores": {
     "1": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.73,
+      "total": 29.88,
       "trending": false
     },
     "8": {
@@ -94,11 +94,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.97,
-      "trending": true
+      "total": 34.97,
+      "trending": false
     },
     "9": {
       "name": "Crystal Waters: I Am House Orchestrated",
@@ -121,7 +121,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.33,
+      "total": 38.26,
       "trending": true
     },
     "11": {
@@ -133,7 +133,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 46.48,
+      "total": 44.33,
       "trending": true
     },
     "12": {
@@ -169,7 +169,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.0,
+      "total": 30.62,
       "trending": false
     },
     "15": {
@@ -226,10 +226,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.14,
+      "total": 15.14,
       "trending": false
     },
     "20": {
@@ -298,10 +298,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.59,
+      "total": 21.59,
       "trending": false
     },
     "26": {
@@ -322,10 +322,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.77,
+      "total": 40.77,
       "trending": true
     },
     "28": {
@@ -334,11 +334,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 41.97,
-      "trending": true
+      "total": 31.97,
+      "trending": false
     },
     "29": {
       "name": "RESISTANCE: Eric Prydz & Argy",
@@ -349,7 +349,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.7,
+      "total": 42.62,
       "trending": true
     },
     "30": {
@@ -358,10 +358,10 @@
       "hype_score": 8,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.14,
+      "total": 22.14,
       "trending": false
     },
     "31": {
@@ -373,7 +373,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.73,
+      "total": 24.27,
       "trending": false
     },
     "32": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.24,
+      "total": 45.0,
       "trending": true
     },
     "40": {
@@ -481,7 +481,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.17,
+      "total": 39.79,
       "trending": true
     },
     "41": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.09,
+      "total": 42.94,
       "trending": true
     },
     "43": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.26,
+      "total": 33.64,
       "trending": false
     },
     "44": {
@@ -562,10 +562,10 @@
       "hype_score": 8,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 46.7,
+      "total": 35.47,
       "trending": true
     },
     "48": {
@@ -574,10 +574,10 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 48.95,
+      "total": 40.64,
       "trending": true
     },
     "49": {
@@ -637,7 +637,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.98,
+      "total": 21.14,
       "trending": false
     },
     "54": {
@@ -673,7 +673,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.59,
+      "total": 17.74,
       "trending": false
     },
     "57": {
@@ -733,7 +733,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.55,
+      "total": 47.41,
       "trending": true
     },
     "62": {
@@ -793,7 +793,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.65,
+      "total": 36.5,
       "trending": true
     },
     "67": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 49.09,
+      "total": 48.94,
       "trending": true
     },
     "68": {
@@ -814,11 +814,11 @@
       "hype_score": 10,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 41.59,
-      "trending": true
+      "total": 32.03,
+      "trending": false
     },
     "69": {
       "name": "Louie Vega & Friends: Moodymann & Karizma",
@@ -841,7 +841,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.53,
+      "total": 38.32,
       "trending": true
     },
     "71": {
@@ -853,7 +853,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.18,
+      "total": 30.26,
       "trending": false
     },
     "72": {
@@ -865,7 +865,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.18,
+      "total": 29.03,
       "trending": false
     },
     "73": {
@@ -877,7 +877,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.02,
+      "total": 27.18,
       "trending": false
     },
     "74": {
@@ -889,7 +889,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.73,
+      "total": 23.59,
       "trending": false
     },
     "75": {
@@ -961,7 +961,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 46.7,
+      "total": 41.8,
       "trending": true
     },
     "81": {
@@ -973,7 +973,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.5,
+      "total": 37.18,
       "trending": true
     },
     "82": {
@@ -982,10 +982,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.91,
+      "total": 24.91,
       "trending": false
     },
     "83": {
@@ -997,8 +997,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.77,
-      "trending": false
+      "total": 35.23,
+      "trending": true
     },
     "84": {
       "name": "Vintage Culture at E11EVEN",
@@ -1009,7 +1009,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.09,
+      "total": 30.8,
       "trending": false
     },
     "85": {
@@ -1018,10 +1018,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.3,
+      "total": 18.3,
       "trending": false
     },
     "86": {
@@ -1042,10 +1042,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.82,
+      "total": 17.82,
       "trending": false
     },
     "88": {
@@ -1105,7 +1105,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.83,
+      "total": 15.38,
       "trending": false
     },
     "93": {
@@ -1117,7 +1117,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.83,
+      "total": 15.38,
       "trending": false
     },
     "94": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.48,
+      "total": 48.41,
       "trending": true
     },
     "107": {
@@ -1285,7 +1285,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.7,
+      "total": 45.8,
       "trending": true
     },
     "108": {
