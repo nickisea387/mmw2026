@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-23T02:21:22.646997+00:00",
+  "updated": "2026-03-23T05:26:19.006285+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 38,
-  "new_count": 73,
+  "matched_existing": 41,
+  "new_count": 70,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -12,26 +12,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Kybba",
-      "date": "2026-03-22T16:00:00-04:00",
-      "venue": "Wynwood Marketplace",
-      "artists": [],
-      "price": "82.39",
-      "url": "https://dice.fm/event/l8o23r-kybba-22nd-mar-wynwood-marketplace-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Cocodrills & Lousy Lover",
-      "date": "2026-03-22T18:00:00-04:00",
-      "venue": "1-800-Lucky",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g56mxa-cocodrills-lousy-lover-22nd-mar-1-800-lucky-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -46,32 +26,12 @@
       "is_new": true
     },
     {
-      "name": "Hush ",
-      "date": "2026-03-22T22:00:00-04:00",
-      "venue": "Minibar SoFi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8egov5-hush-22nd-mar-minibar-sofi-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "MMW: Thunderpony's Bday Saloon: Hank & FLETCH",
       "date": "2026-03-22T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
       "price": "10",
       "url": "https://dice.fm/event/oevpxy-mmw-thunderponys-bday-saloon-hank-fletch-22nd-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Groovers Only: Ale De Tuglie + Joe Vanditti ",
-      "date": "2026-03-22T23:00:00-04:00",
-      "venue": "Floyd Miami",
-      "artists": [],
-      "price": "10",
-      "url": "https://dice.fm/event/oevrpa-groovers-only-saraga-joe-vanditti-22nd-mar-floyd-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -441,7 +401,7 @@
       "venue": "Sable Miami",
       "artists": [],
       "price": "18.19",
-      "url": "https://dice.fm/event/yoaqlp-open-channel-mmw-acraze-b2b-cid-fallon-jazzy-25th-mar-sable-miami-miami-tickets",
+      "url": "https://dice.fm/event/yoaqlp-open-channel-mmw-acraze-b2b-cid-benny-benassi-25th-mar-sable-miami-miami-tickets",
       "matched_id": 108,
       "is_new": false
     },
@@ -1006,6 +966,46 @@
       "is_new": true
     },
     {
+      "name": "Ministry Of Sound x Hard Times",
+      "date": "2026-03-27T19:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/oevn7a-ministry-of-sound-x-hard-times-27th-mar-sable-miami-miami-tickets",
+      "matched_id": 45,
+      "is_new": false
+    },
+    {
+      "name": "Black Book Records - Miami Music Week ",
+      "date": "2026-03-27T20:00:00-04:00",
+      "venue": "Toe Jam Backlot ",
+      "artists": [],
+      "price": "126.74",
+      "url": "https://dice.fm/event/3ow9nx-black-book-records-miami-music-week-27th-mar-toe-jam-backlot-miami-tickets",
+      "matched_id": 43,
+      "is_new": false
+    },
+    {
+      "name": "deadmau5 - Miami Music Week",
+      "date": "2026-03-27T20:00:00-04:00",
+      "venue": "Toe Jam XL",
+      "artists": [],
+      "price": "88.73",
+      "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
+      "matched_id": 46,
+      "is_new": false
+    },
+    {
+      "name": "APEX COMBO FRIDAY PASS",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "80",
+      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1126,22 +1126,6 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
-      "name": "Kybba",
-      "date": "2026-03-22T16:00:00-04:00",
-      "venue": "Wynwood Marketplace",
-      "artists": [],
-      "price": "82.39",
-      "url": "https://dice.fm/event/l8o23r-kybba-22nd-mar-wynwood-marketplace-miami-tickets"
-    },
-    {
-      "name": "Cocodrills & Lousy Lover",
-      "date": "2026-03-22T18:00:00-04:00",
-      "venue": "1-800-Lucky",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g56mxa-cocodrills-lousy-lover-22nd-mar-1-800-lucky-miami-tickets"
-    },
-    {
       "name": "AROUND THE CORNER: HACKER, ROUS ",
       "date": "2026-03-22T21:00:00-04:00",
       "venue": "ASTRA",
@@ -1150,28 +1134,12 @@
       "url": "https://dice.fm/event/yobm9v-around-the-corner-hacker-rous-22nd-mar-astra-miami-tickets"
     },
     {
-      "name": "Hush ",
-      "date": "2026-03-22T22:00:00-04:00",
-      "venue": "Minibar SoFi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8egov5-hush-22nd-mar-minibar-sofi-miami-beach-tickets"
-    },
-    {
       "name": "MMW: Thunderpony's Bday Saloon: Hank & FLETCH",
       "date": "2026-03-22T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
       "price": "10",
       "url": "https://dice.fm/event/oevpxy-mmw-thunderponys-bday-saloon-hank-fletch-22nd-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "Groovers Only: Ale De Tuglie + Joe Vanditti ",
-      "date": "2026-03-22T23:00:00-04:00",
-      "venue": "Floyd Miami",
-      "artists": [],
-      "price": "10",
-      "url": "https://dice.fm/event/oevrpa-groovers-only-saraga-joe-vanditti-22nd-mar-floyd-miami-miami-tickets"
     },
     {
       "name": "AROUND THE CORNER: HACKER, ROUS",
@@ -1676,6 +1644,14 @@
       "artists": [],
       "price": "94.34",
       "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets"
+    },
+    {
+      "name": "APEX COMBO FRIDAY PASS",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "80",
+      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
