@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-23T07:13:43.650786+00:00",
+  "updated": "2026-03-23T09:06:39.113112+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 42,
-  "new_count": 69,
+  "matched_existing": 43,
+  "new_count": 68,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -12,26 +12,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "AROUND THE CORNER: HACKER, ROUS ",
-      "date": "2026-03-22T21:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yobm9v-around-the-corner-hacker-rous-22nd-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Thunderpony's Bday Saloon: Hank & FLETCH",
-      "date": "2026-03-22T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/oevpxy-mmw-thunderponys-bday-saloon-hank-fletch-22nd-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -111,7 +91,7 @@
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-mmw-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets",
+      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -551,7 +531,7 @@
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/mx7r6w-soulute-mmw-edition-26th-mar-esm-hotel-rooftop-miami-beach-tickets",
+      "url": "https://dice.fm/event/mx7r6w-soulute-miami-music-week-edition-26th-mar-esm-hotel-rooftop-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1006,6 +986,26 @@
       "is_new": false
     },
     {
+      "name": "The Cut vs Humans Alike Showcase",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "UVA Wynwood",
+      "artists": [],
+      "price": "12.12",
+      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Clutch",
+      "artists": [],
+      "price": "35",
+      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-clutch-miami-tickets",
+      "matched_id": 53,
+      "is_new": false
+    },
+    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1126,22 +1126,6 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
-      "name": "AROUND THE CORNER: HACKER, ROUS ",
-      "date": "2026-03-22T21:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yobm9v-around-the-corner-hacker-rous-22nd-mar-astra-miami-tickets"
-    },
-    {
-      "name": "MMW: Thunderpony's Bday Saloon: Hank & FLETCH",
-      "date": "2026-03-22T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/oevpxy-mmw-thunderponys-bday-saloon-hank-fletch-22nd-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
       "name": "AROUND THE CORNER: HACKER, ROUS",
       "date": "2026-03-22T23:59:00-04:00",
       "venue": "The Trip",
@@ -1195,7 +1179,7 @@
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-mmw-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets"
+      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets"
     },
     {
       "name": "Welcome to Miami Music Week",
@@ -1427,7 +1411,7 @@
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/mx7r6w-soulute-mmw-edition-26th-mar-esm-hotel-rooftop-miami-beach-tickets"
+      "url": "https://dice.fm/event/mx7r6w-soulute-miami-music-week-edition-26th-mar-esm-hotel-rooftop-miami-beach-tickets"
     },
     {
       "name": "Floyd Lavine & Friends MMW ft. AQUTIE + Nei Tii",
@@ -1644,6 +1628,14 @@
       "artists": [],
       "price": "80",
       "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
+    },
+    {
+      "name": "The Cut vs Humans Alike Showcase",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "UVA Wynwood",
+      "artists": [],
+      "price": "12.12",
+      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
