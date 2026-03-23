@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-23T05:26:19.006285+00:00",
+  "updated": "2026-03-23T07:13:43.650786+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 41,
-  "new_count": 70,
+  "matched_existing": 42,
+  "new_count": 69,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -30,7 +30,7 @@
       "date": "2026-03-22T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "10",
+      "price": "",
       "url": "https://dice.fm/event/oevpxy-mmw-thunderponys-bday-saloon-hank-fletch-22nd-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -52,16 +52,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/l89oww-enjoy-miami-music-week-opening-party-23rd-mar-esm-hotel-rooftop-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Miami Music Week | SONIKA ",
-      "date": "2026-03-23T20:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkq8q6-miami-music-week-sonika-23rd-mar-astra-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -116,7 +106,7 @@
       "is_new": false
     },
     {
-      "name": "Good Taste MMW Edition",
+      "name": "Good Taste Miami Music Week Edition",
       "date": "2026-03-24T17:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
@@ -556,7 +546,7 @@
       "is_new": true
     },
     {
-      "name": "Soulute MMW Edition",
+      "name": "Soulute Miami Music Week Edition",
       "date": "2026-03-26T17:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
@@ -1006,6 +996,16 @@
       "is_new": true
     },
     {
+      "name": "JOURNEY - Spencer Brown, Eric Luttrell , Qrion x Massane , Because of Art",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "MAZUMA",
+      "artists": [],
+      "price": "19.99",
+      "url": "https://dice.fm/event/avpqm2-journey-spencer-brown-eric-luttrell-qrion-x-massane-because-of-art-27th-mar-mazuma-miami-tickets",
+      "matched_id": 54,
+      "is_new": false
+    },
+    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1138,7 +1138,7 @@
       "date": "2026-03-22T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "10",
+      "price": "",
       "url": "https://dice.fm/event/oevpxy-mmw-thunderponys-bday-saloon-hank-fletch-22nd-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -1156,14 +1156,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/l89oww-enjoy-miami-music-week-opening-party-23rd-mar-esm-hotel-rooftop-miami-beach-tickets"
-    },
-    {
-      "name": "Miami Music Week | SONIKA ",
-      "date": "2026-03-23T20:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkq8q6-miami-music-week-sonika-23rd-mar-astra-miami-tickets"
     },
     {
       "name": "MMW: Hernan Cattaneo, Khen, Jonathan, & Differ",
@@ -1198,7 +1190,7 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
-      "name": "Good Taste MMW Edition",
+      "name": "Good Taste Miami Music Week Edition",
       "date": "2026-03-24T17:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
@@ -1430,7 +1422,7 @@
       "url": "https://dice.fm/event/bb82ag-rvdiovctive-x-groove-factory-x-clique-cabana-26th-mar-coyo-taco-miami-tickets"
     },
     {
-      "name": "Soulute MMW Edition",
+      "name": "Soulute Miami Music Week Edition",
       "date": "2026-03-26T17:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
