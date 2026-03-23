@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-23T12:51:50.366300+00:00",
+  "updated": "2026-03-23T15:20:32.775621+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 43,
-  "new_count": 68,
+  "matched_existing": 40,
+  "new_count": 71,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -16,22 +16,22 @@
       "is_new": true
     },
     {
-      "name": "AROUND THE CORNER: HACKER, ROUS",
-      "date": "2026-03-22T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "12.46",
-      "url": "https://dice.fm/event/v3y6lv-around-the-corner-hacker-rous-22nd-mar-the-trip-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "ENJOY. MIAMI MUSIC WEEK OPENING PARTY",
       "date": "2026-03-23T18:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/l89oww-enjoy-miami-music-week-opening-party-23rd-mar-esm-hotel-rooftop-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Miami Music Week | SONIKA ",
+      "date": "2026-03-23T20:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkq8q6-miami-music-week-sonika-23rd-mar-astra-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -224,6 +224,16 @@
       "url": "https://dice.fm/event/3ogw58-balance-miami-25th-mar-1-800-lucky-miami-tickets",
       "matched_id": 16,
       "is_new": false
+    },
+    {
+      "name": "MMW Open Decks + Networker",
+      "date": "2026-03-25T16:30:00-04:00",
+      "venue": "Electric Lady",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/v3yw36-mmw-open-decks-networker-25th-mar-electric-lady-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "That Thing on Wednesday - HoH x ENJOY x Vice City",
@@ -420,7 +430,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "524.99",
+      "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -486,16 +496,6 @@
       "is_new": true
     },
     {
-      "name": "Beatport Live Pool Party: Hot Creations x TSZR",
-      "date": "2026-03-26T15:00:00-04:00",
-      "venue": "Kimpton EPIC Hotel",
-      "artists": [],
-      "price": "46.69",
-      "url": "https://dice.fm/event/bb387o-beatport-live-pool-party-hot-creations-x-tszr-26th-mar-kimpton-epic-hotel-miami-tickets",
-      "matched_id": 21,
-      "is_new": false
-    },
-    {
       "name": "Bassrush Miami Music Week",
       "date": "2026-03-26T15:00:00-04:00",
       "venue": " RC Cola Plant",
@@ -504,6 +504,16 @@
       "url": "https://dice.fm/event/l89pol-bassrush-miami-music-week-26th-mar-rc-cola-plant-miami-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "Beatport Live Pool Party: Hot Creations x TSZR",
+      "date": "2026-03-26T15:00:00-04:00",
+      "venue": "Kimpton EPIC Hotel",
+      "artists": [],
+      "price": "46.69",
+      "url": "https://dice.fm/event/bb387o-beatport-live-pool-party-hot-creations-x-tszr-26th-mar-kimpton-epic-hotel-miami-tickets",
+      "matched_id": 21,
+      "is_new": false
     },
     {
       "name": "Bedrock Sunset Cruise-John Digweed & Spencer Brown",
@@ -522,6 +532,16 @@
       "artists": [],
       "price": "24.25",
       "url": "https://dice.fm/event/bb82ag-rvdiovctive-x-groove-factory-x-clique-cabana-26th-mar-coyo-taco-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "SHIFT MIAMI & M\u00b2Artist Agency Present Lucky Thursday",
+      "date": "2026-03-26T17:00:00-04:00",
+      "venue": "1-800-Lucky",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkm6lg-shift-miami-martist-agency-present-lucky-thursday-26th-mar-1-800-lucky-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -564,6 +584,16 @@
       "url": "https://dice.fm/event/v3qvdv-nora-en-pure-presents-purified-miami-26th-mar-jungle-island-miami-tickets",
       "matched_id": 23,
       "is_new": false
+    },
+    {
+      "name": "Toe Jam Music Week (4-Day Pass)",
+      "date": "2026-03-26T20:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "300.33",
+      "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "UNION SHOWCASE - PEPPE CITARELLA & FRIENDS ",
@@ -706,6 +736,16 @@
       "is_new": false
     },
     {
+      "name": "TELETECH MIAMI",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": " RC Cola Plant",
+      "artists": [],
+      "price": "49",
+      "url": "https://dice.fm/event/v39ll7-teletech-miami-26th-mar-rc-cola-plant-miami-tickets",
+      "matched_id": 99,
+      "is_new": false
+    },
+    {
       "name": "Something Chill MMW Showcase",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
@@ -724,16 +764,6 @@
       "url": "https://dice.fm/event/dkqyde-the-disco-express-mmw-label-showcase-x-we-group-hi-fi-26th-mar-miami-sound-bar-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "TELETECH MIAMI",
-      "date": "2026-03-26T22:00:00-04:00",
-      "venue": " RC Cola Plant",
-      "artists": [],
-      "price": "49",
-      "url": "https://dice.fm/event/v39ll7-teletech-miami-26th-mar-rc-cola-plant-miami-tickets",
-      "matched_id": 99,
-      "is_new": false
     },
     {
       "name": "INTERPLAY X OTHER DIMENSION MMW ",
@@ -772,6 +802,16 @@
       "artists": [],
       "price": "30.31",
       "url": "https://dice.fm/event/rynn3w-farris-wheel-showcase-mmw-2026-26th-mar-mode-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Mixmag x Those Nights (Miami Music Week)",
+      "date": "2026-03-26T23:00:00-04:00",
+      "venue": "La Ferneteria",
+      "artists": [],
+      "price": "24.25",
+      "url": "https://dice.fm/event/xea57l-mixmag-x-those-nights-miami-music-week-26th-mar-la-ferneteria-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -854,6 +894,16 @@
       "url": "https://dice.fm/event/mxloww-hugel-the-originals-present-hiide-mmw-2026-27th-mar-national-hotel-miami-tickets",
       "matched_id": 49,
       "is_new": false
+    },
+    {
+      "name": "tszr x Lab54 | Chris Lorenzo & Skream Garden Party",
+      "date": "2026-03-27T13:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/ww6y6g-tszr-x-lab54-chris-lorenzo-skream-garden-party-27th-mar-sable-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "SHIFT MIAMI & M\u00b2Artist Agency Present Lucky Friday",
@@ -953,56 +1003,6 @@
       "price": "126.74",
       "url": "https://dice.fm/event/3ow9nx-black-book-records-miami-music-week-27th-mar-toe-jam-backlot-miami-tickets",
       "matched_id": 43,
-      "is_new": false
-    },
-    {
-      "name": "deadmau5 - Miami Music Week",
-      "date": "2026-03-27T20:00:00-04:00",
-      "venue": "Toe Jam XL",
-      "artists": [],
-      "price": "88.73",
-      "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
-      "matched_id": 46,
-      "is_new": false
-    },
-    {
-      "name": "APEX COMBO FRIDAY PASS",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "",
-      "artists": [],
-      "price": "80",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "JOURNEY - Spencer Brown, Eric Luttrell , Qrion x Massane , Because of Art",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "19.99",
-      "url": "https://dice.fm/event/avpqm2-journey-spencer-brown-eric-luttrell-qrion-x-massane-because-of-art-27th-mar-mazuma-miami-tickets",
-      "matched_id": 54,
-      "is_new": false
-    },
-    {
-      "name": "The Cut vs Humans Alike Showcase",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "UVA Wynwood",
-      "artists": [],
-      "price": "12.12",
-      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Clutch",
-      "artists": [],
-      "price": "35",
-      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-clutch-miami-tickets",
-      "matched_id": 53,
       "is_new": false
     },
     {
@@ -1126,20 +1126,20 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
-      "name": "AROUND THE CORNER: HACKER, ROUS",
-      "date": "2026-03-22T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "12.46",
-      "url": "https://dice.fm/event/v3y6lv-around-the-corner-hacker-rous-22nd-mar-the-trip-miami-tickets"
-    },
-    {
       "name": "ENJOY. MIAMI MUSIC WEEK OPENING PARTY",
       "date": "2026-03-23T18:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/l89oww-enjoy-miami-music-week-opening-party-23rd-mar-esm-hotel-rooftop-miami-beach-tickets"
+    },
+    {
+      "name": "Miami Music Week | SONIKA ",
+      "date": "2026-03-23T20:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkq8q6-miami-music-week-sonika-23rd-mar-astra-miami-tickets"
     },
     {
       "name": "MMW: Hernan Cattaneo, Khen, Jonathan, & Differ",
@@ -1236,6 +1236,14 @@
       "artists": [],
       "price": "12.46",
       "url": "https://dice.fm/event/6d2o8b-atc-carlos-chaparro-raul-pacheco-nikatnite-24th-mar-the-trip-miami-tickets"
+    },
+    {
+      "name": "MMW Open Decks + Networker",
+      "date": "2026-03-25T16:30:00-04:00",
+      "venue": "Electric Lady",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/v3yw36-mmw-open-decks-networker-25th-mar-electric-lady-miami-tickets"
     },
     {
       "name": "That Thing on Wednesday - HoH x ENJOY x Vice City",
@@ -1362,7 +1370,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "524.99",
+      "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets"
     },
     {
@@ -1406,6 +1414,14 @@
       "url": "https://dice.fm/event/bb82ag-rvdiovctive-x-groove-factory-x-clique-cabana-26th-mar-coyo-taco-miami-tickets"
     },
     {
+      "name": "SHIFT MIAMI & M\u00b2Artist Agency Present Lucky Thursday",
+      "date": "2026-03-26T17:00:00-04:00",
+      "venue": "1-800-Lucky",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkm6lg-shift-miami-martist-agency-present-lucky-thursday-26th-mar-1-800-lucky-miami-tickets"
+    },
+    {
       "name": "Soulute Miami Music Week Edition",
       "date": "2026-03-26T17:00:00-04:00",
       "venue": "Esm\u00e9 Hotel Rooftop",
@@ -1428,6 +1444,14 @@
       "artists": [],
       "price": "147.42",
       "url": "https://dice.fm/event/mx3elk-nebula-presents-miami-music-week-2026-two-day-26th-mar-jungle-island-miami-tickets"
+    },
+    {
+      "name": "Toe Jam Music Week (4-Day Pass)",
+      "date": "2026-03-26T20:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "300.33",
+      "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
     },
     {
       "name": "UNION SHOWCASE - PEPPE CITARELLA & FRIENDS ",
@@ -1542,6 +1566,14 @@
       "url": "https://dice.fm/event/rynn3w-farris-wheel-showcase-mmw-2026-26th-mar-mode-miami-tickets"
     },
     {
+      "name": "Mixmag x Those Nights (Miami Music Week)",
+      "date": "2026-03-26T23:00:00-04:00",
+      "venue": "La Ferneteria",
+      "artists": [],
+      "price": "24.25",
+      "url": "https://dice.fm/event/xea57l-mixmag-x-those-nights-miami-music-week-26th-mar-la-ferneteria-miami-tickets"
+    },
+    {
       "name": "GDB Records Presents: Miami Music Week",
       "date": "2026-03-26T23:00:00-04:00",
       "venue": "Floyd Miami",
@@ -1564,6 +1596,14 @@
       "artists": [],
       "price": "12.46",
       "url": "https://dice.fm/event/l897kb-atc-todd-terry-kenny-dope-janika-tenn-26th-mar-the-trip-miami-tickets"
+    },
+    {
+      "name": "tszr x Lab54 | Chris Lorenzo & Skream Garden Party",
+      "date": "2026-03-27T13:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/ww6y6g-tszr-x-lab54-chris-lorenzo-skream-garden-party-27th-mar-sable-miami-miami-tickets"
     },
     {
       "name": "SHIFT MIAMI & M\u00b2Artist Agency Present Lucky Friday",
@@ -1620,22 +1660,6 @@
       "artists": [],
       "price": "94.34",
       "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets"
-    },
-    {
-      "name": "APEX COMBO FRIDAY PASS",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "",
-      "artists": [],
-      "price": "80",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
-    },
-    {
-      "name": "The Cut vs Humans Alike Showcase",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "UVA Wynwood",
-      "artists": [],
-      "price": "12.12",
-      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
