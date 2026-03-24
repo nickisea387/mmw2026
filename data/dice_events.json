@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-24T18:56:37.749216+00:00",
+  "updated": "2026-03-24T20:56:16.043059+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
   "matched_existing": 41,
@@ -150,7 +150,7 @@
       "date": "2026-03-24T23:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "70",
+      "price": "72.20",
       "url": "https://dice.fm/event/mx8y59-experts-only-miami-music-week-2026-24th-mar-the-ground-miami-miami-club-space-miami-miami-floyd-miami-miami-tickets",
       "matched_id": 1,
       "is_new": false
@@ -230,7 +230,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "24.25",
+      "price": "36.37",
       "url": "https://dice.fm/event/oepbe5-sam-divine-presents-555-wynwood-studios-25th-mar-wynwood-studios-miami-tickets",
       "matched_id": 95,
       "is_new": false
@@ -400,7 +400,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "15",
+      "price": "20",
       "url": "https://dice.fm/event/mxll2l-incorrect-music-showcase-mmw-2026-25th-mar-mode-miami-tickets",
       "matched_id": 17,
       "is_new": false
@@ -470,10 +470,20 @@
       "date": "2026-03-26T12:00:00-04:00",
       "venue": "UVA Wynwood",
       "artists": [],
-      "price": "",
+      "price": "20",
       "url": "https://dice.fm/event/xe6ggm-brunchcast-x-miami-music-week-26th-mar-uva-wynwood-miami-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "Miami Music Week Day 1-The Originals Present HIIDE",
+      "date": "2026-03-26T12:00:00-04:00",
+      "venue": "National Hotel",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8e8md5-miami-music-week-day-1-the-originals-present-hiide-26th-mar-national-hotel-miami-tickets",
+      "matched_id": 49,
+      "is_new": false
     },
     {
       "name": "Bassrush Miami Music Week",
@@ -640,7 +650,7 @@
       "date": "2026-03-26T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "24.25",
+      "price": "48.49",
       "url": "https://dice.fm/event/q2w5mo-marten-lou-ankho-luch-wynwood-studios-26th-mar-wynwood-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -691,7 +701,7 @@
       "venue": "Clutch",
       "artists": [],
       "price": "24.25",
-      "url": "https://dice.fm/event/mx86bw-cosmic-gate-special-guest-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets",
+      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -710,7 +720,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "79.95",
+      "price": "124.95",
       "url": "https://dice.fm/event/yoax7x-resistance-mmw-eric-prydz-argy-jeremy-olander-26th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 29,
       "is_new": false
@@ -993,16 +1003,6 @@
       "price": "126.74",
       "url": "https://dice.fm/event/3ow9nx-black-book-records-miami-music-week-27th-mar-toe-jam-backlot-miami-tickets",
       "matched_id": 43,
-      "is_new": false
-    },
-    {
-      "name": "deadmau5 - Miami Music Week",
-      "date": "2026-03-27T20:00:00-04:00",
-      "venue": "Toe Jam XL",
-      "artists": [],
-      "price": "88.73",
-      "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
-      "matched_id": 46,
       "is_new": false
     },
     {
@@ -1378,7 +1378,7 @@
       "date": "2026-03-26T12:00:00-04:00",
       "venue": "UVA Wynwood",
       "artists": [],
-      "price": "",
+      "price": "20",
       "url": "https://dice.fm/event/xe6ggm-brunchcast-x-miami-music-week-26th-mar-uva-wynwood-miami-tickets"
     },
     {
@@ -1474,7 +1474,7 @@
       "date": "2026-03-26T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "24.25",
+      "price": "48.49",
       "url": "https://dice.fm/event/q2w5mo-marten-lou-ankho-luch-wynwood-studios-26th-mar-wynwood-studios-miami-tickets"
     },
     {
@@ -1491,7 +1491,7 @@
       "venue": "Clutch",
       "artists": [],
       "price": "24.25",
-      "url": "https://dice.fm/event/mx86bw-cosmic-gate-special-guest-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets"
+      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Mira & Tal Fussman ",
