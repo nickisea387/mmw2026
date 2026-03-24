@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-24T07:02:49.944070+00:00",
+  "updated": "2026-03-24T08:56:14.821852+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 41,
-  "new_count": 70,
+  "matched_existing": 42,
+  "new_count": 69,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -12,26 +12,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Miami Music Week | SONIKA ",
-      "date": "2026-03-23T20:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkq8q6-miami-music-week-sonika-23rd-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Hernan Cattaneo, Khen, Jonathan, & Differ",
-      "date": "2026-03-23T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "32.21",
-      "url": "https://dice.fm/event/g5m88a-mmw-hernan-cattaneo-khen-jonathan-differ-23rd-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1006,6 +986,26 @@
       "is_new": false
     },
     {
+      "name": "APEX COMBO FRIDAY PASS",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "80",
+      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "JOURNEY - Spencer Brown, Eric Luttrell , Qrion x Massane , Because of Art",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "MAZUMA",
+      "artists": [],
+      "price": "19.99",
+      "url": "https://dice.fm/event/avpqm2-journey-spencer-brown-eric-luttrell-qrion-x-massane-because-of-art-27th-mar-mazuma-miami-tickets",
+      "matched_id": 54,
+      "is_new": false
+    },
+    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1124,22 +1124,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "Miami Music Week | SONIKA ",
-      "date": "2026-03-23T20:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkq8q6-miami-music-week-sonika-23rd-mar-astra-miami-tickets"
-    },
-    {
-      "name": "MMW: Hernan Cattaneo, Khen, Jonathan, & Differ",
-      "date": "2026-03-23T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "32.21",
-      "url": "https://dice.fm/event/g5m88a-mmw-hernan-cattaneo-khen-jonathan-differ-23rd-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
       "name": "AROUND THE CORNER: MAK, MARINUCCI, CARDO",
@@ -1652,6 +1636,14 @@
       "artists": [],
       "price": "94.34",
       "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets"
+    },
+    {
+      "name": "APEX COMBO FRIDAY PASS",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "80",
+      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
