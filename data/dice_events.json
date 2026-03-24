@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-24T05:19:14.358177+00:00",
+  "updated": "2026-03-24T07:02:49.944070+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 40,
-  "new_count": 71,
+  "matched_existing": 41,
+  "new_count": 70,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -12,16 +12,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "ENJOY. MIAMI MUSIC WEEK OPENING PARTY",
-      "date": "2026-03-23T18:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/l89oww-enjoy-miami-music-week-opening-party-23rd-mar-esm-hotel-rooftop-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1006,6 +996,16 @@
       "is_new": false
     },
     {
+      "name": "deadmau5 - Miami Music Week",
+      "date": "2026-03-27T20:00:00-04:00",
+      "venue": "Toe Jam XL",
+      "artists": [],
+      "price": "88.73",
+      "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
+      "matched_id": 46,
+      "is_new": false
+    },
+    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -1124,14 +1124,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "ENJOY. MIAMI MUSIC WEEK OPENING PARTY",
-      "date": "2026-03-23T18:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/l89oww-enjoy-miami-music-week-opening-party-23rd-mar-esm-hotel-rooftop-miami-beach-tickets"
     },
     {
       "name": "Miami Music Week | SONIKA ",
