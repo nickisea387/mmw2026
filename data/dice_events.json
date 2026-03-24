@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-24T10:55:56.790239+00:00",
+  "updated": "2026-03-24T12:47:31.824519+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 111,
-  "matched_existing": 42,
-  "new_count": 69,
+  "matched_existing": 41,
+  "new_count": 70,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -322,6 +322,16 @@
       "artists": [],
       "price": "64.99",
       "url": "https://dice.fm/event/2w8o2m-factory-town-music-week-2026-wednesday-pass-25th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "WEPA PRESENTS: Miami Music Week @ Faena Theater 3/25",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Faena Theater",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/v3y7xl-wepa-presents-miami-music-week-faena-theater-325-25th-mar-faena-theater-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -716,6 +726,16 @@
       "is_new": false
     },
     {
+      "name": "WEPA PRESENTS: Miami Music Week @ Faena Theater 3/26",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "Faena Theater",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/7dkr5v-wepa-presents-miami-music-week-faena-theater-326-26th-mar-faena-theater-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Something Chill MMW Showcase",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
@@ -750,7 +770,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "49.99",
+      "price": "75",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -983,26 +1003,6 @@
       "price": "88.73",
       "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
       "matched_id": 46,
-      "is_new": false
-    },
-    {
-      "name": "APEX COMBO FRIDAY PASS",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "",
-      "artists": [],
-      "price": "80",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "JOURNEY - Spencer Brown, Eric Luttrell , Qrion x Massane , Because of Art",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "19.99",
-      "url": "https://dice.fm/event/avpqm2-journey-spencer-brown-eric-luttrell-qrion-x-massane-because-of-art-27th-mar-mazuma-miami-tickets",
-      "matched_id": 54,
       "is_new": false
     },
     {
@@ -1302,6 +1302,14 @@
       "url": "https://dice.fm/event/2w8o2m-factory-town-music-week-2026-wednesday-pass-25th-mar-factory-town-miami-tickets"
     },
     {
+      "name": "WEPA PRESENTS: Miami Music Week @ Faena Theater 3/25",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Faena Theater",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/v3y7xl-wepa-presents-miami-music-week-faena-theater-325-25th-mar-faena-theater-miami-beach-tickets"
+    },
+    {
       "name": "Free Your Mind x We Group Hi-Fi",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Miami Sound Bar",
@@ -1494,6 +1502,14 @@
       "url": "https://dice.fm/event/l8b57x-do-not-sit-on-mmw-mira-tal-fussman-26th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
     },
     {
+      "name": "WEPA PRESENTS: Miami Music Week @ Faena Theater 3/26",
+      "date": "2026-03-26T22:00:00-04:00",
+      "venue": "Faena Theater",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/7dkr5v-wepa-presents-miami-music-week-faena-theater-326-26th-mar-faena-theater-miami-beach-tickets"
+    },
+    {
       "name": "Something Chill MMW Showcase",
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
@@ -1522,7 +1538,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "49.99",
+      "price": "75",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets"
     },
     {
@@ -1636,14 +1652,6 @@
       "artists": [],
       "price": "94.34",
       "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets"
-    },
-    {
-      "name": "APEX COMBO FRIDAY PASS",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "",
-      "artists": [],
-      "price": "80",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
