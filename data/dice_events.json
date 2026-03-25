@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-25T12:43:43.858187+00:00",
+  "updated": "2026-03-25T15:25:04.929581+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 109,
-  "matched_existing": 41,
-  "new_count": 68,
+  "matched_existing": 40,
+  "new_count": 69,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -20,7 +20,7 @@
       "date": "2026-03-23T23:59:00-04:00",
       "venue": "The Trip",
       "artists": [],
-      "price": "12.46",
+      "price": "",
       "url": "https://dice.fm/event/v39x27-around-the-corner-mak-marinucci-cardo-23rd-mar-the-trip-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -50,7 +50,7 @@
       "date": "2026-03-24T23:59:00-04:00",
       "venue": "The Trip",
       "artists": [],
-      "price": "12.46",
+      "price": "",
       "url": "https://dice.fm/event/6d2o8b-atc-carlos-chaparro-raul-pacheco-nikatnite-24th-mar-the-trip-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -570,7 +570,7 @@
       "date": "2026-03-26T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "45",
+      "price": "55",
       "url": "https://dice.fm/event/oegg5y-infected-mushroom-john-00-fleming-26th-mar-mazuma-miami-tickets",
       "matched_id": 35,
       "is_new": false
@@ -1046,14 +1046,14 @@
       "is_new": false
     },
     {
-      "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
-      "date": "2026-03-29T12:00:00-04:00",
-      "venue": "National Hotel",
+      "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026 Tickets | From $49.99 | Mar 29 @ National Hotel, Miami",
+      "date": "",
+      "venue": "",
       "artists": [],
       "price": "49.99",
       "url": "https://dice.fm/event/7dpydp-james-hype-the-originals-present-hiide-mmw-2026-29th-mar-national-hotel-miami-tickets",
-      "matched_id": 49,
-      "is_new": false
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "MMW Closing Party With Arodes And Fideles",
@@ -1110,7 +1110,7 @@
       "date": "2026-03-23T23:59:00-04:00",
       "venue": "The Trip",
       "artists": [],
-      "price": "12.46",
+      "price": "",
       "url": "https://dice.fm/event/v39x27-around-the-corner-mak-marinucci-cardo-23rd-mar-the-trip-miami-tickets"
     },
     {
@@ -1134,7 +1134,7 @@
       "date": "2026-03-24T23:59:00-04:00",
       "venue": "The Trip",
       "artists": [],
-      "price": "12.46",
+      "price": "",
       "url": "https://dice.fm/event/6d2o8b-atc-carlos-chaparro-raul-pacheco-nikatnite-24th-mar-the-trip-miami-tickets"
     },
     {
@@ -1632,6 +1632,14 @@
       "artists": [],
       "price": "90.93",
       "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
+    },
+    {
+      "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026 Tickets | From $49.99 | Mar 29 @ National Hotel, Miami",
+      "date": "",
+      "venue": "",
+      "artists": [],
+      "price": "49.99",
+      "url": "https://dice.fm/event/7dpydp-james-hype-the-originals-present-hiide-mmw-2026-29th-mar-national-hotel-miami-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
