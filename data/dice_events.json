@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-25T05:19:51.215867+00:00",
+  "updated": "2026-03-25T07:03:31.185710+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 111,
-  "matched_existing": 42,
+  "total_found": 110,
+  "matched_existing": 41,
   "new_count": 69,
   "events": [
     {
@@ -46,16 +46,6 @@
       "is_new": true
     },
     {
-      "name": "Good Taste Miami Music Week Edition",
-      "date": "2026-03-24T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Miami Music Week | 20Five8Records x Groovemates ",
       "date": "2026-03-24T19:00:00-04:00",
       "venue": "ASTRA",
@@ -74,26 +64,6 @@
       "url": "https://dice.fm/event/g5ar96-off-the-tarmac-24th-mar-domicile-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Brobot Records Miami x We Group Hi-Fi",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Miami Sound Bar",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/py9xxw-brobot-records-miami-x-we-group-hi-fi-24th-mar-miami-sound-bar-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Satoshi Tomiie, Melody & More (Nomad Talent MMW Opener)",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "MODE",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/eorbg6-satoshi-tomiie-melody-more-nomad-talent-mmw-opener-24th-mar-mode-miami-tickets",
-      "matched_id": 5,
-      "is_new": false
     },
     {
       "name": "MMW: Get Closer: Luuk Van Dijk",
@@ -314,16 +284,6 @@
       "url": "https://dice.fm/event/yoaqlp-open-channel-mmw-acraze-b2b-cid-benny-benassi-25th-mar-sable-miami-miami-tickets",
       "matched_id": 108,
       "is_new": false
-    },
-    {
-      "name": "STEPPIN TIL CHECHOUT & BAD APPLE RECORDS PRESENTS MIAMI MUSIC WEEK  GRAVEDGR, SHAY DE CASTRO, VESSEL ",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "30",
-      "url": "https://dice.fm/event/k692ao-steppin-til-chechout-bad-apple-records-presents-miami-music-week-gravedgr-shay-de-castro-vessel-25th-mar-domicile-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "MMW: Cheetah Print: Rafael ",
@@ -730,7 +690,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "75",
+      "price": "64.99",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -926,12 +886,12 @@
       "is_new": true
     },
     {
-      "name": "Shimza and Co Miami Music Week",
-      "date": "2026-03-27T20:00:00-04:00",
-      "venue": "Jungle Island",
+      "name": "The Cut vs Humans Alike Showcase",
+      "date": "2026-03-27T19:00:00-04:00",
+      "venue": "UVA Wynwood",
       "artists": [],
-      "price": "94.34",
-      "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets",
+      "price": "",
+      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -944,6 +904,16 @@
       "url": "https://dice.fm/event/oevn7a-ministry-of-sound-x-hard-times-27th-mar-sable-miami-miami-tickets",
       "matched_id": 45,
       "is_new": false
+    },
+    {
+      "name": "Shimza and Co Miami Music Week",
+      "date": "2026-03-27T20:00:00-04:00",
+      "venue": "Jungle Island",
+      "artists": [],
+      "price": "94.34",
+      "url": "https://dice.fm/event/v3qok7-shimza-and-co-miami-music-week-27th-mar-jungle-island-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Black Book Records - Miami Music Week ",
@@ -986,16 +956,6 @@
       "is_new": false
     },
     {
-      "name": "The Cut vs Humans Alike Showcase",
-      "date": "2026-03-27T19:00:00-04:00",
-      "venue": "UVA Wynwood",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
       "date": "2026-03-27T21:00:00-04:00",
       "venue": "Clutch",
@@ -1004,6 +964,16 @@
       "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-clutch-miami-tickets",
       "matched_id": 53,
       "is_new": false
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Friday Pass)",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "199.99",
+      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
@@ -1024,6 +994,26 @@
       "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 48,
       "is_new": false
+    },
+    {
+      "name": "DOMICILE X ENCORE MMW EDITION ",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Domicile Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "NUSONIDO Showcase - An immersive experience: Calussa",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Wynwood Studios",
+      "artists": [],
+      "price": "30.31",
+      "url": "https://dice.fm/event/mx7b9w-nusonido-showcase-an-immersive-experience-calussa-27th-mar-wynwood-studios-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
@@ -1150,14 +1140,6 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
-      "name": "Good Taste Miami Music Week Edition",
-      "date": "2026-03-24T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets"
-    },
-    {
       "name": "Miami Music Week | 20Five8Records x Groovemates ",
       "date": "2026-03-24T19:00:00-04:00",
       "venue": "ASTRA",
@@ -1172,14 +1154,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/g5ar96-off-the-tarmac-24th-mar-domicile-miami-miami-tickets"
-    },
-    {
-      "name": "Brobot Records Miami x We Group Hi-Fi",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Miami Sound Bar",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/py9xxw-brobot-records-miami-x-we-group-hi-fi-24th-mar-miami-sound-bar-miami-tickets"
     },
     {
       "name": "ATC: CARLOS CHAPARRO, RAUL, PACHECO, NIKATNITE..",
@@ -1300,14 +1274,6 @@
       "artists": [],
       "price": "30.31",
       "url": "https://dice.fm/event/l85yml-cadenza-hi-fi-mmw-special-guest-325-25th-mar-cadenza-hi-fi-miami-tickets"
-    },
-    {
-      "name": "STEPPIN TIL CHECHOUT & BAD APPLE RECORDS PRESENTS MIAMI MUSIC WEEK  GRAVEDGR, SHAY DE CASTRO, VESSEL ",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "30",
-      "url": "https://dice.fm/event/k692ao-steppin-til-chechout-bad-apple-records-presents-miami-music-week-gravedgr-shay-de-castro-vessel-25th-mar-domicile-miami-miami-tickets"
     },
     {
       "name": "MMW: Cheetah Print: Rafael ",
@@ -1514,7 +1480,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "75",
+      "price": "64.99",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets"
     },
     {
@@ -1622,6 +1588,14 @@
       "url": "https://dice.fm/event/53rxbk-witty-tunes-showcase-edd-friends-27th-mar-astra-miami-tickets"
     },
     {
+      "name": "The Cut vs Humans Alike Showcase",
+      "date": "2026-03-27T19:00:00-04:00",
+      "venue": "UVA Wynwood",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets"
+    },
+    {
       "name": "Shimza and Co Miami Music Week",
       "date": "2026-03-27T20:00:00-04:00",
       "venue": "Jungle Island",
@@ -1638,12 +1612,12 @@
       "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
     },
     {
-      "name": "The Cut vs Humans Alike Showcase",
-      "date": "2026-03-27T19:00:00-04:00",
-      "venue": "UVA Wynwood",
+      "name": "Factory Town Music Week 2026 (Friday Pass)",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Factory Town",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoaner-the-cut-vs-humans-alike-showcase-27th-mar-uva-wynwood-miami-tickets"
+      "price": "199.99",
+      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
@@ -1652,6 +1626,22 @@
       "artists": [],
       "price": "90.93",
       "url": "https://dice.fm/event/6dnyd2-do-not-sit-on-mmw-yes-yes-yes-label-party-27th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
+    },
+    {
+      "name": "DOMICILE X ENCORE MMW EDITION ",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Domicile Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets"
+    },
+    {
+      "name": "NUSONIDO Showcase - An immersive experience: Calussa",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Wynwood Studios",
+      "artists": [],
+      "price": "30.31",
+      "url": "https://dice.fm/event/mx7b9w-nusonido-showcase-an-immersive-experience-calussa-27th-mar-wynwood-studios-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
