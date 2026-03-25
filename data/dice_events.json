@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-25T19:54:53.281912+00:00",
+  "updated": "2026-03-25T21:40:11.220625+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 109,
-  "matched_existing": 41,
+  "total_found": 108,
+  "matched_existing": 40,
   "new_count": 68,
   "events": [
     {
@@ -114,16 +114,6 @@
       "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-clutch-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Massano ",
-      "date": "2026-03-25T21:00:00-04:00",
-      "venue": "Clutch",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3owbl8-massano-25th-mar-clutch-miami-tickets",
-      "matched_id": 96,
-      "is_new": false
     },
     {
       "name": "APEX 2026 MMW PASS",
@@ -470,7 +460,7 @@
       "date": "2026-03-26T20:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "69",
+      "price": "47",
       "url": "https://dice.fm/event/5372l8-unkommon-music-week-hugel-friends-joezi-more-26th-mar-little-river-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -548,10 +538,10 @@
     {
       "name": "Cosmic Gate + Gabriel & Dresden + Estiva + Pretty Pink + Luccio + Anunnakis",
       "date": "2026-03-26T21:00:00-04:00",
-      "venue": "Clutch",
+      "venue": "Stereo Club",
       "artists": [],
       "price": "24.25",
-      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets",
+      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-stereo-club-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -1358,7 +1348,7 @@
       "date": "2026-03-26T20:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "69",
+      "price": "47",
       "url": "https://dice.fm/event/5372l8-unkommon-music-week-hugel-friends-joezi-more-26th-mar-little-river-studios-miami-tickets"
     },
     {
@@ -1388,10 +1378,10 @@
     {
       "name": "Cosmic Gate + Gabriel & Dresden + Estiva + Pretty Pink + Luccio + Anunnakis",
       "date": "2026-03-26T21:00:00-04:00",
-      "venue": "Clutch",
+      "venue": "Stereo Club",
       "artists": [],
       "price": "24.25",
-      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets"
+      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-stereo-club-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Mira & Tal Fussman ",
