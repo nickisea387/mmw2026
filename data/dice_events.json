@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-25T08:55:37.568093+00:00",
+  "updated": "2026-03-25T10:52:12.424917+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 111,
+  "total_found": 109,
   "matched_existing": 41,
-  "new_count": 70,
+  "new_count": 68,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -44,46 +44,6 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Good Taste Miami Music Week Edition",
-      "date": "2026-03-24T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Miami Music Week | 20Five8Records x Groovemates ",
-      "date": "2026-03-24T19:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avp7pq-miami-music-week-20five8records-x-groovemates-24th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "OFF THE TARMAC",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5ar96-off-the-tarmac-24th-mar-domicile-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Get Closer: Luuk Van Dijk",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/6d2vdq-mmw-get-closer-luuk-van-dijk-24th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": 3,
-      "is_new": false
     },
     {
       "name": "ATC: CARLOS CHAPARRO, RAUL, PACHECO, NIKATNITE..",
@@ -1026,6 +986,26 @@
       "is_new": true
     },
     {
+      "name": "MMW: Francis Mercier & Amal Nemer",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Jolene Sound Room Miami",
+      "artists": [],
+      "price": "42.21",
+      "url": "https://dice.fm/event/92ako7-mmw-francis-mercier-amal-nemer-27th-mar-jolene-sound-room-miami-miami-tickets",
+      "matched_id": 87,
+      "is_new": false
+    },
+    {
+      "name": "Stereo Annual Showcase (MMW 2026)",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "40",
+      "url": "https://dice.fm/event/3oggkx-stereo-annual-showcase-mmw-2026-27th-mar-mode-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
@@ -1148,30 +1128,6 @@
       "artists": [],
       "price": "333",
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
-    },
-    {
-      "name": "Good Taste Miami Music Week Edition",
-      "date": "2026-03-24T17:00:00-04:00",
-      "venue": "Esm\u00e9 Hotel Rooftop",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets"
-    },
-    {
-      "name": "Miami Music Week | 20Five8Records x Groovemates ",
-      "date": "2026-03-24T19:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avp7pq-miami-music-week-20five8records-x-groovemates-24th-mar-astra-miami-tickets"
-    },
-    {
-      "name": "OFF THE TARMAC",
-      "date": "2026-03-24T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5ar96-off-the-tarmac-24th-mar-domicile-miami-miami-tickets"
     },
     {
       "name": "ATC: CARLOS CHAPARRO, RAUL, PACHECO, NIKATNITE..",
@@ -1660,6 +1616,14 @@
       "artists": [],
       "price": "30.31",
       "url": "https://dice.fm/event/mx7b9w-nusonido-showcase-an-immersive-experience-calussa-27th-mar-wynwood-studios-miami-tickets"
+    },
+    {
+      "name": "Stereo Annual Showcase (MMW 2026)",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "40",
+      "url": "https://dice.fm/event/3oggkx-stereo-annual-showcase-mmw-2026-27th-mar-mode-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
