@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-25T07:03:31.185710+00:00",
+  "updated": "2026-03-25T08:55:37.568093+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 110,
+  "total_found": 111,
   "matched_existing": 41,
-  "new_count": 69,
+  "new_count": 70,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -46,6 +46,16 @@
       "is_new": true
     },
     {
+      "name": "Good Taste Miami Music Week Edition",
+      "date": "2026-03-24T17:00:00-04:00",
+      "venue": "Esm\u00e9 Hotel Rooftop",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Miami Music Week | 20Five8Records x Groovemates ",
       "date": "2026-03-24T19:00:00-04:00",
       "venue": "ASTRA",
@@ -70,7 +80,7 @@
       "date": "2026-03-24T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "60",
+      "price": "",
       "url": "https://dice.fm/event/6d2vdq-mmw-get-closer-luuk-van-dijk-24th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": 3,
       "is_new": false
@@ -690,7 +700,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "64.99",
+      "price": "75",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -1140,6 +1150,14 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
+      "name": "Good Taste Miami Music Week Edition",
+      "date": "2026-03-24T17:00:00-04:00",
+      "venue": "Esm\u00e9 Hotel Rooftop",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/v3ya67-good-taste-miami-music-week-edition-24th-mar-esm-hotel-rooftop-miami-beach-tickets"
+    },
+    {
       "name": "Miami Music Week | 20Five8Records x Groovemates ",
       "date": "2026-03-24T19:00:00-04:00",
       "venue": "ASTRA",
@@ -1480,7 +1498,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "64.99",
+      "price": "75",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets"
     },
     {
