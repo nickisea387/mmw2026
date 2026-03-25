@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-25T17:12:03.859926+00:00",
+  "updated": "2026-03-25T19:54:53.281912+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 109,
   "matched_existing": 41,
@@ -12,16 +12,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "AROUND THE CORNER: MAK, MARINUCCI, CARDO",
-      "date": "2026-03-23T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v39x27-around-the-corner-mak-marinucci-cardo-23rd-mar-the-trip-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -44,26 +34,6 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "ATC: CARLOS CHAPARRO, RAUL, PACHECO, NIKATNITE..",
-      "date": "2026-03-24T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/6d2o8b-atc-carlos-chaparro-raul-pacheco-nikatnite-24th-mar-the-trip-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Two and a' Half Cats | Music Week Opening Party",
-      "date": "2026-03-25T12:00:00-04:00",
-      "venue": "Kimpton Surfcomber",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvna58-two-and-a-half-cats-music-week-opening-party-25th-mar-kimpton-surfcomber-miami-tickets",
-      "matched_id": 14,
-      "is_new": false
     },
     {
       "name": "Beatport Live Pool Party x 20 Years Rekids",
@@ -150,7 +120,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Clutch",
       "artists": [],
-      "price": "24.25",
+      "price": "",
       "url": "https://dice.fm/event/3owbl8-massano-25th-mar-clutch-miami-tickets",
       "matched_id": 96,
       "is_new": false
@@ -1006,6 +976,36 @@
       "is_new": true
     },
     {
+      "name": "Solid Grooves: Miami Music Week 2026",
+      "date": "2026-03-27T23:00:00-04:00",
+      "venue": "Club Space Miami",
+      "artists": [],
+      "price": "102.21",
+      "url": "https://dice.fm/event/92wx36-solid-grooves-miami-music-week-2026-27th-mar-club-space-miami-miami-tickets",
+      "matched_id": 41,
+      "is_new": false
+    },
+    {
+      "name": "Get Busy v. Madafakaz: Miami Music Week",
+      "date": "2026-03-27T23:00:00-04:00",
+      "venue": "Floyd Miami",
+      "artists": [],
+      "price": "30",
+      "url": "https://dice.fm/event/av37vv-get-busy-v-madafakaz-miami-music-week-27th-mar-floyd-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
+      "date": "2026-03-27T23:45:00-04:00",
+      "venue": "94th Aero Squadron",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
@@ -1106,14 +1106,6 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
-      "name": "AROUND THE CORNER: MAK, MARINUCCI, CARDO",
-      "date": "2026-03-23T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v39x27-around-the-corner-mak-marinucci-cardo-23rd-mar-the-trip-miami-tickets"
-    },
-    {
       "name": "JAMES HYPE & THE EDMA MULTI DAY PASS TO BOTH EVENTS",
       "date": "2026-03-24T12:00:00-04:00",
       "venue": "",
@@ -1128,14 +1120,6 @@
       "artists": [],
       "price": "333",
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
-    },
-    {
-      "name": "ATC: CARLOS CHAPARRO, RAUL, PACHECO, NIKATNITE..",
-      "date": "2026-03-24T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/6d2o8b-atc-carlos-chaparro-raul-pacheco-nikatnite-24th-mar-the-trip-miami-tickets"
     },
     {
       "name": "MMW Open Decks + Networker",
@@ -1624,6 +1608,22 @@
       "artists": [],
       "price": "40",
       "url": "https://dice.fm/event/3oggkx-stereo-annual-showcase-mmw-2026-27th-mar-mode-miami-tickets"
+    },
+    {
+      "name": "Get Busy v. Madafakaz: Miami Music Week",
+      "date": "2026-03-27T23:00:00-04:00",
+      "venue": "Floyd Miami",
+      "artists": [],
+      "price": "30",
+      "url": "https://dice.fm/event/av37vv-get-busy-v-madafakaz-miami-music-week-27th-mar-floyd-miami-miami-tickets"
+    },
+    {
+      "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
+      "date": "2026-03-27T23:45:00-04:00",
+      "venue": "94th Aero Squadron",
+      "artists": [],
+      "price": "48.49",
+      "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
