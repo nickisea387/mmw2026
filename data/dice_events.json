@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-26T21:02:27.681777+00:00",
+  "updated": "2026-03-26T22:34:40.374112+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 106,
   "matched_existing": 36,
@@ -72,16 +72,6 @@
       "artists": [],
       "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Brunchcast x Miami Music Week",
-      "date": "2026-03-26T12:00:00-04:00",
-      "venue": "UVA Wynwood",
-      "artists": [],
-      "price": "20",
-      "url": "https://dice.fm/event/xe6ggm-brunchcast-x-miami-music-week-26th-mar-uva-wynwood-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -648,7 +638,7 @@
     {
       "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
       "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Clutch",
+      "venue": "Casa Nube Wynwood",
       "artists": [],
       "price": "40",
       "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-clutch-miami-tickets",
@@ -790,7 +780,7 @@
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
       "artists": [],
-      "price": "109.99",
+      "price": "129.99",
       "url": "https://dice.fm/event/k6a36o-meduza-the-originals-present-hiide-mmw-2026-28th-mar-national-hotel-miami-tickets",
       "matched_id": 66,
       "is_new": false
@@ -1016,6 +1006,16 @@
       "is_new": false
     },
     {
+      "name": "Immersive Groove: Episode 100 Celebration",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/mx3ymr-immersive-groove-episode-100-celebration-28th-mar-mode-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
       "date": "2026-03-29T12:00:00-04:00",
       "venue": "National Hotel",
@@ -1122,14 +1122,6 @@
       "artists": [],
       "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets"
-    },
-    {
-      "name": "Brunchcast x Miami Music Week",
-      "date": "2026-03-26T12:00:00-04:00",
-      "venue": "UVA Wynwood",
-      "artists": [],
-      "price": "20",
-      "url": "https://dice.fm/event/xe6ggm-brunchcast-x-miami-music-week-26th-mar-uva-wynwood-miami-tickets"
     },
     {
       "name": "Bassrush Miami Music Week",
@@ -1618,6 +1610,14 @@
       "artists": [],
       "price": "36.37",
       "url": "https://dice.fm/event/q2wkq9-yulia-niko-presents-axept-mmw-boho-28th-mar-boho-miami-tickets"
+    },
+    {
+      "name": "Immersive Groove: Episode 100 Celebration",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/mx3ymr-immersive-groove-episode-100-celebration-28th-mar-mode-miami-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
