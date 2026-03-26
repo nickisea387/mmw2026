@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-26T17:12:02.817592+00:00",
+  "updated": "2026-03-26T19:05:21.959151+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 106,
-  "matched_existing": 37,
-  "new_count": 69,
+  "matched_existing": 36,
+  "new_count": 70,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -66,12 +66,42 @@
       "is_new": true
     },
     {
+      "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Wednesday Pass)",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/2w8o2m-factory-town-music-week-2026-wednesday-pass-25th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
       "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "ATC: DRAXX, SWAVE, REDTAPE, JEAN CASAS, YANKAA..",
+      "date": "2026-03-25T23:59:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/avpxr7-atc-draxx-swave-redtape-jean-casas-yankaa-25th-mar-the-trip-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -130,7 +160,7 @@
       "date": "2026-03-26T15:30:00-04:00",
       "venue": "South Beach Lady",
       "artists": [],
-      "price": "165",
+      "price": "",
       "url": "https://dice.fm/event/xe6nnm-bedrock-sunset-cruise-john-digweed-spencer-brown-26th-mar-south-beach-lady-miami-tickets",
       "matched_id": 97,
       "is_new": false
@@ -350,7 +380,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": " RC Cola Plant",
       "artists": [],
-      "price": "49",
+      "price": "55",
       "url": "https://dice.fm/event/v39ll7-teletech-miami-26th-mar-rc-cola-plant-miami-tickets",
       "matched_id": 99,
       "is_new": false
@@ -400,7 +430,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "75",
+      "price": "77.20",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -930,7 +960,7 @@
       "date": "2026-03-28T18:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "85",
+      "price": "99",
       "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets",
       "matched_id": null,
       "is_new": true
@@ -964,36 +994,6 @@
       "url": "https://dice.fm/event/eoypdd-apex-combo-saturday-pass-28th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "FREEZE PROJECT & INHOUSE RECORDS ",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/py9pdy-freeze-project-inhouse-records-28th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Saturday Pass)",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "199.99",
-      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Gabriel & Dresden \" Stories We Tell \" MMW",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "19.99",
-      "url": "https://dice.fm/event/wwl6ag-gabriel-dresden-stories-we-tell-mmw-28th-mar-mazuma-miami-tickets",
-      "matched_id": 75,
-      "is_new": false
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
@@ -1116,12 +1116,36 @@
       "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
     },
     {
+      "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets"
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Wednesday Pass)",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/2w8o2m-factory-town-music-week-2026-wednesday-pass-25th-mar-factory-town-miami-tickets"
+    },
+    {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
       "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets"
+    },
+    {
+      "name": "ATC: DRAXX, SWAVE, REDTAPE, JEAN CASAS, YANKAA..",
+      "date": "2026-03-25T23:59:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/avpxr7-atc-draxx-swave-redtape-jean-casas-yankaa-25th-mar-the-trip-miami-tickets"
     },
     {
       "name": "Brunchcast x Miami Music Week",
@@ -1288,7 +1312,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "75",
+      "price": "77.20",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets"
     },
     {
@@ -1560,7 +1584,7 @@
       "date": "2026-03-28T18:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "85",
+      "price": "99",
       "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets"
     },
     {
@@ -1586,22 +1610,6 @@
       "artists": [],
       "price": "80",
       "url": "https://dice.fm/event/eoypdd-apex-combo-saturday-pass-28th-mar-mazuma-miami-tickets"
-    },
-    {
-      "name": "FREEZE PROJECT & INHOUSE RECORDS ",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/py9pdy-freeze-project-inhouse-records-28th-mar-astra-miami-tickets"
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Saturday Pass)",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "199.99",
-      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
