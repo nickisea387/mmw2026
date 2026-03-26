@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-26T07:14:44.092049+00:00",
+  "updated": "2026-03-26T09:07:58.074303+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 107,
   "matched_existing": 36,
@@ -36,36 +36,6 @@
       "is_new": true
     },
     {
-      "name": "Balance Miami",
-      "date": "2026-03-25T16:00:00-04:00",
-      "venue": "1-800-Lucky",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3ogw58-balance-miami-25th-mar-1-800-lucky-miami-tickets",
-      "matched_id": 16,
-      "is_new": false
-    },
-    {
-      "name": "The Hideout Presents Something Light Showcase ",
-      "date": "2026-03-25T18:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/7dmem9-the-hideout-presents-something-light-showcase-25th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Sam Divine Presents 555 @ Wynwood Studios",
-      "date": "2026-03-25T21:00:00-04:00",
-      "venue": "Wynwood Studios",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/oepbe5-sam-divine-presents-555-wynwood-studios-25th-mar-wynwood-studios-miami-tickets",
-      "matched_id": 95,
-      "is_new": false
-    },
-    {
       "name": "Wynwood Studios - MMW All Week Pass",
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
@@ -76,42 +46,12 @@
       "is_new": true
     },
     {
-      "name": "APEX COMBO WEDNESDAY PASS",
-      "date": "2026-03-25T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "APEX 2026 MMW PASS",
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
       "price": "303.08",
       "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-mazuma-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Coldharbour Night X Blackhole Recordings Night ",
-      "date": "2026-03-25T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "49.95",
-      "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -132,56 +72,6 @@
       "artists": [],
       "price": "125",
       "url": "https://dice.fm/event/2w8o2m-factory-town-music-week-2026-wednesday-pass-25th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "WEPA PRESENTS: Miami Music Week @ Faena Theater 3/25",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Faena Theater",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3y7xl-wepa-presents-miami-music-week-faena-theater-325-25th-mar-faena-theater-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Free Your Mind x We Group Hi-Fi",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Miami Sound Bar",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avql9q-free-your-mind-x-we-group-hi-fi-25th-mar-miami-sound-bar-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Cadenza Hi-Fi MMW: SPECIAL GUEST 3/25",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Cadenza Hi-Fi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/l85yml-cadenza-hi-fi-mmw-special-guest-325-25th-mar-cadenza-hi-fi-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Cheetah Print: Rafael ",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v39qa6-mmw-cheetah-print-rafael-25th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Trifecta Records Label Showcase",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "MITA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5mpq2-trifecta-records-label-showcase-25th-mar-mita-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -816,16 +706,6 @@
       "is_new": true
     },
     {
-      "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "90.93",
-      "url": "https://dice.fm/event/6dnyd2-do-not-sit-on-mmw-yes-yes-yes-label-party-27th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -834,6 +714,16 @@
       "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 48,
       "is_new": false
+    },
+    {
+      "name": "Do Not Sit On MMW : Yes Yes Yes Label Party",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/6dnyd2-do-not-sit-on-mmw-yes-yes-yes-label-party-27th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "DOMICILE X ENCORE MMW EDITION ",
@@ -1006,6 +896,116 @@
       "is_new": true
     },
     {
+      "name": "Cosmic Gate Miami Sunset Cruise",
+      "date": "2026-03-28T15:00:00-04:00",
+      "venue": "South Beach Lady",
+      "artists": [],
+      "price": "200.04",
+      "url": "https://dice.fm/event/eo3g7w-cosmic-gate-miami-sunset-cruise-28th-mar-south-beach-lady-miami-tickets",
+      "matched_id": 74,
+      "is_new": false
+    },
+    {
+      "name": "Sun Meets Moon: SAMM, Sparrow, Peace Control + More",
+      "date": "2026-03-28T16:00:00-04:00",
+      "venue": "Tala Beach",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/ryq3nq-sun-meets-moon-samm-sparrow-peace-control-more-28th-mar-tala-beach-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Desert Hearts Open-Air (Miami Music Week 2026)",
+      "date": "2026-03-28T16:00:00-04:00",
+      "venue": "UVA Wynwood",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/q27qwp-desert-hearts-open-air-miami-music-week-2026-28th-mar-uva-wynwood-miami-tickets",
+      "matched_id": 65,
+      "is_new": false
+    },
+    {
+      "name": "Cadenza Hi-Fi MMW: Resaca Takeover - Saturday 3/28",
+      "date": "2026-03-28T17:00:00-04:00",
+      "venue": "Cadenza Hi-Fi",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/nvngnq-cadenza-hi-fi-mmw-resaca-takeover-saturday-328-28th-mar-cadenza-hi-fi-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "No Art Music",
+      "date": "2026-03-28T17:00:00-04:00",
+      "venue": "Little River Studios",
+      "artists": [],
+      "price": "110",
+      "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Black Coffee, Carlita & Kaz James at the Racetrack: MMW 26",
+      "date": "2026-03-28T18:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "85",
+      "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "M\u00e1s Tiempo - Miami Music Week",
+      "date": "2026-03-28T20:00:00-04:00",
+      "venue": "Toe Jam XL",
+      "artists": [],
+      "price": "50.69",
+      "url": "https://dice.fm/event/xeaevm-ms-tiempo-miami-music-week-28th-mar-toe-jam-xl-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "LALALAND - Miami Music Week ",
+      "date": "2026-03-28T20:00:00-04:00",
+      "venue": "Toe Jam Backlot ",
+      "artists": [],
+      "price": "124.82",
+      "url": "https://dice.fm/event/av3kox-lalaland-miami-music-week-28th-mar-toe-jam-backlot-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "APEX COMBO SATURDAY PASS",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "MAZUMA",
+      "artists": [],
+      "price": "80",
+      "url": "https://dice.fm/event/eoypdd-apex-combo-saturday-pass-28th-mar-mazuma-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "FREEZE PROJECT & INHOUSE RECORDS ",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/py9pdy-freeze-project-inhouse-records-28th-mar-astra-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Saturday Pass)",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "199.99",
+      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
@@ -1036,16 +1036,6 @@
       "is_new": false
     },
     {
-      "name": "Factory Town Music Week 2026 (Sunday Pass)",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "249.99",
-      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "MMW Closing Party With Arodes And Fideles",
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Wynwood Studios",
@@ -1054,6 +1044,16 @@
       "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
       "matched_id": 103,
       "is_new": false
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Sunday Pass)",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "249.99",
+      "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
@@ -1102,14 +1102,6 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
-      "name": "The Hideout Presents Something Light Showcase ",
-      "date": "2026-03-25T18:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/7dmem9-the-hideout-presents-something-light-showcase-25th-mar-astra-miami-tickets"
-    },
-    {
       "name": "Wynwood Studios - MMW All Week Pass",
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
@@ -1118,36 +1110,12 @@
       "url": "https://dice.fm/event/bbrk7k-wynwood-studios-mmw-all-week-pass-25th-mar-wynwood-studios-miami-tickets"
     },
     {
-      "name": "APEX COMBO WEDNESDAY PASS",
-      "date": "2026-03-25T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-tickets"
-    },
-    {
       "name": "APEX 2026 MMW PASS",
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
       "price": "303.08",
       "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-mazuma-miami-tickets"
-    },
-    {
-      "name": "Coldharbour Night X Blackhole Recordings Night ",
-      "date": "2026-03-25T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets"
-    },
-    {
-      "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "49.95",
-      "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets"
     },
     {
       "name": "RESISTANCE Miami - MMW Pass",
@@ -1164,46 +1132,6 @@
       "artists": [],
       "price": "125",
       "url": "https://dice.fm/event/2w8o2m-factory-town-music-week-2026-wednesday-pass-25th-mar-factory-town-miami-tickets"
-    },
-    {
-      "name": "WEPA PRESENTS: Miami Music Week @ Faena Theater 3/25",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Faena Theater",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3y7xl-wepa-presents-miami-music-week-faena-theater-325-25th-mar-faena-theater-miami-beach-tickets"
-    },
-    {
-      "name": "Free Your Mind x We Group Hi-Fi",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Miami Sound Bar",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avql9q-free-your-mind-x-we-group-hi-fi-25th-mar-miami-sound-bar-miami-tickets"
-    },
-    {
-      "name": "Cadenza Hi-Fi MMW: SPECIAL GUEST 3/25",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Cadenza Hi-Fi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/l85yml-cadenza-hi-fi-mmw-special-guest-325-25th-mar-cadenza-hi-fi-miami-tickets"
-    },
-    {
-      "name": "MMW: Cheetah Print: Rafael ",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v39qa6-mmw-cheetah-print-rafael-25th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "Trifecta Records Label Showcase",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "MITA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/g5mpq2-trifecta-records-label-showcase-25th-mar-mita-miami-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
@@ -1628,6 +1556,78 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/92a5e6-the-real-deal-party-feel-26-miami-music-week-rooftop-28th-mar-esm-hotel-rooftop-miami-beach-tickets"
+    },
+    {
+      "name": "Sun Meets Moon: SAMM, Sparrow, Peace Control + More",
+      "date": "2026-03-28T16:00:00-04:00",
+      "venue": "Tala Beach",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/ryq3nq-sun-meets-moon-samm-sparrow-peace-control-more-28th-mar-tala-beach-miami-beach-tickets"
+    },
+    {
+      "name": "Cadenza Hi-Fi MMW: Resaca Takeover - Saturday 3/28",
+      "date": "2026-03-28T17:00:00-04:00",
+      "venue": "Cadenza Hi-Fi",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/nvngnq-cadenza-hi-fi-mmw-resaca-takeover-saturday-328-28th-mar-cadenza-hi-fi-miami-tickets"
+    },
+    {
+      "name": "No Art Music",
+      "date": "2026-03-28T17:00:00-04:00",
+      "venue": "Little River Studios",
+      "artists": [],
+      "price": "110",
+      "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets"
+    },
+    {
+      "name": "Black Coffee, Carlita & Kaz James at the Racetrack: MMW 26",
+      "date": "2026-03-28T18:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "85",
+      "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets"
+    },
+    {
+      "name": "M\u00e1s Tiempo - Miami Music Week",
+      "date": "2026-03-28T20:00:00-04:00",
+      "venue": "Toe Jam XL",
+      "artists": [],
+      "price": "50.69",
+      "url": "https://dice.fm/event/xeaevm-ms-tiempo-miami-music-week-28th-mar-toe-jam-xl-miami-tickets"
+    },
+    {
+      "name": "LALALAND - Miami Music Week ",
+      "date": "2026-03-28T20:00:00-04:00",
+      "venue": "Toe Jam Backlot ",
+      "artists": [],
+      "price": "124.82",
+      "url": "https://dice.fm/event/av3kox-lalaland-miami-music-week-28th-mar-toe-jam-backlot-miami-tickets"
+    },
+    {
+      "name": "APEX COMBO SATURDAY PASS",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "MAZUMA",
+      "artists": [],
+      "price": "80",
+      "url": "https://dice.fm/event/eoypdd-apex-combo-saturday-pass-28th-mar-mazuma-miami-tickets"
+    },
+    {
+      "name": "FREEZE PROJECT & INHOUSE RECORDS ",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/py9pdy-freeze-project-inhouse-records-28th-mar-astra-miami-tickets"
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Saturday Pass)",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "199.99",
+      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
