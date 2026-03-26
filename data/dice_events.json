@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-26T05:36:21.200330+00:00",
+  "updated": "2026-03-26T07:14:44.092049+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 108,
-  "matched_existing": 40,
-  "new_count": 68,
+  "total_found": 107,
+  "matched_existing": 36,
+  "new_count": 71,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -36,44 +36,14 @@
       "is_new": true
     },
     {
-      "name": "Beatport Live Pool Party x 20 Years Rekids",
-      "date": "2026-03-25T15:00:00-04:00",
-      "venue": "Kimpton EPIC Hotel",
-      "artists": [],
-      "price": "500",
-      "url": "https://dice.fm/event/av3p5q-beatport-live-pool-party-x-20-years-rekids-25th-mar-kimpton-epic-hotel-miami-tickets",
-      "matched_id": 6,
-      "is_new": false
-    },
-    {
       "name": "Balance Miami",
       "date": "2026-03-25T16:00:00-04:00",
       "venue": "1-800-Lucky",
       "artists": [],
-      "price": "75",
+      "price": "",
       "url": "https://dice.fm/event/3ogw58-balance-miami-25th-mar-1-800-lucky-miami-tickets",
       "matched_id": 16,
       "is_new": false
-    },
-    {
-      "name": "MMW Open Decks + Networker",
-      "date": "2026-03-25T16:30:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3yw36-mmw-open-decks-networker-25th-mar-electric-lady-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "That Thing on Wednesday - HoH x ENJOY x Vice City",
-      "date": "2026-03-25T17:00:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ry98lq-that-thing-on-wednesday-hoh-x-enjoy-x-vice-city-25th-mar-electric-lady-miami-tickets",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "The Hideout Presents Something Light Showcase ",
@@ -90,7 +60,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "48.49",
+      "price": "",
       "url": "https://dice.fm/event/oepbe5-sam-divine-presents-555-wynwood-studios-25th-mar-wynwood-studios-miami-tickets",
       "matched_id": 95,
       "is_new": false
@@ -110,8 +80,8 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "59.99",
-      "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-clutch-miami-tickets",
+      "price": "",
+      "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -130,28 +100,8 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "15",
-      "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "RESISTANCE Miami - MMW Pass",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "294.95",
-      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
+      "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -162,6 +112,16 @@
       "artists": [],
       "price": "49.95",
       "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "RESISTANCE Miami - MMW Pass",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "294.95",
+      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -180,7 +140,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Faena Theater",
       "artists": [],
-      "price": "90.93",
+      "price": "",
       "url": "https://dice.fm/event/v3y7xl-wepa-presents-miami-music-week-faena-theater-325-25th-mar-faena-theater-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
@@ -200,27 +160,17 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Cadenza Hi-Fi",
       "artists": [],
-      "price": "30.31",
+      "price": "",
       "url": "https://dice.fm/event/l85yml-cadenza-hi-fi-mmw-special-guest-325-25th-mar-cadenza-hi-fi-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Open Channel MMW: Acraze b2b CID, Benny Benassi",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Sable Miami",
-      "artists": [],
-      "price": "20.01",
-      "url": "https://dice.fm/event/yoaqlp-open-channel-mmw-acraze-b2b-cid-benny-benassi-25th-mar-sable-miami-miami-tickets",
-      "matched_id": 108,
-      "is_new": false
     },
     {
       "name": "MMW: Cheetah Print: Rafael ",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "62.21",
+      "price": "",
       "url": "https://dice.fm/event/v39qa6-mmw-cheetah-print-rafael-25th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -230,20 +180,10 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "MITA",
       "artists": [],
-      "price": "24.25",
+      "price": "",
       "url": "https://dice.fm/event/g5mpq2-trifecta-records-label-showcase-25th-mar-mita-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Incorrect Music Showcase (MMW 2026)",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "MODE",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/mxll2l-incorrect-music-showcase-mmw-2026-25th-mar-mode-miami-tickets",
-      "matched_id": 17,
-      "is_new": false
     },
     {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
@@ -252,36 +192,6 @@
       "artists": [],
       "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Hugel's Make The Girls Dance: Miami Music Week 2026",
-      "date": "2026-03-25T23:00:00-04:00",
-      "venue": "Club Space Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3q2vd-hugels-make-the-girls-dance-miami-music-week-2026-25th-mar-club-space-miami-miami-tickets",
-      "matched_id": 13,
-      "is_new": false
-    },
-    {
-      "name": "Perreo Del Futuro Presents: Six Sex Miami Music Week ",
-      "date": "2026-03-25T23:00:00-04:00",
-      "venue": "The Ground Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/av3392-perreo-del-futuro-presents-six-sex-miami-music-week-25th-mar-the-ground-miami-miami-tickets",
-      "matched_id": 20,
-      "is_new": false
-    },
-    {
-      "name": "Riordan Selects: Miami Music Week",
-      "date": "2026-03-25T23:00:00-04:00",
-      "venue": "Floyd Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/k6akgl-riordan-selects-miami-music-week-25th-mar-floyd-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -511,7 +421,7 @@
       "venue": "MAZUMA",
       "artists": [],
       "price": "75",
-      "url": "https://dice.fm/event/eoygmd-apex-combo-thursday-pass-26th-mar-mazuma-miami-clutch-miami-tickets",
+      "url": "https://dice.fm/event/eoygmd-apex-combo-thursday-pass-26th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -541,7 +451,7 @@
       "venue": "Stereo Club",
       "artists": [],
       "price": "24.25",
-      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets",
+      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-stereo-club-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -871,7 +781,7 @@
       "venue": "MAZUMA",
       "artists": [],
       "price": "80",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets",
+      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -996,6 +906,36 @@
       "is_new": true
     },
     {
+      "name": "ATC: GON\u00c7ALO, MICHENLO, DIKA, GOBAXX, CRISTALPOWER",
+      "date": "2026-03-27T23:59:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "12.46",
+      "url": "https://dice.fm/event/k695l9-atc-gonalo-michenlo-dika-gobaxx-cristalpower-27th-mar-the-trip-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Casita De Sue\u00f1os",
+      "date": "2026-03-28T07:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "AM.RADIO 025 Miami",
+      "date": "2026-03-28T11:00:00-04:00",
+      "venue": "ZeyZey",
+      "artists": [],
+      "price": "36.37",
+      "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
@@ -1006,6 +946,46 @@
       "is_new": false
     },
     {
+      "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "24.25",
+      "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "MK presents AREA 10 Pool Party",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "Kimpton Surfcomber",
+      "artists": [],
+      "price": "42.44",
+      "url": "https://dice.fm/event/6dl6d7-mk-presents-area-10-pool-party-28th-mar-kimpton-surfcomber-miami-tickets",
+      "matched_id": 62,
+      "is_new": false
+    },
+    {
+      "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "Nikki Beach Miami",
+      "artists": [],
+      "price": "12.12",
+      "url": "https://dice.fm/event/k69ax8-miami-music-week-guest-dj-deron-at-nikki-beach-28th-mar-nikki-beach-miami-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
+      "date": "2026-03-28T14:00:00-04:00",
+      "venue": "Boho",
+      "artists": [],
+      "price": "26.68",
+      "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Louie Vega & Friends: Moodymann, Anan\u00e9, Karizma",
       "date": "2026-03-28T15:00:00-04:00",
       "venue": "ZeyZey",
@@ -1014,6 +994,16 @@
       "url": "https://dice.fm/event/3owm78-louie-vega-friends-moodymann-anan-karizma-28th-mar-zeyzey-miami-tickets",
       "matched_id": 69,
       "is_new": false
+    },
+    {
+      "name": "The Real Deal Party Feel '26: Miami Music Week Rooftop",
+      "date": "2026-03-28T15:00:00-04:00",
+      "venue": "Esm\u00e9 Hotel Rooftop",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/92a5e6-the-real-deal-party-feel-26-miami-music-week-rooftop-28th-mar-esm-hotel-rooftop-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
@@ -1046,16 +1036,6 @@
       "is_new": false
     },
     {
-      "name": "MMW Closing Party With Arodes And Fideles",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Wynwood Studios",
-      "artists": [],
-      "price": "36.37",
-      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
-      "matched_id": 103,
-      "is_new": false
-    },
-    {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
@@ -1064,6 +1044,16 @@
       "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "MMW Closing Party With Arodes And Fideles",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Wynwood Studios",
+      "artists": [],
+      "price": "36.37",
+      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
+      "matched_id": 103,
+      "is_new": false
     },
     {
       "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
@@ -1112,22 +1102,6 @@
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
-      "name": "MMW Open Decks + Networker",
-      "date": "2026-03-25T16:30:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3yw36-mmw-open-decks-networker-25th-mar-electric-lady-miami-tickets"
-    },
-    {
-      "name": "That Thing on Wednesday - HoH x ENJOY x Vice City",
-      "date": "2026-03-25T17:00:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ry98lq-that-thing-on-wednesday-hoh-x-enjoy-x-vice-city-25th-mar-electric-lady-miami-tickets"
-    },
-    {
       "name": "The Hideout Presents Something Light Showcase ",
       "date": "2026-03-25T18:00:00-04:00",
       "venue": "ASTRA",
@@ -1148,8 +1122,8 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "59.99",
-      "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-clutch-miami-tickets"
+      "price": "",
+      "url": "https://dice.fm/event/3o6qap-apex-combo-wednesday-pass-25th-mar-mazuma-miami-tickets"
     },
     {
       "name": "APEX 2026 MMW PASS",
@@ -1164,24 +1138,8 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "15",
-      "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets"
-    },
-    {
-      "name": "Do Not Sit On MMW : Madota [Nervous Records]",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/bb3r9o-do-not-sit-on-mmw-madota-nervous-records-25th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
-    },
-    {
-      "name": "RESISTANCE Miami - MMW Pass",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "294.95",
-      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
+      "url": "https://dice.fm/event/bbxkdx-coldharbour-night-x-blackhole-recordings-night-25th-mar-mazuma-miami-tickets"
     },
     {
       "name": "RESISTANCE MMW: Yousuke Yukimatsu, 999999999",
@@ -1190,6 +1148,14 @@
       "artists": [],
       "price": "49.95",
       "url": "https://dice.fm/event/mx3gr9-resistance-mmw-yousuke-yukimatsu-999999999-25th-mar-m2-miami-miami-beach-tickets"
+    },
+    {
+      "name": "RESISTANCE Miami - MMW Pass",
+      "date": "2026-03-25T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "294.95",
+      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Wednesday Pass)",
@@ -1204,7 +1170,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Faena Theater",
       "artists": [],
-      "price": "90.93",
+      "price": "",
       "url": "https://dice.fm/event/v3y7xl-wepa-presents-miami-music-week-faena-theater-325-25th-mar-faena-theater-miami-beach-tickets"
     },
     {
@@ -1220,7 +1186,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Cadenza Hi-Fi",
       "artists": [],
-      "price": "30.31",
+      "price": "",
       "url": "https://dice.fm/event/l85yml-cadenza-hi-fi-mmw-special-guest-325-25th-mar-cadenza-hi-fi-miami-tickets"
     },
     {
@@ -1228,7 +1194,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "62.21",
+      "price": "",
       "url": "https://dice.fm/event/v39qa6-mmw-cheetah-print-rafael-25th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -1236,7 +1202,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "MITA",
       "artists": [],
-      "price": "24.25",
+      "price": "",
       "url": "https://dice.fm/event/g5mpq2-trifecta-records-label-showcase-25th-mar-mita-miami-tickets"
     },
     {
@@ -1246,14 +1212,6 @@
       "artists": [],
       "price": "527.19",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets"
-    },
-    {
-      "name": "Riordan Selects: Miami Music Week",
-      "date": "2026-03-25T23:00:00-04:00",
-      "venue": "Floyd Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/k6akgl-riordan-selects-miami-music-week-25th-mar-floyd-miami-miami-tickets"
     },
     {
       "name": "ATC: DRAXX, SWAVE, REDTAPE, JEAN CASAS, YANKAA..",
@@ -1373,7 +1331,7 @@
       "venue": "MAZUMA",
       "artists": [],
       "price": "75",
-      "url": "https://dice.fm/event/eoygmd-apex-combo-thursday-pass-26th-mar-mazuma-miami-clutch-miami-tickets"
+      "url": "https://dice.fm/event/eoygmd-apex-combo-thursday-pass-26th-mar-mazuma-miami-tickets"
     },
     {
       "name": "Cosmic Gate + Gabriel & Dresden + Estiva + Pretty Pink + Luccio + Anunnakis",
@@ -1381,7 +1339,7 @@
       "venue": "Stereo Club",
       "artists": [],
       "price": "24.25",
-      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-clutch-miami-tickets"
+      "url": "https://dice.fm/event/mx86bw-cosmic-gate-gabriel-dresden-estiva-pretty-pink-luccio-anunnakis-26th-mar-stereo-club-miami-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Mira & Tal Fussman ",
@@ -1557,7 +1515,7 @@
       "venue": "MAZUMA",
       "artists": [],
       "price": "80",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-clutch-miami-tickets"
+      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Friday Pass)",
@@ -1614,6 +1572,62 @@
       "artists": [],
       "price": "48.49",
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
+    },
+    {
+      "name": "ATC: GON\u00c7ALO, MICHENLO, DIKA, GOBAXX, CRISTALPOWER",
+      "date": "2026-03-27T23:59:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "12.46",
+      "url": "https://dice.fm/event/k695l9-atc-gonalo-michenlo-dika-gobaxx-cristalpower-27th-mar-the-trip-miami-tickets"
+    },
+    {
+      "name": "Casita De Sue\u00f1os",
+      "date": "2026-03-28T07:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets"
+    },
+    {
+      "name": "AM.RADIO 025 Miami",
+      "date": "2026-03-28T11:00:00-04:00",
+      "venue": "ZeyZey",
+      "artists": [],
+      "price": "36.37",
+      "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets"
+    },
+    {
+      "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "24.25",
+      "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
+    },
+    {
+      "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "Nikki Beach Miami",
+      "artists": [],
+      "price": "12.12",
+      "url": "https://dice.fm/event/k69ax8-miami-music-week-guest-dj-deron-at-nikki-beach-28th-mar-nikki-beach-miami-miami-beach-tickets"
+    },
+    {
+      "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
+      "date": "2026-03-28T14:00:00-04:00",
+      "venue": "Boho",
+      "artists": [],
+      "price": "26.68",
+      "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets"
+    },
+    {
+      "name": "The Real Deal Party Feel '26: Miami Music Week Rooftop",
+      "date": "2026-03-28T15:00:00-04:00",
+      "venue": "Esm\u00e9 Hotel Rooftop",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/92a5e6-the-real-deal-party-feel-26-miami-music-week-rooftop-28th-mar-esm-hotel-rooftop-miami-beach-tickets"
     },
     {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
