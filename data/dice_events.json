@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-27T00:30:58.807305+00:00",
+  "updated": "2026-03-27T02:25:18.365453+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 106,
-  "matched_existing": 36,
+  "total_found": 105,
+  "matched_existing": 35,
   "new_count": 70,
   "events": [
     {
@@ -90,7 +90,7 @@
       "date": "2026-03-26T15:00:00-04:00",
       "venue": " RC Cola Plant",
       "artists": [],
-      "price": "20",
+      "price": "",
       "url": "https://dice.fm/event/l89pol-bassrush-miami-music-week-26th-mar-rc-cola-plant-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -100,7 +100,7 @@
       "date": "2026-03-26T15:00:00-04:00",
       "venue": "Kimpton EPIC Hotel",
       "artists": [],
-      "price": "46.69",
+      "price": "500",
       "url": "https://dice.fm/event/bb387o-beatport-live-pool-party-hot-creations-x-tszr-26th-mar-kimpton-epic-hotel-miami-tickets",
       "matched_id": 21,
       "is_new": false
@@ -144,26 +144,6 @@
       "url": "https://dice.fm/event/53b5ad-floyd-lavine-friends-mmw-ft-aqutie-nei-tii-26th-mar-cadenza-hi-fi-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Nebula Presents: Miami Music Week 2026 (Two-Day)",
-      "date": "2026-03-26T19:00:00-04:00",
-      "venue": "Jungle Island",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/mx3elk-nebula-presents-miami-music-week-2026-two-day-26th-mar-jungle-island-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Nora En Pure Presents Purified Miami",
-      "date": "2026-03-26T19:00:00-04:00",
-      "venue": "Jungle Island",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3qvdv-nora-en-pure-presents-purified-miami-26th-mar-jungle-island-miami-tickets",
-      "matched_id": 23,
-      "is_new": false
     },
     {
       "name": "Toe Jam Music Week (4-Day Pass)",
@@ -340,7 +320,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "",
+      "price": "30.31",
       "url": "https://dice.fm/event/oepewm-something-chill-mmw-showcase-26th-mar-mode-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -370,7 +350,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "99.99",
+      "price": "",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -380,7 +360,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "25",
+      "price": "27.21",
       "url": "https://dice.fm/event/92a2r9-mmw-bass-jamz-gaskin-26th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -390,7 +370,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "18.19",
+      "price": "36.37",
       "url": "https://dice.fm/event/rynn3w-farris-wheel-showcase-mmw-2026-26th-mar-mode-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -460,7 +440,7 @@
       "date": "2026-03-27T12:00:00-04:00",
       "venue": "Kimpton Surfcomber",
       "artists": [],
-      "price": "116.82",
+      "price": "128.51",
       "url": "https://dice.fm/event/avq982-tgthr-presents-marco-carola-franky-rizardo-27th-mar-kimpton-surfcomber-miami-tickets",
       "matched_id": 102,
       "is_new": false
@@ -641,7 +621,7 @@
       "venue": "Casa Nube Wynwood",
       "artists": [],
       "price": "40",
-      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-clutch-miami-tickets",
+      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-casa-nube-wynwood-miami-tickets",
       "matched_id": 53,
       "is_new": false
     },
@@ -1016,6 +996,16 @@
       "is_new": true
     },
     {
+      "name": "MMW: Slapfunk x Yoyaku",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Jolene Sound Room Miami",
+      "artists": [],
+      "price": "10",
+      "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
       "date": "2026-03-29T12:00:00-04:00",
       "venue": "National Hotel",
@@ -1128,7 +1118,7 @@
       "date": "2026-03-26T15:00:00-04:00",
       "venue": " RC Cola Plant",
       "artists": [],
-      "price": "20",
+      "price": "",
       "url": "https://dice.fm/event/l89pol-bassrush-miami-music-week-26th-mar-rc-cola-plant-miami-tickets"
     },
     {
@@ -1162,14 +1152,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/53b5ad-floyd-lavine-friends-mmw-ft-aqutie-nei-tii-26th-mar-cadenza-hi-fi-miami-tickets"
-    },
-    {
-      "name": "Nebula Presents: Miami Music Week 2026 (Two-Day)",
-      "date": "2026-03-26T19:00:00-04:00",
-      "venue": "Jungle Island",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/mx3elk-nebula-presents-miami-music-week-2026-two-day-26th-mar-jungle-island-miami-tickets"
     },
     {
       "name": "Toe Jam Music Week (4-Day Pass)",
@@ -1256,7 +1238,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "",
+      "price": "30.31",
       "url": "https://dice.fm/event/oepewm-something-chill-mmw-showcase-26th-mar-mode-miami-tickets"
     },
     {
@@ -1280,7 +1262,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "99.99",
+      "price": "",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets"
     },
     {
@@ -1288,7 +1270,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "25",
+      "price": "27.21",
       "url": "https://dice.fm/event/92a2r9-mmw-bass-jamz-gaskin-26th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -1296,7 +1278,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "18.19",
+      "price": "36.37",
       "url": "https://dice.fm/event/rynn3w-farris-wheel-showcase-mmw-2026-26th-mar-mode-miami-tickets"
     },
     {
@@ -1618,6 +1600,14 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/mx3ymr-immersive-groove-episode-100-celebration-28th-mar-mode-miami-tickets"
+    },
+    {
+      "name": "MMW: Slapfunk x Yoyaku",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Jolene Sound Room Miami",
+      "artists": [],
+      "price": "10",
+      "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
