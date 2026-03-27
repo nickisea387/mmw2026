@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-27T16:51:07.994527+00:00",
+  "updated": "2026-03-27T18:52:40.509098+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 97,
-  "matched_existing": 31,
+  "total_found": 96,
+  "matched_existing": 30,
   "new_count": 66,
   "events": [
     {
@@ -50,7 +50,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "527.19",
+      "price": "524.99",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -64,16 +64,6 @@
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "TGTHR presents Marco Carola & Franky Rizardo",
-      "date": "2026-03-27T12:00:00-04:00",
-      "venue": "Kimpton Surfcomber",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avq982-tgthr-presents-marco-carola-franky-rizardo-27th-mar-kimpton-surfcomber-miami-tickets",
-      "matched_id": 102,
-      "is_new": false
     },
     {
       "name": "MMW - EDX Presents No Xcuses at Nikki Beach",
@@ -120,7 +110,7 @@
       "date": "2026-03-27T14:30:00-04:00",
       "venue": "Musette Yacht",
       "artists": [],
-      "price": "95",
+      "price": "",
       "url": "https://dice.fm/event/6dl7k7-rodriguez-jr-mmw2026-boat-perspectives-x-alaya-27th-mar-musette-yacht-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -150,7 +140,7 @@
       "date": "2026-03-27T15:30:00-04:00",
       "venue": "South Beach Lady",
       "artists": [],
-      "price": "158.82",
+      "price": "150",
       "url": "https://dice.fm/event/v395d6-the-soundgarden-cruise-w-dubfire-b2b-nick-warren-27th-mar-south-beach-lady-miami-tickets",
       "matched_id": 50,
       "is_new": false
@@ -220,7 +210,7 @@
       "date": "2026-03-27T20:00:00-04:00",
       "venue": "Toe Jam XL",
       "artists": [],
-      "price": "88.73",
+      "price": "110.21",
       "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
       "matched_id": 46,
       "is_new": false
@@ -690,7 +680,7 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "Floyd Miami",
       "artists": [],
-      "price": "30",
+      "price": "32.21",
       "url": "https://dice.fm/event/dk3q5o-miami-music-week-innellea-28th-mar-floyd-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -1014,7 +1004,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "527.19",
+      "price": "524.99",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets"
     },
     {
@@ -1046,7 +1036,7 @@
       "date": "2026-03-27T14:30:00-04:00",
       "venue": "Musette Yacht",
       "artists": [],
-      "price": "95",
+      "price": "",
       "url": "https://dice.fm/event/6dl7k7-rodriguez-jr-mmw2026-boat-perspectives-x-alaya-27th-mar-musette-yacht-miami-tickets"
     },
     {
@@ -1358,7 +1348,7 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "Floyd Miami",
       "artists": [],
-      "price": "30",
+      "price": "32.21",
       "url": "https://dice.fm/event/dk3q5o-miami-music-week-innellea-28th-mar-floyd-miami-miami-tickets"
     },
     {
