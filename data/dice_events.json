@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-26T22:34:40.374112+00:00",
+  "updated": "2026-03-27T00:30:58.807305+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 106,
   "matched_existing": 36,
@@ -20,7 +20,7 @@
       "date": "2026-03-24T12:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "333",
+      "price": "",
       "url": "https://dice.fm/event/wwelwg-james-hype-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
@@ -30,7 +30,7 @@
       "date": "2026-03-24T12:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "333",
+      "price": "",
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
@@ -150,7 +150,7 @@
       "date": "2026-03-26T19:00:00-04:00",
       "venue": "Jungle Island",
       "artists": [],
-      "price": "194.58",
+      "price": "",
       "url": "https://dice.fm/event/mx3elk-nebula-presents-miami-music-week-2026-two-day-26th-mar-jungle-island-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -160,7 +160,7 @@
       "date": "2026-03-26T19:00:00-04:00",
       "venue": "Jungle Island",
       "artists": [],
-      "price": "70.76",
+      "price": "",
       "url": "https://dice.fm/event/v3qvdv-nora-en-pure-presents-purified-miami-26th-mar-jungle-island-miami-tickets",
       "matched_id": 23,
       "is_new": false
@@ -370,7 +370,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "75",
+      "price": "99.99",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -530,7 +530,7 @@
       "date": "2026-03-27T15:00:00-04:00",
       "venue": "Joia Beach",
       "artists": [],
-      "price": "30.31",
+      "price": "36.37",
       "url": "https://dice.fm/event/l89kdb-inner-circle-x-level-club-mmw-beach-party-27th-mar-joia-beach-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -580,7 +580,7 @@
       "date": "2026-03-27T19:00:00-04:00",
       "venue": "Sable Miami",
       "artists": [],
-      "price": "48.49",
+      "price": "72.74",
       "url": "https://dice.fm/event/oevn7a-ministry-of-sound-x-hard-times-27th-mar-sable-miami-miami-tickets",
       "matched_id": 45,
       "is_new": false
@@ -1080,7 +1080,7 @@
       "date": "2026-03-24T12:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "333",
+      "price": "",
       "url": "https://dice.fm/event/wwelwg-james-hype-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
@@ -1088,7 +1088,7 @@
       "date": "2026-03-24T12:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "333",
+      "price": "",
       "url": "https://dice.fm/event/2w89xp-meduza-the-edma-multi-day-pass-to-both-events-24th-mar-national-hotel-miami-clevelander-beach-club-miami-beach-tickets"
     },
     {
@@ -1168,7 +1168,7 @@
       "date": "2026-03-26T19:00:00-04:00",
       "venue": "Jungle Island",
       "artists": [],
-      "price": "194.58",
+      "price": "",
       "url": "https://dice.fm/event/mx3elk-nebula-presents-miami-music-week-2026-two-day-26th-mar-jungle-island-miami-tickets"
     },
     {
@@ -1280,7 +1280,7 @@
       "date": "2026-03-26T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "75",
+      "price": "99.99",
       "url": "https://dice.fm/event/mx326k-factory-town-music-week-2026-thursday-pass-26th-mar-factory-town-miami-tickets"
     },
     {
@@ -1368,7 +1368,7 @@
       "date": "2026-03-27T15:00:00-04:00",
       "venue": "Joia Beach",
       "artists": [],
-      "price": "30.31",
+      "price": "36.37",
       "url": "https://dice.fm/event/l89kdb-inner-circle-x-level-club-mmw-beach-party-27th-mar-joia-beach-miami-tickets"
     },
     {
