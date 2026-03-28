@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T19:35:18.382261+00:00",
+  "updated": "2026-03-28T21:25:56.604824+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 66,
-  "matched_existing": 19,
-  "new_count": 47,
+  "matched_existing": 18,
+  "new_count": 48,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -76,6 +76,16 @@
       "is_new": true
     },
     {
+      "name": "AROUND THE CORNER: ROA-TRIP, LORENNA",
+      "date": "2026-03-28T00:00:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "12.46",
+      "url": "https://dice.fm/event/53rmpl-around-the-corner-roa-trip-lorenna-28th-mar-the-trip-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Casita De Sue\u00f1os",
       "date": "2026-03-28T07:00:00-04:00",
       "venue": "Sable Miami",
@@ -86,24 +96,24 @@
       "is_new": true
     },
     {
-      "name": "AM.RADIO 025 Miami",
-      "date": "2026-03-28T11:00:00-04:00",
-      "venue": "ZeyZey",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
       "artists": [],
-      "price": "224.99",
+      "price": "749.99",
       "url": "https://dice.fm/event/k6a36o-meduza-the-originals-present-hiide-mmw-2026-28th-mar-national-hotel-miami-tickets",
       "matched_id": 66,
       "is_new": false
+    },
+    {
+      "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "24.25",
+      "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
@@ -130,7 +140,7 @@
       "date": "2026-03-28T15:00:00-04:00",
       "venue": "ZeyZey",
       "artists": [],
-      "price": "32.51",
+      "price": "66.68",
       "url": "https://dice.fm/event/3owm78-louie-vega-friends-moodymann-anan-karizma-28th-mar-zeyzey-miami-tickets",
       "matched_id": 69,
       "is_new": false
@@ -144,16 +154,6 @@
       "url": "https://dice.fm/event/92a5e6-the-real-deal-party-feel-26-miami-music-week-rooftop-28th-mar-esm-hotel-rooftop-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "Cosmic Gate Miami Sunset Cruise",
-      "date": "2026-03-28T15:00:00-04:00",
-      "venue": "South Beach Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/eo3g7w-cosmic-gate-miami-sunset-cruise-28th-mar-south-beach-lady-miami-tickets",
-      "matched_id": 74,
-      "is_new": false
     },
     {
       "name": "Sun Meets Moon: SAMM, Sparrow, Peace Control + More",
@@ -190,7 +190,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "145",
+      "price": "126",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -210,7 +210,7 @@
       "date": "2026-03-28T20:00:00-04:00",
       "venue": "Toe Jam XL",
       "artists": [],
-      "price": "50.69",
+      "price": "69.71",
       "url": "https://dice.fm/event/xeaevm-ms-tiempo-miami-music-week-28th-mar-toe-jam-xl-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -330,7 +330,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "10",
+      "price": "15",
       "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -530,7 +530,7 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "249.99",
+      "price": "199.99",
       "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -724,6 +724,14 @@
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
     },
     {
+      "name": "AROUND THE CORNER: ROA-TRIP, LORENNA",
+      "date": "2026-03-28T00:00:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "12.46",
+      "url": "https://dice.fm/event/53rmpl-around-the-corner-roa-trip-lorenna-28th-mar-the-trip-miami-tickets"
+    },
+    {
       "name": "Casita De Sue\u00f1os",
       "date": "2026-03-28T07:00:00-04:00",
       "venue": "Sable Miami",
@@ -732,12 +740,12 @@
       "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets"
     },
     {
-      "name": "AM.RADIO 025 Miami",
-      "date": "2026-03-28T11:00:00-04:00",
-      "venue": "ZeyZey",
+      "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "ASTRA",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets"
+      "price": "24.25",
+      "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
     },
     {
       "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
@@ -784,7 +792,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "145",
+      "price": "126",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets"
     },
     {
@@ -800,7 +808,7 @@
       "date": "2026-03-28T20:00:00-04:00",
       "venue": "Toe Jam XL",
       "artists": [],
-      "price": "50.69",
+      "price": "69.71",
       "url": "https://dice.fm/event/xeaevm-ms-tiempo-miami-music-week-28th-mar-toe-jam-xl-miami-tickets"
     },
     {
@@ -864,7 +872,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "10",
+      "price": "15",
       "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -976,7 +984,7 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "249.99",
+      "price": "199.99",
       "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets"
     },
     {
