@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T17:28:45.210252+00:00",
+  "updated": "2026-03-28T19:35:18.382261+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 67,
+  "total_found": 66,
   "matched_existing": 19,
-  "new_count": 48,
+  "new_count": 47,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -20,7 +20,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "151.55",
+      "price": "166.70",
       "url": "https://dice.fm/event/bbrk7k-wynwood-studios-mmw-all-week-pass-25th-mar-wynwood-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -90,7 +90,7 @@
       "date": "2026-03-28T11:00:00-04:00",
       "venue": "ZeyZey",
       "artists": [],
-      "price": "42.44",
+      "price": "",
       "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -100,20 +100,10 @@
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
       "artists": [],
-      "price": "199.99",
+      "price": "224.99",
       "url": "https://dice.fm/event/k6a36o-meduza-the-originals-present-hiide-mmw-2026-28th-mar-national-hotel-miami-tickets",
       "matched_id": 66,
       "is_new": false
-    },
-    {
-      "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
-      "date": "2026-03-28T12:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
@@ -160,7 +150,7 @@
       "date": "2026-03-28T15:00:00-04:00",
       "venue": "South Beach Lady",
       "artists": [],
-      "price": "200.04",
+      "price": "",
       "url": "https://dice.fm/event/eo3g7w-cosmic-gate-miami-sunset-cruise-28th-mar-south-beach-lady-miami-tickets",
       "matched_id": 74,
       "is_new": false
@@ -231,7 +221,7 @@
       "venue": "Toe Jam Backlot ",
       "artists": [],
       "price": "124.82",
-      "url": "https://dice.fm/event/av3kox-lalaland-miami-music-week-28th-mar-toe-jam-backlot-miami-tickets",
+      "url": "https://dice.fm/event/av3kox-lalaland-green-velvet-b2b-josh-baker-28th-mar-toe-jam-backlot-miami-tickets",
       "matched_id": 71,
       "is_new": false
     },
@@ -270,7 +260,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "202.20",
+      "price": "199.99",
       "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -350,7 +340,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Domicile Miami",
       "artists": [],
-      "price": "30",
+      "price": "40",
       "url": "https://dice.fm/event/eo3992-cristobal-pesce-us-debut-saturday-mmw-closing-party-28th-mar-domicile-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -690,7 +680,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "151.55",
+      "price": "166.70",
       "url": "https://dice.fm/event/bbrk7k-wynwood-studios-mmw-all-week-pass-25th-mar-wynwood-studios-miami-tickets"
     },
     {
@@ -746,16 +736,8 @@
       "date": "2026-03-28T11:00:00-04:00",
       "venue": "ZeyZey",
       "artists": [],
-      "price": "42.44",
-      "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets"
-    },
-    {
-      "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
-      "date": "2026-03-28T12:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
+      "url": "https://dice.fm/event/nv99e9-amradio-025-miami-28th-mar-zeyzey-miami-tickets"
     },
     {
       "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
@@ -850,7 +832,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "202.20",
+      "price": "199.99",
       "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
     },
     {
@@ -890,7 +872,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Domicile Miami",
       "artists": [],
-      "price": "30",
+      "price": "40",
       "url": "https://dice.fm/event/eo3992-cristobal-pesce-us-debut-saturday-mmw-closing-party-28th-mar-domicile-miami-miami-tickets"
     },
     {
