@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T21:25:56.604824+00:00",
+  "updated": "2026-03-28T23:25:40.200514+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 66,
+  "total_found": 64,
   "matched_existing": 18,
-  "new_count": 48,
+  "new_count": 46,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -86,16 +86,6 @@
       "is_new": true
     },
     {
-      "name": "Casita De Sue\u00f1os",
-      "date": "2026-03-28T07:00:00-04:00",
-      "venue": "Sable Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
@@ -110,18 +100,8 @@
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "ASTRA",
       "artists": [],
-      "price": "24.25",
+      "price": "26.68",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
-      "date": "2026-03-28T12:00:00-04:00",
-      "venue": "Nikki Beach Miami",
-      "artists": [],
-      "price": "12.12",
-      "url": "https://dice.fm/event/k69ax8-miami-music-week-guest-dj-deron-at-nikki-beach-28th-mar-nikki-beach-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -130,7 +110,7 @@
       "date": "2026-03-28T14:00:00-04:00",
       "venue": "Boho",
       "artists": [],
-      "price": "26.68",
+      "price": "38.80",
       "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -190,7 +170,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "126",
+      "price": "550",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -200,7 +180,7 @@
       "date": "2026-03-28T18:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "85",
+      "price": "120",
       "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets",
       "matched_id": null,
       "is_new": true
@@ -732,35 +712,19 @@
       "url": "https://dice.fm/event/53rmpl-around-the-corner-roa-trip-lorenna-28th-mar-the-trip-miami-tickets"
     },
     {
-      "name": "Casita De Sue\u00f1os",
-      "date": "2026-03-28T07:00:00-04:00",
-      "venue": "Sable Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets"
-    },
-    {
       "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "ASTRA",
       "artists": [],
-      "price": "24.25",
+      "price": "26.68",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
-    },
-    {
-      "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
-      "date": "2026-03-28T12:00:00-04:00",
-      "venue": "Nikki Beach Miami",
-      "artists": [],
-      "price": "12.12",
-      "url": "https://dice.fm/event/k69ax8-miami-music-week-guest-dj-deron-at-nikki-beach-28th-mar-nikki-beach-miami-miami-beach-tickets"
     },
     {
       "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
       "date": "2026-03-28T14:00:00-04:00",
       "venue": "Boho",
       "artists": [],
-      "price": "26.68",
+      "price": "38.80",
       "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets"
     },
     {
@@ -792,7 +756,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "126",
+      "price": "550",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets"
     },
     {
@@ -800,7 +764,7 @@
       "date": "2026-03-28T18:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "85",
+      "price": "120",
       "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets"
     },
     {
