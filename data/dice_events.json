@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T13:40:59.154297+00:00",
+  "updated": "2026-03-28T15:31:03.766084+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 67,
-  "matched_existing": 18,
-  "new_count": 49,
+  "total_found": 71,
+  "matched_existing": 19,
+  "new_count": 52,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -66,6 +66,56 @@
       "is_new": true
     },
     {
+      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
+      "date": "2026-03-27T15:00:00-04:00",
+      "venue": "Electric Lady",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Casa Nube Wynwood",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-casa-nube-wynwood-miami-tickets",
+      "matched_id": 53,
+      "is_new": false
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Friday Pass)",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": 48,
+      "is_new": false
+    },
+    {
+      "name": "DOMICILE X ENCORE MMW EDITION ",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Domicile Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
       "date": "2026-03-27T23:45:00-04:00",
       "venue": "94th Aero Squadron",
@@ -100,7 +150,7 @@
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
       "artists": [],
-      "price": "179.99",
+      "price": "199.99",
       "url": "https://dice.fm/event/k6a36o-meduza-the-originals-present-hiide-mmw-2026-28th-mar-national-hotel-miami-tickets",
       "matched_id": 66,
       "is_new": false
@@ -210,7 +260,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "110",
+      "price": "145",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -286,16 +336,6 @@
       "is_new": true
     },
     {
-      "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "149.95",
-      "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 63,
-      "is_new": false
-    },
-    {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
@@ -304,6 +344,16 @@
       "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "M2 Miami",
+      "artists": [],
+      "price": "149.95",
+      "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": 63,
+      "is_new": false
     },
     {
       "name": "Yulia Niko presents AXEPT MMW @ BOHO ",
@@ -526,16 +576,6 @@
       "is_new": false
     },
     {
-      "name": "MMW Closing Party With Arodes And Fideles",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Wynwood Studios",
-      "artists": [],
-      "price": "36.37",
-      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
-      "matched_id": 103,
-      "is_new": false
-    },
-    {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
@@ -726,6 +766,30 @@
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
     },
     {
+      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
+      "date": "2026-03-27T15:00:00-04:00",
+      "venue": "Electric Lady",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets"
+    },
+    {
+      "name": "Factory Town Music Week 2026 (Friday Pass)",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets"
+    },
+    {
+      "name": "DOMICILE X ENCORE MMW EDITION ",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Domicile Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets"
+    },
+    {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
       "date": "2026-03-27T23:45:00-04:00",
       "venue": "94th Aero Squadron",
@@ -802,7 +866,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "110",
+      "price": "145",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets"
     },
     {
