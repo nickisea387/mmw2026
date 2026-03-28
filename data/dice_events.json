@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T15:31:03.766084+00:00",
+  "updated": "2026-03-28T17:28:45.210252+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 71,
+  "total_found": 67,
   "matched_existing": 19,
-  "new_count": 52,
+  "new_count": 48,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -66,56 +66,6 @@
       "is_new": true
     },
     {
-      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
-      "date": "2026-03-27T15:00:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Casa Nube Wynwood",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-casa-nube-wynwood-miami-tickets",
-      "matched_id": 53,
-      "is_new": false
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Friday Pass)",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "RESISTANCE MMW: Amelie Lens, Boys Noize, \u00d8TTA",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 48,
-      "is_new": false
-    },
-    {
-      "name": "DOMICILE X ENCORE MMW EDITION ",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
       "date": "2026-03-27T23:45:00-04:00",
       "venue": "94th Aero Squadron",
@@ -160,20 +110,10 @@
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "ASTRA",
       "artists": [],
-      "price": "24.25",
+      "price": "",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "MK presents AREA 10 Pool Party",
-      "date": "2026-03-28T12:00:00-04:00",
-      "venue": "Kimpton Surfcomber",
-      "artists": [],
-      "price": "42.44",
-      "url": "https://dice.fm/event/6dl6d7-mk-presents-area-10-pool-party-28th-mar-kimpton-surfcomber-miami-tickets",
-      "matched_id": 62,
-      "is_new": false
     },
     {
       "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
@@ -286,14 +226,14 @@
       "is_new": true
     },
     {
-      "name": "LALALAND - Miami Music Week ",
+      "name": "LALALAND: Green Velvet B2B Josh Baker",
       "date": "2026-03-28T20:00:00-04:00",
       "venue": "Toe Jam Backlot ",
       "artists": [],
       "price": "124.82",
       "url": "https://dice.fm/event/av3kox-lalaland-miami-music-week-28th-mar-toe-jam-backlot-miami-tickets",
-      "matched_id": null,
-      "is_new": true
+      "matched_id": 71,
+      "is_new": false
     },
     {
       "name": "APEX COMBO SATURDAY PASS",
@@ -336,14 +276,14 @@
       "is_new": true
     },
     {
-      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
+      "name": "Gabriel & Dresden \" Stories We Tell \" MMW",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "MAZUMA",
       "artists": [],
-      "price": "90.93",
-      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
+      "price": "19.99",
+      "url": "https://dice.fm/event/wwl6ag-gabriel-dresden-stories-we-tell-mmw-28th-mar-mazuma-miami-tickets",
+      "matched_id": 75,
+      "is_new": false
     },
     {
       "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
@@ -354,6 +294,16 @@
       "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 63,
       "is_new": false
+    },
+    {
+      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Yulia Niko presents AXEPT MMW @ BOHO ",
@@ -450,7 +400,7 @@
       "date": "2026-03-29T05:30:00-04:00",
       "venue": "El Palenque",
       "artists": [],
-      "price": "77.60",
+      "price": "84.86",
       "url": "https://dice.fm/event/dk39vv-lpn-329-miami-music-week-ft-nina-flowers-29th-mar-el-palenque-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -573,6 +523,16 @@
       "price": "69.71",
       "url": "https://dice.fm/event/v39mv6-moblack-records-miami-music-week-29th-mar-toe-jam-backlot-miami-tickets",
       "matched_id": 25,
+      "is_new": false
+    },
+    {
+      "name": "MMW Closing Party With Arodes And Fideles",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Wynwood Studios",
+      "artists": [],
+      "price": "36.37",
+      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
+      "matched_id": 103,
       "is_new": false
     },
     {
@@ -766,30 +726,6 @@
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
     },
     {
-      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
-      "date": "2026-03-27T15:00:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets"
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Friday Pass)",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets"
-    },
-    {
-      "name": "DOMICILE X ENCORE MMW EDITION ",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets"
-    },
-    {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
       "date": "2026-03-27T23:45:00-04:00",
       "venue": "94th Aero Squadron",
@@ -818,7 +754,7 @@
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "ASTRA",
       "artists": [],
-      "price": "24.25",
+      "price": "",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
     },
     {
@@ -884,14 +820,6 @@
       "artists": [],
       "price": "50.69",
       "url": "https://dice.fm/event/xeaevm-ms-tiempo-miami-music-week-28th-mar-toe-jam-xl-miami-tickets"
-    },
-    {
-      "name": "LALALAND - Miami Music Week ",
-      "date": "2026-03-28T20:00:00-04:00",
-      "venue": "Toe Jam Backlot ",
-      "artists": [],
-      "price": "124.82",
-      "url": "https://dice.fm/event/av3kox-lalaland-miami-music-week-28th-mar-toe-jam-backlot-miami-tickets"
     },
     {
       "name": "APEX COMBO SATURDAY PASS",
@@ -994,7 +922,7 @@
       "date": "2026-03-29T05:30:00-04:00",
       "venue": "El Palenque",
       "artists": [],
-      "price": "77.60",
+      "price": "84.86",
       "url": "https://dice.fm/event/dk39vv-lpn-329-miami-music-week-ft-nina-flowers-29th-mar-el-palenque-miami-tickets"
     },
     {
