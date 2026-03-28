@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T12:26:40.504340+00:00",
+  "updated": "2026-03-28T13:40:59.154297+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 67,
-  "matched_existing": 17,
-  "new_count": 50,
+  "matched_existing": 18,
+  "new_count": 49,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -62,16 +62,6 @@
       "artists": [],
       "price": "300.33",
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Friday Pass)",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -296,16 +286,6 @@
       "is_new": true
     },
     {
-      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Do Not Sit On The Furniture",
-      "artists": [],
-      "price": "90.93",
-      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "M2 Miami",
@@ -314,6 +294,16 @@
       "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 63,
       "is_new": false
+    },
+    {
+      "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
+      "date": "2026-03-28T22:00:00-04:00",
+      "venue": "Do Not Sit On The Furniture",
+      "artists": [],
+      "price": "90.93",
+      "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Yulia Niko presents AXEPT MMW @ BOHO ",
@@ -536,6 +526,16 @@
       "is_new": false
     },
     {
+      "name": "MMW Closing Party With Arodes And Fideles",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Wynwood Studios",
+      "artists": [],
+      "price": "36.37",
+      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
+      "matched_id": 103,
+      "is_new": false
+    },
+    {
       "name": "Factory Town Music Week 2026 (Sunday Pass)",
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
@@ -724,14 +724,6 @@
       "artists": [],
       "price": "300.33",
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Friday Pass)",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets"
     },
     {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
