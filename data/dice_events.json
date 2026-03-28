@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T08:48:41.825973+00:00",
+  "updated": "2026-03-28T10:34:49.343873+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 68,
-  "matched_existing": 18,
-  "new_count": 50,
+  "total_found": 71,
+  "matched_existing": 19,
+  "new_count": 52,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -66,6 +66,26 @@
       "is_new": true
     },
     {
+      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
+      "date": "2026-03-27T15:00:00-04:00",
+      "venue": "Electric Lady",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
+      "date": "2026-03-27T21:00:00-04:00",
+      "venue": "Casa Nube Wynwood",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-casa-nube-wynwood-miami-tickets",
+      "matched_id": 53,
+      "is_new": false
+    },
+    {
       "name": "Factory Town Music Week 2026 (Friday Pass)",
       "date": "2026-03-27T21:00:00-04:00",
       "venue": "Factory Town",
@@ -80,10 +100,20 @@
       "date": "2026-03-27T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "124.95",
+      "price": "",
       "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 48,
       "is_new": false
+    },
+    {
+      "name": "DOMICILE X ENCORE MMW EDITION ",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Domicile Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
@@ -736,12 +766,28 @@
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
     },
     {
+      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
+      "date": "2026-03-27T15:00:00-04:00",
+      "venue": "Electric Lady",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets"
+    },
+    {
       "name": "Factory Town Music Week 2026 (Friday Pass)",
       "date": "2026-03-27T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
       "price": "302.21",
       "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets"
+    },
+    {
+      "name": "DOMICILE X ENCORE MMW EDITION ",
+      "date": "2026-03-27T22:00:00-04:00",
+      "venue": "Domicile Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets"
     },
     {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
