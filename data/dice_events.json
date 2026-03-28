@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-28T06:57:28.397660+00:00",
+  "updated": "2026-03-28T08:48:41.825973+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 82,
-  "matched_existing": 25,
-  "new_count": 57,
+  "total_found": 68,
+  "matched_existing": 18,
+  "new_count": 50,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -66,91 +66,11 @@
       "is_new": true
     },
     {
-      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
-      "date": "2026-03-27T15:00:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Cadenza Hi-Fi MMW: Something Chill - Friday 3/27",
-      "date": "2026-03-27T17:00:00-04:00",
-      "venue": "Cadenza Hi-Fi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ryqxdw-cadenza-hi-fi-mmw-something-chill-friday-327-27th-mar-cadenza-hi-fi-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "WITTY TUNES SHOWCASE - EDD & FRIENDS",
-      "date": "2026-03-27T18:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/53rxbk-witty-tunes-showcase-edd-friends-27th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Ministry Of Sound x Hard Times",
-      "date": "2026-03-27T19:00:00-04:00",
-      "venue": "Sable Miami",
-      "artists": [],
-      "price": "72.74",
-      "url": "https://dice.fm/event/oevn7a-ministry-of-sound-x-hard-times-27th-mar-sable-miami-miami-tickets",
-      "matched_id": 45,
-      "is_new": false
-    },
-    {
-      "name": "Black Book Records - Miami Music Week ",
-      "date": "2026-03-27T20:00:00-04:00",
-      "venue": "Toe Jam Backlot ",
-      "artists": [],
-      "price": "171.25",
-      "url": "https://dice.fm/event/3ow9nx-black-book-records-miami-music-week-27th-mar-toe-jam-backlot-miami-tickets",
-      "matched_id": 43,
-      "is_new": false
-    },
-    {
-      "name": "deadmau5 - Miami Music Week",
-      "date": "2026-03-27T20:00:00-04:00",
-      "venue": "Toe Jam XL",
-      "artists": [],
-      "price": "110.21",
-      "url": "https://dice.fm/event/xe2ayl-deadmau5-miami-music-week-27th-mar-toe-jam-xl-miami-tickets",
-      "matched_id": 46,
-      "is_new": false
-    },
-    {
-      "name": "APEX COMBO FRIDAY PASS",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "65.01",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Ferry Corsten + Giuseppe Ottaviani + Billy Gillies + Amy Wiles + Luccio",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "Casa Nube Wynwood",
-      "artists": [],
-      "price": "45",
-      "url": "https://dice.fm/event/3owk8p-ferry-corsten-giuseppe-ottaviani-billy-gillies-amy-wiles-luccio-27th-mar-casa-nube-wynwood-miami-tickets",
-      "matched_id": 53,
-      "is_new": false
-    },
-    {
       "name": "Factory Town Music Week 2026 (Friday Pass)",
       "date": "2026-03-27T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "300",
+      "price": "302.21",
       "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -164,46 +84,6 @@
       "url": "https://dice.fm/event/92arpn-resistance-mmw-amelie-lens-boys-noize-tta-27th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 48,
       "is_new": false
-    },
-    {
-      "name": "DOMICILE X ENCORE MMW EDITION ",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "NUSONIDO Showcase - An immersive experience: Calussa",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Wynwood Studios",
-      "artists": [],
-      "price": "181.85",
-      "url": "https://dice.fm/event/mx7b9w-nusonido-showcase-an-immersive-experience-calussa-27th-mar-wynwood-studios-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Francis Mercier & Amal Nemer",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "42.21",
-      "url": "https://dice.fm/event/92ako7-mmw-francis-mercier-amal-nemer-27th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": 87,
-      "is_new": false
-    },
-    {
-      "name": "THE EDMA OFFICIAL AFTER PARTY",
-      "date": "2026-03-27T23:00:00-04:00",
-      "venue": "Clevelander Beach Club",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvnnvq-the-edma-official-after-party-27th-mar-clevelander-beach-club-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
@@ -426,16 +306,6 @@
       "is_new": true
     },
     {
-      "name": "Gabriel & Dresden \" Stories We Tell \" MMW",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "19.99",
-      "url": "https://dice.fm/event/wwl6ag-gabriel-dresden-stories-we-tell-mmw-28th-mar-mazuma-miami-tickets",
-      "matched_id": 75,
-      "is_new": false
-    },
-    {
       "name": "Do Not Sit On MMW : Rodriguez Jr. & Nico Morano",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
@@ -530,7 +400,7 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "The Ground Miami",
       "artists": [],
-      "price": "20",
+      "price": "30",
       "url": "https://dice.fm/event/q279oa-whynotus-miami-music-week-28th-mar-the-ground-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -684,16 +554,6 @@
       "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "MMW Closing Party With Arodes And Fideles",
-      "date": "2026-03-29T21:00:00-04:00",
-      "venue": "Wynwood Studios",
-      "artists": [],
-      "price": "36.37",
-      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
-      "matched_id": 103,
-      "is_new": false
     },
     {
       "name": "APEX COMBO SUNDAY PASS",
@@ -876,68 +736,12 @@
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
     },
     {
-      "name": "JVNGLA MIAMI:ART DEPARTMENT/FLAGRANT DRVMS/MATT MARTINEZ & Friends ",
-      "date": "2026-03-27T15:00:00-04:00",
-      "venue": "Electric Lady",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvnax9-jvngla-miamiart-departmentflagrant-drvmsmatt-martinez-friends-27th-mar-electric-lady-miami-tickets"
-    },
-    {
-      "name": "Cadenza Hi-Fi MMW: Something Chill - Friday 3/27",
-      "date": "2026-03-27T17:00:00-04:00",
-      "venue": "Cadenza Hi-Fi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/ryqxdw-cadenza-hi-fi-mmw-something-chill-friday-327-27th-mar-cadenza-hi-fi-miami-tickets"
-    },
-    {
-      "name": "WITTY TUNES SHOWCASE - EDD & FRIENDS",
-      "date": "2026-03-27T18:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/53rxbk-witty-tunes-showcase-edd-friends-27th-mar-astra-miami-tickets"
-    },
-    {
-      "name": "APEX COMBO FRIDAY PASS",
-      "date": "2026-03-27T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "65.01",
-      "url": "https://dice.fm/event/v3ypd6-apex-combo-friday-pass-27th-mar-mazuma-miami-tickets"
-    },
-    {
       "name": "Factory Town Music Week 2026 (Friday Pass)",
       "date": "2026-03-27T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "300",
+      "price": "302.21",
       "url": "https://dice.fm/event/yoay3r-factory-town-music-week-2026-friday-pass-27th-mar-factory-town-miami-tickets"
-    },
-    {
-      "name": "DOMICILE X ENCORE MMW EDITION ",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8egamv-domicile-x-encore-mmw-edition-27th-mar-domicile-miami-miami-tickets"
-    },
-    {
-      "name": "NUSONIDO Showcase - An immersive experience: Calussa",
-      "date": "2026-03-27T22:00:00-04:00",
-      "venue": "Wynwood Studios",
-      "artists": [],
-      "price": "181.85",
-      "url": "https://dice.fm/event/mx7b9w-nusonido-showcase-an-immersive-experience-calussa-27th-mar-wynwood-studios-miami-tickets"
-    },
-    {
-      "name": "THE EDMA OFFICIAL AFTER PARTY",
-      "date": "2026-03-27T23:00:00-04:00",
-      "venue": "Clevelander Beach Club",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/nvnnvq-the-edma-official-after-party-27th-mar-clevelander-beach-club-miami-beach-tickets"
     },
     {
       "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
@@ -1128,7 +932,7 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "The Ground Miami",
       "artists": [],
-      "price": "20",
+      "price": "30",
       "url": "https://dice.fm/event/q279oa-whynotus-miami-music-week-28th-mar-the-ground-miami-miami-tickets"
     },
     {
