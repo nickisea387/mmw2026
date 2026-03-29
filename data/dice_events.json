@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-29T02:28:16.336384+00:00",
+  "updated": "2026-03-29T05:35:52.882906+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 64,
+  "total_found": 63,
   "matched_existing": 18,
-  "new_count": 46,
+  "new_count": 45,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -20,7 +20,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "166.70",
+      "price": "",
       "url": "https://dice.fm/event/bbrk7k-wynwood-studios-mmw-all-week-pass-25th-mar-wynwood-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -60,7 +60,7 @@
       "date": "2026-03-26T20:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "300.33",
+      "price": "",
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -80,7 +80,7 @@
       "date": "2026-03-28T00:00:00-04:00",
       "venue": "The Trip",
       "artists": [],
-      "price": "12.46",
+      "price": "",
       "url": "https://dice.fm/event/53rmpl-around-the-corner-roa-trip-lorenna-28th-mar-the-trip-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -102,16 +102,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
-      "date": "2026-03-28T14:00:00-04:00",
-      "venue": "Boho",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -150,7 +140,7 @@
       "date": "2026-03-28T16:00:00-04:00",
       "venue": "UVA Wynwood",
       "artists": [],
-      "price": "12.12",
+      "price": "",
       "url": "https://dice.fm/event/q27qwp-desert-hearts-open-air-miami-music-week-2026-28th-mar-uva-wynwood-miami-tickets",
       "matched_id": 65,
       "is_new": false
@@ -180,7 +170,7 @@
       "date": "2026-03-28T18:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "120",
+      "price": "",
       "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets",
       "matched_id": null,
       "is_new": true
@@ -240,7 +230,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "300",
+      "price": "302.21",
       "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -270,7 +260,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
       "artists": [],
-      "price": "93.13",
+      "price": "",
       "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
@@ -280,7 +270,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Boho",
       "artists": [],
-      "price": "36.37",
+      "price": "60.62",
       "url": "https://dice.fm/event/q2wkq9-yulia-niko-presents-axept-mmw-boho-28th-mar-boho-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -290,7 +280,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "121.23",
+      "price": "242.47",
       "url": "https://dice.fm/event/2w8nya-blondish-friends-wynwood-studios-28th-mar-wynwood-studios-miami-tickets",
       "matched_id": 92,
       "is_new": false
@@ -300,7 +290,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "20",
+      "price": "",
       "url": "https://dice.fm/event/mx3ymr-immersive-groove-episode-100-celebration-28th-mar-mode-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -310,7 +300,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "32.21",
+      "price": "62.21",
       "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -330,7 +320,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "25",
+      "price": "",
       "url": "https://dice.fm/event/l8bbww-pendulum-by-steve-lawler-mmw-2026-28th-mar-mode-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -340,7 +330,7 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "Club Space Miami",
       "artists": [],
-      "price": "60",
+      "price": "",
       "url": "https://dice.fm/event/g5d6b5-marco-carola-presents-music-on-miami-music-week-2026-28th-mar-club-space-miami-miami-tickets",
       "matched_id": 60,
       "is_new": false
@@ -350,17 +340,17 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "The Ground Miami",
       "artists": [],
-      "price": "30",
+      "price": "",
       "url": "https://dice.fm/event/q279oa-whynotus-miami-music-week-28th-mar-the-ground-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
     {
-      "name": "Miami Music Week: Innellea ",
+      "name": "Miami Music Week: Layla Benitez",
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "Floyd Miami",
       "artists": [],
-      "price": "32.21",
+      "price": "",
       "url": "https://dice.fm/event/dk3q5o-miami-music-week-innellea-28th-mar-floyd-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -660,7 +650,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "166.70",
+      "price": "",
       "url": "https://dice.fm/event/bbrk7k-wynwood-studios-mmw-all-week-pass-25th-mar-wynwood-studios-miami-tickets"
     },
     {
@@ -692,7 +682,7 @@
       "date": "2026-03-26T20:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "300.33",
+      "price": "",
       "url": "https://dice.fm/event/8egn5w-toe-jam-music-week-4-day-pass-26th-mar-toe-jam-backlot-miami-toe-jam-xl-miami-tickets"
     },
     {
@@ -708,7 +698,7 @@
       "date": "2026-03-28T00:00:00-04:00",
       "venue": "The Trip",
       "artists": [],
-      "price": "12.46",
+      "price": "",
       "url": "https://dice.fm/event/53rmpl-around-the-corner-roa-trip-lorenna-28th-mar-the-trip-miami-tickets"
     },
     {
@@ -718,14 +708,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
-    },
-    {
-      "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
-      "date": "2026-03-28T14:00:00-04:00",
-      "venue": "Boho",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets"
     },
     {
       "name": "The Real Deal Party Feel '26: Miami Music Week Rooftop",
@@ -764,7 +746,7 @@
       "date": "2026-03-28T18:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "120",
+      "price": "",
       "url": "https://dice.fm/event/7dpg36-black-coffee-carlita-kaz-james-at-the-racetrack-mmw-26-28th-mar-club-space-miami-miami-hialeah-park-casino-hialeah-tickets"
     },
     {
@@ -804,7 +786,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "300",
+      "price": "302.21",
       "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
     },
     {
@@ -812,7 +794,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Do Not Sit On The Furniture",
       "artists": [],
-      "price": "93.13",
+      "price": "",
       "url": "https://dice.fm/event/2wk6wp-do-not-sit-on-mmw-rodriguez-jr-nico-morano-28th-mar-do-not-sit-on-the-furniture-miami-beach-tickets"
     },
     {
@@ -820,7 +802,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Boho",
       "artists": [],
-      "price": "36.37",
+      "price": "60.62",
       "url": "https://dice.fm/event/q2wkq9-yulia-niko-presents-axept-mmw-boho-28th-mar-boho-miami-tickets"
     },
     {
@@ -828,7 +810,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "20",
+      "price": "",
       "url": "https://dice.fm/event/mx3ymr-immersive-groove-episode-100-celebration-28th-mar-mode-miami-tickets"
     },
     {
@@ -836,7 +818,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "32.21",
+      "price": "62.21",
       "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -852,7 +834,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "25",
+      "price": "",
       "url": "https://dice.fm/event/l8bbww-pendulum-by-steve-lawler-mmw-2026-28th-mar-mode-miami-tickets"
     },
     {
@@ -860,15 +842,15 @@
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "The Ground Miami",
       "artists": [],
-      "price": "30",
+      "price": "",
       "url": "https://dice.fm/event/q279oa-whynotus-miami-music-week-28th-mar-the-ground-miami-miami-tickets"
     },
     {
-      "name": "Miami Music Week: Innellea ",
+      "name": "Miami Music Week: Layla Benitez",
       "date": "2026-03-28T23:00:00-04:00",
       "venue": "Floyd Miami",
       "artists": [],
-      "price": "32.21",
+      "price": "",
       "url": "https://dice.fm/event/dk3q5o-miami-music-week-innellea-28th-mar-floyd-miami-miami-tickets"
     },
     {
