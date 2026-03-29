@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-29T08:51:43.150180+00:00",
+  "updated": "2026-03-29T10:33:38.650579+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 42,
-  "matched_existing": 13,
-  "new_count": 29,
+  "total_found": 37,
+  "matched_existing": 12,
+  "new_count": 25,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -30,7 +30,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "294.95",
+      "price": "",
       "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
       "matched_id": null,
       "is_new": true
@@ -56,36 +56,6 @@
       "is_new": true
     },
     {
-      "name": "LALALAND: Green Velvet B2B Josh Baker",
-      "date": "2026-03-28T20:00:00-04:00",
-      "venue": "Toe Jam Backlot ",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/av3kox-lalaland-green-velvet-b2b-josh-baker-28th-mar-toe-jam-backlot-miami-tickets",
-      "matched_id": 71,
-      "is_new": false
-    },
-    {
-      "name": "Solardo",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "Para\u00edso Est\u00e9reo",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avq27x-solardo-28th-mar-paraso-estreo-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "FREEZE PROJECT & INHOUSE RECORDS ",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/py9pdy-freeze-project-inhouse-records-28th-mar-astra-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Factory Town Music Week 2026 (Saturday Pass)",
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "Factory Town",
@@ -100,7 +70,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "19.99",
+      "price": "",
       "url": "https://dice.fm/event/wwl6ag-gabriel-dresden-stories-we-tell-mmw-28th-mar-mazuma-miami-tickets",
       "matched_id": 75,
       "is_new": false
@@ -110,37 +80,17 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "149.95",
+      "price": "",
       "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 63,
       "is_new": false
-    },
-    {
-      "name": "Yulia Niko presents AXEPT MMW @ BOHO ",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Boho",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/q2wkq9-yulia-niko-presents-axept-mmw-boho-28th-mar-boho-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MMW: Slapfunk x Yoyaku",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "CRISTOBAL PESCE US Debut Saturday MMW CLOSING PARTY  ",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Domicile Miami",
       "artists": [],
-      "price": "40",
+      "price": "",
       "url": "https://dice.fm/event/eo3992-cristobal-pesce-us-debut-saturday-mmw-closing-party-28th-mar-domicile-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -150,7 +100,7 @@
       "date": "2026-03-29T05:30:00-04:00",
       "venue": "El Palenque",
       "artists": [],
-      "price": "84.86",
+      "price": "",
       "url": "https://dice.fm/event/dk39vv-lpn-329-miami-music-week-ft-nina-flowers-29th-mar-el-palenque-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -320,7 +270,7 @@
       "date": "2026-03-29T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "124.95",
+      "price": "",
       "url": "https://dice.fm/event/dkqo6g-resistance-mmw-closing-party-carl-cox-maceo-plex-29th-mar-m2-miami-miami-beach-tickets",
       "matched_id": 80,
       "is_new": false
@@ -448,7 +398,7 @@
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "M2 Miami",
       "artists": [],
-      "price": "294.95",
+      "price": "",
       "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
     },
     {
@@ -468,22 +418,6 @@
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
     },
     {
-      "name": "Solardo",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "Para\u00edso Est\u00e9reo",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/avq27x-solardo-28th-mar-paraso-estreo-miami-tickets"
-    },
-    {
-      "name": "FREEZE PROJECT & INHOUSE RECORDS ",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "ASTRA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/py9pdy-freeze-project-inhouse-records-28th-mar-astra-miami-tickets"
-    },
-    {
       "name": "Factory Town Music Week 2026 (Saturday Pass)",
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "Factory Town",
@@ -492,27 +426,11 @@
       "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
     },
     {
-      "name": "Yulia Niko presents AXEPT MMW @ BOHO ",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Boho",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/q2wkq9-yulia-niko-presents-axept-mmw-boho-28th-mar-boho-miami-tickets"
-    },
-    {
-      "name": "MMW: Slapfunk x Yoyaku",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/8e62vr-mmw-slapfunk-x-yoyaku-28th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
       "name": "CRISTOBAL PESCE US Debut Saturday MMW CLOSING PARTY  ",
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Domicile Miami",
       "artists": [],
-      "price": "40",
+      "price": "",
       "url": "https://dice.fm/event/eo3992-cristobal-pesce-us-debut-saturday-mmw-closing-party-28th-mar-domicile-miami-miami-tickets"
     },
     {
@@ -520,7 +438,7 @@
       "date": "2026-03-29T05:30:00-04:00",
       "venue": "El Palenque",
       "artists": [],
-      "price": "84.86",
+      "price": "",
       "url": "https://dice.fm/event/dk39vv-lpn-329-miami-music-week-ft-nina-flowers-29th-mar-el-palenque-miami-tickets"
     },
     {
