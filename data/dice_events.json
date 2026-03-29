@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-29T10:33:38.650579+00:00",
+  "updated": "2026-03-29T12:27:37.296642+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 37,
-  "matched_existing": 12,
-  "new_count": 25,
+  "total_found": 30,
+  "matched_existing": 9,
+  "new_count": 21,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -26,16 +26,6 @@
       "is_new": true
     },
     {
-      "name": "RESISTANCE Miami - MMW Pass",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
@@ -52,56 +42,6 @@
       "artists": [],
       "price": "48.49",
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Saturday Pass)",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "302.21",
-      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Gabriel & Dresden \" Stories We Tell \" MMW",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "MAZUMA",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/wwl6ag-gabriel-dresden-stories-we-tell-mmw-28th-mar-mazuma-miami-tickets",
-      "matched_id": 75,
-      "is_new": false
-    },
-    {
-      "name": "RESISTANCE MMW: Boris Brejcha, Miss Monique",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/3ow7l8-resistance-mmw-boris-brejcha-miss-monique-28th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 63,
-      "is_new": false
-    },
-    {
-      "name": "CRISTOBAL PESCE US Debut Saturday MMW CLOSING PARTY  ",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/eo3992-cristobal-pesce-us-debut-saturday-mmw-closing-party-28th-mar-domicile-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "LPN! 3.29 MIAMI MUSIC WEEK   ft. NINA FLOWERS ",
-      "date": "2026-03-29T05:30:00-04:00",
-      "venue": "El Palenque",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dk39vv-lpn-329-miami-music-week-ft-nina-flowers-29th-mar-el-palenque-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -266,16 +206,6 @@
       "is_new": false
     },
     {
-      "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
-      "date": "2026-03-29T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkqo6g-resistance-mmw-closing-party-carl-cox-maceo-plex-29th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 80,
-      "is_new": false
-    },
-    {
       "name": "Hush ",
       "date": "2026-03-29T22:00:00-04:00",
       "venue": "Minibar SoFi",
@@ -394,14 +324,6 @@
       "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-paraso-estreo-miami-la-otra-miami-mazuma-miami-casa-nube-wynwood-miami-tickets"
     },
     {
-      "name": "RESISTANCE Miami - MMW Pass",
-      "date": "2026-03-25T22:00:00-04:00",
-      "venue": "M2 Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yoayax-resistance-miami-mmw-pass-25th-mar-m2-miami-miami-beach-tickets"
-    },
-    {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
@@ -416,30 +338,6 @@
       "artists": [],
       "price": "48.49",
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Saturday Pass)",
-      "date": "2026-03-28T21:00:00-04:00",
-      "venue": "Factory Town",
-      "artists": [],
-      "price": "302.21",
-      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
-    },
-    {
-      "name": "CRISTOBAL PESCE US Debut Saturday MMW CLOSING PARTY  ",
-      "date": "2026-03-28T22:00:00-04:00",
-      "venue": "Domicile Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/eo3992-cristobal-pesce-us-debut-saturday-mmw-closing-party-28th-mar-domicile-miami-miami-tickets"
-    },
-    {
-      "name": "LPN! 3.29 MIAMI MUSIC WEEK   ft. NINA FLOWERS ",
-      "date": "2026-03-29T05:30:00-04:00",
-      "venue": "El Palenque",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dk39vv-lpn-329-miami-music-week-ft-nina-flowers-29th-mar-el-palenque-miami-tickets"
     },
     {
       "name": "UNUM - Miami Music Week",
