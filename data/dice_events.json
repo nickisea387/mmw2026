@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-29T13:39:33.039705+00:00",
+  "updated": "2026-03-29T14:54:12.896408+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 30,
+  "total_found": 31,
   "matched_existing": 9,
-  "new_count": 21,
+  "new_count": 22,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -46,6 +46,16 @@
       "is_new": true
     },
     {
+      "name": "Factory Town Music Week 2026 (Saturday Pass)",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "UNUM - Miami Music Week",
       "date": "2026-03-29T07:00:00-04:00",
       "venue": "Sable Miami",
@@ -60,7 +70,7 @@
       "date": "2026-03-29T11:00:00-04:00",
       "venue": "South Beach Lady",
       "artists": [],
-      "price": "110",
+      "price": "",
       "url": "https://dice.fm/event/3o6ka8-ship-of-fools-the-reunion-29th-mar-south-beach-lady-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -340,6 +350,14 @@
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
     },
     {
+      "name": "Factory Town Music Week 2026 (Saturday Pass)",
+      "date": "2026-03-28T21:00:00-04:00",
+      "venue": "Factory Town",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owk2l-factory-town-music-week-2026-saturday-pass-28th-mar-factory-town-miami-tickets"
+    },
+    {
       "name": "UNUM - Miami Music Week",
       "date": "2026-03-29T07:00:00-04:00",
       "venue": "Sable Miami",
@@ -352,7 +370,7 @@
       "date": "2026-03-29T11:00:00-04:00",
       "venue": "South Beach Lady",
       "artists": [],
-      "price": "110",
+      "price": "",
       "url": "https://dice.fm/event/3o6ka8-ship-of-fools-the-reunion-29th-mar-south-beach-lady-miami-tickets"
     },
     {
