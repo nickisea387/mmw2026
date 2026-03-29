@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-29T05:35:52.882906+00:00",
+  "updated": "2026-03-29T07:13:40.605242+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 63,
+  "total_found": 66,
   "matched_existing": 18,
-  "new_count": 45,
+  "new_count": 48,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -86,6 +86,16 @@
       "is_new": true
     },
     {
+      "name": "Casita De Sue\u00f1os",
+      "date": "2026-03-28T07:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "MEDUZA -The Originals Present HIIDE MMW 2026",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "National Hotel",
@@ -102,6 +112,26 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "Nikki Beach Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/k69ax8-miami-music-week-guest-dj-deron-at-nikki-beach-28th-mar-nikki-beach-miami-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
+      "date": "2026-03-28T14:00:00-04:00",
+      "venue": "Boho",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -160,7 +190,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "550",
+      "price": "",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -200,7 +230,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "80",
+      "price": "",
       "url": "https://dice.fm/event/eoypdd-apex-combo-saturday-pass-28th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -280,7 +310,7 @@
       "date": "2026-03-28T22:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "242.47",
+      "price": "",
       "url": "https://dice.fm/event/2w8nya-blondish-friends-wynwood-studios-28th-mar-wynwood-studios-miami-tickets",
       "matched_id": 92,
       "is_new": false
@@ -702,12 +732,36 @@
       "url": "https://dice.fm/event/53rmpl-around-the-corner-roa-trip-lorenna-28th-mar-the-trip-miami-tickets"
     },
     {
+      "name": "Casita De Sue\u00f1os",
+      "date": "2026-03-28T07:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3owb7v-casita-de-sueos-28th-mar-sable-miami-miami-tickets"
+    },
+    {
       "name": "NOTHIN PERSONAL: DANIEL ORPI, CORTES, BASSO UK..",
       "date": "2026-03-28T12:00:00-04:00",
       "venue": "ASTRA",
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/q2wan9-nothin-personal-daniel-orpi-cortes-basso-uk-28th-mar-astra-miami-tickets"
+    },
+    {
+      "name": "Miami Music Week - Guest Dj Deron at Nikki Beach",
+      "date": "2026-03-28T12:00:00-04:00",
+      "venue": "Nikki Beach Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/k69ax8-miami-music-week-guest-dj-deron-at-nikki-beach-28th-mar-nikki-beach-miami-miami-beach-tickets"
+    },
+    {
+      "name": "Derrick Does Disco \u2014 Deep House Brunch | Essential Miami MMW",
+      "date": "2026-03-28T14:00:00-04:00",
+      "venue": "Boho",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkmk8o-derrick-does-disco-deep-house-brunch-essential-miami-mmw-28th-mar-boho-miami-tickets"
     },
     {
       "name": "The Real Deal Party Feel '26: Miami Music Week Rooftop",
@@ -738,7 +792,7 @@
       "date": "2026-03-28T17:00:00-04:00",
       "venue": "Little River Studios",
       "artists": [],
-      "price": "550",
+      "price": "",
       "url": "https://dice.fm/event/6d2vo7-no-art-music-28th-mar-little-river-studios-miami-tickets"
     },
     {
@@ -762,7 +816,7 @@
       "date": "2026-03-28T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "80",
+      "price": "",
       "url": "https://dice.fm/event/eoypdd-apex-combo-saturday-pass-28th-mar-mazuma-miami-tickets"
     },
     {
