@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-30T05:41:53.027810+00:00",
+  "updated": "2026-03-30T07:30:06.821993+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 26,
-  "matched_existing": 8,
-  "new_count": 18,
+  "total_found": 19,
+  "matched_existing": 7,
+  "new_count": 12,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -20,7 +20,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "80",
+      "price": "",
       "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-paraso-estreo-miami-la-otra-miami-mazuma-miami-casa-nube-wynwood-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -40,7 +40,7 @@
       "date": "2026-03-27T23:45:00-04:00",
       "venue": "94th Aero Squadron",
       "artists": [],
-      "price": "88.16",
+      "price": "",
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -50,28 +50,8 @@
       "date": "2026-03-29T07:00:00-04:00",
       "venue": "Sable Miami",
       "artists": [],
-      "price": "38.03",
+      "price": "",
       "url": "https://dice.fm/event/eorx7y-unum-miami-music-week-29th-mar-sable-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
-      "date": "2026-03-29T12:00:00-04:00",
-      "venue": "National Hotel",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/7dpydp-james-hype-the-originals-present-hiide-mmw-2026-29th-mar-national-hotel-miami-tickets",
-      "matched_id": 49,
-      "is_new": false
-    },
-    {
-      "name": "Mixmag Caribbean vs Humans Alike Showcase MMW2026",
-      "date": "2026-03-29T12:00:00-04:00",
-      "venue": "1-800-Lucky",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/7demgb-mixmag-caribbean-vs-humans-alike-showcase-mmw2026-29th-mar-1-800-lucky-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -82,16 +62,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/2w37ga--brian-cid-presents-ladobe-29th-mar-cadenza-hi-fi-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "PLAYGRND SERIES MIAMI: SPRING FEVER EDITION",
-      "date": "2026-03-29T17:00:00-04:00",
-      "venue": "ZeyZey",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bb39ag-playgrnd-series-miami-spring-fever-edition-29th-mar-zeyzey-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -140,7 +110,7 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Wynwood Studios",
       "artists": [],
-      "price": "36.37",
+      "price": "",
       "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
       "matched_id": 103,
       "is_new": false
@@ -150,7 +120,7 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "80",
+      "price": "",
       "url": "https://dice.fm/event/6dl3kq-apex-combo-sunday-pass-29th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -166,24 +136,14 @@
       "is_new": false
     },
     {
-      "name": "Hush ",
+      "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
       "date": "2026-03-29T22:00:00-04:00",
-      "venue": "Minibar SoFi",
+      "venue": "M2 Miami",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbrwam-hush-29th-mar-minibar-sofi-miami-beach-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Echo Temple x Wassup MMW Showcase",
-      "date": "2026-03-29T22:00:00-04:00",
-      "venue": "MODE",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkmrnq-echo-temple-x-wassup-mmw-showcase-29th-mar-mode-miami-tickets",
-      "matched_id": null,
-      "is_new": true
+      "price": "124.95",
+      "url": "https://dice.fm/event/dkqo6g-resistance-mmw-closing-party-carl-cox-maceo-plex-29th-mar-m2-miami-miami-beach-tickets",
+      "matched_id": 80,
+      "is_new": false
     },
     {
       "name": "MMW: Heavy House Society: Sidney Charles",
@@ -196,16 +156,6 @@
       "is_new": true
     },
     {
-      "name": "Deeperfect Showcase (MMW 2026)",
-      "date": "2026-03-29T22:00:00-04:00",
-      "venue": "MODE",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/92wa5o-deeperfect-showcase-mmw-2026-29th-mar-mode-miami-tickets",
-      "matched_id": 89,
-      "is_new": false
-    },
-    {
       "name": "30+ Hour MMW Closing Party 2026",
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "Club Space Miami",
@@ -214,26 +164,6 @@
       "url": "https://dice.fm/event/mxl5nr-30-hour-mmw-closing-party-2026-29th-mar-club-space-miami-miami-tickets",
       "matched_id": 88,
       "is_new": false
-    },
-    {
-      "name": "III Points Presents: Miami Music Week",
-      "date": "2026-03-29T23:00:00-04:00",
-      "venue": "The Ground Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yo6ava-iii-points-presents-miami-music-week-29th-mar-the-ground-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "F93 x PIV Records: Miami Music Week",
-      "date": "2026-03-29T23:00:00-04:00",
-      "venue": "Floyd Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3q9el-f93-x-piv-records-miami-music-week-29th-mar-floyd-miami-miami-tickets",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
@@ -280,7 +210,7 @@
       "date": "2026-03-25T21:00:00-04:00",
       "venue": "",
       "artists": [],
-      "price": "80",
+      "price": "",
       "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-paraso-estreo-miami-la-otra-miami-mazuma-miami-casa-nube-wynwood-miami-tickets"
     },
     {
@@ -296,7 +226,7 @@
       "date": "2026-03-27T23:45:00-04:00",
       "venue": "94th Aero Squadron",
       "artists": [],
-      "price": "88.16",
+      "price": "",
       "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
     },
     {
@@ -304,16 +234,8 @@
       "date": "2026-03-29T07:00:00-04:00",
       "venue": "Sable Miami",
       "artists": [],
-      "price": "38.03",
-      "url": "https://dice.fm/event/eorx7y-unum-miami-music-week-29th-mar-sable-miami-miami-tickets"
-    },
-    {
-      "name": "Mixmag Caribbean vs Humans Alike Showcase MMW2026",
-      "date": "2026-03-29T12:00:00-04:00",
-      "venue": "1-800-Lucky",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/7demgb-mixmag-caribbean-vs-humans-alike-showcase-mmw2026-29th-mar-1-800-lucky-miami-tickets"
+      "url": "https://dice.fm/event/eorx7y-unum-miami-music-week-29th-mar-sable-miami-miami-tickets"
     },
     {
       "name": " Brian Cid presents Ladobe",
@@ -322,14 +244,6 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/2w37ga--brian-cid-presents-ladobe-29th-mar-cadenza-hi-fi-miami-tickets"
-    },
-    {
-      "name": "PLAYGRND SERIES MIAMI: SPRING FEVER EDITION",
-      "date": "2026-03-29T17:00:00-04:00",
-      "venue": "ZeyZey",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bb39ag-playgrnd-series-miami-spring-fever-edition-29th-mar-zeyzey-miami-tickets"
     },
     {
       "name": "Steve Angello & Friends - Miami Music Week",
@@ -352,24 +266,8 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "MAZUMA",
       "artists": [],
-      "price": "80",
+      "price": "",
       "url": "https://dice.fm/event/6dl3kq-apex-combo-sunday-pass-29th-mar-mazuma-miami-tickets"
-    },
-    {
-      "name": "Hush ",
-      "date": "2026-03-29T22:00:00-04:00",
-      "venue": "Minibar SoFi",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbrwam-hush-29th-mar-minibar-sofi-miami-beach-tickets"
-    },
-    {
-      "name": "Echo Temple x Wassup MMW Showcase",
-      "date": "2026-03-29T22:00:00-04:00",
-      "venue": "MODE",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/dkmrnq-echo-temple-x-wassup-mmw-showcase-29th-mar-mode-miami-tickets"
     },
     {
       "name": "MMW: Heavy House Society: Sidney Charles",
@@ -378,22 +276,6 @@
       "artists": [],
       "price": "40",
       "url": "https://dice.fm/event/nv9gl9-mmw-heavy-house-society-sidney-charles-29th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "III Points Presents: Miami Music Week",
-      "date": "2026-03-29T23:00:00-04:00",
-      "venue": "The Ground Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/yo6ava-iii-points-presents-miami-music-week-29th-mar-the-ground-miami-miami-tickets"
-    },
-    {
-      "name": "F93 x PIV Records: Miami Music Week",
-      "date": "2026-03-29T23:00:00-04:00",
-      "venue": "Floyd Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/v3q9el-f93-x-piv-records-miami-music-week-29th-mar-floyd-miami-miami-tickets"
     },
     {
       "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
