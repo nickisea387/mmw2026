@@ -1,190 +1,10 @@
 {
-  "updated": "2026-03-30T09:24:50.506578+00:00",
+  "updated": "2026-03-30T11:11:33.993402+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 24,
-  "matched_existing": 10,
-  "new_count": 14,
+  "total_found": 26,
+  "matched_existing": 8,
+  "new_count": 18,
   "events": [
-    {
-      "name": "MMW Jolene All Access Pass",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4222
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Factory Town Music Week 2026 (5-Day Pass)",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 52719,
-        "sales_tax": 3449,
-        "amount_from": null
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Steve Angello & Friends - Miami Music Week",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 8239
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "MoBlack Records - Miami Music Week ",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 6971
-      },
-      "url": "",
-      "matched_id": 25,
-      "is_new": false
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Sunday Pass)",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 30000
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "Guy J & Mariano Mellino ",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 7000
-      },
-      "url": "",
-      "matched_id": 16,
-      "is_new": false
-    },
-    {
-      "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 12495,
-        "sales_tax": 818,
-        "amount_from": null
-      },
-      "url": "",
-      "matched_id": 80,
-      "is_new": false
-    },
-    {
-      "name": "MMW: Heavy House Society: Sidney Charles",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 4000,
-        "sales_tax": 261,
-        "amount_from": null
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "30+ Hour MMW Closing Party 2026",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4000
-      },
-      "url": "",
-      "matched_id": 88,
-      "is_new": false
-    },
-    {
-      "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 1246
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "ENJOY. Miami Music Week Closing Party ",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 0
-      },
-      "url": "",
-      "matched_id": 88,
-      "is_new": false
-    },
-    {
-      "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 3000
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
     {
       "name": "MMW Jolene All Access Pass",
       "date": "2026-03-19T22:00:00-04:00",
@@ -196,14 +16,94 @@
       "is_new": true
     },
     {
+      "name": "APEX 2026 MMW PASS",
+      "date": "2026-03-25T21:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-paraso-estreo-miami-la-otra-miami-mazuma-miami-casa-nube-wynwood-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "527.19",
+      "price": "",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets",
       "matched_id": null,
       "is_new": true
+    },
+    {
+      "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
+      "date": "2026-03-27T23:45:00-04:00",
+      "venue": "94th Aero Squadron",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "UNUM - Miami Music Week",
+      "date": "2026-03-29T07:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/eorx7y-unum-miami-music-week-29th-mar-sable-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "JAMES HYPE -The Originals Present HIIDE - MMW 2026",
+      "date": "2026-03-29T12:00:00-04:00",
+      "venue": "National Hotel",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/7dpydp-james-hype-the-originals-present-hiide-mmw-2026-29th-mar-national-hotel-miami-tickets",
+      "matched_id": 49,
+      "is_new": false
+    },
+    {
+      "name": "Mixmag Caribbean vs Humans Alike Showcase MMW2026",
+      "date": "2026-03-29T12:00:00-04:00",
+      "venue": "1-800-Lucky",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/7demgb-mixmag-caribbean-vs-humans-alike-showcase-mmw2026-29th-mar-1-800-lucky-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": " Brian Cid presents Ladobe",
+      "date": "2026-03-29T17:00:00-04:00",
+      "venue": "Cadenza Hi-Fi",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/2w37ga--brian-cid-presents-ladobe-29th-mar-cadenza-hi-fi-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "PLAYGRND SERIES MIAMI: SPRING FEVER EDITION",
+      "date": "2026-03-29T17:00:00-04:00",
+      "venue": "ZeyZey",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bb39ag-playgrnd-series-miami-spring-fever-edition-29th-mar-zeyzey-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Miami Music Week Closing Party | LIBERO",
+      "date": "2026-03-29T19:00:00-04:00",
+      "venue": "ASTRA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/ry9wdv-miami-music-week-closing-party-libero-29th-mar-astra-miami-tickets",
+      "matched_id": 88,
+      "is_new": false
     },
     {
       "name": "Steve Angello & Friends - Miami Music Week",
@@ -230,8 +130,28 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "300",
+      "price": "",
       "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "MMW Closing Party With Arodes And Fideles",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "Wynwood Studios",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/g5ap32-mmw-closing-party-with-arodes-and-fideles-29th-mar-wynwood-studios-miami-tickets",
+      "matched_id": 103,
+      "is_new": false
+    },
+    {
+      "name": "APEX COMBO SUNDAY PASS",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "MAZUMA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/6dl3kq-apex-combo-sunday-pass-29th-mar-mazuma-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -246,14 +166,24 @@
       "is_new": false
     },
     {
-      "name": "RESISTANCE MMW Closing Party: Carl Cox, Maceo Plex",
+      "name": "Hush ",
       "date": "2026-03-29T22:00:00-04:00",
-      "venue": "M2 Miami",
+      "venue": "Minibar SoFi",
       "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/dkqo6g-resistance-mmw-closing-party-carl-cox-maceo-plex-29th-mar-m2-miami-miami-beach-tickets",
-      "matched_id": 80,
-      "is_new": false
+      "url": "https://dice.fm/event/bbrwam-hush-29th-mar-minibar-sofi-miami-beach-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "Echo Temple x Wassup MMW Showcase",
+      "date": "2026-03-29T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkmrnq-echo-temple-x-wassup-mmw-showcase-29th-mar-mode-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "MMW: Heavy House Society: Sidney Charles",
@@ -266,6 +196,16 @@
       "is_new": true
     },
     {
+      "name": "Deeperfect Showcase (MMW 2026)",
+      "date": "2026-03-29T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/92wa5o-deeperfect-showcase-mmw-2026-29th-mar-mode-miami-tickets",
+      "matched_id": 89,
+      "is_new": false
+    },
+    {
       "name": "30+ Hour MMW Closing Party 2026",
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "Club Space Miami",
@@ -274,6 +214,26 @@
       "url": "https://dice.fm/event/mxl5nr-30-hour-mmw-closing-party-2026-29th-mar-club-space-miami-miami-tickets",
       "matched_id": 88,
       "is_new": false
+    },
+    {
+      "name": "III Points Presents: Miami Music Week",
+      "date": "2026-03-29T23:00:00-04:00",
+      "venue": "The Ground Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/yo6ava-iii-points-presents-miami-music-week-29th-mar-the-ground-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "F93 x PIV Records: Miami Music Week",
+      "date": "2026-03-29T23:00:00-04:00",
+      "venue": "Floyd Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/v3q9el-f93-x-piv-records-miami-music-week-29th-mar-floyd-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
     },
     {
       "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
@@ -309,97 +269,6 @@
   "new_events": [
     {
       "name": "MMW Jolene All Access Pass",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4222
-      },
-      "url": ""
-    },
-    {
-      "name": "Factory Town Music Week 2026 (5-Day Pass)",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 52719,
-        "sales_tax": 3449,
-        "amount_from": null
-      },
-      "url": ""
-    },
-    {
-      "name": "Steve Angello & Friends - Miami Music Week",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 8239
-      },
-      "url": ""
-    },
-    {
-      "name": "Factory Town Music Week 2026 (Sunday Pass)",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 30000
-      },
-      "url": ""
-    },
-    {
-      "name": "MMW: Heavy House Society: Sidney Charles",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 4000,
-        "sales_tax": 261,
-        "amount_from": null
-      },
-      "url": ""
-    },
-    {
-      "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 1246
-      },
-      "url": ""
-    },
-    {
-      "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 3000
-      },
-      "url": ""
-    },
-    {
-      "name": "MMW Jolene All Access Pass",
       "date": "2026-03-19T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
@@ -407,12 +276,60 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
+      "name": "APEX 2026 MMW PASS",
+      "date": "2026-03-25T21:00:00-04:00",
+      "venue": "",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/3onvwg-apex-2026-mmw-pass-25th-mar-paraso-estreo-miami-la-otra-miami-mazuma-miami-casa-nube-wynwood-miami-tickets"
+    },
+    {
       "name": "Factory Town Music Week 2026 (5-Day Pass)",
       "date": "2026-03-25T22:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "527.19",
+      "price": "",
       "url": "https://dice.fm/event/oeq9vy-factory-town-music-week-2026-5-day-pass-25th-mar-factory-town-miami-tickets"
+    },
+    {
+      "name": "Where Are My Keys? MMW by Un_Mute & Pickle",
+      "date": "2026-03-27T23:45:00-04:00",
+      "venue": "94th Aero Squadron",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkqbaq-where-are-my-keys-mmw-by-unmute-pickle-27th-mar-94th-aero-squadron-miami-tickets"
+    },
+    {
+      "name": "UNUM - Miami Music Week",
+      "date": "2026-03-29T07:00:00-04:00",
+      "venue": "Sable Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/eorx7y-unum-miami-music-week-29th-mar-sable-miami-miami-tickets"
+    },
+    {
+      "name": "Mixmag Caribbean vs Humans Alike Showcase MMW2026",
+      "date": "2026-03-29T12:00:00-04:00",
+      "venue": "1-800-Lucky",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/7demgb-mixmag-caribbean-vs-humans-alike-showcase-mmw2026-29th-mar-1-800-lucky-miami-tickets"
+    },
+    {
+      "name": " Brian Cid presents Ladobe",
+      "date": "2026-03-29T17:00:00-04:00",
+      "venue": "Cadenza Hi-Fi",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/2w37ga--brian-cid-presents-ladobe-29th-mar-cadenza-hi-fi-miami-tickets"
+    },
+    {
+      "name": "PLAYGRND SERIES MIAMI: SPRING FEVER EDITION",
+      "date": "2026-03-29T17:00:00-04:00",
+      "venue": "ZeyZey",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bb39ag-playgrnd-series-miami-spring-fever-edition-29th-mar-zeyzey-miami-tickets"
     },
     {
       "name": "Steve Angello & Friends - Miami Music Week",
@@ -427,8 +344,32 @@
       "date": "2026-03-29T21:00:00-04:00",
       "venue": "Factory Town",
       "artists": [],
-      "price": "300",
+      "price": "",
       "url": "https://dice.fm/event/av3kk7-factory-town-music-week-2026-sunday-pass-29th-mar-factory-town-miami-tickets"
+    },
+    {
+      "name": "APEX COMBO SUNDAY PASS",
+      "date": "2026-03-29T21:00:00-04:00",
+      "venue": "MAZUMA",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/6dl3kq-apex-combo-sunday-pass-29th-mar-mazuma-miami-tickets"
+    },
+    {
+      "name": "Hush ",
+      "date": "2026-03-29T22:00:00-04:00",
+      "venue": "Minibar SoFi",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/bbrwam-hush-29th-mar-minibar-sofi-miami-beach-tickets"
+    },
+    {
+      "name": "Echo Temple x Wassup MMW Showcase",
+      "date": "2026-03-29T22:00:00-04:00",
+      "venue": "MODE",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/dkmrnq-echo-temple-x-wassup-mmw-showcase-29th-mar-mode-miami-tickets"
     },
     {
       "name": "MMW: Heavy House Society: Sidney Charles",
@@ -437,6 +378,22 @@
       "artists": [],
       "price": "",
       "url": "https://dice.fm/event/nv9gl9-mmw-heavy-house-society-sidney-charles-29th-mar-jolene-sound-room-miami-miami-tickets"
+    },
+    {
+      "name": "III Points Presents: Miami Music Week",
+      "date": "2026-03-29T23:00:00-04:00",
+      "venue": "The Ground Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/yo6ava-iii-points-presents-miami-music-week-29th-mar-the-ground-miami-miami-tickets"
+    },
+    {
+      "name": "F93 x PIV Records: Miami Music Week",
+      "date": "2026-03-29T23:00:00-04:00",
+      "venue": "Floyd Miami",
+      "artists": [],
+      "price": "",
+      "url": "https://dice.fm/event/v3q9el-f93-x-piv-records-miami-music-week-29th-mar-floyd-miami-miami-tickets"
     },
     {
       "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
