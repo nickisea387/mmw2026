@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-30T15:28:49.542585+00:00",
+  "updated": "2026-03-30T17:05:57.867713+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 8,
-  "matched_existing": 4,
+  "total_found": 6,
+  "matched_existing": 2,
   "new_count": 4,
   "events": [
     {
@@ -19,21 +19,6 @@
       "url": "",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "30+ Hour MMW Closing Party 2026",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4000
-      },
-      "url": "",
-      "matched_id": 88,
-      "is_new": false
     },
     {
       "name": "ENJOY. Miami Music Week Closing Party ",
@@ -74,16 +59,6 @@
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
-    },
-    {
-      "name": "30+ Hour MMW Closing Party 2026",
-      "date": "2026-03-29T23:00:00-04:00",
-      "venue": "Club Space Miami",
-      "artists": [],
-      "price": "40",
-      "url": "https://dice.fm/event/mxl5nr-30-hour-mmw-closing-party-2026-29th-mar-club-space-miami-miami-tickets",
-      "matched_id": 88,
-      "is_new": false
     },
     {
       "name": "ENJOY. Miami Music Week Closing Party ",
