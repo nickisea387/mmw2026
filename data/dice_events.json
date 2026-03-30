@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-30T12:54:20.330822+00:00",
+  "updated": "2026-03-30T15:28:49.542585+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 10,
+  "total_found": 8,
   "matched_existing": 4,
-  "new_count": 6,
+  "new_count": 4,
   "events": [
     {
       "name": "MMW Jolene All Access Pass",
@@ -34,21 +34,6 @@
       "url": "",
       "matched_id": 88,
       "is_new": false
-    },
-    {
-      "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 1246
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
     },
     {
       "name": "ENJOY. Miami Music Week Closing Party ",
@@ -101,16 +86,6 @@
       "is_new": false
     },
     {
-      "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
-      "date": "2026-03-29T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "12.46",
-      "url": "https://dice.fm/event/nv9p55-atc-chesster-andy-lotti-madison-park-29th-mar-the-trip-miami-tickets",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
       "name": "ENJOY. Miami Music Week Closing Party ",
       "date": "2026-03-30T20:00:00-04:00",
       "venue": " 8Street Brickell",
@@ -146,19 +121,6 @@
       "url": ""
     },
     {
-      "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 1246
-      },
-      "url": ""
-    },
-    {
       "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
       "date": "",
       "venue": "",
@@ -178,14 +140,6 @@
       "artists": [],
       "price": "42.22",
       "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
-    },
-    {
-      "name": "ATC: CHESSTER, ANDY LOTTI, MADISON PARK..",
-      "date": "2026-03-29T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
-      "price": "12.46",
-      "url": "https://dice.fm/event/nv9p55-atc-chesster-andy-lotti-madison-park-29th-mar-the-trip-miami-tickets"
     },
     {
       "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
