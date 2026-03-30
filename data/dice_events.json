@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-30T02:24:52.467324+00:00",
+  "updated": "2026-03-30T05:41:53.027810+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 26,
   "matched_existing": 8,
@@ -60,7 +60,7 @@
       "date": "2026-03-29T12:00:00-04:00",
       "venue": "National Hotel",
       "artists": [],
-      "price": "79.99",
+      "price": "",
       "url": "https://dice.fm/event/7dpydp-james-hype-the-originals-present-hiide-mmw-2026-29th-mar-national-hotel-miami-tickets",
       "matched_id": 49,
       "is_new": false
@@ -110,7 +110,7 @@
       "date": "2026-03-29T20:00:00-04:00",
       "venue": "Toe Jam XL",
       "artists": [],
-      "price": "63.37",
+      "price": "82.39",
       "url": "https://dice.fm/event/oev7ka-steve-angello-friends-miami-music-week-29th-mar-toe-jam-xl-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -190,7 +190,7 @@
       "date": "2026-03-29T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "20.01",
+      "price": "40",
       "url": "https://dice.fm/event/nv9gl9-mmw-heavy-house-society-sidney-charles-29th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -200,7 +200,7 @@
       "date": "2026-03-29T22:00:00-04:00",
       "venue": "MODE",
       "artists": [],
-      "price": "36.37",
+      "price": "",
       "url": "https://dice.fm/event/92wa5o-deeperfect-showcase-mmw-2026-29th-mar-mode-miami-tickets",
       "matched_id": 89,
       "is_new": false
@@ -220,7 +220,7 @@
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "The Ground Miami",
       "artists": [],
-      "price": "14.99",
+      "price": "",
       "url": "https://dice.fm/event/yo6ava-iii-points-presents-miami-music-week-29th-mar-the-ground-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -230,7 +230,7 @@
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "Floyd Miami",
       "artists": [],
-      "price": "14.99",
+      "price": "",
       "url": "https://dice.fm/event/v3q9el-f93-x-piv-records-miami-music-week-29th-mar-floyd-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -336,7 +336,7 @@
       "date": "2026-03-29T20:00:00-04:00",
       "venue": "Toe Jam XL",
       "artists": [],
-      "price": "63.37",
+      "price": "82.39",
       "url": "https://dice.fm/event/oev7ka-steve-angello-friends-miami-music-week-29th-mar-toe-jam-xl-miami-tickets"
     },
     {
@@ -376,7 +376,7 @@
       "date": "2026-03-29T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "20.01",
+      "price": "40",
       "url": "https://dice.fm/event/nv9gl9-mmw-heavy-house-society-sidney-charles-29th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
@@ -384,7 +384,7 @@
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "The Ground Miami",
       "artists": [],
-      "price": "14.99",
+      "price": "",
       "url": "https://dice.fm/event/yo6ava-iii-points-presents-miami-music-week-29th-mar-the-ground-miami-miami-tickets"
     },
     {
@@ -392,7 +392,7 @@
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "Floyd Miami",
       "artists": [],
-      "price": "14.99",
+      "price": "",
       "url": "https://dice.fm/event/v3q9el-f93-x-piv-records-miami-music-week-29th-mar-floyd-miami-miami-tickets"
     },
     {
