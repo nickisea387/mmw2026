@@ -1,57 +1,29 @@
 {
-  "updated": "2026-03-31T15:30:41.899390+00:00",
+  "updated": "2026-03-31T17:04:10.937131+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 2,
+  "total_found": 1,
   "matched_existing": 0,
-  "new_count": 2,
+  "new_count": 1,
   "events": [
     {
-      "name": "AROUND THE CORNER: FELIPE RUIZ",
+      "name": "Our company",
       "date": "",
       "venue": "",
       "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 2491
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "AROUND THE CORNER: FELIPE RUIZ",
-      "date": "2026-03-30T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/8eglvw-around-the-corner-felipe-ruiz-30th-mar-the-trip-miami-tickets",
+      "url": "https://dice.fm/bundles/miami-music-week-events-55yy",
       "matched_id": null,
       "is_new": true
     }
   ],
   "new_events": [
     {
-      "name": "AROUND THE CORNER: FELIPE RUIZ",
+      "name": "Our company",
       "date": "",
       "venue": "",
       "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 2491
-      },
-      "url": ""
-    },
-    {
-      "name": "AROUND THE CORNER: FELIPE RUIZ",
-      "date": "2026-03-30T23:59:00-04:00",
-      "venue": "The Trip",
-      "artists": [],
       "price": "",
-      "url": "https://dice.fm/event/8eglvw-around-the-corner-felipe-ruiz-30th-mar-the-trip-miami-tickets"
+      "url": "https://dice.fm/bundles/miami-music-week-events-55yy"
     }
   ]
 }
