@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-31T05:35:07.266803+00:00",
+  "updated": "2026-03-31T07:14:53.982592+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 8,
   "matched_existing": 4,
@@ -14,7 +14,7 @@
         "currency": "USD",
         "amount": null,
         "sales_tax": null,
-        "amount_from": 4000
+        "amount_from": 4221
       },
       "url": "",
       "matched_id": 88,
@@ -42,8 +42,8 @@
       "artists": [],
       "price": {
         "currency": "USD",
-        "amount": 8001,
-        "sales_tax": 524,
+        "amount": 10000,
+        "sales_tax": 654,
         "amount_from": null
       },
       "url": "",
@@ -70,7 +70,7 @@
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "Club Space Miami",
       "artists": [],
-      "price": "42.21",
+      "price": "",
       "url": "https://dice.fm/event/mxl5nr-30-hour-mmw-closing-party-2026-29th-mar-club-space-miami-miami-tickets",
       "matched_id": 88,
       "is_new": false
@@ -90,7 +90,7 @@
       "date": "2026-03-30T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "100",
+      "price": "",
       "url": "https://dice.fm/event/wwekkn-mmw-maceo-plex-special-guest-bakke-b2b-jonny-from-space-30th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
@@ -114,8 +114,8 @@
       "artists": [],
       "price": {
         "currency": "USD",
-        "amount": 8001,
-        "sales_tax": 524,
+        "amount": 10000,
+        "sales_tax": 654,
         "amount_from": null
       },
       "url": ""
@@ -138,7 +138,7 @@
       "date": "2026-03-30T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "100",
+      "price": "",
       "url": "https://dice.fm/event/wwekkn-mmw-maceo-plex-special-guest-bakke-b2b-jonny-from-space-30th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
