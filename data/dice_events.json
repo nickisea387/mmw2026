@@ -1,25 +1,10 @@
 {
-  "updated": "2026-03-31T02:24:38.385116+00:00",
+  "updated": "2026-03-31T05:35:07.266803+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
   "total_found": 8,
   "matched_existing": 4,
   "new_count": 4,
   "events": [
-    {
-      "name": "MMW Jolene All Access Pass",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4222
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
     {
       "name": "30+ Hour MMW Closing Party 2026",
       "date": "",
@@ -57,21 +42,26 @@
       "artists": [],
       "price": {
         "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 3000
+        "amount": 8001,
+        "sales_tax": 524,
+        "amount_from": null
       },
       "url": "",
       "matched_id": null,
       "is_new": true
     },
     {
-      "name": "MMW Jolene All Access Pass",
-      "date": "2026-03-19T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
+      "name": "AROUND THE CORNER: FELIPE RUIZ",
+      "date": "",
+      "venue": "",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets",
+      "price": {
+        "currency": "USD",
+        "amount": null,
+        "sales_tax": null,
+        "amount_from": 2491
+      },
+      "url": "",
       "matched_id": null,
       "is_new": true
     },
@@ -80,7 +70,7 @@
       "date": "2026-03-29T23:00:00-04:00",
       "venue": "Club Space Miami",
       "artists": [],
-      "price": "40",
+      "price": "42.21",
       "url": "https://dice.fm/event/mxl5nr-30-hour-mmw-closing-party-2026-29th-mar-club-space-miami-miami-tickets",
       "matched_id": 88,
       "is_new": false
@@ -100,54 +90,64 @@
       "date": "2026-03-30T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "30",
+      "price": "100",
       "url": "https://dice.fm/event/wwekkn-mmw-maceo-plex-special-guest-bakke-b2b-jonny-from-space-30th-mar-jolene-sound-room-miami-miami-tickets",
+      "matched_id": null,
+      "is_new": true
+    },
+    {
+      "name": "AROUND THE CORNER: FELIPE RUIZ",
+      "date": "2026-03-30T23:59:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "24.91",
+      "url": "https://dice.fm/event/8eglvw-around-the-corner-felipe-ruiz-30th-mar-the-trip-miami-tickets",
       "matched_id": null,
       "is_new": true
     }
   ],
   "new_events": [
     {
-      "name": "MMW Jolene All Access Pass",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4222
-      },
-      "url": ""
-    },
-    {
       "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
       "date": "",
       "venue": "",
       "artists": [],
       "price": {
         "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 3000
+        "amount": 8001,
+        "sales_tax": 524,
+        "amount_from": null
       },
       "url": ""
     },
     {
-      "name": "MMW Jolene All Access Pass",
-      "date": "2026-03-19T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
+      "name": "AROUND THE CORNER: FELIPE RUIZ",
+      "date": "",
+      "venue": "",
       "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/av3982-mmw-jolene-all-access-pass-19th-mar-jolene-sound-room-miami-miami-tickets"
+      "price": {
+        "currency": "USD",
+        "amount": null,
+        "sales_tax": null,
+        "amount_from": 2491
+      },
+      "url": ""
     },
     {
       "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
       "date": "2026-03-30T22:00:00-04:00",
       "venue": "Jolene Sound Room Miami",
       "artists": [],
-      "price": "30",
+      "price": "100",
       "url": "https://dice.fm/event/wwekkn-mmw-maceo-plex-special-guest-bakke-b2b-jonny-from-space-30th-mar-jolene-sound-room-miami-miami-tickets"
+    },
+    {
+      "name": "AROUND THE CORNER: FELIPE RUIZ",
+      "date": "2026-03-30T23:59:00-04:00",
+      "venue": "The Trip",
+      "artists": [],
+      "price": "24.91",
+      "url": "https://dice.fm/event/8eglvw-around-the-corner-felipe-ruiz-30th-mar-the-trip-miami-tickets"
     }
   ]
 }
