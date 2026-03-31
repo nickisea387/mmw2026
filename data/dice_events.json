@@ -1,55 +1,10 @@
 {
-  "updated": "2026-03-31T07:14:53.982592+00:00",
+  "updated": "2026-03-31T09:11:39.584600+00:00",
   "source": "https://dice.fm/bundles/miami-music-week-events-55yy",
-  "total_found": 8,
-  "matched_existing": 4,
-  "new_count": 4,
+  "total_found": 2,
+  "matched_existing": 0,
+  "new_count": 2,
   "events": [
-    {
-      "name": "30+ Hour MMW Closing Party 2026",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 4221
-      },
-      "url": "",
-      "matched_id": 88,
-      "is_new": false
-    },
-    {
-      "name": "ENJOY. Miami Music Week Closing Party ",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": null,
-        "sales_tax": null,
-        "amount_from": 0
-      },
-      "url": "",
-      "matched_id": 88,
-      "is_new": false
-    },
-    {
-      "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 10000,
-        "sales_tax": 654,
-        "amount_from": null
-      },
-      "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
     {
       "name": "AROUND THE CORNER: FELIPE RUIZ",
       "date": "",
@@ -62,36 +17,6 @@
         "amount_from": 2491
       },
       "url": "",
-      "matched_id": null,
-      "is_new": true
-    },
-    {
-      "name": "30+ Hour MMW Closing Party 2026",
-      "date": "2026-03-29T23:00:00-04:00",
-      "venue": "Club Space Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/mxl5nr-30-hour-mmw-closing-party-2026-29th-mar-club-space-miami-miami-tickets",
-      "matched_id": 88,
-      "is_new": false
-    },
-    {
-      "name": "ENJOY. Miami Music Week Closing Party ",
-      "date": "2026-03-30T20:00:00-04:00",
-      "venue": " 8Street Brickell",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/bbrpqm-enjoy-miami-music-week-closing-party-30th-mar-8street-brickell-miami-tickets",
-      "matched_id": 88,
-      "is_new": false
-    },
-    {
-      "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
-      "date": "2026-03-30T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/wwekkn-mmw-maceo-plex-special-guest-bakke-b2b-jonny-from-space-30th-mar-jolene-sound-room-miami-miami-tickets",
       "matched_id": null,
       "is_new": true
     },
@@ -108,19 +33,6 @@
   ],
   "new_events": [
     {
-      "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
-      "date": "",
-      "venue": "",
-      "artists": [],
-      "price": {
-        "currency": "USD",
-        "amount": 10000,
-        "sales_tax": 654,
-        "amount_from": null
-      },
-      "url": ""
-    },
-    {
       "name": "AROUND THE CORNER: FELIPE RUIZ",
       "date": "",
       "venue": "",
@@ -132,14 +44,6 @@
         "amount_from": 2491
       },
       "url": ""
-    },
-    {
-      "name": "MMW: Maceo Plex, Special Guest, Bakke b2b Jonny From Space",
-      "date": "2026-03-30T22:00:00-04:00",
-      "venue": "Jolene Sound Room Miami",
-      "artists": [],
-      "price": "",
-      "url": "https://dice.fm/event/wwekkn-mmw-maceo-plex-special-guest-bakke-b2b-jonny-from-space-30th-mar-jolene-sound-room-miami-miami-tickets"
     },
     {
       "name": "AROUND THE CORNER: FELIPE RUIZ",
