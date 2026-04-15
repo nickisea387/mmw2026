@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-15T19:09:16.167592+00:00",
+  "updated": "2026-04-15T21:03:21.100345+00:00",
   "source": "google_news_rss",
   "signals": {
     "1": {
@@ -11,8 +11,8 @@
       "score": 0.213
     },
     "3": {
-      "articles": 21,
-      "score": 0.223
+      "articles": 22,
+      "score": 0.234
     },
     "4": {
       "articles": 25,
@@ -27,44 +27,44 @@
       "score": 0.351
     },
     "7": {
-      "articles": 46,
-      "score": 0.489
+      "articles": 45,
+      "score": 0.479
     },
     "8": {
       "articles": 38,
       "score": 0.404
     },
     "9": {
-      "articles": 56,
-      "score": 0.596
+      "articles": 55,
+      "score": 0.585
     },
     "10": {
       "articles": 82,
       "score": 0.872
     },
     "11": {
-      "articles": 74,
-      "score": 0.787
+      "articles": 75,
+      "score": 0.798
     },
     "12": {
-      "articles": 29,
-      "score": 0.309
+      "articles": 30,
+      "score": 0.319
     },
     "13": {
-      "articles": 37,
-      "score": 0.394
+      "articles": 38,
+      "score": 0.404
     },
     "14": {
-      "articles": 12,
-      "score": 0.128
+      "articles": 77,
+      "score": 0.819
     },
     "15": {
       "articles": 31,
       "score": 0.33
     },
     "16": {
-      "articles": 7,
-      "score": 0.074
+      "articles": 17,
+      "score": 0.181
     },
     "17": {
       "articles": 13,
@@ -83,28 +83,28 @@
       "score": 0.16
     },
     "21": {
-      "articles": 39,
-      "score": 0.415
+      "articles": 37,
+      "score": 0.394
     },
     "22": {
       "articles": 64,
       "score": 0.681
     },
     "23": {
-      "articles": 66,
-      "score": 0.702
-    },
-    "24": {
       "articles": 73,
       "score": 0.777
+    },
+    "24": {
+      "articles": 85,
+      "score": 0.904
     },
     "25": {
       "articles": 17,
       "score": 0.181
     },
     "26": {
-      "articles": 58,
-      "score": 0.617
+      "articles": 66,
+      "score": 0.702
     },
     "27": {
       "articles": 74,
@@ -115,28 +115,28 @@
       "score": 0.404
     },
     "29": {
-      "articles": 82,
-      "score": 0.872
+      "articles": 65,
+      "score": 0.691
     },
     "30": {
-      "articles": 25,
-      "score": 0.266
+      "articles": 27,
+      "score": 0.287
     },
     "31": {
-      "articles": 42,
-      "score": 0.447
+      "articles": 39,
+      "score": 0.415
     },
     "32": {
-      "articles": 20,
-      "score": 0.213
+      "articles": 21,
+      "score": 0.223
     },
     "33": {
-      "articles": 77,
-      "score": 0.819
+      "articles": 58,
+      "score": 0.617
     },
     "34": {
-      "articles": 29,
-      "score": 0.309
+      "articles": 30,
+      "score": 0.319
     },
     "35": {
       "articles": 18,
@@ -155,8 +155,8 @@
       "score": 0.138
     },
     "39": {
-      "articles": 79,
-      "score": 0.84
+      "articles": 86,
+      "score": 0.915
     },
     "40": {
       "articles": 69,
@@ -167,8 +167,8 @@
       "score": 0.362
     },
     "42": {
-      "articles": 44,
-      "score": 0.468
+      "articles": 89,
+      "score": 0.947
     },
     "43": {
       "articles": 51,
@@ -179,8 +179,8 @@
       "score": 0.181
     },
     "45": {
-      "articles": 49,
-      "score": 0.521
+      "articles": 48,
+      "score": 0.511
     },
     "46": {
       "articles": 74,
@@ -191,8 +191,8 @@
       "score": 1.0
     },
     "48": {
-      "articles": 44,
-      "score": 0.468
+      "articles": 85,
+      "score": 0.904
     },
     "49": {
       "articles": 38,
@@ -203,8 +203,8 @@
       "score": 0.33
     },
     "51": {
-      "articles": 39,
-      "score": 0.415
+      "articles": 38,
+      "score": 0.404
     },
     "52": {
       "articles": 0,
@@ -219,8 +219,8 @@
       "score": 0.266
     },
     "55": {
-      "articles": 19,
-      "score": 0.202
+      "articles": 20,
+      "score": 0.213
     },
     "56": {
       "articles": 39,
@@ -243,40 +243,40 @@
       "score": 0.383
     },
     "61": {
-      "articles": 84,
-      "score": 0.894
+      "articles": 77,
+      "score": 0.819
     },
     "62": {
-      "articles": 36,
-      "score": 0.383
+      "articles": 52,
+      "score": 0.553
     },
     "63": {
       "articles": 64,
       "score": 0.681
     },
     "64": {
-      "articles": 26,
-      "score": 0.277
+      "articles": 25,
+      "score": 0.266
     },
     "65": {
       "articles": 10,
       "score": 0.106
     },
     "66": {
+      "articles": 51,
+      "score": 0.543
+    },
+    "67": {
+      "articles": 92,
+      "score": 0.979
+    },
+    "68": {
       "articles": 47,
       "score": 0.5
     },
-    "67": {
-      "articles": 44,
-      "score": 0.468
-    },
-    "68": {
-      "articles": 53,
-      "score": 0.564
-    },
     "69": {
-      "articles": 24,
-      "score": 0.255
+      "articles": 25,
+      "score": 0.266
     },
     "70": {
       "articles": 66,
@@ -287,12 +287,12 @@
       "score": 0.606
     },
     "72": {
-      "articles": 28,
-      "score": 0.298
+      "articles": 10,
+      "score": 0.106
     },
     "73": {
-      "articles": 63,
-      "score": 0.67
+      "articles": 60,
+      "score": 0.638
     },
     "74": {
       "articles": 29,
@@ -311,32 +311,32 @@
       "score": 0.181
     },
     "78": {
-      "articles": 37,
-      "score": 0.394
+      "articles": 40,
+      "score": 0.426
     },
     "79": {
-      "articles": 39,
-      "score": 0.415
+      "articles": 38,
+      "score": 0.404
     },
     "80": {
-      "articles": 81,
-      "score": 0.862
+      "articles": 79,
+      "score": 0.84
     },
     "81": {
-      "articles": 67,
-      "score": 0.713
+      "articles": 68,
+      "score": 0.723
     },
     "82": {
-      "articles": 19,
-      "score": 0.202
+      "articles": 20,
+      "score": 0.213
     },
     "83": {
-      "articles": 63,
-      "score": 0.67
+      "articles": 62,
+      "score": 0.66
     },
     "84": {
-      "articles": 61,
-      "score": 0.649
+      "articles": 66,
+      "score": 0.702
     },
     "85": {
       "articles": 13,
@@ -347,8 +347,8 @@
       "score": 0.16
     },
     "87": {
-      "articles": 22,
-      "score": 0.234
+      "articles": 23,
+      "score": 0.245
     },
     "88": {
       "articles": 0,
@@ -399,8 +399,8 @@
       "score": 0.0
     },
     "100": {
-      "articles": 26,
-      "score": 0.277
+      "articles": 33,
+      "score": 0.351
     },
     "101": {
       "articles": 4,
@@ -411,28 +411,28 @@
       "score": 0.383
     },
     "103": {
-      "articles": 13,
-      "score": 0.138
+      "articles": 14,
+      "score": 0.149
     },
     "104": {
       "articles": 29,
       "score": 0.309
     },
     "105": {
-      "articles": 85,
-      "score": 0.904
+      "articles": 86,
+      "score": 0.915
     },
     "106": {
-      "articles": 58,
-      "score": 0.617
+      "articles": 61,
+      "score": 0.649
     },
     "107": {
-      "articles": 87,
-      "score": 0.926
+      "articles": 79,
+      "score": 0.84
     },
     "108": {
-      "articles": 15,
-      "score": 0.16
+      "articles": 16,
+      "score": 0.17
     },
     "109": {
       "articles": 16,
