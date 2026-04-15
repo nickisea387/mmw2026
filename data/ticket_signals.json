@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-15T11:10:36.640121+00:00",
+  "updated": "2026-04-15T12:48:01.685966+00:00",
   "signals": {
     "1": {
       "soldOut": false,
@@ -258,8 +258,8 @@
       "status": "final_release"
     },
     "65": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "66": {
       "soldOut": true,
