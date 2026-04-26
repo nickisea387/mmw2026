@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-26T07:56:52.181362+00:00",
+  "updated": "2026-04-26T09:12:39.979526+00:00",
   "signals": {
     "1": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "2": {
       "soldOut": false,
@@ -30,16 +30,16 @@
       "status": "available"
     },
     "8": {
-      "soldOut": false,
-      "status": "available"
-    },
-    "9": {
       "soldOut": true,
       "status": "sold_out"
     },
-    "10": {
+    "9": {
       "soldOut": false,
       "status": "available"
+    },
+    "10": {
+      "soldOut": true,
+      "status": "sold_out"
     },
     "11": {
       "soldOut": false,
@@ -134,8 +134,8 @@
       "status": "available"
     },
     "34": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "35": {
       "soldOut": false,
@@ -146,8 +146,8 @@
       "status": "available"
     },
     "37": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "38": {
       "soldOut": false,
@@ -198,8 +198,8 @@
       "status": "available"
     },
     "50": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "51": {
       "soldOut": false,
@@ -218,8 +218,8 @@
       "status": "available"
     },
     "55": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "56": {
       "soldOut": false,
@@ -242,8 +242,8 @@
       "status": "available"
     },
     "61": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "62": {
       "soldOut": false,
@@ -258,8 +258,8 @@
       "status": "final_release"
     },
     "65": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "66": {
       "soldOut": false,
@@ -306,8 +306,8 @@
       "status": "available"
     },
     "77": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "78": {
       "soldOut": false,
@@ -358,12 +358,12 @@
       "status": "available"
     },
     "90": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "91": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "92": {
       "soldOut": false,
