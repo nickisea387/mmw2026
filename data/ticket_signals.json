@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-28T09:05:47.816710+00:00",
+  "updated": "2026-04-28T11:55:06.032409+00:00",
   "signals": {
     "1": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "2": {
       "soldOut": false,
@@ -30,16 +30,16 @@
       "status": "available"
     },
     "8": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "9": {
       "soldOut": true,
       "status": "sold_out"
     },
     "10": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "11": {
       "soldOut": false,
@@ -122,8 +122,8 @@
       "status": "sold_out"
     },
     "31": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "32": {
       "soldOut": false,
@@ -190,20 +190,20 @@
       "status": "available"
     },
     "48": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "49": {
       "soldOut": false,
       "status": "available"
     },
     "50": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "51": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "52": {
       "soldOut": false,
@@ -218,8 +218,8 @@
       "status": "available"
     },
     "55": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "56": {
       "soldOut": false,
@@ -255,11 +255,11 @@
     },
     "64": {
       "soldOut": false,
-      "status": "available"
+      "status": "final_release"
     },
     "65": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "66": {
       "soldOut": false,
@@ -290,8 +290,8 @@
       "status": "available"
     },
     "73": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "74": {
       "soldOut": false,
