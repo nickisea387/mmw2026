@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-04T02:49:32.466389+00:00",
+  "updated": "2026-05-04T06:25:18.809953+00:00",
   "signals": {
     "1": {
       "soldOut": true,
@@ -50,8 +50,8 @@
       "status": "available"
     },
     "13": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "14": {
       "soldOut": false,
@@ -162,16 +162,16 @@
       "status": "available"
     },
     "41": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "42": {
       "soldOut": false,
       "status": "available"
     },
     "43": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "44": {
       "soldOut": false,
@@ -194,12 +194,12 @@
       "status": "available"
     },
     "49": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "50": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "51": {
       "soldOut": false,
@@ -250,8 +250,8 @@
       "status": "available"
     },
     "63": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "64": {
       "soldOut": false,
@@ -294,8 +294,8 @@
       "status": "available"
     },
     "74": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "75": {
       "soldOut": false,
@@ -350,8 +350,8 @@
       "status": "available"
     },
     "88": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "89": {
       "soldOut": false,
@@ -386,8 +386,8 @@
       "status": "available"
     },
     "97": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "98": {
       "soldOut": false,
