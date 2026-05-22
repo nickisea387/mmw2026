@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-22T21:33:44.151165+00:00",
+  "updated": "2026-05-22T23:06:13.602631+00:00",
   "threshold": 35,
-  "trending_count": 25,
+  "trending_count": 29,
   "total_events": 109,
   "scores": {
     "1": {
@@ -37,7 +37,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.94,
+      "total": 18.61,
       "trending": false
     },
     "4": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.2,
+      "total": 27.03,
       "trending": false
     },
     "8": {
@@ -97,7 +97,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.39,
+      "total": 33.56,
       "trending": false
     },
     "9": {
@@ -133,7 +133,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.13,
+      "total": 44.3,
       "trending": true
     },
     "12": {
@@ -145,7 +145,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.05,
+      "total": 24.89,
       "trending": false
     },
     "13": {
@@ -166,11 +166,11 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.75,
-      "trending": false
+      "total": 38.09,
+      "trending": true
     },
     "15": {
       "name": "RESISTANCE Miami Music Week",
@@ -205,7 +205,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.11,
+      "total": 15.95,
       "trending": false
     },
     "18": {
@@ -217,7 +217,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.36,
+      "total": 20.55,
       "trending": false
     },
     "19": {
@@ -226,10 +226,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.12,
+      "total": 24.95,
       "trending": false
     },
     "20": {
@@ -241,7 +241,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.11,
+      "total": 17.95,
       "trending": false
     },
     "21": {
@@ -253,7 +253,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.03,
+      "total": 30.87,
       "trending": false
     },
     "22": {
@@ -265,7 +265,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.83,
+      "total": 35.99,
       "trending": true
     },
     "23": {
@@ -289,7 +289,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.88,
+      "total": 43.2,
       "trending": true
     },
     "25": {
@@ -310,11 +310,11 @@
       "hype_score": 8,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.11,
-      "trending": false
+      "total": 40.78,
+      "trending": true
     },
     "27": {
       "name": "deadmau5 at E11EVEN",
@@ -325,7 +325,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.15,
+      "total": 36.78,
       "trending": true
     },
     "28": {
@@ -337,7 +337,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.39,
+      "total": 30.56,
       "trending": false
     },
     "29": {
@@ -397,7 +397,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.6,
+      "total": 31.09,
       "trending": false
     },
     "34": {
@@ -421,7 +421,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.45,
+      "total": 17.61,
       "trending": false
     },
     "36": {
@@ -433,7 +433,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.01,
+      "total": 19.86,
       "trending": false
     },
     "37": {
@@ -445,7 +445,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 14.14,
+      "total": 13.97,
       "trending": false
     },
     "38": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 42.6,
+      "total": 43.75,
       "trending": true
     },
     "40": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.27,
+      "total": 39.44,
       "trending": true
     },
     "43": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.01,
+      "total": 31.34,
       "trending": false
     },
     "44": {
@@ -529,7 +529,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.28,
+      "total": 20.95,
       "trending": false
     },
     "45": {
@@ -553,7 +553,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.15,
+      "total": 36.78,
       "trending": true
     },
     "47": {
@@ -565,8 +565,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.06,
-      "trending": false
+      "total": 35.53,
+      "trending": true
     },
     "48": {
       "name": "RESISTANCE: Amelie Lens & Boys Noize",
@@ -577,7 +577,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.58,
+      "total": 41.72,
       "trending": true
     },
     "49": {
@@ -613,7 +613,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.5,
+      "total": 27.69,
       "trending": false
     },
     "52": {
@@ -637,7 +637,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.91,
+      "total": 21.08,
       "trending": false
     },
     "54": {
@@ -682,10 +682,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 13.64,
+      "total": 23.64,
       "trending": false
     },
     "58": {
@@ -697,7 +697,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.05,
+      "total": 29.89,
       "trending": false
     },
     "59": {
@@ -733,7 +733,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.39,
+      "total": 47.55,
       "trending": true
     },
     "62": {
@@ -745,7 +745,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.8,
+      "total": 35.97,
       "trending": true
     },
     "63": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.27,
+      "total": 45.44,
       "trending": true
     },
     "68": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.05,
+      "total": 30.87,
       "trending": false
     },
     "69": {
@@ -841,7 +841,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.95,
+      "total": 33.15,
       "trending": false
     },
     "71": {
@@ -853,7 +853,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.15,
+      "total": 27.01,
       "trending": false
     },
     "72": {
@@ -997,7 +997,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.8,
+      "total": 29.48,
       "trending": false
     },
     "84": {
@@ -1009,7 +1009,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.25,
+      "total": 32.75,
       "trending": false
     },
     "85": {
@@ -1030,10 +1030,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.8,
+      "total": 31.8,
       "trending": false
     },
     "87": {
@@ -1054,11 +1054,11 @@
       "hype_score": 10,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.0,
-      "trending": false
+      "total": 38.0,
+      "trending": true
     },
     "89": {
       "name": "Deeperfect Showcase",
@@ -1093,7 +1093,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.77,
+      "total": 21.94,
       "trending": false
     },
     "92": {
@@ -1174,10 +1174,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.0,
+      "total": 25.0,
       "trending": false
     },
     "99": {
@@ -1249,7 +1249,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.08,
+      "total": 30.24,
       "trending": false
     },
     "105": {
@@ -1261,7 +1261,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.58,
+      "total": 49.37,
       "trending": true
     },
     "106": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.83,
+      "total": 43.99,
       "trending": true
     },
     "107": {
@@ -1285,7 +1285,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 49.86,
+      "total": 49.37,
       "trending": true
     },
     "108": {
