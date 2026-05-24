@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-24T17:03:09.488736+00:00",
+  "updated": "2026-05-24T18:57:21.599562+00:00",
   "threshold": 35,
-  "trending_count": 30,
+  "trending_count": 27,
   "total_events": 109,
   "scores": {
     "1": {
@@ -25,7 +25,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.93,
+      "total": 21.11,
       "trending": false
     },
     "3": {
@@ -37,7 +37,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.76,
+      "total": 18.93,
       "trending": false
     },
     "4": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.18,
+      "total": 26.52,
       "trending": false
     },
     "8": {
@@ -133,7 +133,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 45.35,
+      "total": 45.17,
       "trending": true
     },
     "12": {
@@ -214,10 +214,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.03,
+      "total": 19.83,
       "trending": false
     },
     "19": {
@@ -226,10 +226,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.23,
+      "total": 15.23,
       "trending": false
     },
     "20": {
@@ -286,10 +286,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 54.31,
+      "total": 44.49,
       "trending": true
     },
     "25": {
@@ -310,11 +310,11 @@
       "hype_score": 8,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.73,
-      "trending": true
+      "total": 32.73,
+      "trending": false
     },
     "27": {
       "name": "deadmau5 at E11EVEN",
@@ -325,7 +325,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.62,
+      "total": 36.13,
       "trending": true
     },
     "28": {
@@ -370,10 +370,10 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.52,
+      "total": 21.69,
       "trending": false
     },
     "32": {
@@ -394,11 +394,11 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 41.04,
-      "trending": true
+      "total": 30.7,
+      "trending": false
     },
     "34": {
       "name": "Cosmic Gate & Friends",
@@ -421,7 +421,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.58,
+      "total": 17.41,
       "trending": false
     },
     "36": {
@@ -445,7 +445,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 14.04,
+      "total": 13.86,
       "trending": false
     },
     "38": {
@@ -466,10 +466,10 @@
       "hype_score": 10,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 54.77,
+      "total": 44.77,
       "trending": true
     },
     "40": {
@@ -481,7 +481,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.2,
+      "total": 39.38,
       "trending": true
     },
     "41": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.17,
+      "total": 39.01,
       "trending": true
     },
     "43": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.94,
+      "total": 31.06,
       "trending": false
     },
     "44": {
@@ -553,7 +553,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.62,
+      "total": 36.13,
       "trending": true
     },
     "47": {
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.14,
+      "total": 35.97,
       "trending": true
     },
     "48": {
@@ -577,7 +577,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.97,
+      "total": 43.14,
       "trending": true
     },
     "49": {
@@ -706,10 +706,10 @@
       "hype_score": 10,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.48,
+      "total": 35.48,
       "trending": true
     },
     "60": {
@@ -721,8 +721,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.96,
-      "trending": false
+      "total": 35.14,
+      "trending": true
     },
     "61": {
       "name": "Factory Town: Adam Beyer & Friends",
@@ -733,7 +733,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.17,
+      "total": 47.59,
       "trending": true
     },
     "62": {
@@ -742,10 +742,10 @@
       "hype_score": 8,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.28,
+      "total": 35.1,
       "trending": true
     },
     "63": {
@@ -757,7 +757,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.97,
+      "total": 38.13,
       "trending": true
     },
     "64": {
@@ -781,7 +781,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.55,
+      "total": 24.38,
       "trending": false
     },
     "66": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.17,
+      "total": 45.01,
       "trending": true
     },
     "68": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.03,
+      "total": 30.87,
       "trending": false
     },
     "69": {
@@ -841,8 +841,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.7,
-      "trending": true
+      "total": 34.13,
+      "trending": false
     },
     "71": {
       "name": "LALALAND: Green Velvet & Cajmere",
@@ -853,7 +853,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.28,
+      "total": 28.79,
       "trending": false
     },
     "72": {
@@ -865,7 +865,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.04,
+      "total": 31.38,
       "trending": false
     },
     "73": {
@@ -877,7 +877,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.04,
+      "total": 26.86,
       "trending": false
     },
     "74": {
@@ -934,10 +934,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.0,
+      "total": 20.0,
       "trending": false
     },
     "79": {
@@ -1006,11 +1006,11 @@
       "hype_score": 8,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.04,
-      "trending": true
+      "total": 31.86,
+      "trending": false
     },
     "85": {
       "name": "Cristoph Presents COS Miami",
@@ -1021,7 +1021,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.41,
+      "total": 18.23,
       "trending": false
     },
     "86": {
@@ -1102,10 +1102,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.89,
+      "total": 15.89,
       "trending": false
     },
     "93": {
@@ -1129,7 +1129,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.27,
+      "total": 20.45,
       "trending": false
     },
     "95": {
@@ -1153,7 +1153,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.11,
+      "total": 17.41,
       "trending": false
     },
     "97": {
@@ -1165,7 +1165,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.18,
+      "total": 25.52,
       "trending": false
     },
     "98": {
@@ -1201,7 +1201,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.21,
+      "total": 20.38,
       "trending": false
     },
     "101": {
@@ -1258,10 +1258,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 57.2,
+      "total": 49.8,
       "trending": true
     },
     "106": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.1,
+      "total": 43.24,
       "trending": true
     },
     "107": {
@@ -1285,7 +1285,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.49,
+      "total": 48.77,
       "trending": true
     },
     "108": {
@@ -1297,7 +1297,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.38,
+      "total": 17.55,
       "trending": false
     },
     "109": {
@@ -1309,7 +1309,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.41,
+      "total": 16.58,
       "trending": false
     }
   }
