@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-10T03:09:58.638794+00:00",
+  "updated": "2026-06-10T08:00:43.020501+00:00",
   "signals": {
     "1": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "2": {
       "soldOut": false,
@@ -30,8 +30,8 @@
       "status": "available"
     },
     "8": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "9": {
       "soldOut": false,
@@ -62,8 +62,8 @@
       "status": "available"
     },
     "16": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "17": {
       "soldOut": false,
@@ -94,8 +94,8 @@
       "status": "available"
     },
     "24": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "25": {
       "soldOut": false,
@@ -206,8 +206,8 @@
       "status": "available"
     },
     "52": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "53": {
       "soldOut": false,
@@ -230,8 +230,8 @@
       "status": "available"
     },
     "58": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "59": {
       "soldOut": false,
@@ -270,8 +270,8 @@
       "status": "available"
     },
     "68": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "69": {
       "soldOut": false,
@@ -322,8 +322,8 @@
       "status": "available"
     },
     "81": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "82": {
       "soldOut": false,
@@ -390,8 +390,8 @@
       "status": "sold_out"
     },
     "98": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "99": {
       "soldOut": false,
