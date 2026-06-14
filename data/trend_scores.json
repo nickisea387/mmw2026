@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-14T18:13:10.649511+00:00",
+  "updated": "2026-06-14T20:15:26.237955+00:00",
   "threshold": 35,
-  "trending_count": 24,
+  "trending_count": 27,
   "total_events": 109,
   "scores": {
     "1": {
@@ -13,7 +13,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.27,
+      "total": 50.62,
       "trending": true
     },
     "2": {
@@ -37,7 +37,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.77,
+      "total": 18.97,
       "trending": false
     },
     "4": {
@@ -49,7 +49,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 22.08,
+      "total": 21.89,
       "trending": false
     },
     "5": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.19,
+      "total": 26.0,
       "trending": false
     },
     "8": {
@@ -121,7 +121,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.48,
+      "total": 41.34,
       "trending": true
     },
     "11": {
@@ -157,7 +157,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.3,
+      "total": 21.48,
       "trending": false
     },
     "14": {
@@ -265,8 +265,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.97,
-      "trending": true
+      "total": 33.92,
+      "trending": false
     },
     "23": {
       "name": "Nora En Pure Presents Purified Miami",
@@ -286,10 +286,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.89,
+      "total": 53.71,
       "trending": true
     },
     "25": {
@@ -313,7 +313,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.16,
+      "total": 33.78,
       "trending": false
     },
     "27": {
@@ -325,7 +325,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.81,
+      "total": 35.52,
       "trending": true
     },
     "28": {
@@ -397,7 +397,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.23,
+      "total": 32.03,
       "trending": false
     },
     "34": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.96,
+      "total": 40.52,
       "trending": true
     },
     "40": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.01,
+      "total": 39.36,
       "trending": true
     },
     "43": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.41,
+      "total": 31.79,
       "trending": false
     },
     "44": {
@@ -553,7 +553,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.81,
+      "total": 35.52,
       "trending": true
     },
     "47": {
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.62,
+      "total": 36.82,
       "trending": true
     },
     "48": {
@@ -577,7 +577,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.62,
+      "total": 43.82,
       "trending": true
     },
     "49": {
@@ -589,7 +589,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.66,
+      "total": 21.48,
       "trending": false
     },
     "50": {
@@ -598,11 +598,11 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.3,
-      "trending": false
+      "total": 35.3,
+      "trending": true
     },
     "51": {
       "name": "Seven Lions at MIDLINE",
@@ -733,7 +733,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 46.48,
+      "total": 47.41,
       "trending": true
     },
     "62": {
@@ -745,8 +745,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.86,
-      "trending": false
+      "total": 35.7,
+      "trending": true
     },
     "63": {
       "name": "RESISTANCE: Boris Brejcha, Miss Monique",
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.01,
+      "total": 45.36,
       "trending": true
     },
     "68": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.3,
+      "total": 31.66,
       "trending": false
     },
     "69": {
@@ -865,7 +865,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.89,
+      "total": 24.26,
       "trending": false
     },
     "73": {
@@ -874,11 +874,11 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.48,
-      "trending": false
+      "total": 37.48,
+      "trending": true
     },
     "74": {
       "name": "Cosmic Gate Sunset Cruise",
@@ -886,10 +886,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.26,
+      "total": 31.44,
       "trending": false
     },
     "75": {
@@ -913,7 +913,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.96,
+      "total": 24.79,
       "trending": false
     },
     "77": {
@@ -949,7 +949,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.92,
+      "total": 37.48,
       "trending": true
     },
     "80": {
@@ -973,7 +973,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.63,
+      "total": 37.25,
       "trending": true
     },
     "82": {
@@ -997,7 +997,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.41,
+      "total": 29.34,
       "trending": false
     },
     "84": {
@@ -1045,7 +1045,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.15,
+      "total": 17.33,
       "trending": false
     },
     "88": {
@@ -1093,7 +1093,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.97,
+      "total": 22.15,
       "trending": false
     },
     "92": {
@@ -1105,7 +1105,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.22,
+      "total": 16.04,
       "trending": false
     },
     "93": {
@@ -1117,7 +1117,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.22,
+      "total": 16.04,
       "trending": false
     },
     "94": {
@@ -1153,7 +1153,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.33,
+      "total": 18.15,
       "trending": false
     },
     "97": {
@@ -1162,11 +1162,11 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.37,
-      "trending": false
+      "total": 35.19,
+      "trending": true
     },
     "98": {
       "name": "Bassrush Miami",
@@ -1201,7 +1201,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.11,
+      "total": 19.93,
       "trending": false
     },
     "101": {
@@ -1225,7 +1225,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.52,
+      "total": 23.7,
       "trending": false
     },
     "103": {
@@ -1261,7 +1261,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.89,
+      "total": 48.41,
       "trending": true
     },
     "106": {
