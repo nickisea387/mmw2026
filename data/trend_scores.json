@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-16T00:04:48.388261+00:00",
+  "updated": "2026-06-16T01:27:58.691539+00:00",
   "threshold": 35,
-  "trending_count": 26,
+  "trending_count": 25,
   "total_events": 109,
   "scores": {
     "1": {
@@ -277,7 +277,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.68,
+      "total": 28.18,
       "trending": false
     },
     "24": {
@@ -286,10 +286,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 53.3,
+      "total": 43.5,
       "trending": true
     },
     "25": {
@@ -457,7 +457,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.18,
+      "total": 16.38,
       "trending": false
     },
     "39": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 45.88,
+      "total": 42.32,
       "trending": true
     },
     "40": {
@@ -481,7 +481,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.07,
+      "total": 32.88,
       "trending": false
     },
     "41": {
@@ -493,8 +493,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.12,
-      "trending": true
+      "total": 34.95,
+      "trending": false
     },
     "42": {
       "name": "Black Coffee at LIV",
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.88,
+      "total": 39.7,
       "trending": true
     },
     "43": {
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.5,
+      "total": 35.68,
       "trending": true
     },
     "48": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.88,
+      "total": 45.7,
       "trending": true
     },
     "68": {
@@ -841,7 +841,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.12,
+      "total": 36.62,
       "trending": true
     },
     "71": {
@@ -913,7 +913,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.43,
+      "total": 25.25,
       "trending": false
     },
     "77": {
@@ -997,7 +997,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.5,
+      "total": 29.62,
       "trending": false
     },
     "84": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.75,
+      "total": 40.68,
       "trending": true
     },
     "107": {
