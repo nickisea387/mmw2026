@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-22T23:41:04.572682+00:00",
+  "updated": "2026-06-23T01:08:32.184734+00:00",
   "threshold": 35,
-  "trending_count": 26,
+  "trending_count": 23,
   "total_events": 109,
   "scores": {
     "1": {
@@ -37,7 +37,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.77,
+      "total": 18.97,
       "trending": false
     },
     "4": {
@@ -73,7 +73,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.63,
+      "total": 29.44,
       "trending": false
     },
     "7": {
@@ -121,7 +121,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.41,
+      "total": 40.23,
       "trending": true
     },
     "11": {
@@ -157,7 +157,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.66,
+      "total": 21.86,
       "trending": false
     },
     "14": {
@@ -169,7 +169,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.12,
+      "total": 28.3,
       "trending": false
     },
     "15": {
@@ -202,10 +202,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.04,
+      "total": 16.04,
       "trending": false
     },
     "18": {
@@ -217,7 +217,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.77,
+      "total": 17.97,
       "trending": false
     },
     "19": {
@@ -253,7 +253,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.86,
+      "total": 32.03,
       "trending": false
     },
     "22": {
@@ -265,7 +265,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.25,
+      "total": 37.45,
       "trending": true
     },
     "23": {
@@ -274,11 +274,11 @@
       "hype_score": 10,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.08,
-      "trending": true
+      "total": 29.44,
+      "trending": false
     },
     "24": {
       "name": "Pardon My French",
@@ -313,7 +313,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.03,
+      "total": 32.85,
       "trending": false
     },
     "27": {
@@ -325,8 +325,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.52,
-      "trending": true
+      "total": 34.22,
+      "trending": false
     },
     "28": {
       "name": "Cloonee Presents Hellbent",
@@ -349,7 +349,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.12,
+      "total": 39.92,
       "trending": true
     },
     "30": {
@@ -373,7 +373,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.26,
+      "total": 20.44,
       "trending": false
     },
     "32": {
@@ -397,7 +397,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.01,
+      "total": 31.67,
       "trending": false
     },
     "34": {
@@ -409,7 +409,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.33,
+      "total": 18.15,
       "trending": false
     },
     "35": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.96,
+      "total": 45.52,
       "trending": true
     },
     "40": {
@@ -481,7 +481,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.63,
+      "total": 32.26,
       "trending": false
     },
     "41": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.41,
+      "total": 31.59,
       "trending": false
     },
     "44": {
@@ -553,8 +553,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.52,
-      "trending": true
+      "total": 34.22,
+      "trending": false
     },
     "47": {
       "name": "Diplo at E11EVEN",
@@ -565,8 +565,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.96,
-      "trending": false
+      "total": 35.71,
+      "trending": true
     },
     "48": {
       "name": "RESISTANCE: Amelie Lens & Boys Noize",
@@ -577,7 +577,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 42.71,
+      "total": 36.97,
       "trending": true
     },
     "49": {
@@ -598,11 +598,11 @@
       "hype_score": 8,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.86,
-      "trending": true
+      "total": 25.3,
+      "trending": false
     },
     "51": {
       "name": "Seven Lions at MIDLINE",
@@ -613,7 +613,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.48,
+      "total": 27.11,
       "trending": false
     },
     "52": {
@@ -637,7 +637,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.7,
+      "total": 20.89,
       "trending": false
     },
     "54": {
@@ -673,7 +673,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.15,
+      "total": 14.66,
       "trending": false
     },
     "57": {
@@ -697,7 +697,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.86,
+      "total": 31.66,
       "trending": false
     },
     "59": {
@@ -709,7 +709,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.63,
+      "total": 35.44,
       "trending": true
     },
     "60": {
@@ -721,8 +721,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.88,
-      "trending": false
+      "total": 35.08,
+      "trending": true
     },
     "61": {
       "name": "Factory Town: Adam Beyer & Friends",
@@ -745,8 +745,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.52,
-      "trending": true
+      "total": 33.86,
+      "trending": false
     },
     "63": {
       "name": "RESISTANCE: Boris Brejcha, Miss Monique",
@@ -769,7 +769,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.52,
+      "total": 26.7,
       "trending": false
     },
     "65": {
@@ -793,7 +793,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.19,
+      "total": 39.36,
       "trending": true
     },
     "67": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.37,
+      "total": 30.55,
       "trending": false
     },
     "69": {
@@ -853,7 +853,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.89,
+      "total": 23.7,
       "trending": false
     },
     "72": {
@@ -865,7 +865,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.08,
+      "total": 23.15,
       "trending": false
     },
     "73": {
@@ -913,7 +913,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.96,
+      "total": 25.34,
       "trending": false
     },
     "77": {
@@ -949,7 +949,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.86,
+      "total": 38.03,
       "trending": true
     },
     "80": {
@@ -961,7 +961,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 46.27,
+      "total": 47.0,
       "trending": true
     },
     "81": {
@@ -997,7 +997,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.59,
+      "total": 28.96,
       "trending": false
     },
     "84": {
@@ -1009,7 +1009,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.01,
+      "total": 27.86,
       "trending": false
     },
     "85": {
@@ -1105,7 +1105,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.22,
+      "total": 16.04,
       "trending": false
     },
     "93": {
@@ -1117,7 +1117,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.22,
+      "total": 16.04,
       "trending": false
     },
     "94": {
@@ -1141,7 +1141,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.04,
+      "total": 16.84,
       "trending": false
     },
     "96": {
@@ -1213,7 +1213,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 11.55,
+      "total": 11.38,
       "trending": false
     },
     "102": {
@@ -1261,7 +1261,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 49.89,
+      "total": 50.45,
       "trending": true
     },
     "106": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.22,
+      "total": 43.03,
       "trending": true
     },
     "107": {

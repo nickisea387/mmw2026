@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T23:33:08.651350+00:00",
+  "updated": "2026-06-23T01:00:51.212111+00:00",
   "signals": {
     "1": {
       "soldOut": false,
@@ -66,8 +66,8 @@
       "status": "available"
     },
     "17": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "18": {
       "soldOut": false,
@@ -90,8 +90,8 @@
       "status": "available"
     },
     "23": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "24": {
       "soldOut": true,
@@ -198,8 +198,8 @@
       "status": "available"
     },
     "50": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "available"
     },
     "51": {
       "soldOut": false,
