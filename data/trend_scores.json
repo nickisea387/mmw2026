@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T01:08:32.184734+00:00",
+  "updated": "2026-06-23T04:07:46.600850+00:00",
   "threshold": 35,
   "trending_count": 23,
   "total_events": 109,
@@ -10,10 +10,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 49.89,
+      "total": 59.89,
       "trending": true
     },
     "2": {
@@ -25,7 +25,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.33,
+      "total": 21.15,
       "trending": false
     },
     "3": {
@@ -133,7 +133,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.08,
+      "total": 44.25,
       "trending": true
     },
     "12": {
@@ -157,7 +157,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.86,
+      "total": 21.66,
       "trending": false
     },
     "14": {
@@ -169,7 +169,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.3,
+      "total": 28.48,
       "trending": false
     },
     "15": {
@@ -265,7 +265,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.45,
+      "total": 37.63,
       "trending": true
     },
     "23": {
@@ -289,7 +289,7 @@
       "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 54.27,
+      "total": 54.07,
       "trending": true
     },
     "25": {
@@ -382,10 +382,10 @@
       "hype_score": 6,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.15,
+      "total": 26.48,
       "trending": false
     },
     "33": {
@@ -430,10 +430,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.75,
+      "total": 28.75,
       "trending": false
     },
     "37": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 45.52,
+      "total": 45.16,
       "trending": true
     },
     "40": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.59,
+      "total": 31.96,
       "trending": false
     },
     "44": {
@@ -577,7 +577,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.97,
+      "total": 42.71,
       "trending": true
     },
     "49": {
@@ -589,7 +589,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.86,
+      "total": 21.66,
       "trending": false
     },
     "50": {
@@ -601,7 +601,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.3,
+      "total": 25.86,
       "trending": false
     },
     "51": {
@@ -613,7 +613,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.11,
+      "total": 26.93,
       "trending": false
     },
     "52": {
@@ -637,7 +637,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.89,
+      "total": 20.7,
       "trending": false
     },
     "54": {
@@ -670,10 +670,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 14.66,
+      "total": 26.15,
       "trending": false
     },
     "57": {
@@ -709,7 +709,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.44,
+      "total": 35.63,
       "trending": true
     },
     "60": {
@@ -853,7 +853,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.7,
+      "total": 28.7,
       "trending": false
     },
     "72": {
@@ -1009,7 +1009,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.86,
+      "total": 31.01,
       "trending": false
     },
     "85": {
@@ -1141,7 +1141,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.84,
+      "total": 17.04,
       "trending": false
     },
     "96": {
@@ -1201,7 +1201,7 @@
       "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.55,
+      "total": 29.75,
       "trending": false
     },
     "101": {
@@ -1213,7 +1213,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 11.38,
+      "total": 11.55,
       "trending": false
     },
     "102": {
@@ -1237,7 +1237,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.66,
+      "total": 15.85,
       "trending": false
     },
     "104": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.03,
+      "total": 43.22,
       "trending": true
     },
     "107": {
