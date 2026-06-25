@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-25T22:04:59.550663+00:00",
+  "updated": "2026-06-25T23:25:58.485350+00:00",
   "threshold": 35,
-  "trending_count": 22,
+  "trending_count": 23,
   "total_events": 109,
   "scores": {
     "1": {
@@ -13,7 +13,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 49.56,
+      "total": 45.77,
       "trending": true
     },
     "2": {
@@ -145,7 +145,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.87,
+      "total": 26.51,
       "trending": false
     },
     "13": {
@@ -202,10 +202,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.0,
+      "total": 26.0,
       "trending": false
     },
     "18": {
@@ -241,7 +241,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.54,
+      "total": 18.36,
       "trending": false
     },
     "21": {
@@ -361,7 +361,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.61,
+      "total": 21.43,
       "trending": false
     },
     "31": {
@@ -433,7 +433,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.97,
+      "total": 18.79,
       "trending": false
     },
     "37": {
@@ -457,7 +457,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.71,
+      "total": 15.54,
       "trending": false
     },
     "39": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 43.75,
+      "total": 43.38,
       "trending": true
     },
     "40": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.12,
+      "total": 38.77,
       "trending": true
     },
     "43": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.67,
+      "total": 32.49,
       "trending": false
     },
     "44": {
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.74,
+      "total": 35.56,
       "trending": true
     },
     "48": {
@@ -649,7 +649,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.88,
+      "total": 19.05,
       "trending": false
     },
     "55": {
@@ -697,7 +697,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.87,
+      "total": 31.51,
       "trending": false
     },
     "59": {
@@ -709,8 +709,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.44,
-      "trending": false
+      "total": 35.88,
+      "trending": true
     },
     "60": {
       "name": "Marco Carola: Music On",
@@ -745,7 +745,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.15,
+      "total": 32.97,
       "trending": false
     },
     "63": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 45.12,
+      "total": 44.77,
       "trending": true
     },
     "68": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.59,
+      "total": 30.79,
       "trending": false
     },
     "69": {
@@ -937,7 +937,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 19.16,
+      "total": 20.23,
       "trending": false
     },
     "79": {
@@ -1021,7 +1021,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.26,
+      "total": 18.0,
       "trending": false
     },
     "86": {
@@ -1045,7 +1045,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.07,
+      "total": 16.89,
       "trending": false
     },
     "88": {
@@ -1153,7 +1153,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.61,
+      "total": 18.43,
       "trending": false
     },
     "97": {
