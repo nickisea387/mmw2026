@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T10:27:54.351159+00:00",
+  "updated": "2026-06-27T12:24:40.900050+00:00",
   "threshold": 35,
   "trending_count": 23,
   "total_events": 109,
@@ -94,11 +94,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.85,
-      "trending": true
+      "total": 34.85,
+      "trending": false
     },
     "9": {
       "name": "Crystal Waters: I Am House Orchestrated",
@@ -169,7 +169,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.81,
+      "total": 29.62,
       "trending": false
     },
     "15": {
@@ -238,10 +238,10 @@
       "hype_score": 6,
       "bandwagon_score": 1,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.57,
+      "total": 18.57,
       "trending": false
     },
     "21": {
@@ -265,7 +265,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.05,
+      "total": 35.86,
       "trending": true
     },
     "23": {
@@ -325,7 +325,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.86,
+      "total": 33.23,
       "trending": false
     },
     "28": {
@@ -349,7 +349,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.98,
+      "total": 40.34,
       "trending": true
     },
     "30": {
@@ -373,7 +373,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.75,
+      "total": 20.57,
       "trending": false
     },
     "32": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.44,
+      "total": 44.25,
       "trending": true
     },
     "40": {
@@ -529,7 +529,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.57,
+      "total": 21.19,
       "trending": false
     },
     "45": {
@@ -553,7 +553,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.86,
+      "total": 33.23,
       "trending": false
     },
     "47": {
@@ -565,8 +565,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.99,
-      "trending": false
+      "total": 35.35,
+      "trending": true
     },
     "48": {
       "name": "RESISTANCE: Amelie Lens & Boys Noize",
@@ -601,7 +601,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.41,
+      "total": 25.23,
       "trending": false
     },
     "51": {
@@ -649,7 +649,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 19.31,
+      "total": 19.12,
       "trending": false
     },
     "55": {
@@ -733,7 +733,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.25,
+      "total": 47.62,
       "trending": true
     },
     "62": {
@@ -793,7 +793,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 38.88,
+      "total": 39.06,
       "trending": true
     },
     "67": {
@@ -1045,7 +1045,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.93,
+      "total": 17.11,
       "trending": false
     },
     "88": {
@@ -1309,7 +1309,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.75,
+      "total": 16.57,
       "trending": false
     }
   }
