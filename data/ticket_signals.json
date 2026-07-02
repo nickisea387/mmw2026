@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T08:59:59.223159+00:00",
+  "updated": "2026-07-02T11:38:26.928705+00:00",
   "signals": {
     "1": {
       "soldOut": false,
@@ -66,8 +66,8 @@
       "status": "available"
     },
     "17": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "18": {
       "soldOut": false,
@@ -86,8 +86,8 @@
       "status": "available"
     },
     "22": {
-      "soldOut": false,
-      "status": "available"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "23": {
       "soldOut": false,
