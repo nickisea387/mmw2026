@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-05T00:58:11.634240+00:00",
+  "updated": "2026-07-05T02:59:47.370405+00:00",
   "threshold": 35,
-  "trending_count": 25,
+  "trending_count": 27,
   "total_events": 109,
   "scores": {
     "1": {
@@ -10,10 +10,10 @@
       "hype_score": 10,
       "bandwagon_score": 5,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.1,
+      "total": 59.94,
       "trending": true
     },
     "2": {
@@ -82,11 +82,11 @@
       "hype_score": 8,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.32,
-      "trending": false
+      "total": 38.5,
+      "trending": true
     },
     "8": {
       "name": "DJ Mag Pool Party: Cloonee",
@@ -94,11 +94,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.9,
-      "trending": false
+      "total": 45.08,
+      "trending": true
     },
     "9": {
       "name": "Crystal Waters: I Am House Orchestrated",
@@ -106,10 +106,10 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.93,
+      "total": 33.93,
       "trending": false
     },
     "10": {
@@ -121,7 +121,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.67,
+      "total": 40.49,
       "trending": true
     },
     "11": {
@@ -157,7 +157,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 22.86,
+      "total": 22.5,
       "trending": false
     },
     "14": {
@@ -190,10 +190,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.39,
+      "total": 27.39,
       "trending": false
     },
     "17": {
@@ -202,10 +202,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.14,
+      "total": 26.32,
       "trending": false
     },
     "18": {
@@ -253,7 +253,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.14,
+      "total": 32.32,
       "trending": false
     },
     "22": {
@@ -262,10 +262,10 @@
       "hype_score": 10,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 36.04,
+      "total": 46.04,
       "trending": true
     },
     "23": {
@@ -289,7 +289,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.76,
+      "total": 43.94,
       "trending": true
     },
     "25": {
@@ -313,7 +313,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.82,
+      "total": 36.0,
       "trending": true
     },
     "27": {
@@ -337,7 +337,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.89,
+      "total": 32.08,
       "trending": false
     },
     "29": {
@@ -349,7 +349,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.97,
+      "total": 41.15,
       "trending": true
     },
     "30": {
@@ -397,7 +397,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.61,
+      "total": 31.25,
       "trending": false
     },
     "34": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 43.43,
+      "total": 43.25,
       "trending": true
     },
     "40": {
@@ -553,7 +553,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.04,
+      "total": 35.22,
       "trending": true
     },
     "47": {
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.49,
+      "total": 34.67,
       "trending": false
     },
     "48": {
@@ -601,7 +601,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.89,
+      "total": 25.07,
       "trending": false
     },
     "51": {
@@ -613,7 +613,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.5,
+      "total": 29.04,
       "trending": false
     },
     "52": {
@@ -637,7 +637,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.47,
+      "total": 21.29,
       "trending": false
     },
     "54": {
@@ -673,7 +673,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.39,
+      "total": 16.57,
       "trending": false
     },
     "57": {
@@ -757,7 +757,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 38.83,
+      "total": 39.01,
       "trending": true
     },
     "64": {
@@ -793,7 +793,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.56,
+      "total": 37.4,
       "trending": true
     },
     "67": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.96,
+      "total": 31.6,
       "trending": false
     },
     "69": {
@@ -913,7 +913,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.5,
+      "total": 24.32,
       "trending": false
     },
     "77": {
@@ -937,7 +937,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.43,
+      "total": 21.25,
       "trending": false
     },
     "79": {
@@ -973,7 +973,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 38.71,
+      "total": 38.53,
       "trending": true
     },
     "82": {
@@ -997,7 +997,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.46,
+      "total": 30.83,
       "trending": false
     },
     "84": {
@@ -1009,7 +1009,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.19,
+      "total": 31.53,
       "trending": false
     },
     "85": {
@@ -1021,7 +1021,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.14,
+      "total": 18.32,
       "trending": false
     },
     "86": {
@@ -1045,7 +1045,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.39,
+      "total": 17.57,
       "trending": false
     },
     "88": {
@@ -1141,7 +1141,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.14,
+      "total": 17.32,
       "trending": false
     },
     "96": {
@@ -1153,7 +1153,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.21,
+      "total": 18.03,
       "trending": false
     },
     "97": {
@@ -1201,7 +1201,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.07,
+      "total": 20.25,
       "trending": false
     },
     "101": {
@@ -1225,7 +1225,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.93,
+      "total": 23.75,
       "trending": false
     },
     "103": {
@@ -1237,7 +1237,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.32,
+      "total": 16.14,
       "trending": false
     },
     "104": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.92,
+      "total": 45.11,
       "trending": true
     },
     "107": {
@@ -1297,7 +1297,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.43,
+      "total": 17.61,
       "trending": false
     },
     "109": {
