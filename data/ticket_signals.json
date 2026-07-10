@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T06:51:11.695155+00:00",
+  "updated": "2026-07-10T09:56:45.701406+00:00",
   "signals": {
     "1": {
       "soldOut": false,
@@ -91,7 +91,7 @@
     },
     "23": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "24": {
       "soldOut": false,
