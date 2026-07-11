@@ -1,85 +1,85 @@
 {
-  "updated": "2026-07-11T16:42:17.445359+00:00",
+  "updated": "2026-07-11T18:42:59.357514+00:00",
   "signals": {
     "1": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "2": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "3": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "4": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "5": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "6": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "7": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "8": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "9": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "10": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "11": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "12": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "13": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "14": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "15": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "16": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "17": {
-      "soldOut": true,
-      "status": "sold_out"
+      "soldOut": false,
+      "status": "unknown"
     },
     "18": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "19": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "20": {
       "soldOut": false,
-      "status": "available"
+      "status": "unknown"
     },
     "21": {
       "soldOut": false,
