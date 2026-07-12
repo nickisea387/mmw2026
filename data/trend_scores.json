@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-12T13:59:46.081688+00:00",
+  "updated": "2026-07-12T15:28:01.384315+00:00",
   "threshold": 35,
-  "trending_count": 27,
+  "trending_count": 26,
   "total_events": 109,
   "scores": {
     "1": {
@@ -13,7 +13,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.82,
+      "total": 50.64,
       "trending": true
     },
     "2": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.31,
+      "total": 29.49,
       "trending": false
     },
     "8": {
@@ -94,11 +94,11 @@
       "hype_score": 10,
       "bandwagon_score": 4,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.79,
-      "trending": true
+      "total": 34.97,
+      "trending": false
     },
     "9": {
       "name": "Crystal Waters: I Am House Orchestrated",
@@ -202,10 +202,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 10,
+      "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.54,
+      "total": 16.54,
       "trending": false
     },
     "18": {
@@ -277,7 +277,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.41,
+      "total": 30.59,
       "trending": false
     },
     "24": {
@@ -337,7 +337,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.79,
+      "total": 31.97,
       "trending": false
     },
     "29": {
@@ -421,7 +421,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.71,
+      "total": 17.89,
       "trending": false
     },
     "36": {
@@ -529,7 +529,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.71,
+      "total": 21.54,
       "trending": false
     },
     "45": {
@@ -565,8 +565,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.2,
-      "trending": true
+      "total": 34.64,
+      "trending": false
     },
     "48": {
       "name": "RESISTANCE: Amelie Lens & Boys Noize",
@@ -649,7 +649,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 19.97,
+      "total": 19.79,
       "trending": false
     },
     "55": {
@@ -721,8 +721,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.8,
-      "trending": false
+      "total": 35.7,
+      "trending": true
     },
     "61": {
       "name": "Factory Town: Adam Beyer & Friends",
@@ -745,7 +745,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.41,
+      "total": 32.59,
       "trending": false
     },
     "63": {
@@ -781,7 +781,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.44,
+      "total": 24.62,
       "trending": false
     },
     "66": {
@@ -865,7 +865,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.88,
+      "total": 22.18,
       "trending": false
     },
     "73": {
@@ -925,7 +925,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.07,
+      "total": 17.89,
       "trending": false
     },
     "78": {
@@ -1009,7 +1009,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.84,
+      "total": 31.66,
       "trending": false
     },
     "85": {
@@ -1201,7 +1201,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.15,
+      "total": 20.51,
       "trending": false
     },
     "101": {
@@ -1297,7 +1297,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.44,
+      "total": 17.26,
       "trending": false
     },
     "109": {
