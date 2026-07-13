@@ -1,53 +1,53 @@
 {
-  "updated": "2026-07-13T12:47:54.449528+00:00",
+  "updated": "2026-07-13T14:58:50.544547+00:00",
   "signals": {
     "1": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "2": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "3": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "4": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "5": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "6": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "7": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "8": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "9": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "10": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "11": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "12": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "13": {
       "soldOut": false,
@@ -55,35 +55,35 @@
     },
     "14": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "15": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "16": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "17": {
-      "soldOut": false,
-      "status": "unknown"
+      "soldOut": true,
+      "status": "sold_out"
     },
     "18": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "19": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "20": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "21": {
       "soldOut": false,
-      "status": "unknown"
+      "status": "available"
     },
     "22": {
       "soldOut": false,
