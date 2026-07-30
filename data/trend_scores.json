@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-30T11:17:07.318673+00:00",
+  "updated": "2026-07-30T13:29:58.652027+00:00",
   "threshold": 35,
-  "trending_count": 23,
+  "trending_count": 22,
   "total_events": 109,
   "scores": {
     "1": {
@@ -13,7 +13,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 50.17,
+      "total": 50.01,
       "trending": true
     },
     "2": {
@@ -49,7 +49,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.3,
+      "total": 21.46,
       "trending": false
     },
     "5": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.73,
+      "total": 29.56,
       "trending": false
     },
     "8": {
@@ -97,7 +97,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.77,
+      "total": 34.61,
       "trending": false
     },
     "9": {
@@ -121,7 +121,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.03,
+      "total": 40.36,
       "trending": true
     },
     "11": {
@@ -169,7 +169,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.38,
+      "total": 27.55,
       "trending": false
     },
     "15": {
@@ -217,7 +217,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.46,
+      "total": 18.3,
       "trending": false
     },
     "19": {
@@ -253,7 +253,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.27,
+      "total": 31.43,
       "trending": false
     },
     "22": {
@@ -277,7 +277,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.28,
+      "total": 30.12,
       "trending": false
     },
     "24": {
@@ -289,7 +289,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 43.35,
+      "total": 43.52,
       "trending": true
     },
     "25": {
@@ -313,7 +313,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.55,
+      "total": 31.71,
       "trending": false
     },
     "27": {
@@ -325,8 +325,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.07,
-      "trending": true
+      "total": 34.74,
+      "trending": false
     },
     "28": {
       "name": "Cloonee Presents Hellbent",
@@ -337,7 +337,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.77,
+      "total": 31.61,
       "trending": false
     },
     "29": {
@@ -349,7 +349,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.37,
+      "total": 40.2,
       "trending": true
     },
     "30": {
@@ -457,7 +457,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.8,
+      "total": 15.97,
       "trending": false
     },
     "39": {
@@ -493,7 +493,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.8,
+      "total": 34.63,
       "trending": false
     },
     "42": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 41.2,
+      "total": 41.03,
       "trending": true
     },
     "43": {
@@ -517,7 +517,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.22,
+      "total": 34.55,
       "trending": false
     },
     "44": {
@@ -553,8 +553,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.07,
-      "trending": true
+      "total": 34.74,
+      "trending": false
     },
     "47": {
       "name": "Diplo at E11EVEN",
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.71,
+      "total": 32.88,
       "trending": false
     },
     "48": {
@@ -589,7 +589,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.77,
+      "total": 20.94,
       "trending": false
     },
     "50": {
@@ -601,7 +601,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.94,
+      "total": 25.11,
       "trending": false
     },
     "51": {
@@ -673,7 +673,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.96,
+      "total": 16.8,
       "trending": false
     },
     "57": {
@@ -709,7 +709,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.29,
+      "total": 35.12,
       "trending": true
     },
     "60": {
@@ -721,8 +721,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 34.96,
-      "trending": false
+      "total": 35.12,
+      "trending": true
     },
     "61": {
       "name": "Factory Town: Adam Beyer & Friends",
@@ -757,7 +757,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.38,
+      "total": 39.22,
       "trending": true
     },
     "64": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.2,
+      "total": 47.03,
       "trending": true
     },
     "68": {
@@ -853,7 +853,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.74,
+      "total": 27.91,
       "trending": false
     },
     "72": {
@@ -889,7 +889,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 20.46,
+      "total": 20.3,
       "trending": false
     },
     "75": {
@@ -925,7 +925,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.3,
+      "total": 17.97,
       "trending": false
     },
     "78": {
@@ -949,7 +949,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 37.27,
+      "total": 37.44,
       "trending": true
     },
     "80": {
@@ -985,7 +985,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.12,
+      "total": 23.8,
       "trending": false
     },
     "83": {
@@ -1045,7 +1045,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.13,
+      "total": 17.3,
       "trending": false
     },
     "88": {
@@ -1081,7 +1081,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.48,
+      "total": 16.31,
       "trending": false
     },
     "91": {
@@ -1225,7 +1225,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.96,
+      "total": 24.12,
       "trending": false
     },
     "103": {
@@ -1249,7 +1249,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.79,
+      "total": 30.62,
       "trending": false
     },
     "105": {
@@ -1309,7 +1309,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.48,
+      "total": 16.64,
       "trending": false
     }
   }
