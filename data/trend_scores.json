@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-10T01:56:58.979027+00:00",
+  "updated": "2026-08-10T04:12:10.902181+00:00",
   "threshold": 35,
-  "trending_count": 25,
+  "trending_count": 23,
   "total_events": 109,
   "scores": {
     "1": {
@@ -73,7 +73,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.3,
+      "total": 26.73,
       "trending": false
     },
     "7": {
@@ -85,7 +85,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.31,
+      "total": 30.48,
       "trending": false
     },
     "8": {
@@ -97,7 +97,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.55,
+      "total": 35.38,
       "trending": true
     },
     "9": {
@@ -121,8 +121,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 40.93,
-      "trending": true
+      "total": 29.73,
+      "trending": false
     },
     "11": {
       "name": "Converge: Richie Hawtin b2b Dubfire",
@@ -169,7 +169,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.52,
+      "total": 27.35,
       "trending": false
     },
     "15": {
@@ -181,7 +181,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 27.83,
+      "total": 25.58,
       "trending": false
     },
     "16": {
@@ -229,7 +229,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.23,
+      "total": 14.04,
       "trending": false
     },
     "20": {
@@ -277,7 +277,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.52,
+      "total": 28.96,
       "trending": false
     },
     "24": {
@@ -289,7 +289,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 44.49,
+      "total": 44.31,
       "trending": true
     },
     "25": {
@@ -313,7 +313,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 30.31,
+      "total": 30.13,
       "trending": false
     },
     "27": {
@@ -325,7 +325,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.45,
+      "total": 35.62,
       "trending": true
     },
     "28": {
@@ -337,7 +337,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.55,
+      "total": 32.38,
       "trending": false
     },
     "29": {
@@ -373,7 +373,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.18,
+      "total": 21.0,
       "trending": false
     },
     "32": {
@@ -385,7 +385,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 18.45,
+      "total": 18.27,
       "trending": false
     },
     "33": {
@@ -397,7 +397,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.42,
+      "total": 32.08,
       "trending": false
     },
     "34": {
@@ -469,7 +469,7 @@
       "soldout_bonus": 0,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 44.42,
+      "total": 43.9,
       "trending": true
     },
     "40": {
@@ -505,7 +505,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 41.77,
+      "total": 41.42,
       "trending": true
     },
     "43": {
@@ -517,8 +517,8 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.04,
-      "trending": true
+      "total": 34.7,
+      "trending": false
     },
     "44": {
       "name": "Shimza at Jungle Island",
@@ -541,7 +541,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.45,
+      "total": 26.27,
       "trending": false
     },
     "46": {
@@ -553,7 +553,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.45,
+      "total": 35.62,
       "trending": true
     },
     "47": {
@@ -613,7 +613,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.62,
+      "total": 29.45,
       "trending": false
     },
     "52": {
@@ -637,7 +637,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 21.48,
+      "total": 21.3,
       "trending": false
     },
     "54": {
@@ -733,7 +733,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.42,
+      "total": 47.24,
       "trending": true
     },
     "62": {
@@ -757,7 +757,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.48,
+      "total": 33.3,
       "trending": false
     },
     "64": {
@@ -793,7 +793,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 39.01,
+      "total": 39.17,
       "trending": true
     },
     "67": {
@@ -805,7 +805,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 47.77,
+      "total": 47.42,
       "trending": true
     },
     "68": {
@@ -817,7 +817,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.55,
+      "total": 31.72,
       "trending": false
     },
     "69": {
@@ -901,7 +901,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.23,
+      "total": 16.41,
       "trending": false
     },
     "76": {
@@ -997,7 +997,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.01,
+      "total": 30.83,
       "trending": false
     },
     "84": {
@@ -1045,7 +1045,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 17.11,
+      "total": 17.27,
       "trending": false
     },
     "88": {
@@ -1081,7 +1081,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.41,
+      "total": 16.23,
       "trending": false
     },
     "91": {
@@ -1165,7 +1165,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.18,
+      "total": 25.34,
       "trending": false
     },
     "98": {
@@ -1249,7 +1249,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.06,
+      "total": 32.9,
       "trending": false
     },
     "105": {
@@ -1297,7 +1297,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 16.34,
+      "total": 17.55,
       "trending": false
     },
     "109": {
