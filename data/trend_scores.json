@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-15T23:19:23.966413+00:00",
+  "updated": "2026-11-16T03:35:00.469693+00:00",
   "threshold": 35,
-  "trending_count": 22,
+  "trending_count": 23,
   "total_events": 109,
   "scores": {
     "1": {
@@ -25,7 +25,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 24.33,
+      "total": 24.66,
       "trending": false
     },
     "3": {
@@ -58,10 +58,10 @@
       "hype_score": 6,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 15.34,
+      "total": 25.34,
       "trending": false
     },
     "6": {
@@ -97,7 +97,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.33,
+      "total": 35.66,
       "trending": true
     },
     "9": {
@@ -130,10 +130,10 @@
       "hype_score": 10,
       "bandwagon_score": 2,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 8,
       "momentum": 0,
-      "total": 41.33,
+      "total": 51.33,
       "trending": true
     },
     "12": {
@@ -142,11 +142,11 @@
       "hype_score": 8,
       "bandwagon_score": 3,
       "reddit_score": 0.0,
-      "soldout_bonus": 0,
+      "soldout_bonus": 10,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.0,
-      "trending": false
+      "total": 36.0,
+      "trending": true
     },
     "13": {
       "name": "HUGEL's Make The Girls Dance",
@@ -337,7 +337,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 32.33,
+      "total": 32.66,
       "trending": false
     },
     "29": {
@@ -565,7 +565,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 28.0,
+      "total": 27.67,
       "trending": false
     },
     "48": {
@@ -745,7 +745,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 33.0,
+      "total": 33.33,
       "trending": false
     },
     "63": {
@@ -757,7 +757,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 35.0,
+      "total": 35.33,
       "trending": true
     },
     "64": {
@@ -769,7 +769,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 29.33,
+      "total": 29.66,
       "trending": false
     },
     "65": {
@@ -841,7 +841,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 31.0,
+      "total": 31.66,
       "trending": false
     },
     "71": {
@@ -877,7 +877,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 23.66,
+      "total": 23.34,
       "trending": false
     },
     "74": {
@@ -1093,7 +1093,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 25.66,
+      "total": 25.33,
       "trending": false
     },
     "92": {
@@ -1165,7 +1165,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 26.33,
+      "total": 26.66,
       "trending": false
     },
     "98": {
@@ -1273,7 +1273,7 @@
       "soldout_bonus": 0,
       "dark_horse": 0,
       "momentum": 0,
-      "total": 41.34,
+      "total": 42.0,
       "trending": true
     },
     "107": {
